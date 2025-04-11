@@ -1,6 +1,7 @@
 #![no_std]
 #![allow(non_camel_case_types)]
 #![doc = include_str!("../README.md")]
+#![allow(unused_imports)]
 
 // Define which module to use based on the chip feature flags
 #[cfg_attr(feature = "ra0e1", path = "./pacs/ra0e1/pac.rs")]

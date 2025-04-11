@@ -1,13 +1,27 @@
 [package]
 name = "ra-pac"
-version = "0.1.0"
+version = "0.0.0"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 description = "Peripheral Access Crate (PAC) for Renesas RA Microcontrollers."
 authors = ["Tri Nguyen <trongtribk06@gmail.com>"]
-keywords = ["arm", "cortex-m", "ra", "renesas", "peripherals"]
+keywords = ["no-std", "arm", "cortex-m", "ra", "renesas"]
 repository = "https://github.com/nguyentri/ra-pac"
 documentation = "https://docs.embassy.dev/nguyentri/ra-pac"
+categories = ["embedded", "hardware-support", "no-std"]
+readme = "README.md"
+exclude = [
+    "target/",
+    "*.svd",
+    "*.svd_patch",
+    ".git/",
+    ".vscode/",
+    "*.py",
+    "*.rs.bk",
+    "*.log",
+    "*.tmp",
+    "*.bak",
+]
 
 [dependencies]
 cortex-m-rt = "0.7.5"
