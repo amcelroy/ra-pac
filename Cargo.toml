@@ -1,27 +1,32 @@
 [package]
 name = "ra-pac"
-version = "0.0.0"
+version = "0.0.1"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 description = "Peripheral Access Crate (PAC) for Renesas RA Microcontrollers."
 authors = ["Tri Nguyen <trongtribk06@gmail.com>"]
 keywords = ["no-std", "arm", "cortex-m", "ra", "renesas"]
 repository = "https://github.com/nguyentri/ra-pac"
-documentation = "https://docs.embassy.dev/nguyentri/ra-pac"
+documentation = "https://docs.rs/crate/ra-pac/latest"
 categories = ["embedded", "hardware-support", "no-std"]
 readme = "README.md"
-exclude = [
-    "target/",
-    "*.svd",
-    "*.svd_patch",
-    ".git/",
-    ".vscode/",
-    "*.py",
-    "*.rs.bk",
-    "*.log",
-    "*.tmp",
-    "*.bak",
-]
+include = ["src/**/*", "Cargo.toml", "README.md", "build.rs"]
+exclude = ["src/inner.rs"]
+
+# Custom License Note for Auto-generated Content (SVD files)
+[package.metadata]
+license_notes = """
+The contents of this crate are auto-generated and licensed under the following proprietary terms of Renesas Electronics Corporation:
+This software is supplied by Renesas Electronics Corporation and is only intended for use with Renesas products.
+No other uses are authorized. This software is owned by Renesas Electronics Corporation and is protected under all applicable laws, including copyright laws.
+
+The software is provided "AS IS" without warranties of any kind, and Renesas makes no warranties regarding this software, including but not limited to
+warranties of merchantability, fitness for a particular purpose, and non-infringement.
+
+Renesas reserves the right, without notice, to make changes to this software and to discontinue the availability of this software. By using this software,
+you agree to the additional terms and conditions found at:
+http://www.renesas.com/disclaimer
+"""
 
 [dependencies]
 cortex-m-rt = "0.7.5"
