@@ -27,7 +27,7 @@ documentation = "https://docs.rs/crate/ra2a1-pac/latest"
 categories = ["embedded", "hardware-support", "no-std"]
 include = ["src/*", "Cargo.toml", "README.md", "build.rs", "device.x"]
 readme = "README.md"
-license = "LICENSE.TXT"
+license-file = "LICENSE.TXT"
 
 [lib]
 test = false
@@ -58,9 +58,9 @@ crc = []
 doc = []
 sci0 = []
 sci1 = []
-sci9 = [ "sci1" ]
+sci9 = ["sci1"]
 spi0 = []
-spi1 = [ "spi0" ]
+spi1 = ["spi0"]
 can0 = []
 iic0 = []
 iic1 = []
@@ -76,29 +76,88 @@ icu = []
 system = []
 mstp = []
 agt0 = []
-agt1 = [ "agt0" ]
+agt1 = ["agt0"]
 gpt320 = []
 gpt_ops = []
 gpt161 = []
-gpt162 = [ "gpt161" ]
-gpt163 = [ "gpt161" ]
-gpt164 = [ "gpt161" ]
-gpt165 = [ "gpt161" ]
-gpt166 = [ "gpt161" ]
+gpt162 = ["gpt161"]
+gpt163 = ["gpt161"]
+gpt164 = ["gpt161"]
+gpt165 = ["gpt161"]
+gpt166 = ["gpt161"]
 poeg = []
 rtc = []
 fcache = []
 port0 = []
 port1 = []
-port2 = [ "port1" ]
-port3 = [ "port0" ]
-port4 = [ "port0" ]
-port5 = [ "port0" ]
-port9 = [ "port0" ]
+port2 = ["port1"]
+port3 = ["port0"]
+port4 = ["port0"]
+port5 = ["port0"]
+port9 = ["port0"]
 pfs = []
 pmisc = []
 
-all = ["acmphs0" ,"acmplp" ,"adc160" ,"ctsu" ,"opamp" ,"sdadc24" ,"tsn" ,"dac12" ,"dac8" ,"elc" ,"iwdt" ,"kint" ,"usbfs" ,"wdt" ,"cac" ,"crc" ,"doc" ,"sci0" ,"sci1" ,"sci9" ,"spi0" ,"spi1" ,"can0" ,"iic0" ,"iic1" ,"mmf" ,"mmpu" ,"smpu" ,"spmon" ,"sram" ,"bus" ,"dbg" ,"dtc" ,"icu" ,"system" ,"mstp" ,"agt0" ,"agt1" ,"gpt320" ,"gpt_ops" ,"gpt161" ,"gpt162" ,"gpt163" ,"gpt164" ,"gpt165" ,"gpt166" ,"poeg" ,"rtc" ,"fcache" ,"port0" ,"port1" ,"port2" ,"port3" ,"port4" ,"port5" ,"port9" ,"pfs" ,"pmisc"]
+all = [
+    "acmphs0",
+    "acmplp",
+    "adc160",
+    "ctsu",
+    "opamp",
+    "sdadc24",
+    "tsn",
+    "dac12",
+    "dac8",
+    "elc",
+    "iwdt",
+    "kint",
+    "usbfs",
+    "wdt",
+    "cac",
+    "crc",
+    "doc",
+    "sci0",
+    "sci1",
+    "sci9",
+    "spi0",
+    "spi1",
+    "can0",
+    "iic0",
+    "iic1",
+    "mmf",
+    "mmpu",
+    "smpu",
+    "spmon",
+    "sram",
+    "bus",
+    "dbg",
+    "dtc",
+    "icu",
+    "system",
+    "mstp",
+    "agt0",
+    "agt1",
+    "gpt320",
+    "gpt_ops",
+    "gpt161",
+    "gpt162",
+    "gpt163",
+    "gpt164",
+    "gpt165",
+    "gpt166",
+    "poeg",
+    "rtc",
+    "fcache",
+    "port0",
+    "port1",
+    "port2",
+    "port3",
+    "port4",
+    "port5",
+    "port9",
+    "pfs",
+    "pmisc",
+]
 
 tracing = ["dep:phf"]
 
@@ -107,4 +166,4 @@ tracing_dummy = []
 rt = ["cortex-m-rt/device"]
 
 [package.metadata.docs.rs]
-features = ["all","rt"]
+features = ["all", "rt"]

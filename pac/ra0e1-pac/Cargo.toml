@@ -27,7 +27,7 @@ documentation = "https://docs.rs/crate/ra0e1-pac/latest"
 categories = ["embedded", "hardware-support", "no-std"]
 include = ["src/*", "Cargo.toml", "README.md", "build.rs", "device.x"]
 readme = "README.md"
-license = "LICENSE.TXT"
+license-file = "LICENSE.TXT"
 
 [lib]
 test = false
@@ -69,7 +69,37 @@ pclbuz = []
 trng = []
 flcn = []
 
-all = ["sram" ,"bus" ,"dtc" ,"icu" ,"dbg" ,"sysc" ,"elc" ,"iwdt" ,"mstp" ,"crc" ,"port0" ,"port1" ,"port2" ,"port3" ,"port4" ,"port9" ,"pfs_a" ,"porga" ,"adc_d" ,"sau0" ,"sau1" ,"tau" ,"rtc_c" ,"iica" ,"uarta" ,"tml32" ,"pclbuz" ,"trng" ,"flcn"]
+all = [
+    "sram",
+    "bus",
+    "dtc",
+    "icu",
+    "dbg",
+    "sysc",
+    "elc",
+    "iwdt",
+    "mstp",
+    "crc",
+    "port0",
+    "port1",
+    "port2",
+    "port3",
+    "port4",
+    "port9",
+    "pfs_a",
+    "porga",
+    "adc_d",
+    "sau0",
+    "sau1",
+    "tau",
+    "rtc_c",
+    "iica",
+    "uarta",
+    "tml32",
+    "pclbuz",
+    "trng",
+    "flcn",
+]
 
 tracing = ["dep:phf"]
 
@@ -78,4 +108,4 @@ tracing_dummy = []
 rt = ["cortex-m-rt/device"]
 
 [package.metadata.docs.rs]
-features = ["all","rt"]
+features = ["all", "rt"]
