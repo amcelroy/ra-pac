@@ -381,8 +381,7 @@ def main():
     os.makedirs("svd_patch", exist_ok=True)
 
     # Set environment variables
-    os.environ["RUST_BACKTRACE"] = RUST_BACKTRACE
-    os.environ["RUST_FULLTRACE"] = RUST_FULLTRACE
+    os.environ["RUST_BACKTRACE"] = RUST_FULLTRACE
     os.environ["RUST_LOG"] = RUST_LOG
 
     # Check if a device name is provided as a command-line argument

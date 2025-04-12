@@ -12,7 +12,7 @@ Add the crate to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-ra-pac = { version = "0.0.1", features = ["ra4m1", "rt"] }
+ra-pac = { version = "0.0.0", features = ["ra4m1", "rt"] }
 ```
 
 Choose the appropriate feature for your target device. **You must specify exactly one device feature.**
