@@ -7,36 +7,6 @@ The crate is automatically generated from the SVD files in [packs](https://www.k
 
 It serves as the foundation for the Hardware Abstraction Layer (HAL) in Rust for Renesas RA Series Microcontrollers.
 
-## Usage
-
-Add the crate to your `Cargo.toml`:
-
-```toml
-[dependencies]
-ra-pac = { version = "0.0.0", features = ["ra4m1", "rt"] }
-```
-
-## Target Architectures
-
-Each device corresponds to a specific architecture target:
-
-- **RA0, RA2 Series**: `thumbv8m.base-none-eabi` (Cortex-M23)
-
-- **RA4, RA6 Series**:
-  - Cortex-M4 devices: `thumbv7em-none-eabihf`
-    - `ra4m1` (Cortex-M4)
-    - `ra4m2` (Cortex-M4)
-    - `ra4m3` (Cortex-M4)
-    - `ra4w1` (Cortex-M4)
-    - `ra6m1` (Cortex-M4)
-    - `ra6m2` (Cortex-M4)
-    - `ra6m3` (Cortex-M4)
-    - `ra6t1` (Cortex-M4)
-  - Cortex-M33 devices: `thumbv8m.main-none-eabihf`
-    - The other RA4 devices
-
-- **RA8 Series**: `thumbv8m.main-none-eabihf` (Cortex-M33)
-
 ## Supported Devices
 
 - RA0E1
@@ -68,6 +38,27 @@ Each device corresponds to a specific architecture target:
 - RA8E1
 - RA8E2
 - RA8M1
+
+## Target Architectures
+
+Each device corresponds to a specific architecture target:
+
+- **RA0, RA2 Series**: `thumbv8m.base-none-eabi` (Cortex-M23)
+
+- **RA4, RA6 Series**:
+  - Cortex-M4 devices: `thumbv7em-none-eabihf`
+    - `ra4m1` (Cortex-M4)
+    - `ra4m2` (Cortex-M4)
+    - `ra4m3` (Cortex-M4)
+    - `ra4w1` (Cortex-M4)
+    - `ra6m1` (Cortex-M4)
+    - `ra6m2` (Cortex-M4)
+    - `ra6m3` (Cortex-M4)
+    - `ra6t1` (Cortex-M4)
+  - Cortex-M33 devices: `thumbv8m.main-none-eabihf`
+    - The other RA4 and RA6 devices
+
+- **RA8 Series**: `thumbv8m.main-none-eabihf` (Cortex-M33)
 
 ## License
 
