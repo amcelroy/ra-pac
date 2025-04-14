@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 0.90.02, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:15:45 +0000
+// Generated from SVD 0.90.02, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:18:12 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Rmpu {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "MMPU Operation After Detection Register"]
+
     #[inline(always)]
     pub const fn mmpuoad(
         &self,
@@ -45,7 +45,6 @@ impl super::Rmpu {
         }
     }
 
-    #[doc = "MMPU Operation After Detection Protect Register"]
     #[inline(always)]
     pub const fn mmpuoadpt(
         &self,
@@ -57,7 +56,6 @@ impl super::Rmpu {
         }
     }
 
-    #[doc = "MMPU Enable Register for DMAC"]
     #[inline(always)]
     pub const fn mmpuendmac(
         &self,
@@ -69,7 +67,6 @@ impl super::Rmpu {
         }
     }
 
-    #[doc = "MMPU Enable Protect Register for DMAC"]
     #[inline(always)]
     pub const fn mmpuenptdmac(
         &self,
@@ -81,7 +78,6 @@ impl super::Rmpu {
         }
     }
 
-    #[doc = "MMPU Regions Protect Register for DMAC"]
     #[inline(always)]
     pub const fn mmpurptdmac(
         &self,
@@ -93,7 +89,6 @@ impl super::Rmpu {
         }
     }
 
-    #[doc = "MMPU Regions Protect Register for DMAC Secure"]
     #[inline(always)]
     pub const fn mmpurptdmac_sec(
         &self,
@@ -105,7 +100,6 @@ impl super::Rmpu {
         }
     }
 
-    #[doc = "MMPU Access Control Register for DMAC"]
     #[inline(always)]
     pub const fn mmpuacdmac(
         &self,
@@ -119,7 +113,6 @@ impl super::Rmpu {
         }
     }
 
-    #[doc = "MMPU Start Address Register for DMAC"]
     #[inline(always)]
     pub const fn mmpusdmac(
         &self,
@@ -133,7 +126,6 @@ impl super::Rmpu {
         }
     }
 
-    #[doc = "MMPU End Address Register for DMAC"]
     #[inline(always)]
     pub const fn mmpuedmac(
         &self,
@@ -153,24 +145,40 @@ pub struct Mmpuoad_SPEC;
 impl crate::sealed::RegSpec for Mmpuoad_SPEC {
     type DataType = u16;
 }
-#[doc = "MMPU Operation After Detection Register"]
+
 pub type Mmpuoad = crate::RegValueT<Mmpuoad_SPEC>;
 
 impl Mmpuoad {
-    #[doc = "Operation After Detection"]
     #[inline(always)]
     pub fn oad(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, mmpuoad::Oad, Mmpuoad_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,mmpuoad::Oad, Mmpuoad_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        mmpuoad::Oad,
+        mmpuoad::Oad,
+        Mmpuoad_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            mmpuoad::Oad,
+            mmpuoad::Oad,
+            Mmpuoad_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "This bit enables or disables writes to the OAD bit."]
+
     #[inline(always)]
     pub fn key(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Mmpuoad_SPEC, crate::common::W> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Mmpuoad_SPEC,crate::common::W>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Mmpuoad_SPEC, crate::common::W> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Mmpuoad_SPEC,crate::common::W>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Mmpuoad {
@@ -185,9 +193,8 @@ pub mod mmpuoad {
     pub struct Oad_SPEC;
     pub type Oad = crate::EnumBitfieldStruct<u8, Oad_SPEC>;
     impl Oad {
-        #[doc = "Non-maskable interrupt"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Reset"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -197,11 +204,10 @@ pub struct Mmpuoadpt_SPEC;
 impl crate::sealed::RegSpec for Mmpuoadpt_SPEC {
     type DataType = u16;
 }
-#[doc = "MMPU Operation After Detection Protect Register"]
+
 pub type Mmpuoadpt = crate::RegValueT<Mmpuoadpt_SPEC>;
 
 impl Mmpuoadpt {
-    #[doc = "Protection of register"]
     #[inline(always)]
     pub fn protect(
         self,
@@ -210,6 +216,7 @@ impl Mmpuoadpt {
         0x1,
         1,
         0,
+        mmpuoadpt::Protect,
         mmpuoadpt::Protect,
         Mmpuoadpt_SPEC,
         crate::common::RW,
@@ -220,16 +227,17 @@ impl Mmpuoadpt {
             1,
             0,
             mmpuoadpt::Protect,
+            mmpuoadpt::Protect,
             Mmpuoadpt_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Key code"]
+
     #[inline(always)]
     pub fn key(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Mmpuoadpt_SPEC, crate::common::W> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Mmpuoadpt_SPEC,crate::common::W>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Mmpuoadpt_SPEC, crate::common::W> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Mmpuoadpt_SPEC,crate::common::W>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Mmpuoadpt {
@@ -244,9 +252,8 @@ pub mod mmpuoadpt {
     pub struct Protect_SPEC;
     pub type Protect = crate::EnumBitfieldStruct<u8, Protect_SPEC>;
     impl Protect {
-        #[doc = "MMPUOAD register writes are possible"]
         pub const _0: Self = Self::new(0);
-        #[doc = "MMPUOAD register writes are protected. Read is possible"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -256,11 +263,10 @@ pub struct Mmpuendmac_SPEC;
 impl crate::sealed::RegSpec for Mmpuendmac_SPEC {
     type DataType = u16;
 }
-#[doc = "MMPU Enable Register for DMAC"]
+
 pub type Mmpuendmac = crate::RegValueT<Mmpuendmac_SPEC>;
 
 impl Mmpuendmac {
-    #[doc = "Bus Master MPU of DMAC enable"]
     #[inline(always)]
     pub fn enable(
         self,
@@ -269,6 +275,7 @@ impl Mmpuendmac {
         0x1,
         1,
         0,
+        mmpuendmac::Enable,
         mmpuendmac::Enable,
         Mmpuendmac_SPEC,
         crate::common::RW,
@@ -279,16 +286,18 @@ impl Mmpuendmac {
             1,
             0,
             mmpuendmac::Enable,
+            mmpuendmac::Enable,
             Mmpuendmac_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "These bits enable or disable writes to the ENABLE bit."]
+
     #[inline(always)]
     pub fn key(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Mmpuendmac_SPEC, crate::common::W> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Mmpuendmac_SPEC,crate::common::W>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Mmpuendmac_SPEC, crate::common::W>
+    {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Mmpuendmac_SPEC,crate::common::W>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Mmpuendmac {
@@ -303,9 +312,8 @@ pub mod mmpuendmac {
     pub struct Enable_SPEC;
     pub type Enable = crate::EnumBitfieldStruct<u8, Enable_SPEC>;
     impl Enable {
-        #[doc = "Bus Master MPU of DMAC is disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Bus Master MPU of DMAC is enabled"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -315,11 +323,10 @@ pub struct Mmpuenptdmac_SPEC;
 impl crate::sealed::RegSpec for Mmpuenptdmac_SPEC {
     type DataType = u16;
 }
-#[doc = "MMPU Enable Protect Register for DMAC"]
+
 pub type Mmpuenptdmac = crate::RegValueT<Mmpuenptdmac_SPEC>;
 
 impl Mmpuenptdmac {
-    #[doc = "Protection of register"]
     #[inline(always)]
     pub fn protect(
         self,
@@ -328,6 +335,7 @@ impl Mmpuenptdmac {
         0x1,
         1,
         0,
+        mmpuenptdmac::Protect,
         mmpuenptdmac::Protect,
         Mmpuenptdmac_SPEC,
         crate::common::RW,
@@ -338,16 +346,18 @@ impl Mmpuenptdmac {
             1,
             0,
             mmpuenptdmac::Protect,
+            mmpuenptdmac::Protect,
             Mmpuenptdmac_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "These bits enable or disable writes to the PROTECT bit."]
+
     #[inline(always)]
     pub fn key(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Mmpuenptdmac_SPEC, crate::common::W> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Mmpuenptdmac_SPEC,crate::common::W>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Mmpuenptdmac_SPEC, crate::common::W>
+    {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Mmpuenptdmac_SPEC,crate::common::W>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Mmpuenptdmac {
@@ -362,9 +372,8 @@ pub mod mmpuenptdmac {
     pub struct Protect_SPEC;
     pub type Protect = crate::EnumBitfieldStruct<u8, Protect_SPEC>;
     impl Protect {
-        #[doc = "MMPUENDMAC register writes are possible"]
         pub const _0: Self = Self::new(0);
-        #[doc = "MMPUENDMAC register writes are protected. Read is possible"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -374,11 +383,10 @@ pub struct Mmpurptdmac_SPEC;
 impl crate::sealed::RegSpec for Mmpurptdmac_SPEC {
     type DataType = u16;
 }
-#[doc = "MMPU Regions Protect Register for DMAC"]
+
 pub type Mmpurptdmac = crate::RegValueT<Mmpurptdmac_SPEC>;
 
 impl Mmpurptdmac {
-    #[doc = "Protection of register"]
     #[inline(always)]
     pub fn protect(
         self,
@@ -387,6 +395,7 @@ impl Mmpurptdmac {
         0x1,
         1,
         0,
+        mmpurptdmac::Protect,
         mmpurptdmac::Protect,
         Mmpurptdmac_SPEC,
         crate::common::RW,
@@ -397,16 +406,18 @@ impl Mmpurptdmac {
             1,
             0,
             mmpurptdmac::Protect,
+            mmpurptdmac::Protect,
             Mmpurptdmac_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "These bits enable or disable writes to the PROTECT bit."]
+
     #[inline(always)]
     pub fn key(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Mmpurptdmac_SPEC, crate::common::W> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Mmpurptdmac_SPEC,crate::common::W>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Mmpurptdmac_SPEC, crate::common::W>
+    {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Mmpurptdmac_SPEC,crate::common::W>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Mmpurptdmac {
@@ -421,9 +432,8 @@ pub mod mmpurptdmac {
     pub struct Protect_SPEC;
     pub type Protect = crate::EnumBitfieldStruct<u8, Protect_SPEC>;
     impl Protect {
-        #[doc = "Bus Master MPU register for DMAC writing is possible"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Bus Master MPU register for DMAC writing is protected. Read is possible"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -433,11 +443,10 @@ pub struct MmpurptdmacSec_SPEC;
 impl crate::sealed::RegSpec for MmpurptdmacSec_SPEC {
     type DataType = u16;
 }
-#[doc = "MMPU Regions Protect Register for DMAC Secure"]
+
 pub type MmpurptdmacSec = crate::RegValueT<MmpurptdmacSec_SPEC>;
 
 impl MmpurptdmacSec {
-    #[doc = "Protection of register"]
     #[inline(always)]
     pub fn protect(
         self,
@@ -446,6 +455,7 @@ impl MmpurptdmacSec {
         0x1,
         1,
         0,
+        mmpurptdmac_sec::Protect,
         mmpurptdmac_sec::Protect,
         MmpurptdmacSec_SPEC,
         crate::common::RW,
@@ -456,17 +466,18 @@ impl MmpurptdmacSec {
             1,
             0,
             mmpurptdmac_sec::Protect,
+            mmpurptdmac_sec::Protect,
             MmpurptdmacSec_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "These bits enable or disable writes to the PROTECT bit."]
+
     #[inline(always)]
     pub fn key(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, MmpurptdmacSec_SPEC, crate::common::W>
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, MmpurptdmacSec_SPEC, crate::common::W>
     {
-        crate::common::RegisterField::<8,0xff,1,0,u8, MmpurptdmacSec_SPEC,crate::common::W>::from_register(self,0)
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,MmpurptdmacSec_SPEC,crate::common::W>::from_register(self,0)
     }
 }
 impl ::core::default::Default for MmpurptdmacSec {
@@ -481,9 +492,8 @@ pub mod mmpurptdmac_sec {
     pub struct Protect_SPEC;
     pub type Protect = crate::EnumBitfieldStruct<u8, Protect_SPEC>;
     impl Protect {
-        #[doc = "Bus master MPU register for DMAC secure writes are possible"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Bus master MPU register for DMAC secure writes are protected. Read is possible"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -493,11 +503,10 @@ pub struct Mmpuacdmac_SPEC;
 impl crate::sealed::RegSpec for Mmpuacdmac_SPEC {
     type DataType = u16;
 }
-#[doc = "MMPU Access Control Register for DMAC"]
+
 pub type Mmpuacdmac = crate::RegValueT<Mmpuacdmac_SPEC>;
 
 impl Mmpuacdmac {
-    #[doc = "Region Enable"]
     #[inline(always)]
     pub fn enable(
         self,
@@ -506,6 +515,7 @@ impl Mmpuacdmac {
         0x1,
         1,
         0,
+        mmpuacdmac::Enable,
         mmpuacdmac::Enable,
         Mmpuacdmac_SPEC,
         crate::common::RW,
@@ -516,11 +526,12 @@ impl Mmpuacdmac {
             1,
             0,
             mmpuacdmac::Enable,
+            mmpuacdmac::Enable,
             Mmpuacdmac_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Read Protection"]
+
     #[inline(always)]
     pub fn rp(
         self,
@@ -529,6 +540,7 @@ impl Mmpuacdmac {
         0x1,
         1,
         0,
+        mmpuacdmac::Rp,
         mmpuacdmac::Rp,
         Mmpuacdmac_SPEC,
         crate::common::RW,
@@ -539,11 +551,12 @@ impl Mmpuacdmac {
             1,
             0,
             mmpuacdmac::Rp,
+            mmpuacdmac::Rp,
             Mmpuacdmac_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Write Protection"]
+
     #[inline(always)]
     pub fn wp(
         self,
@@ -553,6 +566,7 @@ impl Mmpuacdmac {
         1,
         0,
         mmpuacdmac::Wp,
+        mmpuacdmac::Wp,
         Mmpuacdmac_SPEC,
         crate::common::RW,
     > {
@@ -561,6 +575,7 @@ impl Mmpuacdmac {
             0x1,
             1,
             0,
+            mmpuacdmac::Wp,
             mmpuacdmac::Wp,
             Mmpuacdmac_SPEC,
             crate::common::RW,
@@ -579,27 +594,24 @@ pub mod mmpuacdmac {
     pub struct Enable_SPEC;
     pub type Enable = crate::EnumBitfieldStruct<u8, Enable_SPEC>;
     impl Enable {
-        #[doc = "DMAC region n unit is disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "DMAC region n unit is enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Rp_SPEC;
     pub type Rp = crate::EnumBitfieldStruct<u8, Rp_SPEC>;
     impl Rp {
-        #[doc = "Read permission"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Read protection"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Wp_SPEC;
     pub type Wp = crate::EnumBitfieldStruct<u8, Wp_SPEC>;
     impl Wp {
-        #[doc = "Write permission"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Write protection"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -609,17 +621,25 @@ pub struct Mmpusdmac_SPEC;
 impl crate::sealed::RegSpec for Mmpusdmac_SPEC {
     type DataType = u32;
 }
-#[doc = "MMPU Start Address Register for DMAC"]
+
 pub type Mmpusdmac = crate::RegValueT<Mmpusdmac_SPEC>;
 
 impl Mmpusdmac {
-    #[doc = "Region start address register"]
     #[inline(always)]
     pub fn mmpus(
         self,
-    ) -> crate::common::RegisterField<5, 0x7ffffff, 1, 0, u32, Mmpusdmac_SPEC, crate::common::RW>
+    ) -> crate::common::RegisterField<5, 0x7ffffff, 1, 0, u32, u32, Mmpusdmac_SPEC, crate::common::RW>
     {
-        crate::common::RegisterField::<5,0x7ffffff,1,0,u32, Mmpusdmac_SPEC,crate::common::RW>::from_register(self,0)
+        crate::common::RegisterField::<
+            5,
+            0x7ffffff,
+            1,
+            0,
+            u32,
+            u32,
+            Mmpusdmac_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Mmpusdmac {
@@ -635,17 +655,25 @@ pub struct Mmpuedmac_SPEC;
 impl crate::sealed::RegSpec for Mmpuedmac_SPEC {
     type DataType = u32;
 }
-#[doc = "MMPU End Address Register for DMAC"]
+
 pub type Mmpuedmac = crate::RegValueT<Mmpuedmac_SPEC>;
 
 impl Mmpuedmac {
-    #[doc = "Region end address register"]
     #[inline(always)]
     pub fn mmpue(
         self,
-    ) -> crate::common::RegisterField<5, 0x7ffffff, 1, 0, u32, Mmpuedmac_SPEC, crate::common::RW>
+    ) -> crate::common::RegisterField<5, 0x7ffffff, 1, 0, u32, u32, Mmpuedmac_SPEC, crate::common::RW>
     {
-        crate::common::RegisterField::<5,0x7ffffff,1,0,u32, Mmpuedmac_SPEC,crate::common::RW>::from_register(self,0)
+        crate::common::RegisterField::<
+            5,
+            0x7ffffff,
+            1,
+            0,
+            u32,
+            u32,
+            Mmpuedmac_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Mmpuedmac {

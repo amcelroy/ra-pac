@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.1, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:14:39 +0000
+// Generated from SVD 1.1, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:16:53 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Port1 {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "Port Control Register 1"]
+
     #[inline(always)]
     pub const fn pcntr1(
         &self,
@@ -45,7 +45,6 @@ impl super::Port1 {
         }
     }
 
-    #[doc = "Output data register"]
     #[inline(always)]
     pub const fn podr(&self) -> &'static crate::common::Reg<self::Podr_SPEC, crate::common::RW> {
         unsafe {
@@ -55,7 +54,6 @@ impl super::Port1 {
         }
     }
 
-    #[doc = "Direction register"]
     #[inline(always)]
     pub const fn pdr(&self) -> &'static crate::common::Reg<self::Pdr_SPEC, crate::common::RW> {
         unsafe {
@@ -65,7 +63,6 @@ impl super::Port1 {
         }
     }
 
-    #[doc = "Port Control Register 2"]
     #[inline(always)]
     pub const fn pcntr2(&self) -> &'static crate::common::Reg<self::Pcntr2_SPEC, crate::common::R> {
         unsafe {
@@ -75,7 +72,6 @@ impl super::Port1 {
         }
     }
 
-    #[doc = "Event input data register"]
     #[inline(always)]
     pub const fn eidr(&self) -> &'static crate::common::Reg<self::Eidr_SPEC, crate::common::R> {
         unsafe {
@@ -85,7 +81,6 @@ impl super::Port1 {
         }
     }
 
-    #[doc = "Input data register"]
     #[inline(always)]
     pub const fn pidr(&self) -> &'static crate::common::Reg<self::Pidr_SPEC, crate::common::R> {
         unsafe {
@@ -95,7 +90,6 @@ impl super::Port1 {
         }
     }
 
-    #[doc = "Port Control Register 3"]
     #[inline(always)]
     pub const fn pcntr3(&self) -> &'static crate::common::Reg<self::Pcntr3_SPEC, crate::common::W> {
         unsafe {
@@ -105,7 +99,6 @@ impl super::Port1 {
         }
     }
 
-    #[doc = "Output reset register"]
     #[inline(always)]
     pub const fn porr(&self) -> &'static crate::common::Reg<self::Porr_SPEC, crate::common::W> {
         unsafe {
@@ -115,7 +108,6 @@ impl super::Port1 {
         }
     }
 
-    #[doc = "Output set register"]
     #[inline(always)]
     pub const fn posr(&self) -> &'static crate::common::Reg<self::Posr_SPEC, crate::common::W> {
         unsafe {
@@ -125,7 +117,6 @@ impl super::Port1 {
         }
     }
 
-    #[doc = "Port Control Register 4"]
     #[inline(always)]
     pub const fn pcntr4(
         &self,
@@ -137,7 +128,6 @@ impl super::Port1 {
         }
     }
 
-    #[doc = "Event output reset register"]
     #[inline(always)]
     pub const fn eorr(&self) -> &'static crate::common::Reg<self::Eorr_SPEC, crate::common::RW> {
         unsafe {
@@ -147,7 +137,6 @@ impl super::Port1 {
         }
     }
 
-    #[doc = "Event output set register"]
     #[inline(always)]
     pub const fn eosr(&self) -> &'static crate::common::Reg<self::Eosr_SPEC, crate::common::RW> {
         unsafe {
@@ -163,7 +152,7 @@ pub struct Pcntr1_SPEC;
 impl crate::sealed::RegSpec for Pcntr1_SPEC {
     type DataType = u32;
 }
-#[doc = "Port Control Register 1"]
+
 pub type Pcntr1 = crate::RegValueT<Pcntr1_SPEC>;
 
 impl NoBitfieldReg<Pcntr1_SPEC> for Pcntr1 {}
@@ -180,7 +169,7 @@ pub struct Podr_SPEC;
 impl crate::sealed::RegSpec for Podr_SPEC {
     type DataType = u16;
 }
-#[doc = "Output data register"]
+
 pub type Podr = crate::RegValueT<Podr_SPEC>;
 
 impl NoBitfieldReg<Podr_SPEC> for Podr {}
@@ -197,7 +186,7 @@ pub struct Pdr_SPEC;
 impl crate::sealed::RegSpec for Pdr_SPEC {
     type DataType = u16;
 }
-#[doc = "Direction register"]
+
 pub type Pdr = crate::RegValueT<Pdr_SPEC>;
 
 impl NoBitfieldReg<Pdr_SPEC> for Pdr {}
@@ -214,7 +203,7 @@ pub struct Pcntr2_SPEC;
 impl crate::sealed::RegSpec for Pcntr2_SPEC {
     type DataType = u32;
 }
-#[doc = "Port Control Register 2"]
+
 pub type Pcntr2 = crate::RegValueT<Pcntr2_SPEC>;
 
 impl NoBitfieldReg<Pcntr2_SPEC> for Pcntr2 {}
@@ -231,7 +220,7 @@ pub struct Eidr_SPEC;
 impl crate::sealed::RegSpec for Eidr_SPEC {
     type DataType = u16;
 }
-#[doc = "Event input data register"]
+
 pub type Eidr = crate::RegValueT<Eidr_SPEC>;
 
 impl NoBitfieldReg<Eidr_SPEC> for Eidr {}
@@ -248,7 +237,7 @@ pub struct Pidr_SPEC;
 impl crate::sealed::RegSpec for Pidr_SPEC {
     type DataType = u16;
 }
-#[doc = "Input data register"]
+
 pub type Pidr = crate::RegValueT<Pidr_SPEC>;
 
 impl NoBitfieldReg<Pidr_SPEC> for Pidr {}
@@ -265,7 +254,7 @@ pub struct Pcntr3_SPEC;
 impl crate::sealed::RegSpec for Pcntr3_SPEC {
     type DataType = u32;
 }
-#[doc = "Port Control Register 3"]
+
 pub type Pcntr3 = crate::RegValueT<Pcntr3_SPEC>;
 
 impl NoBitfieldReg<Pcntr3_SPEC> for Pcntr3 {}
@@ -282,7 +271,7 @@ pub struct Porr_SPEC;
 impl crate::sealed::RegSpec for Porr_SPEC {
     type DataType = u16;
 }
-#[doc = "Output reset register"]
+
 pub type Porr = crate::RegValueT<Porr_SPEC>;
 
 impl NoBitfieldReg<Porr_SPEC> for Porr {}
@@ -299,7 +288,7 @@ pub struct Posr_SPEC;
 impl crate::sealed::RegSpec for Posr_SPEC {
     type DataType = u16;
 }
-#[doc = "Output set register"]
+
 pub type Posr = crate::RegValueT<Posr_SPEC>;
 
 impl NoBitfieldReg<Posr_SPEC> for Posr {}
@@ -316,7 +305,7 @@ pub struct Pcntr4_SPEC;
 impl crate::sealed::RegSpec for Pcntr4_SPEC {
     type DataType = u32;
 }
-#[doc = "Port Control Register 4"]
+
 pub type Pcntr4 = crate::RegValueT<Pcntr4_SPEC>;
 
 impl NoBitfieldReg<Pcntr4_SPEC> for Pcntr4 {}
@@ -333,7 +322,7 @@ pub struct Eorr_SPEC;
 impl crate::sealed::RegSpec for Eorr_SPEC {
     type DataType = u16;
 }
-#[doc = "Event output reset register"]
+
 pub type Eorr = crate::RegValueT<Eorr_SPEC>;
 
 impl NoBitfieldReg<Eorr_SPEC> for Eorr {}
@@ -350,7 +339,7 @@ pub struct Eosr_SPEC;
 impl crate::sealed::RegSpec for Eosr_SPEC {
     type DataType = u16;
 }
-#[doc = "Event output set register"]
+
 pub type Eosr = crate::RegValueT<Eosr_SPEC>;
 
 impl NoBitfieldReg<Eosr_SPEC> for Eosr {}

@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.2, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:17:16 +0000
+// Generated from SVD 1.2, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:19:53 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Elc {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "Event Link Controller Register"]
+
     #[inline(always)]
     pub const fn elcr(&self) -> &'static crate::common::Reg<self::Elcr_SPEC, crate::common::RW> {
         unsafe {
@@ -43,7 +43,6 @@ impl super::Elc {
         }
     }
 
-    #[doc = "Event Link Software Event Generation Register %s"]
     #[inline(always)]
     pub const fn elsegr(
         &self,
@@ -57,7 +56,6 @@ impl super::Elc {
         }
     }
 
-    #[doc = "Event Link Setting Register %s"]
     #[inline(always)]
     pub const fn elsr(
         &self,
@@ -77,16 +75,33 @@ pub struct Elcr_SPEC;
 impl crate::sealed::RegSpec for Elcr_SPEC {
     type DataType = u8;
 }
-#[doc = "Event Link Controller Register"]
+
 pub type Elcr = crate::RegValueT<Elcr_SPEC>;
 
 impl Elcr {
-    #[doc = "All Event Link Enable"]
     #[inline(always)]
     pub fn elcon(
         self,
-    ) -> crate::common::RegisterField<7, 0x1, 1, 0, elcr::Elcon, Elcr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<7,0x1,1,0,elcr::Elcon, Elcr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        7,
+        0x1,
+        1,
+        0,
+        elcr::Elcon,
+        elcr::Elcon,
+        Elcr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            7,
+            0x1,
+            1,
+            0,
+            elcr::Elcon,
+            elcr::Elcon,
+            Elcr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Elcr {
@@ -101,9 +116,8 @@ pub mod elcr {
     pub struct Elcon_SPEC;
     pub type Elcon = crate::EnumBitfieldStruct<u8, Elcon_SPEC>;
     impl Elcon {
-        #[doc = "Disable ELC function"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Enable ELC function."]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -113,32 +127,83 @@ pub struct Elsegr_SPEC;
 impl crate::sealed::RegSpec for Elsegr_SPEC {
     type DataType = u8;
 }
-#[doc = "Event Link Software Event Generation Register %s"]
+
 pub type Elsegr = crate::RegValueT<Elsegr_SPEC>;
 
 impl Elsegr {
-    #[doc = "ELSEGR Register Write Disable"]
     #[inline(always)]
     pub fn wi(
         self,
-    ) -> crate::common::RegisterField<7, 0x1, 1, 0, elsegr::Wi, Elsegr_SPEC, crate::common::W> {
-        crate::common::RegisterField::<7,0x1,1,0,elsegr::Wi, Elsegr_SPEC,crate::common::W>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        7,
+        0x1,
+        1,
+        0,
+        elsegr::Wi,
+        elsegr::Wi,
+        Elsegr_SPEC,
+        crate::common::W,
+    > {
+        crate::common::RegisterField::<
+            7,
+            0x1,
+            1,
+            0,
+            elsegr::Wi,
+            elsegr::Wi,
+            Elsegr_SPEC,
+            crate::common::W,
+        >::from_register(self, 0)
     }
-    #[doc = "SEG Bit Write Enable"]
+
     #[inline(always)]
     pub fn we(
         self,
-    ) -> crate::common::RegisterField<6, 0x1, 1, 0, elsegr::We, Elsegr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<6,0x1,1,0,elsegr::We, Elsegr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        6,
+        0x1,
+        1,
+        0,
+        elsegr::We,
+        elsegr::We,
+        Elsegr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            6,
+            0x1,
+            1,
+            0,
+            elsegr::We,
+            elsegr::We,
+            Elsegr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Software Event Generation"]
+
     #[inline(always)]
     pub fn seg(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, elsegr::Seg, Elsegr_SPEC, crate::common::W>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,elsegr::Seg, Elsegr_SPEC,crate::common::W>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        elsegr::Seg,
+        elsegr::Seg,
+        Elsegr_SPEC,
+        crate::common::W,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            elsegr::Seg,
+            elsegr::Seg,
+            Elsegr_SPEC,
+            crate::common::W,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Elsegr {
@@ -153,27 +218,24 @@ pub mod elsegr {
     pub struct Wi_SPEC;
     pub type Wi = crate::EnumBitfieldStruct<u8, Wi_SPEC>;
     impl Wi {
-        #[doc = "Enable writes to ELSEGR register"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Disable writes to ELSEGR register."]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct We_SPEC;
     pub type We = crate::EnumBitfieldStruct<u8, We_SPEC>;
     impl We {
-        #[doc = "Disable writes to SEG bit"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Enable writes to SEG bit"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Seg_SPEC;
     pub type Seg = crate::EnumBitfieldStruct<u8, Seg_SPEC>;
     impl Seg {
-        #[doc = "Normal operation"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Generate a software event"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -183,16 +245,33 @@ pub struct Elsr_SPEC;
 impl crate::sealed::RegSpec for Elsr_SPEC {
     type DataType = u16;
 }
-#[doc = "Event Link Setting Register %s"]
+
 pub type Elsr = crate::RegValueT<Elsr_SPEC>;
 
 impl Elsr {
-    #[doc = "Event Link Select"]
     #[inline(always)]
     pub fn els(
         self,
-    ) -> crate::common::RegisterField<0, 0x1ff, 1, 0, elsr::Els, Elsr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0x1ff,1,0,elsr::Els, Elsr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1ff,
+        1,
+        0,
+        elsr::Els,
+        elsr::Els,
+        Elsr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1ff,
+            1,
+            0,
+            elsr::Els,
+            elsr::Els,
+            Elsr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Elsr {
@@ -207,9 +286,8 @@ pub mod elsr {
     pub struct Els_SPEC;
     pub type Els = crate::EnumBitfieldStruct<u8, Els_SPEC>;
     impl Els {
-        #[doc = "Event output to the corresponding peripheral module is disabled."]
         pub const _0_X_000: Self = Self::new(0);
-        #[doc = "Set the number for the event signal to be linked."]
+
         pub const OTHERS: Self = Self::new(0);
     }
 }

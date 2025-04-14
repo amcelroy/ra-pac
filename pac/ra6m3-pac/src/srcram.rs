@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.2, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:17:41 +0000
+// Generated from SVD 1.2, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:20:22 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Srcram {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "Filter Coefficient Table \\[%s\\]"]
+
     #[inline(always)]
     pub const fn srcfctr(
         &self,
@@ -53,16 +53,16 @@ pub struct Srcfctr_SPEC;
 impl crate::sealed::RegSpec for Srcfctr_SPEC {
     type DataType = u32;
 }
-#[doc = "Filter Coefficient Table \\[%s\\]"]
+
 pub type Srcfctr = crate::RegValueT<Srcfctr_SPEC>;
 
 impl Srcfctr {
-    #[doc = "Stores a filter coefficient value."]
     #[inline(always)]
     pub fn srcfcoe(
         self,
-    ) -> crate::common::RegisterField<0, 0x3fffff, 1, 0, u32, Srcfctr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0x3fffff,1,0,u32, Srcfctr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0x3fffff, 1, 0, u32, u32, Srcfctr_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<0,0x3fffff,1,0,u32,u32,Srcfctr_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Srcfctr {

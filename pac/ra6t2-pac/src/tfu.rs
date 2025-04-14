@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.40.00, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:18:35 +0000
+// Generated from SVD 1.40.00, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:21:24 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Tfu {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "Trigonometric Status Register"]
+
     #[inline(always)]
     pub const fn trgsts(&self) -> &'static crate::common::Reg<self::Trgsts_SPEC, crate::common::R> {
         unsafe {
@@ -43,7 +43,6 @@ impl super::Tfu {
         }
     }
 
-    #[doc = "Sine Cosine Data Register 0"]
     #[inline(always)]
     pub const fn scdt0(&self) -> &'static crate::common::Reg<self::Scdt0_SPEC, crate::common::RW> {
         unsafe {
@@ -53,7 +52,6 @@ impl super::Tfu {
         }
     }
 
-    #[doc = "Sine Cosine Data Register 1"]
     #[inline(always)]
     pub const fn scdt1(&self) -> &'static crate::common::Reg<self::Scdt1_SPEC, crate::common::RW> {
         unsafe {
@@ -63,7 +61,6 @@ impl super::Tfu {
         }
     }
 
-    #[doc = "Arctangent Data Register 0"]
     #[inline(always)]
     pub const fn atdt0(&self) -> &'static crate::common::Reg<self::Atdt0_SPEC, crate::common::RW> {
         unsafe {
@@ -73,7 +70,6 @@ impl super::Tfu {
         }
     }
 
-    #[doc = "Arctangent Data Register 1"]
     #[inline(always)]
     pub const fn atdt1(&self) -> &'static crate::common::Reg<self::Atdt1_SPEC, crate::common::RW> {
         unsafe {
@@ -89,25 +85,58 @@ pub struct Trgsts_SPEC;
 impl crate::sealed::RegSpec for Trgsts_SPEC {
     type DataType = u8;
 }
-#[doc = "Trigonometric Status Register"]
+
 pub type Trgsts = crate::RegValueT<Trgsts_SPEC>;
 
 impl Trgsts {
-    #[doc = "Calculation in progress flag"]
     #[inline(always)]
     pub fn bsyf(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, trgsts::Bsyf, Trgsts_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,trgsts::Bsyf, Trgsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        trgsts::Bsyf,
+        trgsts::Bsyf,
+        Trgsts_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            trgsts::Bsyf,
+            trgsts::Bsyf,
+            Trgsts_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "Input error flag"]
+
     #[inline(always)]
     pub fn errf(
         self,
-    ) -> crate::common::RegisterField<1, 0x1, 1, 0, trgsts::Errf, Trgsts_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<1,0x1,1,0,trgsts::Errf, Trgsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        1,
+        0x1,
+        1,
+        0,
+        trgsts::Errf,
+        trgsts::Errf,
+        Trgsts_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            1,
+            0x1,
+            1,
+            0,
+            trgsts::Errf,
+            trgsts::Errf,
+            Trgsts_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Trgsts {
@@ -122,18 +151,16 @@ pub mod trgsts {
     pub struct Bsyf_SPEC;
     pub type Bsyf = crate::EnumBitfieldStruct<u8, Bsyf_SPEC>;
     impl Bsyf {
-        #[doc = "No calculating"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Calculating"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Errf_SPEC;
     pub type Errf = crate::EnumBitfieldStruct<u8, Errf_SPEC>;
     impl Errf {
-        #[doc = "No input error occurred"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Input error occurred"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -143,16 +170,16 @@ pub struct Scdt0_SPEC;
 impl crate::sealed::RegSpec for Scdt0_SPEC {
     type DataType = u32;
 }
-#[doc = "Sine Cosine Data Register 0"]
+
 pub type Scdt0 = crate::RegValueT<Scdt0_SPEC>;
 
 impl Scdt0 {
-    #[doc = "Sine Cosine Data Register 0 (single-precision floating-point)"]
     #[inline(always)]
     pub fn scdt0(
         self,
-    ) -> crate::common::RegisterField<0, 0xffffffff, 1, 0, u32, Scdt0_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xffffffff,1,0,u32, Scdt0_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xffffffff, 1, 0, u32, u32, Scdt0_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<0,0xffffffff,1,0,u32,u32,Scdt0_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Scdt0 {
@@ -168,16 +195,16 @@ pub struct Scdt1_SPEC;
 impl crate::sealed::RegSpec for Scdt1_SPEC {
     type DataType = u32;
 }
-#[doc = "Sine Cosine Data Register 1"]
+
 pub type Scdt1 = crate::RegValueT<Scdt1_SPEC>;
 
 impl Scdt1 {
-    #[doc = "Sine Cosine Data Register 1 (single-precision floating-point)"]
     #[inline(always)]
     pub fn scdt1(
         self,
-    ) -> crate::common::RegisterField<0, 0xffffffff, 1, 0, u32, Scdt1_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xffffffff,1,0,u32, Scdt1_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xffffffff, 1, 0, u32, u32, Scdt1_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<0,0xffffffff,1,0,u32,u32,Scdt1_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Scdt1 {
@@ -193,16 +220,16 @@ pub struct Atdt0_SPEC;
 impl crate::sealed::RegSpec for Atdt0_SPEC {
     type DataType = u32;
 }
-#[doc = "Arctangent Data Register 0"]
+
 pub type Atdt0 = crate::RegValueT<Atdt0_SPEC>;
 
 impl Atdt0 {
-    #[doc = "Arctangent Data Register 0 (single-precision floating-point)"]
     #[inline(always)]
     pub fn atdt0(
         self,
-    ) -> crate::common::RegisterField<0, 0xffffffff, 1, 0, u32, Atdt0_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xffffffff,1,0,u32, Atdt0_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xffffffff, 1, 0, u32, u32, Atdt0_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<0,0xffffffff,1,0,u32,u32,Atdt0_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Atdt0 {
@@ -218,16 +245,16 @@ pub struct Atdt1_SPEC;
 impl crate::sealed::RegSpec for Atdt1_SPEC {
     type DataType = u32;
 }
-#[doc = "Arctangent Data Register 1"]
+
 pub type Atdt1 = crate::RegValueT<Atdt1_SPEC>;
 
 impl Atdt1 {
-    #[doc = "Arctangent Data Register 1 (single-precision floating-point)"]
     #[inline(always)]
     pub fn atdt1(
         self,
-    ) -> crate::common::RegisterField<0, 0xffffffff, 1, 0, u32, Atdt1_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xffffffff,1,0,u32, Atdt1_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xffffffff, 1, 0, u32, u32, Atdt1_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<0,0xffffffff,1,0,u32,u32,Atdt1_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Atdt1 {

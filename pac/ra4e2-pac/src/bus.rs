@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.30.00, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:15:35 +0000
+// Generated from SVD 1.30.00, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:17:59 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Bus {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "Slave Bus Control Register"]
+
     #[inline(always)]
     pub const fn busscntfhbiu(
         &self,
@@ -45,7 +45,6 @@ impl super::Bus {
         }
     }
 
-    #[doc = "Slave Bus Control Register"]
     #[inline(always)]
     pub const fn busscntflbiu(
         &self,
@@ -57,7 +56,6 @@ impl super::Bus {
         }
     }
 
-    #[doc = "Slave Bus Control Register"]
     #[inline(always)]
     pub const fn busscnts0biu(
         &self,
@@ -69,7 +67,6 @@ impl super::Bus {
         }
     }
 
-    #[doc = "Slave Bus Control Register"]
     #[inline(always)]
     pub const fn busscntpsbiu(
         &self,
@@ -81,7 +78,6 @@ impl super::Bus {
         }
     }
 
-    #[doc = "Slave Bus Control Register"]
     #[inline(always)]
     pub const fn busscntplbiu(
         &self,
@@ -93,7 +89,6 @@ impl super::Bus {
         }
     }
 
-    #[doc = "Slave Bus Control Register"]
     #[inline(always)]
     pub const fn busscntphbiu(
         &self,
@@ -105,7 +100,6 @@ impl super::Bus {
         }
     }
 
-    #[doc = "BUS Error Address Register"]
     #[inline(always)]
     pub const fn buserradd(
         &self,
@@ -119,7 +113,6 @@ impl super::Bus {
         }
     }
 
-    #[doc = "BUS Error Read Write Register"]
     #[inline(always)]
     pub const fn buserrrw(
         &self,
@@ -133,7 +126,6 @@ impl super::Bus {
         }
     }
 
-    #[doc = "BUS TZF Error Address Register"]
     #[inline(always)]
     pub const fn btzferradd(
         &self,
@@ -147,7 +139,6 @@ impl super::Bus {
         }
     }
 
-    #[doc = "BUS TZF Error Read Write Register"]
     #[inline(always)]
     pub const fn btzferrrw(
         &self,
@@ -161,7 +152,6 @@ impl super::Bus {
         }
     }
 
-    #[doc = "BUS Error Status Register %s"]
     #[inline(always)]
     pub const fn buserrstat(
         &self,
@@ -175,7 +165,6 @@ impl super::Bus {
         }
     }
 
-    #[doc = "BUS Error Clear Register %s"]
     #[inline(always)]
     pub const fn buserrclr(
         &self,
@@ -189,7 +178,6 @@ impl super::Bus {
         }
     }
 
-    #[doc = "DMAC/DTC Error Status Register"]
     #[inline(always)]
     pub const fn dmacdtcerrstat(
         &self,
@@ -201,7 +189,6 @@ impl super::Bus {
         }
     }
 
-    #[doc = "DMAC/DTC Error Clear Register"]
     #[inline(always)]
     pub const fn dmacdtcerrclr(
         &self,
@@ -219,11 +206,10 @@ pub struct Busscntfhbiu_SPEC;
 impl crate::sealed::RegSpec for Busscntfhbiu_SPEC {
     type DataType = u16;
 }
-#[doc = "Slave Bus Control Register"]
+
 pub type Busscntfhbiu = crate::RegValueT<Busscntfhbiu_SPEC>;
 
 impl Busscntfhbiu {
-    #[doc = "Arbitration Select for two masters"]
     #[inline(always)]
     pub fn arbs(
         self,
@@ -233,6 +219,7 @@ impl Busscntfhbiu {
         1,
         0,
         busscntfhbiu::Arbs,
+        busscntfhbiu::Arbs,
         Busscntfhbiu_SPEC,
         crate::common::RW,
     > {
@@ -241,6 +228,7 @@ impl Busscntfhbiu {
             0x3,
             1,
             0,
+            busscntfhbiu::Arbs,
             busscntfhbiu::Arbs,
             Busscntfhbiu_SPEC,
             crate::common::RW,
@@ -259,11 +247,10 @@ pub mod busscntfhbiu {
     pub struct Arbs_SPEC;
     pub type Arbs = crate::EnumBitfieldStruct<u8, Arbs_SPEC>;
     impl Arbs {
-        #[doc = "DMAC/DTC > CPU"]
         pub const _00: Self = Self::new(0);
-        #[doc = "DMAC/DTC ↔ CPU"]
+
         pub const _01: Self = Self::new(1);
-        #[doc = "Setting prohibited"]
+
         pub const OTHERS: Self = Self::new(0);
     }
 }
@@ -273,11 +260,10 @@ pub struct Busscntflbiu_SPEC;
 impl crate::sealed::RegSpec for Busscntflbiu_SPEC {
     type DataType = u16;
 }
-#[doc = "Slave Bus Control Register"]
+
 pub type Busscntflbiu = crate::RegValueT<Busscntflbiu_SPEC>;
 
 impl Busscntflbiu {
-    #[doc = "Arbitration Select for two masters"]
     #[inline(always)]
     pub fn arbs(
         self,
@@ -287,6 +273,7 @@ impl Busscntflbiu {
         1,
         0,
         busscntflbiu::Arbs,
+        busscntflbiu::Arbs,
         Busscntflbiu_SPEC,
         crate::common::RW,
     > {
@@ -295,6 +282,7 @@ impl Busscntflbiu {
             0x3,
             1,
             0,
+            busscntflbiu::Arbs,
             busscntflbiu::Arbs,
             Busscntflbiu_SPEC,
             crate::common::RW,
@@ -313,11 +301,10 @@ pub mod busscntflbiu {
     pub struct Arbs_SPEC;
     pub type Arbs = crate::EnumBitfieldStruct<u8, Arbs_SPEC>;
     impl Arbs {
-        #[doc = "DMAC/DTC > CPU"]
         pub const _00: Self = Self::new(0);
-        #[doc = "DMAC/DTC ↔ CPU"]
+
         pub const _01: Self = Self::new(1);
-        #[doc = "Setting prohibited"]
+
         pub const OTHERS: Self = Self::new(0);
     }
 }
@@ -327,11 +314,10 @@ pub struct Busscnts0Biu_SPEC;
 impl crate::sealed::RegSpec for Busscnts0Biu_SPEC {
     type DataType = u16;
 }
-#[doc = "Slave Bus Control Register"]
+
 pub type Busscnts0Biu = crate::RegValueT<Busscnts0Biu_SPEC>;
 
 impl Busscnts0Biu {
-    #[doc = "Arbitration Select for two masters"]
     #[inline(always)]
     pub fn arbs(
         self,
@@ -341,6 +327,7 @@ impl Busscnts0Biu {
         1,
         0,
         busscnts0biu::Arbs,
+        busscnts0biu::Arbs,
         Busscnts0Biu_SPEC,
         crate::common::RW,
     > {
@@ -349,6 +336,7 @@ impl Busscnts0Biu {
             0x3,
             1,
             0,
+            busscnts0biu::Arbs,
             busscnts0biu::Arbs,
             Busscnts0Biu_SPEC,
             crate::common::RW,
@@ -367,11 +355,10 @@ pub mod busscnts0biu {
     pub struct Arbs_SPEC;
     pub type Arbs = crate::EnumBitfieldStruct<u8, Arbs_SPEC>;
     impl Arbs {
-        #[doc = "DMAC/DTC > CPU"]
         pub const _00: Self = Self::new(0);
-        #[doc = "DMAC/DTC ↔ CPU"]
+
         pub const _01: Self = Self::new(1);
-        #[doc = "Setting prohibited"]
+
         pub const OTHERS: Self = Self::new(0);
     }
 }
@@ -381,11 +368,10 @@ pub struct Busscntpsbiu_SPEC;
 impl crate::sealed::RegSpec for Busscntpsbiu_SPEC {
     type DataType = u16;
 }
-#[doc = "Slave Bus Control Register"]
+
 pub type Busscntpsbiu = crate::RegValueT<Busscntpsbiu_SPEC>;
 
 impl Busscntpsbiu {
-    #[doc = "Arbitration Select for two masters"]
     #[inline(always)]
     pub fn arbs(
         self,
@@ -395,6 +381,7 @@ impl Busscntpsbiu {
         1,
         0,
         busscntpsbiu::Arbs,
+        busscntpsbiu::Arbs,
         Busscntpsbiu_SPEC,
         crate::common::RW,
     > {
@@ -403,6 +390,7 @@ impl Busscntpsbiu {
             0x1,
             1,
             0,
+            busscntpsbiu::Arbs,
             busscntpsbiu::Arbs,
             Busscntpsbiu_SPEC,
             crate::common::RW,
@@ -421,9 +409,8 @@ pub mod busscntpsbiu {
     pub struct Arbs_SPEC;
     pub type Arbs = crate::EnumBitfieldStruct<u8, Arbs_SPEC>;
     impl Arbs {
-        #[doc = "DMAC/DTC > CPU"]
         pub const _0: Self = Self::new(0);
-        #[doc = "DMAC/DTC ↔ CPU"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -433,11 +420,10 @@ pub struct Busscntplbiu_SPEC;
 impl crate::sealed::RegSpec for Busscntplbiu_SPEC {
     type DataType = u16;
 }
-#[doc = "Slave Bus Control Register"]
+
 pub type Busscntplbiu = crate::RegValueT<Busscntplbiu_SPEC>;
 
 impl Busscntplbiu {
-    #[doc = "Arbitration Select for two masters"]
     #[inline(always)]
     pub fn arbs(
         self,
@@ -447,6 +433,7 @@ impl Busscntplbiu {
         1,
         0,
         busscntplbiu::Arbs,
+        busscntplbiu::Arbs,
         Busscntplbiu_SPEC,
         crate::common::RW,
     > {
@@ -455,6 +442,7 @@ impl Busscntplbiu {
             0x1,
             1,
             0,
+            busscntplbiu::Arbs,
             busscntplbiu::Arbs,
             Busscntplbiu_SPEC,
             crate::common::RW,
@@ -473,9 +461,8 @@ pub mod busscntplbiu {
     pub struct Arbs_SPEC;
     pub type Arbs = crate::EnumBitfieldStruct<u8, Arbs_SPEC>;
     impl Arbs {
-        #[doc = "DMAC/DTC > CPU"]
         pub const _0: Self = Self::new(0);
-        #[doc = "DMAC/DTC ↔ CPU"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -485,11 +472,10 @@ pub struct Busscntphbiu_SPEC;
 impl crate::sealed::RegSpec for Busscntphbiu_SPEC {
     type DataType = u16;
 }
-#[doc = "Slave Bus Control Register"]
+
 pub type Busscntphbiu = crate::RegValueT<Busscntphbiu_SPEC>;
 
 impl Busscntphbiu {
-    #[doc = "Arbitration Select for two masters"]
     #[inline(always)]
     pub fn arbs(
         self,
@@ -499,6 +485,7 @@ impl Busscntphbiu {
         1,
         0,
         busscntphbiu::Arbs,
+        busscntphbiu::Arbs,
         Busscntphbiu_SPEC,
         crate::common::RW,
     > {
@@ -507,6 +494,7 @@ impl Busscntphbiu {
             0x1,
             1,
             0,
+            busscntphbiu::Arbs,
             busscntphbiu::Arbs,
             Busscntphbiu_SPEC,
             crate::common::RW,
@@ -525,9 +513,8 @@ pub mod busscntphbiu {
     pub struct Arbs_SPEC;
     pub type Arbs = crate::EnumBitfieldStruct<u8, Arbs_SPEC>;
     impl Arbs {
-        #[doc = "DMAC/DTC > CPU"]
         pub const _0: Self = Self::new(0);
-        #[doc = "DMAC/DTC ↔ CPU"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -537,17 +524,25 @@ pub struct Buserradd_SPEC;
 impl crate::sealed::RegSpec for Buserradd_SPEC {
     type DataType = u32;
 }
-#[doc = "BUS Error Address Register"]
+
 pub type Buserradd = crate::RegValueT<Buserradd_SPEC>;
 
 impl Buserradd {
-    #[doc = "Bus Error Address"]
     #[inline(always)]
     pub fn berad(
         self,
-    ) -> crate::common::RegisterField<0, 0xffffffff, 1, 0, u32, Buserradd_SPEC, crate::common::R>
+    ) -> crate::common::RegisterField<0, 0xffffffff, 1, 0, u32, u32, Buserradd_SPEC, crate::common::R>
     {
-        crate::common::RegisterField::<0,0xffffffff,1,0,u32, Buserradd_SPEC,crate::common::R>::from_register(self,0)
+        crate::common::RegisterField::<
+            0,
+            0xffffffff,
+            1,
+            0,
+            u32,
+            u32,
+            Buserradd_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Buserradd {
@@ -563,21 +558,29 @@ pub struct Buserrrw_SPEC;
 impl crate::sealed::RegSpec for Buserrrw_SPEC {
     type DataType = u8;
 }
-#[doc = "BUS Error Read Write Register"]
+
 pub type Buserrrw = crate::RegValueT<Buserrrw_SPEC>;
 
 impl Buserrrw {
-    #[doc = "Error Access Read/Write Status"]
     #[inline(always)]
     pub fn rwstat(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, buserrrw::Rwstat, Buserrrw_SPEC, crate::common::R>
-    {
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        buserrrw::Rwstat,
+        buserrrw::Rwstat,
+        Buserrrw_SPEC,
+        crate::common::R,
+    > {
         crate::common::RegisterField::<
             0,
             0x1,
             1,
             0,
+            buserrrw::Rwstat,
             buserrrw::Rwstat,
             Buserrrw_SPEC,
             crate::common::R,
@@ -596,9 +599,8 @@ pub mod buserrrw {
     pub struct Rwstat_SPEC;
     pub type Rwstat = crate::EnumBitfieldStruct<u8, Rwstat_SPEC>;
     impl Rwstat {
-        #[doc = "Read access"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Write access"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -608,17 +610,33 @@ pub struct Btzferradd_SPEC;
 impl crate::sealed::RegSpec for Btzferradd_SPEC {
     type DataType = u32;
 }
-#[doc = "BUS TZF Error Address Register"]
+
 pub type Btzferradd = crate::RegValueT<Btzferradd_SPEC>;
 
 impl Btzferradd {
-    #[doc = "Bus TrustZone Filter Error Address"]
     #[inline(always)]
     pub fn btzferad(
         self,
-    ) -> crate::common::RegisterField<0, 0xffffffff, 1, 0, u32, Btzferradd_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<0,0xffffffff,1,0,u32, Btzferradd_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0xffffffff,
+        1,
+        0,
+        u32,
+        u32,
+        Btzferradd_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0xffffffff,
+            1,
+            0,
+            u32,
+            u32,
+            Btzferradd_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Btzferradd {
@@ -634,11 +652,10 @@ pub struct Btzferrrw_SPEC;
 impl crate::sealed::RegSpec for Btzferrrw_SPEC {
     type DataType = u8;
 }
-#[doc = "BUS TZF Error Read Write Register"]
+
 pub type Btzferrrw = crate::RegValueT<Btzferrrw_SPEC>;
 
 impl Btzferrrw {
-    #[doc = "TrustZone filter error access Read/Write Status"]
     #[inline(always)]
     pub fn trwstat(
         self,
@@ -648,6 +665,7 @@ impl Btzferrrw {
         1,
         0,
         btzferrrw::Trwstat,
+        btzferrrw::Trwstat,
         Btzferrrw_SPEC,
         crate::common::R,
     > {
@@ -656,6 +674,7 @@ impl Btzferrrw {
             0x1,
             1,
             0,
+            btzferrrw::Trwstat,
             btzferrrw::Trwstat,
             Btzferrrw_SPEC,
             crate::common::R,
@@ -674,9 +693,8 @@ pub mod btzferrrw {
     pub struct Trwstat_SPEC;
     pub type Trwstat = crate::EnumBitfieldStruct<u8, Trwstat_SPEC>;
     impl Trwstat {
-        #[doc = "Read access"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Write access"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -686,11 +704,10 @@ pub struct Buserrstat_SPEC;
 impl crate::sealed::RegSpec for Buserrstat_SPEC {
     type DataType = u8;
 }
-#[doc = "BUS Error Status Register %s"]
+
 pub type Buserrstat = crate::RegValueT<Buserrstat_SPEC>;
 
 impl Buserrstat {
-    #[doc = "Slave bus Error Status"]
     #[inline(always)]
     pub fn slerrstat(
         self,
@@ -699,6 +716,7 @@ impl Buserrstat {
         0x1,
         1,
         0,
+        buserrstat::Slerrstat,
         buserrstat::Slerrstat,
         Buserrstat_SPEC,
         crate::common::R,
@@ -709,11 +727,12 @@ impl Buserrstat {
             1,
             0,
             buserrstat::Slerrstat,
+            buserrstat::Slerrstat,
             Buserrstat_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "Slave TrustZone filter Error Status"]
+
     #[inline(always)]
     pub fn sterrstat(
         self,
@@ -722,6 +741,7 @@ impl Buserrstat {
         0x1,
         1,
         0,
+        buserrstat::Sterrstat,
         buserrstat::Sterrstat,
         Buserrstat_SPEC,
         crate::common::R,
@@ -732,11 +752,12 @@ impl Buserrstat {
             1,
             0,
             buserrstat::Sterrstat,
+            buserrstat::Sterrstat,
             Buserrstat_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "Master MPU Error Status"]
+
     #[inline(always)]
     pub fn mmerrstat(
         self,
@@ -745,6 +766,7 @@ impl Buserrstat {
         0x1,
         1,
         0,
+        buserrstat::Mmerrstat,
         buserrstat::Mmerrstat,
         Buserrstat_SPEC,
         crate::common::R,
@@ -755,11 +777,12 @@ impl Buserrstat {
             1,
             0,
             buserrstat::Mmerrstat,
+            buserrstat::Mmerrstat,
             Buserrstat_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "Illegal address access Error Status"]
+
     #[inline(always)]
     pub fn ilerrstat(
         self,
@@ -769,6 +792,7 @@ impl Buserrstat {
         1,
         0,
         buserrstat::Ilerrstat,
+        buserrstat::Ilerrstat,
         Buserrstat_SPEC,
         crate::common::R,
     > {
@@ -777,6 +801,7 @@ impl Buserrstat {
             0x1,
             1,
             0,
+            buserrstat::Ilerrstat,
             buserrstat::Ilerrstat,
             Buserrstat_SPEC,
             crate::common::R,
@@ -795,36 +820,32 @@ pub mod buserrstat {
     pub struct Slerrstat_SPEC;
     pub type Slerrstat = crate::EnumBitfieldStruct<u8, Slerrstat_SPEC>;
     impl Slerrstat {
-        #[doc = "No error occurred"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Error occurred"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Sterrstat_SPEC;
     pub type Sterrstat = crate::EnumBitfieldStruct<u8, Sterrstat_SPEC>;
     impl Sterrstat {
-        #[doc = "No error occurred"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Error occurred"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Mmerrstat_SPEC;
     pub type Mmerrstat = crate::EnumBitfieldStruct<u8, Mmerrstat_SPEC>;
     impl Mmerrstat {
-        #[doc = "No error occurred"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Error occurred"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Ilerrstat_SPEC;
     pub type Ilerrstat = crate::EnumBitfieldStruct<u8, Ilerrstat_SPEC>;
     impl Ilerrstat {
-        #[doc = "No error occurred"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Error occurred"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -834,32 +855,31 @@ pub struct Buserrclr_SPEC;
 impl crate::sealed::RegSpec for Buserrclr_SPEC {
     type DataType = u8;
 }
-#[doc = "BUS Error Clear Register %s"]
+
 pub type Buserrclr = crate::RegValueT<Buserrclr_SPEC>;
 
 impl Buserrclr {
-    #[doc = "Slave bus Error Clear"]
     #[inline(always)]
     pub fn slerrclr(
         self,
     ) -> crate::common::RegisterFieldBool<0, 1, 0, Buserrclr_SPEC, crate::common::RW> {
         crate::common::RegisterFieldBool::<0,1,0,Buserrclr_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Slave TrustZone filter Error Clear"]
+
     #[inline(always)]
     pub fn sterrclr(
         self,
     ) -> crate::common::RegisterFieldBool<1, 1, 0, Buserrclr_SPEC, crate::common::RW> {
         crate::common::RegisterFieldBool::<1,1,0,Buserrclr_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Master MPU Error Clear"]
+
     #[inline(always)]
     pub fn mmerrclr(
         self,
     ) -> crate::common::RegisterFieldBool<3, 1, 0, Buserrclr_SPEC, crate::common::RW> {
         crate::common::RegisterFieldBool::<3,1,0,Buserrclr_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Illegal Address Access Error Clear"]
+
     #[inline(always)]
     pub fn ilerrclr(
         self,
@@ -880,11 +900,10 @@ pub struct Dmacdtcerrstat_SPEC;
 impl crate::sealed::RegSpec for Dmacdtcerrstat_SPEC {
     type DataType = u8;
 }
-#[doc = "DMAC/DTC Error Status Register"]
+
 pub type Dmacdtcerrstat = crate::RegValueT<Dmacdtcerrstat_SPEC>;
 
 impl Dmacdtcerrstat {
-    #[doc = "Master TrustZone Filter Error Status"]
     #[inline(always)]
     pub fn mterrstat(
         self,
@@ -894,6 +913,7 @@ impl Dmacdtcerrstat {
         1,
         0,
         dmacdtcerrstat::Mterrstat,
+        dmacdtcerrstat::Mterrstat,
         Dmacdtcerrstat_SPEC,
         crate::common::R,
     > {
@@ -902,6 +922,7 @@ impl Dmacdtcerrstat {
             0x1,
             1,
             0,
+            dmacdtcerrstat::Mterrstat,
             dmacdtcerrstat::Mterrstat,
             Dmacdtcerrstat_SPEC,
             crate::common::R,
@@ -920,9 +941,8 @@ pub mod dmacdtcerrstat {
     pub struct Mterrstat_SPEC;
     pub type Mterrstat = crate::EnumBitfieldStruct<u8, Mterrstat_SPEC>;
     impl Mterrstat {
-        #[doc = "No error occurred"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Error occurred"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -932,11 +952,10 @@ pub struct Dmacdtcerrclr_SPEC;
 impl crate::sealed::RegSpec for Dmacdtcerrclr_SPEC {
     type DataType = u8;
 }
-#[doc = "DMAC/DTC Error Clear Register"]
+
 pub type Dmacdtcerrclr = crate::RegValueT<Dmacdtcerrclr_SPEC>;
 
 impl Dmacdtcerrclr {
-    #[doc = "Master TrustZone filter Error Clear"]
     #[inline(always)]
     pub fn mterrclr(
         self,

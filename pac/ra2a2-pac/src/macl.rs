@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.20.02, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:14:46 +0000
+// Generated from SVD 1.20.02, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:17:03 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Macl {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "Multiplication Data Register Bn"]
+
     #[inline(always)]
     pub const fn mulb(
         &self,
@@ -47,7 +47,6 @@ impl super::Macl {
         }
     }
 
-    #[doc = "Multiplication Result Register %s"]
     #[inline(always)]
     pub const fn mulrl(
         &self,
@@ -61,7 +60,6 @@ impl super::Macl {
         }
     }
 
-    #[doc = "Multiplication Result Register %s"]
     #[inline(always)]
     pub const fn mulrh(
         &self,
@@ -75,7 +73,6 @@ impl super::Macl {
         }
     }
 
-    #[doc = "Multiplication Data Register A"]
     #[inline(always)]
     pub const fn mul32u(
         &self,
@@ -87,7 +84,6 @@ impl super::Macl {
         }
     }
 
-    #[doc = "Multiplication Data Register A"]
     #[inline(always)]
     pub const fn mul32s(
         &self,
@@ -99,7 +95,6 @@ impl super::Macl {
         }
     }
 
-    #[doc = "Multiplication Data Register A"]
     #[inline(always)]
     pub const fn mac32u(
         &self,
@@ -111,7 +106,6 @@ impl super::Macl {
         }
     }
 
-    #[doc = "Multiplication Data Register A"]
     #[inline(always)]
     pub const fn mac32s(
         &self,
@@ -123,7 +117,6 @@ impl super::Macl {
         }
     }
 
-    #[doc = "Multiplication Control Register"]
     #[inline(always)]
     pub const fn mulc(&self) -> &'static crate::common::Reg<self::Mulc_SPEC, crate::common::RW> {
         unsafe {
@@ -133,7 +126,6 @@ impl super::Macl {
         }
     }
 
-    #[doc = "Multiplication Result Clear Register"]
     #[inline(always)]
     pub const fn mulrclr(
         &self,
@@ -151,7 +143,7 @@ pub struct Mulb_SPEC;
 impl crate::sealed::RegSpec for Mulb_SPEC {
     type DataType = u32;
 }
-#[doc = "Multiplication Data Register Bn"]
+
 pub type Mulb = crate::RegValueT<Mulb_SPEC>;
 
 impl NoBitfieldReg<Mulb_SPEC> for Mulb {}
@@ -168,7 +160,7 @@ pub struct Mulrl_SPEC;
 impl crate::sealed::RegSpec for Mulrl_SPEC {
     type DataType = u32;
 }
-#[doc = "Multiplication Result Register %s"]
+
 pub type Mulrl = crate::RegValueT<Mulrl_SPEC>;
 
 impl NoBitfieldReg<Mulrl_SPEC> for Mulrl {}
@@ -185,7 +177,7 @@ pub struct Mulrh_SPEC;
 impl crate::sealed::RegSpec for Mulrh_SPEC {
     type DataType = u32;
 }
-#[doc = "Multiplication Result Register %s"]
+
 pub type Mulrh = crate::RegValueT<Mulrh_SPEC>;
 
 impl NoBitfieldReg<Mulrh_SPEC> for Mulrh {}
@@ -202,7 +194,7 @@ pub struct Mul32U_SPEC;
 impl crate::sealed::RegSpec for Mul32U_SPEC {
     type DataType = u32;
 }
-#[doc = "Multiplication Data Register A"]
+
 pub type Mul32U = crate::RegValueT<Mul32U_SPEC>;
 
 impl NoBitfieldReg<Mul32U_SPEC> for Mul32U {}
@@ -219,7 +211,7 @@ pub struct Mul32S_SPEC;
 impl crate::sealed::RegSpec for Mul32S_SPEC {
     type DataType = u32;
 }
-#[doc = "Multiplication Data Register A"]
+
 pub type Mul32S = crate::RegValueT<Mul32S_SPEC>;
 
 impl NoBitfieldReg<Mul32S_SPEC> for Mul32S {}
@@ -236,7 +228,7 @@ pub struct Mac32U_SPEC;
 impl crate::sealed::RegSpec for Mac32U_SPEC {
     type DataType = u32;
 }
-#[doc = "Multiplication Data Register A"]
+
 pub type Mac32U = crate::RegValueT<Mac32U_SPEC>;
 
 impl NoBitfieldReg<Mac32U_SPEC> for Mac32U {}
@@ -253,7 +245,7 @@ pub struct Mac32S_SPEC;
 impl crate::sealed::RegSpec for Mac32S_SPEC {
     type DataType = u32;
 }
-#[doc = "Multiplication Data Register A"]
+
 pub type Mac32S = crate::RegValueT<Mac32S_SPEC>;
 
 impl NoBitfieldReg<Mac32S_SPEC> for Mac32S {}
@@ -270,53 +262,158 @@ pub struct Mulc_SPEC;
 impl crate::sealed::RegSpec for Mulc_SPEC {
     type DataType = u8;
 }
-#[doc = "Multiplication Control Register"]
+
 pub type Mulc = crate::RegValueT<Mulc_SPEC>;
 
 impl Mulc {
-    #[doc = "Operation Processing Status Bit"]
     #[inline(always)]
     pub fn mulst(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, mulc::Mulst, Mulc_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0x1,1,0,mulc::Mulst, Mulc_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        mulc::Mulst,
+        mulc::Mulst,
+        Mulc_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            mulc::Mulst,
+            mulc::Mulst,
+            Mulc_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "Multiply-accumulation Result (accumulation value) Sign Flag"]
+
     #[inline(always)]
     pub fn macsf(
         self,
-    ) -> crate::common::RegisterField<1, 0x1, 1, 0, mulc::Macsf, Mulc_SPEC, crate::common::R> {
-        crate::common::RegisterField::<1,0x1,1,0,mulc::Macsf, Mulc_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        1,
+        0x1,
+        1,
+        0,
+        mulc::Macsf,
+        mulc::Macsf,
+        Mulc_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            1,
+            0x1,
+            1,
+            0,
+            mulc::Macsf,
+            mulc::Macsf,
+            Mulc_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "Multiply-accumulation Result (accumulation value) Overflow/Underflow Flag"]
+
     #[inline(always)]
     pub fn macof(
         self,
-    ) -> crate::common::RegisterField<2, 0x1, 1, 0, mulc::Macof, Mulc_SPEC, crate::common::R> {
-        crate::common::RegisterField::<2,0x1,1,0,mulc::Macof, Mulc_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        2,
+        0x1,
+        1,
+        0,
+        mulc::Macof,
+        mulc::Macof,
+        Mulc_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            2,
+            0x1,
+            1,
+            0,
+            mulc::Macof,
+            mulc::Macof,
+            Mulc_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "Fixed Point Mode Selection"]
+
     #[inline(always)]
     pub fn mulfrac(
         self,
-    ) -> crate::common::RegisterField<4, 0x1, 1, 0, mulc::Mulfrac, Mulc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<4,0x1,1,0,mulc::Mulfrac, Mulc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        4,
+        0x1,
+        1,
+        0,
+        mulc::Mulfrac,
+        mulc::Mulfrac,
+        Mulc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            4,
+            0x1,
+            1,
+            0,
+            mulc::Mulfrac,
+            mulc::Mulfrac,
+            Mulc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Signedness Selection"]
+
     #[inline(always)]
     pub fn mulsm(
         self,
-    ) -> crate::common::RegisterField<6, 0x1, 1, 0, mulc::Mulsm, Mulc_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<6,0x1,1,0,mulc::Mulsm, Mulc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        6,
+        0x1,
+        1,
+        0,
+        mulc::Mulsm,
+        mulc::Mulsm,
+        Mulc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            6,
+            0x1,
+            1,
+            0,
+            mulc::Mulsm,
+            mulc::Mulsm,
+            Mulc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Operation Mode Selection"]
+
     #[inline(always)]
     pub fn macmode(
         self,
-    ) -> crate::common::RegisterField<7, 0x1, 1, 0, mulc::Macmode, Mulc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<7,0x1,1,0,mulc::Macmode, Mulc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        7,
+        0x1,
+        1,
+        0,
+        mulc::Macmode,
+        mulc::Macmode,
+        Mulc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            7,
+            0x1,
+            1,
+            0,
+            mulc::Macmode,
+            mulc::Macmode,
+            Mulc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Mulc {
@@ -331,54 +428,48 @@ pub mod mulc {
     pub struct Mulst_SPEC;
     pub type Mulst = crate::EnumBitfieldStruct<u8, Mulst_SPEC>;
     impl Mulst {
-        #[doc = "Completion of operation processing"]
         pub const _0: Self = Self::new(0);
-        #[doc = "During operation processing"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Macsf_SPEC;
     pub type Macsf = crate::EnumBitfieldStruct<u8, Macsf_SPEC>;
     impl Macsf {
-        #[doc = "Positive accumulation value"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Negative accumulation value"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Macof_SPEC;
     pub type Macof = crate::EnumBitfieldStruct<u8, Macof_SPEC>;
     impl Macof {
-        #[doc = "No overflow/underflow occurred"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Overflow/underflow occurred"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Mulfrac_SPEC;
     pub type Mulfrac = crate::EnumBitfieldStruct<u8, Mulfrac_SPEC>;
     impl Mulfrac {
-        #[doc = "Disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Mulsm_SPEC;
     pub type Mulsm = crate::EnumBitfieldStruct<u8, Mulsm_SPEC>;
     impl Mulsm {
-        #[doc = "Unsigned"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Signed"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Macmode_SPEC;
     pub type Macmode = crate::EnumBitfieldStruct<u8, Macmode_SPEC>;
     impl Macmode {
-        #[doc = "Multiplication mode"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Multiply-accumulation mode"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -388,7 +479,7 @@ pub struct Mulrclr_SPEC;
 impl crate::sealed::RegSpec for Mulrclr_SPEC {
     type DataType = u32;
 }
-#[doc = "Multiplication Result Clear Register"]
+
 pub type Mulrclr = crate::RegValueT<Mulrclr_SPEC>;
 
 impl NoBitfieldReg<Mulrclr_SPEC> for Mulrclr {}

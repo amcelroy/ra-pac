@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.1, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:14:39 +0000
+// Generated from SVD 1.1, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:16:53 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Doc {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "DOC Control Register"]
+
     #[inline(always)]
     pub const fn docr(&self) -> &'static crate::common::Reg<self::Docr_SPEC, crate::common::RW> {
         unsafe {
@@ -43,7 +43,6 @@ impl super::Doc {
         }
     }
 
-    #[doc = "DOC Data Input Register"]
     #[inline(always)]
     pub const fn dodir(&self) -> &'static crate::common::Reg<self::Dodir_SPEC, crate::common::RW> {
         unsafe {
@@ -53,7 +52,6 @@ impl super::Doc {
         }
     }
 
-    #[doc = "DOC Data Setting Register"]
     #[inline(always)]
     pub const fn dodsr(&self) -> &'static crate::common::Reg<self::Dodsr_SPEC, crate::common::RW> {
         unsafe {
@@ -69,45 +67,97 @@ pub struct Docr_SPEC;
 impl crate::sealed::RegSpec for Docr_SPEC {
     type DataType = u8;
 }
-#[doc = "DOC Control Register"]
+
 pub type Docr = crate::RegValueT<Docr_SPEC>;
 
 impl Docr {
-    #[doc = "DOPCF Clear"]
     #[inline(always)]
     pub fn dopcfcl(
         self,
-    ) -> crate::common::RegisterField<6, 0x1, 1, 0, docr::Dopcfcl, Docr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<6,0x1,1,0,docr::Dopcfcl, Docr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        6,
+        0x1,
+        1,
+        0,
+        docr::Dopcfcl,
+        docr::Dopcfcl,
+        Docr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            6,
+            0x1,
+            1,
+            0,
+            docr::Dopcfcl,
+            docr::Dopcfcl,
+            Docr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Data Operation Circuit FlagIndicates the result of an operation."]
+
     #[inline(always)]
     pub fn dopcf(self) -> crate::common::RegisterFieldBool<5, 1, 0, Docr_SPEC, crate::common::R> {
         crate::common::RegisterFieldBool::<5, 1, 0, Docr_SPEC, crate::common::R>::from_register(
             self, 0,
         )
     }
-    #[doc = "These bits are read as 00. The write value should be 00."]
+
     #[inline(always)]
     pub fn reserved(
         self,
-    ) -> crate::common::RegisterField<3, 0x3, 1, 0, u8, Docr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<3,0x3,1,0,u8, Docr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<3, 0x3, 1, 0, u8, u8, Docr_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<3,0x3,1,0,u8,u8,Docr_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Detection Condition Select"]
+
     #[inline(always)]
     pub fn dcsel(
         self,
-    ) -> crate::common::RegisterField<2, 0x1, 1, 0, docr::Dcsel, Docr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<2,0x1,1,0,docr::Dcsel, Docr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        2,
+        0x1,
+        1,
+        0,
+        docr::Dcsel,
+        docr::Dcsel,
+        Docr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            2,
+            0x1,
+            1,
+            0,
+            docr::Dcsel,
+            docr::Dcsel,
+            Docr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Operating Mode Select"]
+
     #[inline(always)]
     pub fn oms(
         self,
-    ) -> crate::common::RegisterField<0, 0x3, 1, 0, docr::Oms, Docr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0x3,1,0,docr::Oms, Docr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x3,
+        1,
+        0,
+        docr::Oms,
+        docr::Oms,
+        Docr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x3,
+            1,
+            0,
+            docr::Oms,
+            docr::Oms,
+            Docr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Docr {
@@ -122,31 +172,28 @@ pub mod docr {
     pub struct Dopcfcl_SPEC;
     pub type Dopcfcl = crate::EnumBitfieldStruct<u8, Dopcfcl_SPEC>;
     impl Dopcfcl {
-        #[doc = "Maintains the DOPCF flag state."]
         pub const _0: Self = Self::new(0);
-        #[doc = "Clears the DOPCF flag."]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Dcsel_SPEC;
     pub type Dcsel = crate::EnumBitfieldStruct<u8, Dcsel_SPEC>;
     impl Dcsel {
-        #[doc = "DOPCF is set when data mismatch is detected."]
         pub const _0: Self = Self::new(0);
-        #[doc = "DOPCF is set when data match is detected."]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Oms_SPEC;
     pub type Oms = crate::EnumBitfieldStruct<u8, Oms_SPEC>;
     impl Oms {
-        #[doc = "Data comparison mode"]
         pub const _00: Self = Self::new(0);
-        #[doc = "Data addition mode"]
+
         pub const _01: Self = Self::new(1);
-        #[doc = "Data subtraction mode"]
+
         pub const _10: Self = Self::new(2);
-        #[doc = "Setting prohibited"]
+
         pub const _11: Self = Self::new(3);
     }
 }
@@ -156,16 +203,16 @@ pub struct Dodir_SPEC;
 impl crate::sealed::RegSpec for Dodir_SPEC {
     type DataType = u16;
 }
-#[doc = "DOC Data Input Register"]
+
 pub type Dodir = crate::RegValueT<Dodir_SPEC>;
 
 impl Dodir {
-    #[doc = "16-bit read-write register in which 16-bit data for use in the operations are stored."]
     #[inline(always)]
     pub fn dodir(
         self,
-    ) -> crate::common::RegisterField<0, 0xffff, 1, 0, u16, Dodir_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xffff,1,0,u16, Dodir_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xffff, 1, 0, u16, u16, Dodir_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<0,0xffff,1,0,u16,u16,Dodir_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Dodir {
@@ -181,16 +228,16 @@ pub struct Dodsr_SPEC;
 impl crate::sealed::RegSpec for Dodsr_SPEC {
     type DataType = u16;
 }
-#[doc = "DOC Data Setting Register"]
+
 pub type Dodsr = crate::RegValueT<Dodsr_SPEC>;
 
 impl Dodsr {
-    #[doc = "This register stores 16-bit data for use as a reference in data comparison mode. This register also stores the results of operations in data addition and data subtraction modes."]
     #[inline(always)]
     pub fn dodsr(
         self,
-    ) -> crate::common::RegisterField<0, 0xffff, 1, 0, u16, Dodsr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xffff,1,0,u16, Dodsr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xffff, 1, 0, u16, u16, Dodsr_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<0,0xffff,1,0,u16,u16,Dodsr_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Dodsr {

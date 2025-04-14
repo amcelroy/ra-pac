@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.00.01, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:19:29 +0000
+// Generated from SVD 1.00.01, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:22:22 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::CpuDbg {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "Debug Status Register"]
+
     #[inline(always)]
     pub const fn dbgstr(&self) -> &'static crate::common::Reg<self::Dbgstr_SPEC, crate::common::R> {
         unsafe {
@@ -43,7 +43,6 @@ impl super::CpuDbg {
         }
     }
 
-    #[doc = "Debug Stop Control Register"]
     #[inline(always)]
     pub const fn dbgstopcr(
         &self,
@@ -55,7 +54,6 @@ impl super::CpuDbg {
         }
     }
 
-    #[doc = "Debug Authentication Control Register 0"]
     #[inline(always)]
     pub const fn dbgauth0(
         &self,
@@ -67,7 +65,6 @@ impl super::CpuDbg {
         }
     }
 
-    #[doc = "Debug Authentication Control Register 1"]
     #[inline(always)]
     pub const fn dbgauth1(
         &self,
@@ -79,7 +76,6 @@ impl super::CpuDbg {
         }
     }
 
-    #[doc = "Trace Port Control Register"]
     #[inline(always)]
     pub const fn trportcr(
         &self,
@@ -91,7 +87,6 @@ impl super::CpuDbg {
         }
     }
 
-    #[doc = "Cache Debug Control Register"]
     #[inline(always)]
     pub const fn cachedbgcr(
         &self,
@@ -103,7 +98,6 @@ impl super::CpuDbg {
         }
     }
 
-    #[doc = "MOCO Enable Request Register for Debug"]
     #[inline(always)]
     pub const fn dbgmocoen(
         &self,
@@ -115,7 +109,6 @@ impl super::CpuDbg {
         }
     }
 
-    #[doc = "Flash Sequencer Clock Select Register for Debug"]
     #[inline(always)]
     pub const fn dbgfclksel(
         &self,
@@ -133,11 +126,10 @@ pub struct Dbgstr_SPEC;
 impl crate::sealed::RegSpec for Dbgstr_SPEC {
     type DataType = u32;
 }
-#[doc = "Debug Status Register"]
+
 pub type Dbgstr = crate::RegValueT<Dbgstr_SPEC>;
 
 impl Dbgstr {
-    #[doc = "Debug power-up request"]
     #[inline(always)]
     pub fn cdbgpwrupreq(
         self,
@@ -146,6 +138,7 @@ impl Dbgstr {
         0x1,
         1,
         0,
+        dbgstr::Cdbgpwrupreq,
         dbgstr::Cdbgpwrupreq,
         Dbgstr_SPEC,
         crate::common::R,
@@ -156,11 +149,12 @@ impl Dbgstr {
             1,
             0,
             dbgstr::Cdbgpwrupreq,
+            dbgstr::Cdbgpwrupreq,
             Dbgstr_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "Debug power-up acknowledge"]
+
     #[inline(always)]
     pub fn cdbgpwrupack(
         self,
@@ -170,6 +164,7 @@ impl Dbgstr {
         1,
         0,
         dbgstr::Cdbgpwrupack,
+        dbgstr::Cdbgpwrupack,
         Dbgstr_SPEC,
         crate::common::R,
     > {
@@ -178,6 +173,7 @@ impl Dbgstr {
             0x1,
             1,
             0,
+            dbgstr::Cdbgpwrupack,
             dbgstr::Cdbgpwrupack,
             Dbgstr_SPEC,
             crate::common::R,
@@ -196,18 +192,16 @@ pub mod dbgstr {
     pub struct Cdbgpwrupreq_SPEC;
     pub type Cdbgpwrupreq = crate::EnumBitfieldStruct<u8, Cdbgpwrupreq_SPEC>;
     impl Cdbgpwrupreq {
-        #[doc = "OCD is not requesting debug power-up"]
         pub const _0: Self = Self::new(0);
-        #[doc = "OCD is requesting debug power-up"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cdbgpwrupack_SPEC;
     pub type Cdbgpwrupack = crate::EnumBitfieldStruct<u8, Cdbgpwrupack_SPEC>;
     impl Cdbgpwrupack {
-        #[doc = "Debug power-up request is not acknowledged"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Debug power-up request is acknowledged"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -217,11 +211,10 @@ pub struct Dbgstopcr_SPEC;
 impl crate::sealed::RegSpec for Dbgstopcr_SPEC {
     type DataType = u32;
 }
-#[doc = "Debug Stop Control Register"]
+
 pub type Dbgstopcr = crate::RegValueT<Dbgstopcr_SPEC>;
 
 impl Dbgstopcr {
-    #[doc = "Mask bit for IWDT reset/interrupt in the OCD run mode"]
     #[inline(always)]
     pub fn dbgstop_iwdt(
         self,
@@ -230,6 +223,7 @@ impl Dbgstopcr {
         0x1,
         1,
         0,
+        dbgstopcr::DbgstopIwdt,
         dbgstopcr::DbgstopIwdt,
         Dbgstopcr_SPEC,
         crate::common::RW,
@@ -240,11 +234,12 @@ impl Dbgstopcr {
             1,
             0,
             dbgstopcr::DbgstopIwdt,
+            dbgstopcr::DbgstopIwdt,
             Dbgstopcr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Mask bit for WDT reset/interrupt in the OCD run mode"]
+
     #[inline(always)]
     pub fn dbgstop_wdt0(
         self,
@@ -253,6 +248,7 @@ impl Dbgstopcr {
         0x1,
         1,
         0,
+        dbgstopcr::DbgstopWdt0,
         dbgstopcr::DbgstopWdt0,
         Dbgstopcr_SPEC,
         crate::common::RW,
@@ -263,11 +259,12 @@ impl Dbgstopcr {
             1,
             0,
             dbgstopcr::DbgstopWdt0,
+            dbgstopcr::DbgstopWdt0,
             Dbgstopcr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Mask bit for PVDn (n = 1, 2) reset/interrupt"]
+
     #[inline(always)]
     pub fn dbgstop_pvd(
         self,
@@ -276,6 +273,7 @@ impl Dbgstopcr {
         0x1,
         1,
         0,
+        dbgstopcr::DbgstopPvd,
         dbgstopcr::DbgstopPvd,
         Dbgstopcr_SPEC,
         crate::common::RW,
@@ -286,11 +284,12 @@ impl Dbgstopcr {
             1,
             0,
             dbgstopcr::DbgstopPvd,
+            dbgstopcr::DbgstopPvd,
             Dbgstopcr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = ""]
+
     #[inline(always)]
     pub fn dbgstop_rer(
         self,
@@ -300,6 +299,7 @@ impl Dbgstopcr {
         1,
         0,
         dbgstopcr::DbgstopRer,
+        dbgstopcr::DbgstopRer,
         Dbgstopcr_SPEC,
         crate::common::RW,
     > {
@@ -308,6 +308,7 @@ impl Dbgstopcr {
             0x1,
             1,
             0,
+            dbgstopcr::DbgstopRer,
             dbgstopcr::DbgstopRer,
             Dbgstopcr_SPEC,
             crate::common::RW,
@@ -326,36 +327,32 @@ pub mod dbgstopcr {
     pub struct DbgstopIwdt_SPEC;
     pub type DbgstopIwdt = crate::EnumBitfieldStruct<u8, DbgstopIwdt_SPEC>;
     impl DbgstopIwdt {
-        #[doc = "Enable IWDT reset/interrupt"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Mask IWDT reset/interrupt and stop IWDT counter"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct DbgstopWdt0_SPEC;
     pub type DbgstopWdt0 = crate::EnumBitfieldStruct<u8, DbgstopWdt0_SPEC>;
     impl DbgstopWdt0 {
-        #[doc = "Enable WDT reset/interrupt"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Mask WDT reset/interrupt and stop WDT counter"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct DbgstopPvd_SPEC;
     pub type DbgstopPvd = crate::EnumBitfieldStruct<u8, DbgstopPvd_SPEC>;
     impl DbgstopPvd {
-        #[doc = "Enable PVDn (n = 1, 2) reset/interrupt"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Mask PVDn (n = 1, 2) reset/interrupt"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct DbgstopRer_SPEC;
     pub type DbgstopRer = crate::EnumBitfieldStruct<u8, DbgstopRer_SPEC>;
     impl DbgstopRer {
-        #[doc = "Enable SRAM parity error reset/interrupt"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Mask SRAM parity error reset/interrupt"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -365,11 +362,10 @@ pub struct Dbgauth0_SPEC;
 impl crate::sealed::RegSpec for Dbgauth0_SPEC {
     type DataType = u32;
 }
-#[doc = "Debug Authentication Control Register 0"]
+
 pub type Dbgauth0 = crate::RegValueT<Dbgauth0_SPEC>;
 
 impl Dbgauth0 {
-    #[doc = "CPU invasive debug enable"]
     #[inline(always)]
     pub fn dbgen0(
         self,
@@ -378,6 +374,7 @@ impl Dbgauth0 {
         0x1,
         1,
         0,
+        dbgauth0::Dbgen0,
         dbgauth0::Dbgen0,
         Dbgauth0_SPEC,
         crate::common::RW,
@@ -388,11 +385,12 @@ impl Dbgauth0 {
             1,
             0,
             dbgauth0::Dbgen0,
+            dbgauth0::Dbgen0,
             Dbgauth0_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "CPU non-invasive debug enable"]
+
     #[inline(always)]
     pub fn niden0(
         self,
@@ -401,6 +399,7 @@ impl Dbgauth0 {
         0x1,
         1,
         0,
+        dbgauth0::Niden0,
         dbgauth0::Niden0,
         Dbgauth0_SPEC,
         crate::common::RW,
@@ -411,11 +410,12 @@ impl Dbgauth0 {
             1,
             0,
             dbgauth0::Niden0,
+            dbgauth0::Niden0,
             Dbgauth0_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "CPU AHB-AP (AP0) debug enable"]
+
     #[inline(always)]
     pub fn dbgenap(
         self,
@@ -424,6 +424,7 @@ impl Dbgauth0 {
         0x1,
         1,
         0,
+        dbgauth0::Dbgenap,
         dbgauth0::Dbgenap,
         Dbgauth0_SPEC,
         crate::common::RW,
@@ -434,11 +435,12 @@ impl Dbgauth0 {
             1,
             0,
             dbgauth0::Dbgenap,
+            dbgauth0::Dbgenap,
             Dbgauth0_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "APB-AP (AP1) authentication"]
+
     #[inline(always)]
     pub fn deviceen(
         self,
@@ -447,6 +449,7 @@ impl Dbgauth0 {
         0x1,
         1,
         0,
+        dbgauth0::Deviceen,
         dbgauth0::Deviceen,
         Dbgauth0_SPEC,
         crate::common::RW,
@@ -457,11 +460,12 @@ impl Dbgauth0 {
             1,
             0,
             dbgauth0::Deviceen,
+            dbgauth0::Deviceen,
             Dbgauth0_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Software control of debug function"]
+
     #[inline(always)]
     pub fn swdbg(
         self,
@@ -471,6 +475,7 @@ impl Dbgauth0 {
         1,
         0,
         dbgauth0::Swdbg,
+        dbgauth0::Swdbg,
         Dbgauth0_SPEC,
         crate::common::RW,
     > {
@@ -479,6 +484,7 @@ impl Dbgauth0 {
             0x1,
             1,
             0,
+            dbgauth0::Swdbg,
             dbgauth0::Swdbg,
             Dbgauth0_SPEC,
             crate::common::RW,
@@ -497,45 +503,40 @@ pub mod dbgauth0 {
     pub struct Dbgen0_SPEC;
     pub type Dbgen0 = crate::EnumBitfieldStruct<u8, Dbgen0_SPEC>;
     impl Dbgen0 {
-        #[doc = "Disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Niden0_SPEC;
     pub type Niden0 = crate::EnumBitfieldStruct<u8, Niden0_SPEC>;
     impl Niden0 {
-        #[doc = "Disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Dbgenap_SPEC;
     pub type Dbgenap = crate::EnumBitfieldStruct<u8, Dbgenap_SPEC>;
     impl Dbgenap {
-        #[doc = "Disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Deviceen_SPEC;
     pub type Deviceen = crate::EnumBitfieldStruct<u8, Deviceen_SPEC>;
     impl Deviceen {
-        #[doc = "Disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Swdbg_SPEC;
     pub type Swdbg = crate::EnumBitfieldStruct<u8, Swdbg_SPEC>;
     impl Swdbg {
-        #[doc = "Disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Enabled"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -545,11 +546,10 @@ pub struct Dbgauth1_SPEC;
 impl crate::sealed::RegSpec for Dbgauth1_SPEC {
     type DataType = u32;
 }
-#[doc = "Debug Authentication Control Register 1"]
+
 pub type Dbgauth1 = crate::RegValueT<Dbgauth1_SPEC>;
 
 impl Dbgauth1 {
-    #[doc = "CPU AHB-AP (AP0) debug enable"]
     #[inline(always)]
     pub fn spidenap(
         self,
@@ -559,6 +559,7 @@ impl Dbgauth1 {
         1,
         0,
         dbgauth1::Spidenap,
+        dbgauth1::Spidenap,
         Dbgauth1_SPEC,
         crate::common::RW,
     > {
@@ -567,6 +568,7 @@ impl Dbgauth1 {
             0x1,
             1,
             0,
+            dbgauth1::Spidenap,
             dbgauth1::Spidenap,
             Dbgauth1_SPEC,
             crate::common::RW,
@@ -585,9 +587,8 @@ pub mod dbgauth1 {
     pub struct Spidenap_SPEC;
     pub type Spidenap = crate::EnumBitfieldStruct<u8, Spidenap_SPEC>;
     impl Spidenap {
-        #[doc = "Disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Enabled"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -597,25 +598,58 @@ pub struct Trportcr_SPEC;
 impl crate::sealed::RegSpec for Trportcr_SPEC {
     type DataType = u32;
 }
-#[doc = "Trace Port Control Register"]
+
 pub type Trportcr = crate::RegValueT<Trportcr_SPEC>;
 
 impl Trportcr {
-    #[doc = "Data Out Enable bit indicates whether Trace Clock, Trace Data, and SWO outputs are enabled."]
     #[inline(always)]
     pub fn oe(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, trportcr::Oe, Trportcr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,trportcr::Oe, Trportcr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        trportcr::Oe,
+        trportcr::Oe,
+        Trportcr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            trportcr::Oe,
+            trportcr::Oe,
+            Trportcr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Port Drive Capability Control indicates trace port buffer speed:"]
+
     #[inline(always)]
     pub fn drv(
         self,
-    ) -> crate::common::RegisterField<2, 0x3, 1, 0, trportcr::Drv, Trportcr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<2,0x3,1,0,trportcr::Drv, Trportcr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        2,
+        0x3,
+        1,
+        0,
+        trportcr::Drv,
+        trportcr::Drv,
+        Trportcr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            2,
+            0x3,
+            1,
+            0,
+            trportcr::Drv,
+            trportcr::Drv,
+            Trportcr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Trportcr {
@@ -630,22 +664,20 @@ pub mod trportcr {
     pub struct Oe_SPEC;
     pub type Oe = crate::EnumBitfieldStruct<u8, Oe_SPEC>;
     impl Oe {
-        #[doc = "Output disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Output enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Drv_SPEC;
     pub type Drv = crate::EnumBitfieldStruct<u8, Drv_SPEC>;
     impl Drv {
-        #[doc = "Low-drive"]
         pub const _00: Self = Self::new(0);
-        #[doc = "Middle-drive"]
+
         pub const _01: Self = Self::new(1);
-        #[doc = "High-speed high-drive"]
+
         pub const _10: Self = Self::new(2);
-        #[doc = "High-drive"]
+
         pub const _11: Self = Self::new(3);
     }
 }
@@ -655,11 +687,10 @@ pub struct Cachedbgcr_SPEC;
 impl crate::sealed::RegSpec for Cachedbgcr_SPEC {
     type DataType = u32;
 }
-#[doc = "Cache Debug Control Register"]
+
 pub type Cachedbgcr = crate::RegValueT<Cachedbgcr_SPEC>;
 
 impl Cachedbgcr {
-    #[doc = "Disable L1 cache automatic invalidation"]
     #[inline(always)]
     pub fn l1rstdis(
         self,
@@ -669,6 +700,7 @@ impl Cachedbgcr {
         1,
         0,
         cachedbgcr::L1Rstdis,
+        cachedbgcr::L1Rstdis,
         Cachedbgcr_SPEC,
         crate::common::RW,
     > {
@@ -677,6 +709,7 @@ impl Cachedbgcr {
             0x1,
             1,
             0,
+            cachedbgcr::L1Rstdis,
             cachedbgcr::L1Rstdis,
             Cachedbgcr_SPEC,
             crate::common::RW,
@@ -695,9 +728,8 @@ pub mod cachedbgcr {
     pub struct L1Rstdis_SPEC;
     pub type L1Rstdis = crate::EnumBitfieldStruct<u8, L1Rstdis_SPEC>;
     impl L1Rstdis {
-        #[doc = "Enable automatic invalidation of the L1 cache"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Disable automatic invalidation of the L1 cache"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -707,11 +739,10 @@ pub struct Dbgmocoen_SPEC;
 impl crate::sealed::RegSpec for Dbgmocoen_SPEC {
     type DataType = u32;
 }
-#[doc = "MOCO Enable Request Register for Debug"]
+
 pub type Dbgmocoen = crate::RegValueT<Dbgmocoen_SPEC>;
 
 impl Dbgmocoen {
-    #[doc = "MOCO enable request"]
     #[inline(always)]
     pub fn mocoen(
         self,
@@ -721,6 +752,7 @@ impl Dbgmocoen {
         1,
         0,
         dbgmocoen::Mocoen,
+        dbgmocoen::Mocoen,
         Dbgmocoen_SPEC,
         crate::common::RW,
     > {
@@ -729,6 +761,7 @@ impl Dbgmocoen {
             0x1,
             1,
             0,
+            dbgmocoen::Mocoen,
             dbgmocoen::Mocoen,
             Dbgmocoen_SPEC,
             crate::common::RW,
@@ -747,9 +780,8 @@ pub mod dbgmocoen {
     pub struct Mocoen_SPEC;
     pub type Mocoen = crate::EnumBitfieldStruct<u8, Mocoen_SPEC>;
     impl Mocoen {
-        #[doc = "No request MOCO enable"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Request MOCO enable"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -759,11 +791,10 @@ pub struct Dbgfclksel_SPEC;
 impl crate::sealed::RegSpec for Dbgfclksel_SPEC {
     type DataType = u32;
 }
-#[doc = "Flash Sequencer Clock Select Register for Debug"]
+
 pub type Dbgfclksel = crate::RegValueT<Dbgfclksel_SPEC>;
 
 impl Dbgfclksel {
-    #[doc = "Flash sequencer clock select"]
     #[inline(always)]
     pub fn fclksel(
         self,
@@ -773,6 +804,7 @@ impl Dbgfclksel {
         1,
         0,
         dbgfclksel::Fclksel,
+        dbgfclksel::Fclksel,
         Dbgfclksel_SPEC,
         crate::common::RW,
     > {
@@ -781,6 +813,7 @@ impl Dbgfclksel {
             0x1,
             1,
             0,
+            dbgfclksel::Fclksel,
             dbgfclksel::Fclksel,
             Dbgfclksel_SPEC,
             crate::common::RW,
@@ -799,9 +832,8 @@ pub mod dbgfclksel {
     pub struct Fclksel_SPEC;
     pub type Fclksel = crate::EnumBitfieldStruct<u8, Fclksel_SPEC>;
     impl Fclksel {
-        #[doc = "FCLK"]
         pub const _0: Self = Self::new(0);
-        #[doc = "MOCO"]
+
         pub const _1: Self = Self::new(1);
     }
 }

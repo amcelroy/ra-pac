@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.20.00, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:18:50 +0000
+// Generated from SVD 1.20.00, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:21:40 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Cache {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "C-Cache Control Register"]
+
     #[inline(always)]
     pub const fn ccactl(
         &self,
@@ -45,7 +45,6 @@ impl super::Cache {
         }
     }
 
-    #[doc = "C-Cache Flush Control Register"]
     #[inline(always)]
     pub const fn ccafct(
         &self,
@@ -57,7 +56,6 @@ impl super::Cache {
         }
     }
 
-    #[doc = "C-Cache Line Configuration Register"]
     #[inline(always)]
     pub const fn ccalcf(
         &self,
@@ -69,7 +67,6 @@ impl super::Cache {
         }
     }
 
-    #[doc = "S-Cache Control Register"]
     #[inline(always)]
     pub const fn scactl(
         &self,
@@ -81,7 +78,6 @@ impl super::Cache {
         }
     }
 
-    #[doc = "S-Cache Flush Control Register"]
     #[inline(always)]
     pub const fn scafct(
         &self,
@@ -93,7 +89,6 @@ impl super::Cache {
         }
     }
 
-    #[doc = "S-Cache Line Configuration Register"]
     #[inline(always)]
     pub const fn scalcf(
         &self,
@@ -105,7 +100,6 @@ impl super::Cache {
         }
     }
 
-    #[doc = "Cache Parity Error Operation After Detection Register"]
     #[inline(always)]
     pub const fn capoad(
         &self,
@@ -117,7 +111,6 @@ impl super::Cache {
         }
     }
 
-    #[doc = "Cache Protection Register"]
     #[inline(always)]
     pub const fn caprcr(
         &self,
@@ -135,17 +128,33 @@ pub struct Ccactl_SPEC;
 impl crate::sealed::RegSpec for Ccactl_SPEC {
     type DataType = u32;
 }
-#[doc = "C-Cache Control Register"]
+
 pub type Ccactl = crate::RegValueT<Ccactl_SPEC>;
 
 impl Ccactl {
-    #[doc = "C-Cache Enable"]
     #[inline(always)]
     pub fn enc(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, ccactl::Enc, Ccactl_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,ccactl::Enc, Ccactl_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        ccactl::Enc,
+        ccactl::Enc,
+        Ccactl_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            ccactl::Enc,
+            ccactl::Enc,
+            Ccactl_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Ccactl {
@@ -160,9 +169,8 @@ pub mod ccactl {
     pub struct Enc_SPEC;
     pub type Enc = crate::EnumBitfieldStruct<u8, Enc_SPEC>;
     impl Enc {
-        #[doc = "Disable C-cache"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Enable C-cache"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -172,17 +180,33 @@ pub struct Ccafct_SPEC;
 impl crate::sealed::RegSpec for Ccafct_SPEC {
     type DataType = u32;
 }
-#[doc = "C-Cache Flush Control Register"]
+
 pub type Ccafct = crate::RegValueT<Ccafct_SPEC>;
 
 impl Ccafct {
-    #[doc = "C-Cache Flush"]
     #[inline(always)]
     pub fn fc(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, ccafct::Fc, Ccafct_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,ccafct::Fc, Ccafct_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        ccafct::Fc,
+        ccafct::Fc,
+        Ccafct_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            ccafct::Fc,
+            ccafct::Fc,
+            Ccafct_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Ccafct {
@@ -197,9 +221,8 @@ pub mod ccafct {
     pub struct Fc_SPEC;
     pub type Fc = crate::EnumBitfieldStruct<u8, Fc_SPEC>;
     impl Fc {
-        #[doc = "No action"]
         pub const _0: Self = Self::new(0);
-        #[doc = "C-cache line flush (all lines invalidated)"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -209,17 +232,33 @@ pub struct Ccalcf_SPEC;
 impl crate::sealed::RegSpec for Ccalcf_SPEC {
     type DataType = u32;
 }
-#[doc = "C-Cache Line Configuration Register"]
+
 pub type Ccalcf = crate::RegValueT<Ccalcf_SPEC>;
 
 impl Ccalcf {
-    #[doc = "C-Cache Line Size"]
     #[inline(always)]
     pub fn cc(
         self,
-    ) -> crate::common::RegisterField<0, 0x3, 1, 0, ccalcf::Cc, Ccalcf_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x3,1,0,ccalcf::Cc, Ccalcf_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x3,
+        1,
+        0,
+        ccalcf::Cc,
+        ccalcf::Cc,
+        Ccalcf_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x3,
+            1,
+            0,
+            ccalcf::Cc,
+            ccalcf::Cc,
+            Ccalcf_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Ccalcf {
@@ -234,13 +273,12 @@ pub mod ccalcf {
     pub struct Cc_SPEC;
     pub type Cc = crate::EnumBitfieldStruct<u8, Cc_SPEC>;
     impl Cc {
-        #[doc = "Prohibited"]
         pub const _00: Self = Self::new(0);
-        #[doc = "Cache line size 32 bytes"]
+
         pub const _01: Self = Self::new(1);
-        #[doc = "Cache line size 64 bytes"]
+
         pub const _10: Self = Self::new(2);
-        #[doc = "Prohibited"]
+
         pub const _11: Self = Self::new(3);
     }
 }
@@ -250,17 +288,33 @@ pub struct Scactl_SPEC;
 impl crate::sealed::RegSpec for Scactl_SPEC {
     type DataType = u32;
 }
-#[doc = "S-Cache Control Register"]
+
 pub type Scactl = crate::RegValueT<Scactl_SPEC>;
 
 impl Scactl {
-    #[doc = "S-Cache Enable"]
     #[inline(always)]
     pub fn ens(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, scactl::Ens, Scactl_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,scactl::Ens, Scactl_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        scactl::Ens,
+        scactl::Ens,
+        Scactl_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            scactl::Ens,
+            scactl::Ens,
+            Scactl_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Scactl {
@@ -275,9 +329,8 @@ pub mod scactl {
     pub struct Ens_SPEC;
     pub type Ens = crate::EnumBitfieldStruct<u8, Ens_SPEC>;
     impl Ens {
-        #[doc = "Disable S-cache"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Enable S-cache"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -287,17 +340,33 @@ pub struct Scafct_SPEC;
 impl crate::sealed::RegSpec for Scafct_SPEC {
     type DataType = u32;
 }
-#[doc = "S-Cache Flush Control Register"]
+
 pub type Scafct = crate::RegValueT<Scafct_SPEC>;
 
 impl Scafct {
-    #[doc = "S-Cache Flush"]
     #[inline(always)]
     pub fn fs(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, scafct::Fs, Scafct_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,scafct::Fs, Scafct_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        scafct::Fs,
+        scafct::Fs,
+        Scafct_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            scafct::Fs,
+            scafct::Fs,
+            Scafct_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Scafct {
@@ -312,9 +381,8 @@ pub mod scafct {
     pub struct Fs_SPEC;
     pub type Fs = crate::EnumBitfieldStruct<u8, Fs_SPEC>;
     impl Fs {
-        #[doc = "No action"]
         pub const _0: Self = Self::new(0);
-        #[doc = "S-cache line flush (all lines invalidated)"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -324,17 +392,33 @@ pub struct Scalcf_SPEC;
 impl crate::sealed::RegSpec for Scalcf_SPEC {
     type DataType = u32;
 }
-#[doc = "S-Cache Line Configuration Register"]
+
 pub type Scalcf = crate::RegValueT<Scalcf_SPEC>;
 
 impl Scalcf {
-    #[doc = "S-Cache Line Size"]
     #[inline(always)]
     pub fn cs(
         self,
-    ) -> crate::common::RegisterField<0, 0x3, 1, 0, scalcf::Cs, Scalcf_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x3,1,0,scalcf::Cs, Scalcf_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x3,
+        1,
+        0,
+        scalcf::Cs,
+        scalcf::Cs,
+        Scalcf_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x3,
+            1,
+            0,
+            scalcf::Cs,
+            scalcf::Cs,
+            Scalcf_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Scalcf {
@@ -349,13 +433,12 @@ pub mod scalcf {
     pub struct Cs_SPEC;
     pub type Cs = crate::EnumBitfieldStruct<u8, Cs_SPEC>;
     impl Cs {
-        #[doc = "Prohibited"]
         pub const _00: Self = Self::new(0);
-        #[doc = "Cache line size 32 bytes"]
+
         pub const _01: Self = Self::new(1);
-        #[doc = "Cache line size 64 bytes"]
+
         pub const _10: Self = Self::new(2);
-        #[doc = "Prohibited"]
+
         pub const _11: Self = Self::new(3);
     }
 }
@@ -365,17 +448,33 @@ pub struct Capoad_SPEC;
 impl crate::sealed::RegSpec for Capoad_SPEC {
     type DataType = u32;
 }
-#[doc = "Cache Parity Error Operation After Detection Register"]
+
 pub type Capoad = crate::RegValueT<Capoad_SPEC>;
 
 impl Capoad {
-    #[doc = "Operation after Detection"]
     #[inline(always)]
     pub fn oad(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, capoad::Oad, Capoad_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,capoad::Oad, Capoad_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        capoad::Oad,
+        capoad::Oad,
+        Capoad_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            capoad::Oad,
+            capoad::Oad,
+            Capoad_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Capoad {
@@ -390,9 +489,8 @@ pub mod capoad {
     pub struct Oad_SPEC;
     pub type Oad = crate::EnumBitfieldStruct<u8, Oad_SPEC>;
     impl Oad {
-        #[doc = "Non-maskable interrupt"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Reset"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -402,24 +500,40 @@ pub struct Caprcr_SPEC;
 impl crate::sealed::RegSpec for Caprcr_SPEC {
     type DataType = u32;
 }
-#[doc = "Cache Protection Register"]
+
 pub type Caprcr = crate::RegValueT<Caprcr_SPEC>;
 
 impl Caprcr {
-    #[doc = "Register Write Control"]
     #[inline(always)]
     pub fn prcr(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, caprcr::Prcr, Caprcr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,caprcr::Prcr, Caprcr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        caprcr::Prcr,
+        caprcr::Prcr,
+        Caprcr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            caprcr::Prcr,
+            caprcr::Prcr,
+            Caprcr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Write key code"]
+
     #[inline(always)]
     pub fn kw(
         self,
-    ) -> crate::common::RegisterField<1, 0x7f, 1, 0, u8, Caprcr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<1,0x7f,1,0,u8, Caprcr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<1, 0x7f, 1, 0, u8, u8, Caprcr_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<1,0x7f,1,0,u8,u8,Caprcr_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Caprcr {
@@ -434,9 +548,8 @@ pub mod caprcr {
     pub struct Prcr_SPEC;
     pub type Prcr = crate::EnumBitfieldStruct<u8, Prcr_SPEC>;
     impl Prcr {
-        #[doc = "Disable writes to protected registers"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Enable writes to protected registers"]
+
         pub const _1: Self = Self::new(1);
     }
 }

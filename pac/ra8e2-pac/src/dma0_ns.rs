@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.00.01, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:19:56 +0000
+// Generated from SVD 1.00.01, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:22:53 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Dma0Ns {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "DMA Module Activation Register"]
+
     #[inline(always)]
     pub const fn dmast(&self) -> &'static crate::common::Reg<self::Dmast_SPEC, crate::common::RW> {
         unsafe {
@@ -43,7 +43,6 @@ impl super::Dma0Ns {
         }
     }
 
-    #[doc = "DMAC Error Channel Register"]
     #[inline(always)]
     pub const fn dmechr(
         &self,
@@ -55,7 +54,6 @@ impl super::Dma0Ns {
         }
     }
 
-    #[doc = "DMAC Event Link Setting Register %s"]
     #[inline(always)]
     pub const fn delsr(
         &self,
@@ -75,17 +73,33 @@ pub struct Dmast_SPEC;
 impl crate::sealed::RegSpec for Dmast_SPEC {
     type DataType = u8;
 }
-#[doc = "DMA Module Activation Register"]
+
 pub type Dmast = crate::RegValueT<Dmast_SPEC>;
 
 impl Dmast {
-    #[doc = "DMAC Operation Enable"]
     #[inline(always)]
     pub fn dmst(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, dmast::Dmst, Dmast_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,dmast::Dmst, Dmast_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        dmast::Dmst,
+        dmast::Dmst,
+        Dmast_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            dmast::Dmst,
+            dmast::Dmst,
+            Dmast_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Dmast {
@@ -100,9 +114,8 @@ pub mod dmast {
     pub struct Dmst_SPEC;
     pub type Dmst = crate::EnumBitfieldStruct<u8, Dmst_SPEC>;
     impl Dmst {
-        #[doc = "DMAC activation is disabled."]
         pub const _0: Self = Self::new(0);
-        #[doc = "DMAC activation is enabled."]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -112,32 +125,65 @@ pub struct Dmechr_SPEC;
 impl crate::sealed::RegSpec for Dmechr_SPEC {
     type DataType = u32;
 }
-#[doc = "DMAC Error Channel Register"]
+
 pub type Dmechr = crate::RegValueT<Dmechr_SPEC>;
 
 impl Dmechr {
-    #[doc = "DMAC Error channel"]
     #[inline(always)]
     pub fn dmech(
         self,
-    ) -> crate::common::RegisterField<0, 0x7, 1, 0, u8, Dmechr_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0x7,1,0,u8, Dmechr_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0x7, 1, 0, u8, u8, Dmechr_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0x7,1,0,u8,u8,Dmechr_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "DMAC Error channel Security Attribution Monitor"]
+
     #[inline(always)]
     pub fn dmechsam(
         self,
-    ) -> crate::common::RegisterField<8, 0x1, 1, 0, dmechr::Dmechsam, Dmechr_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<8,0x1,1,0,dmechr::Dmechsam, Dmechr_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        8,
+        0x1,
+        1,
+        0,
+        dmechr::Dmechsam,
+        dmechr::Dmechsam,
+        Dmechr_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            8,
+            0x1,
+            1,
+            0,
+            dmechr::Dmechsam,
+            dmechr::Dmechsam,
+            Dmechr_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "DMAC Error Status"]
+
     #[inline(always)]
     pub fn dmesta(
         self,
-    ) -> crate::common::RegisterField<16, 0x1, 1, 0, dmechr::Dmesta, Dmechr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<16,0x1,1,0,dmechr::Dmesta, Dmechr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        16,
+        0x1,
+        1,
+        0,
+        dmechr::Dmesta,
+        dmechr::Dmesta,
+        Dmechr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            16,
+            0x1,
+            1,
+            0,
+            dmechr::Dmesta,
+            dmechr::Dmesta,
+            Dmechr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Dmechr {
@@ -152,18 +198,16 @@ pub mod dmechr {
     pub struct Dmechsam_SPEC;
     pub type Dmechsam = crate::EnumBitfieldStruct<u8, Dmechsam_SPEC>;
     impl Dmechsam {
-        #[doc = "secure channel"]
         pub const _0: Self = Self::new(0);
-        #[doc = "non-secure channel"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Dmesta_SPEC;
     pub type Dmesta = crate::EnumBitfieldStruct<u8, Dmesta_SPEC>;
     impl Dmesta {
-        #[doc = "No DMA transfer error occurred"]
         pub const _0: Self = Self::new(0);
-        #[doc = "DMA transfer error occurred"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -173,24 +217,58 @@ pub struct Delsr_SPEC;
 impl crate::sealed::RegSpec for Delsr_SPEC {
     type DataType = u32;
 }
-#[doc = "DMAC Event Link Setting Register %s"]
+
 pub type Delsr = crate::RegValueT<Delsr_SPEC>;
 
 impl Delsr {
-    #[doc = "DMAC Event Link Select"]
     #[inline(always)]
     pub fn dels(
         self,
-    ) -> crate::common::RegisterField<0, 0x1ff, 1, 0, delsr::Dels, Delsr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1ff,1,0,delsr::Dels, Delsr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1ff,
+        1,
+        0,
+        delsr::Dels,
+        delsr::Dels,
+        Delsr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1ff,
+            1,
+            0,
+            delsr::Dels,
+            delsr::Dels,
+            Delsr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "DMAC Activation Request Status flag"]
+
     #[inline(always)]
     pub fn ir(
         self,
-    ) -> crate::common::RegisterField<16, 0x1, 1, 0, delsr::Ir, Delsr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0x1,1,0,delsr::Ir, Delsr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        16,
+        0x1,
+        1,
+        0,
+        delsr::Ir,
+        delsr::Ir,
+        Delsr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            16,
+            0x1,
+            1,
+            0,
+            delsr::Ir,
+            delsr::Ir,
+            Delsr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Delsr {
@@ -205,18 +283,16 @@ pub mod delsr {
     pub struct Dels_SPEC;
     pub type Dels = crate::EnumBitfieldStruct<u8, Dels_SPEC>;
     impl Dels {
-        #[doc = "Disable interrupts to the associated DMAC module"]
         pub const _0_X_00: Self = Self::new(0);
-        #[doc = "Event signal number to be linked. For details, see Table x.x Event table."]
+
         pub const OTHERS: Self = Self::new(0);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Ir_SPEC;
     pub type Ir = crate::EnumBitfieldStruct<u8, Ir_SPEC>;
     impl Ir {
-        #[doc = "No DMAC activation request occurred."]
         pub const _0: Self = Self::new(0);
-        #[doc = "DMAC activation request occurred."]
+
         pub const _1: Self = Self::new(1);
     }
 }

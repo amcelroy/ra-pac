@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.1, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:14:39 +0000
+// Generated from SVD 1.1, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:16:53 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Pmisc {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "Write-Protect Register"]
+
     #[inline(always)]
     pub const fn pwpr(&self) -> &'static crate::common::Reg<self::Pwpr_SPEC, crate::common::RW> {
         unsafe {
@@ -49,30 +49,65 @@ pub struct Pwpr_SPEC;
 impl crate::sealed::RegSpec for Pwpr_SPEC {
     type DataType = u8;
 }
-#[doc = "Write-Protect Register"]
+
 pub type Pwpr = crate::RegValueT<Pwpr_SPEC>;
 
 impl Pwpr {
-    #[doc = "PFSWE Bit Write Disable"]
     #[inline(always)]
     pub fn b0wi(
         self,
-    ) -> crate::common::RegisterField<7, 0x1, 1, 0, pwpr::B0Wi, Pwpr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<7,0x1,1,0,pwpr::B0Wi, Pwpr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        7,
+        0x1,
+        1,
+        0,
+        pwpr::B0Wi,
+        pwpr::B0Wi,
+        Pwpr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            7,
+            0x1,
+            1,
+            0,
+            pwpr::B0Wi,
+            pwpr::B0Wi,
+            Pwpr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "PFS Register Write Enable"]
+
     #[inline(always)]
     pub fn pfswe(
         self,
-    ) -> crate::common::RegisterField<6, 0x1, 1, 0, pwpr::Pfswe, Pwpr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<6,0x1,1,0,pwpr::Pfswe, Pwpr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        6,
+        0x1,
+        1,
+        0,
+        pwpr::Pfswe,
+        pwpr::Pfswe,
+        Pwpr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            6,
+            0x1,
+            1,
+            0,
+            pwpr::Pfswe,
+            pwpr::Pfswe,
+            Pwpr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "These bits are read as 000000. The write value should be 000000."]
+
     #[inline(always)]
     pub fn reserved(
         self,
-    ) -> crate::common::RegisterField<0, 0x3f, 1, 0, u8, Pwpr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0x3f,1,0,u8, Pwpr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0x3f, 1, 0, u8, u8, Pwpr_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<0,0x3f,1,0,u8,u8,Pwpr_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Pwpr {
@@ -87,18 +122,16 @@ pub mod pwpr {
     pub struct B0Wi_SPEC;
     pub type B0Wi = crate::EnumBitfieldStruct<u8, B0Wi_SPEC>;
     impl B0Wi {
-        #[doc = "Writing to the PFSWE bit is enabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Writing to the PFSWE bit is disabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Pfswe_SPEC;
     pub type Pfswe = crate::EnumBitfieldStruct<u8, Pfswe_SPEC>;
     impl Pfswe {
-        #[doc = "Writing to the PFS register is disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Writing to the PFS register is enabled"]
+
         pub const _1: Self = Self::new(1);
     }
 }

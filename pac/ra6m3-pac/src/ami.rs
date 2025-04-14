@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.2, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:17:41 +0000
+// Generated from SVD 1.2, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:20:22 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Ami {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "D/A A/D Synchronous Unit Select Register"]
+
     #[inline(always)]
     pub const fn daadusr(
         &self,
@@ -51,11 +51,10 @@ pub struct Daadusr_SPEC;
 impl crate::sealed::RegSpec for Daadusr_SPEC {
     type DataType = u8;
 }
-#[doc = "D/A A/D Synchronous Unit Select Register"]
+
 pub type Daadusr = crate::RegValueT<Daadusr_SPEC>;
 
 impl Daadusr {
-    #[doc = "A/D Unit 1 Select"]
     #[inline(always)]
     pub fn amadsel1(
         self,
@@ -65,6 +64,7 @@ impl Daadusr {
         1,
         0,
         daadusr::Amadsel1,
+        daadusr::Amadsel1,
         Daadusr_SPEC,
         crate::common::RW,
     > {
@@ -73,6 +73,7 @@ impl Daadusr {
             0x1,
             1,
             0,
+            daadusr::Amadsel1,
             daadusr::Amadsel1,
             Daadusr_SPEC,
             crate::common::RW,
@@ -91,9 +92,8 @@ pub mod daadusr {
     pub struct Amadsel1_SPEC;
     pub type Amadsel1 = crate::EnumBitfieldStruct<u8, Amadsel1_SPEC>;
     impl Amadsel1 {
-        #[doc = "Unit 1 is not selected."]
         pub const _0: Self = Self::new(0);
-        #[doc = "Unit 1 is selected."]
+
         pub const _1: Self = Self::new(1);
     }
 }

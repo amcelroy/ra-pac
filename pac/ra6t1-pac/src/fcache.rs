@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.0, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:18:24 +0000
+// Generated from SVD 1.0, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:21:11 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Fcache {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "Flash Cache Enable Register"]
+
     #[inline(always)]
     pub const fn fcachee(
         &self,
@@ -45,7 +45,6 @@ impl super::Fcache {
         }
     }
 
-    #[doc = "Flash Cache Invalidate Register"]
     #[inline(always)]
     pub const fn fcacheiv(
         &self,
@@ -57,7 +56,6 @@ impl super::Fcache {
         }
     }
 
-    #[doc = "Flash Wait Cycle Register"]
     #[inline(always)]
     pub const fn flwt(&self) -> &'static crate::common::Reg<self::Flwt_SPEC, crate::common::RW> {
         unsafe {
@@ -73,11 +71,10 @@ pub struct Fcachee_SPEC;
 impl crate::sealed::RegSpec for Fcachee_SPEC {
     type DataType = u16;
 }
-#[doc = "Flash Cache Enable Register"]
+
 pub type Fcachee = crate::RegValueT<Fcachee_SPEC>;
 
 impl Fcachee {
-    #[doc = "FCACHE Enable"]
     #[inline(always)]
     pub fn fcacheen(
         self,
@@ -87,6 +84,7 @@ impl Fcachee {
         1,
         0,
         fcachee::Fcacheen,
+        fcachee::Fcacheen,
         Fcachee_SPEC,
         crate::common::RW,
     > {
@@ -95,6 +93,7 @@ impl Fcachee {
             0x1,
             1,
             0,
+            fcachee::Fcacheen,
             fcachee::Fcacheen,
             Fcachee_SPEC,
             crate::common::RW,
@@ -113,9 +112,8 @@ pub mod fcachee {
     pub struct Fcacheen_SPEC;
     pub type Fcacheen = crate::EnumBitfieldStruct<u8, Fcacheen_SPEC>;
     impl Fcacheen {
-        #[doc = "FCACHE is disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "FCACHE is enabled"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -125,11 +123,10 @@ pub struct Fcacheiv_SPEC;
 impl crate::sealed::RegSpec for Fcacheiv_SPEC {
     type DataType = u16;
 }
-#[doc = "Flash Cache Invalidate Register"]
+
 pub type Fcacheiv = crate::RegValueT<Fcacheiv_SPEC>;
 
 impl Fcacheiv {
-    #[doc = "FCACHE Invalidation"]
     #[inline(always)]
     pub fn fcacheiv(
         self,
@@ -139,6 +136,7 @@ impl Fcacheiv {
         1,
         0,
         fcacheiv::Fcacheiv,
+        fcacheiv::Fcacheiv,
         Fcacheiv_SPEC,
         crate::common::RW,
     > {
@@ -147,6 +145,7 @@ impl Fcacheiv {
             0x1,
             1,
             0,
+            fcacheiv::Fcacheiv,
             fcacheiv::Fcacheiv,
             Fcacheiv_SPEC,
             crate::common::RW,
@@ -165,9 +164,8 @@ pub mod fcacheiv {
     pub struct Fcacheiv_SPEC;
     pub type Fcacheiv = crate::EnumBitfieldStruct<u8, Fcacheiv_SPEC>;
     impl Fcacheiv {
-        #[doc = "(Read)not in progress / (Write) no effect."]
         pub const _0: Self = Self::new(0);
-        #[doc = "(Read)in progress /(Write)  Starting Cache Invalidation"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -177,16 +175,33 @@ pub struct Flwt_SPEC;
 impl crate::sealed::RegSpec for Flwt_SPEC {
     type DataType = u8;
 }
-#[doc = "Flash Wait Cycle Register"]
+
 pub type Flwt = crate::RegValueT<Flwt_SPEC>;
 
 impl Flwt {
-    #[doc = "Flash Wait Cycle"]
     #[inline(always)]
     pub fn flwt(
         self,
-    ) -> crate::common::RegisterField<0, 0x7, 1, 0, flwt::Flwt, Flwt_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0x7,1,0,flwt::Flwt, Flwt_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x7,
+        1,
+        0,
+        flwt::Flwt,
+        flwt::Flwt,
+        Flwt_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x7,
+            1,
+            0,
+            flwt::Flwt,
+            flwt::Flwt,
+            Flwt_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Flwt {
@@ -201,13 +216,12 @@ pub mod flwt {
     pub struct Flwt_SPEC;
     pub type Flwt = crate::EnumBitfieldStruct<u8, Flwt_SPEC>;
     impl Flwt {
-        #[doc = "0 wait (ICLK<=80MHz)"]
         pub const _000: Self = Self::new(0);
-        #[doc = "1 wait (80MHz < ICLK <=160MHz)"]
+
         pub const _001: Self = Self::new(1);
-        #[doc = "2 waits (160MHz < ICLK <=240MHz)"]
+
         pub const _010: Self = Self::new(2);
-        #[doc = "Setting prohibited"]
+
         pub const OTHERS: Self = Self::new(0);
     }
 }

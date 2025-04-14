@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.10.00, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:14:33 +0000
+// Generated from SVD 1.10.00, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:16:47 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Crc {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "CRC Control Register 0"]
+
     #[inline(always)]
     pub const fn crccr0(
         &self,
@@ -45,7 +45,6 @@ impl super::Crc {
         }
     }
 
-    #[doc = "CRC Data Input Register"]
     #[inline(always)]
     pub const fn crcdir(
         &self,
@@ -57,7 +56,6 @@ impl super::Crc {
         }
     }
 
-    #[doc = "CRC Data Input Register"]
     #[inline(always)]
     pub const fn crcdir_by(
         &self,
@@ -69,7 +67,6 @@ impl super::Crc {
         }
     }
 
-    #[doc = "CRC Data Output Register"]
     #[inline(always)]
     pub const fn crcdor(
         &self,
@@ -81,7 +78,6 @@ impl super::Crc {
         }
     }
 
-    #[doc = "CRC Data Output Register"]
     #[inline(always)]
     pub const fn crcdor_ha(
         &self,
@@ -99,25 +95,58 @@ pub struct Crccr0_SPEC;
 impl crate::sealed::RegSpec for Crccr0_SPEC {
     type DataType = u8;
 }
-#[doc = "CRC Control Register 0"]
+
 pub type Crccr0 = crate::RegValueT<Crccr0_SPEC>;
 
 impl Crccr0 {
-    #[doc = "CRC Generating Polynomial Switching"]
     #[inline(always)]
     pub fn gps(
         self,
-    ) -> crate::common::RegisterField<0, 0x7, 1, 0, crccr0::Gps, Crccr0_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x7,1,0,crccr0::Gps, Crccr0_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x7,
+        1,
+        0,
+        crccr0::Gps,
+        crccr0::Gps,
+        Crccr0_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x7,
+            1,
+            0,
+            crccr0::Gps,
+            crccr0::Gps,
+            Crccr0_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "CRCDOR/CRCDOR_HA Register Clear"]
+
     #[inline(always)]
     pub fn dorclr(
         self,
-    ) -> crate::common::RegisterField<7, 0x1, 1, 0, crccr0::Dorclr, Crccr0_SPEC, crate::common::W>
-    {
-        crate::common::RegisterField::<7,0x1,1,0,crccr0::Dorclr, Crccr0_SPEC,crate::common::W>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        7,
+        0x1,
+        1,
+        0,
+        crccr0::Dorclr,
+        crccr0::Dorclr,
+        Crccr0_SPEC,
+        crate::common::W,
+    > {
+        crate::common::RegisterField::<
+            7,
+            0x1,
+            1,
+            0,
+            crccr0::Dorclr,
+            crccr0::Dorclr,
+            Crccr0_SPEC,
+            crate::common::W,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Crccr0 {
@@ -132,20 +161,18 @@ pub mod crccr0 {
     pub struct Gps_SPEC;
     pub type Gps = crate::EnumBitfieldStruct<u8, Gps_SPEC>;
     impl Gps {
-        #[doc = "16-bit CRC-CCITT (X16 + X12 + X5 + 1)"]
         pub const _011: Self = Self::new(3);
-        #[doc = "32-bit CRC-32 (X32 + X26 + X23 + X22 + X16 + X12 + X11 +X10 + X8 + X7 + X5 + X4 + X2 + X + 1)"]
+
         pub const _100: Self = Self::new(4);
-        #[doc = "No calculation is executed"]
+
         pub const OTHERS: Self = Self::new(0);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Dorclr_SPEC;
     pub type Dorclr = crate::EnumBitfieldStruct<u8, Dorclr_SPEC>;
     impl Dorclr {
-        #[doc = "No effect"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Clear the CRCDOR/CRCDOR_HA register"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -155,7 +182,7 @@ pub struct Crcdir_SPEC;
 impl crate::sealed::RegSpec for Crcdir_SPEC {
     type DataType = u32;
 }
-#[doc = "CRC Data Input Register"]
+
 pub type Crcdir = crate::RegValueT<Crcdir_SPEC>;
 
 impl NoBitfieldReg<Crcdir_SPEC> for Crcdir {}
@@ -172,7 +199,7 @@ pub struct CrcdirBy_SPEC;
 impl crate::sealed::RegSpec for CrcdirBy_SPEC {
     type DataType = u8;
 }
-#[doc = "CRC Data Input Register"]
+
 pub type CrcdirBy = crate::RegValueT<CrcdirBy_SPEC>;
 
 impl NoBitfieldReg<CrcdirBy_SPEC> for CrcdirBy {}
@@ -189,7 +216,7 @@ pub struct Crcdor_SPEC;
 impl crate::sealed::RegSpec for Crcdor_SPEC {
     type DataType = u32;
 }
-#[doc = "CRC Data Output Register"]
+
 pub type Crcdor = crate::RegValueT<Crcdor_SPEC>;
 
 impl NoBitfieldReg<Crcdor_SPEC> for Crcdor {}
@@ -206,7 +233,7 @@ pub struct CrcdorHa_SPEC;
 impl crate::sealed::RegSpec for CrcdorHa_SPEC {
     type DataType = u16;
 }
-#[doc = "CRC Data Output Register"]
+
 pub type CrcdorHa = crate::RegValueT<CrcdorHa_SPEC>;
 
 impl NoBitfieldReg<CrcdorHa_SPEC> for CrcdorHa {}

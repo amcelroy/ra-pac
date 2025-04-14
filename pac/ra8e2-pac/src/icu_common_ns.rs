@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.00.01, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:19:56 +0000
+// Generated from SVD 1.00.01, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:22:53 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::IcuCommonNs {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "IRQ Control Register %s"]
+
     #[inline(always)]
     pub const fn irqcr(
         &self,
@@ -47,7 +47,6 @@ impl super::IcuCommonNs {
         }
     }
 
-    #[doc = "NMI Pin Interrupt Control Register"]
     #[inline(always)]
     pub const fn nmicr(&self) -> &'static crate::common::Reg<self::Nmicr_SPEC, crate::common::RW> {
         unsafe {
@@ -63,33 +62,83 @@ pub struct Irqcr_SPEC;
 impl crate::sealed::RegSpec for Irqcr_SPEC {
     type DataType = u8;
 }
-#[doc = "IRQ Control Register %s"]
+
 pub type Irqcr = crate::RegValueT<Irqcr_SPEC>;
 
 impl Irqcr {
-    #[doc = "IRQi Detection Sense Select"]
     #[inline(always)]
     pub fn irqmd(
         self,
-    ) -> crate::common::RegisterField<0, 0x3, 1, 0, irqcr::Irqmd, Irqcr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x3,1,0,irqcr::Irqmd, Irqcr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x3,
+        1,
+        0,
+        irqcr::Irqmd,
+        irqcr::Irqmd,
+        Irqcr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x3,
+            1,
+            0,
+            irqcr::Irqmd,
+            irqcr::Irqmd,
+            Irqcr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "IRQi Digital Filter Sampling Clock Select"]
+
     #[inline(always)]
     pub fn fclksel(
         self,
-    ) -> crate::common::RegisterField<4, 0x3, 1, 0, irqcr::Fclksel, Irqcr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<4,0x3,1,0,irqcr::Fclksel, Irqcr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        4,
+        0x3,
+        1,
+        0,
+        irqcr::Fclksel,
+        irqcr::Fclksel,
+        Irqcr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            4,
+            0x3,
+            1,
+            0,
+            irqcr::Fclksel,
+            irqcr::Fclksel,
+            Irqcr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "IRQi Digital Filter Enable"]
+
     #[inline(always)]
     pub fn flten(
         self,
-    ) -> crate::common::RegisterField<7, 0x1, 1, 0, irqcr::Flten, Irqcr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<7,0x1,1,0,irqcr::Flten, Irqcr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        7,
+        0x1,
+        1,
+        0,
+        irqcr::Flten,
+        irqcr::Flten,
+        Irqcr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            7,
+            0x1,
+            1,
+            0,
+            irqcr::Flten,
+            irqcr::Flten,
+            Irqcr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Irqcr {
@@ -104,35 +153,32 @@ pub mod irqcr {
     pub struct Irqmd_SPEC;
     pub type Irqmd = crate::EnumBitfieldStruct<u8, Irqmd_SPEC>;
     impl Irqmd {
-        #[doc = "Falling edge"]
         pub const _00: Self = Self::new(0);
-        #[doc = "Rising edge"]
+
         pub const _01: Self = Self::new(1);
-        #[doc = "Rising and falling edges"]
+
         pub const _10: Self = Self::new(2);
-        #[doc = "Low level"]
+
         pub const _11: Self = Self::new(3);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Fclksel_SPEC;
     pub type Fclksel = crate::EnumBitfieldStruct<u8, Fclksel_SPEC>;
     impl Fclksel {
-        #[doc = "PCLKB"]
         pub const _00: Self = Self::new(0);
-        #[doc = "PCLKB/8"]
+
         pub const _01: Self = Self::new(1);
-        #[doc = "PCLKB/32"]
+
         pub const _10: Self = Self::new(2);
-        #[doc = "PCLKB/64"]
+
         pub const _11: Self = Self::new(3);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Flten_SPEC;
     pub type Flten = crate::EnumBitfieldStruct<u8, Flten_SPEC>;
     impl Flten {
-        #[doc = "Digital filter is disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Digital filter is enabled."]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -142,33 +188,83 @@ pub struct Nmicr_SPEC;
 impl crate::sealed::RegSpec for Nmicr_SPEC {
     type DataType = u8;
 }
-#[doc = "NMI Pin Interrupt Control Register"]
+
 pub type Nmicr = crate::RegValueT<Nmicr_SPEC>;
 
 impl Nmicr {
-    #[doc = "NMI Detection Set"]
     #[inline(always)]
     pub fn nmimd(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, nmicr::Nmimd, Nmicr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,nmicr::Nmimd, Nmicr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        nmicr::Nmimd,
+        nmicr::Nmimd,
+        Nmicr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            nmicr::Nmimd,
+            nmicr::Nmimd,
+            Nmicr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "NMI Digital Filter Sampling Clock Select"]
+
     #[inline(always)]
     pub fn nfclksel(
         self,
-    ) -> crate::common::RegisterField<4, 0x3, 1, 0, nmicr::Nfclksel, Nmicr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<4,0x3,1,0,nmicr::Nfclksel, Nmicr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        4,
+        0x3,
+        1,
+        0,
+        nmicr::Nfclksel,
+        nmicr::Nfclksel,
+        Nmicr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            4,
+            0x3,
+            1,
+            0,
+            nmicr::Nfclksel,
+            nmicr::Nfclksel,
+            Nmicr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "NMI Digital Filter Enable"]
+
     #[inline(always)]
     pub fn nflten(
         self,
-    ) -> crate::common::RegisterField<7, 0x1, 1, 0, nmicr::Nflten, Nmicr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<7,0x1,1,0,nmicr::Nflten, Nmicr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        7,
+        0x1,
+        1,
+        0,
+        nmicr::Nflten,
+        nmicr::Nflten,
+        Nmicr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            7,
+            0x1,
+            1,
+            0,
+            nmicr::Nflten,
+            nmicr::Nflten,
+            Nmicr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Nmicr {
@@ -183,31 +279,28 @@ pub mod nmicr {
     pub struct Nmimd_SPEC;
     pub type Nmimd = crate::EnumBitfieldStruct<u8, Nmimd_SPEC>;
     impl Nmimd {
-        #[doc = "Falling edge"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Rising edge"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Nfclksel_SPEC;
     pub type Nfclksel = crate::EnumBitfieldStruct<u8, Nfclksel_SPEC>;
     impl Nfclksel {
-        #[doc = "PCLKB"]
         pub const _00: Self = Self::new(0);
-        #[doc = "PCLKB/8"]
+
         pub const _01: Self = Self::new(1);
-        #[doc = "PCLKB/32"]
+
         pub const _10: Self = Self::new(2);
-        #[doc = "PCLKB/64"]
+
         pub const _11: Self = Self::new(3);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Nflten_SPEC;
     pub type Nflten = crate::EnumBitfieldStruct<u8, Nflten_SPEC>;
     impl Nflten {
-        #[doc = "Disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Enabled"]
+
         pub const _1: Self = Self::new(1);
     }
 }

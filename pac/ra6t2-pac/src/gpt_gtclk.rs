@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.40.00, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:18:35 +0000
+// Generated from SVD 1.40.00, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:21:24 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::GptGtclk {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "General PWM Timer Clock Control Register"]
+
     #[inline(always)]
     pub const fn gtclkcr(
         &self,
@@ -51,17 +51,33 @@ pub struct Gtclkcr_SPEC;
 impl crate::sealed::RegSpec for Gtclkcr_SPEC {
     type DataType = u32;
 }
-#[doc = "General PWM Timer Clock Control Register"]
+
 pub type Gtclkcr = crate::RegValueT<Gtclkcr_SPEC>;
 
 impl Gtclkcr {
-    #[doc = "Synchronization Circuit Bypass Enable"]
     #[inline(always)]
     pub fn bpen(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, gtclkcr::Bpen, Gtclkcr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,gtclkcr::Bpen, Gtclkcr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        gtclkcr::Bpen,
+        gtclkcr::Bpen,
+        Gtclkcr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            gtclkcr::Bpen,
+            gtclkcr::Bpen,
+            Gtclkcr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Gtclkcr {
@@ -76,9 +92,8 @@ pub mod gtclkcr {
     pub struct Bpen_SPEC;
     pub type Bpen = crate::EnumBitfieldStruct<u8, Bpen_SPEC>;
     impl Bpen {
-        #[doc = "In case of using Bus Clock and GPT Core Clock asynchronously"]
         pub const _0: Self = Self::new(0);
-        #[doc = "In case of using Bus Clock and GPT Core Clock synchronously"]
+
         pub const _1: Self = Self::new(1);
     }
 }

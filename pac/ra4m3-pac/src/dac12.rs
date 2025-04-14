@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.40.00, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:16:18 +0000
+// Generated from SVD 1.40.00, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:18:50 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Dac12 {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "D/A Data Register %s"]
+
     #[inline(always)]
     pub const fn dadr(
         &self,
@@ -47,7 +47,6 @@ impl super::Dac12 {
         }
     }
 
-    #[doc = "D/A Control Register"]
     #[inline(always)]
     pub const fn dacr(&self) -> &'static crate::common::Reg<self::Dacr_SPEC, crate::common::RW> {
         unsafe {
@@ -57,7 +56,6 @@ impl super::Dac12 {
         }
     }
 
-    #[doc = "DADRn Format Select Register"]
     #[inline(always)]
     pub const fn dadpr(&self) -> &'static crate::common::Reg<self::Dadpr_SPEC, crate::common::RW> {
         unsafe {
@@ -67,7 +65,6 @@ impl super::Dac12 {
         }
     }
 
-    #[doc = "D/A A/D Synchronous Start Control Register"]
     #[inline(always)]
     pub const fn daadscr(
         &self,
@@ -79,7 +76,6 @@ impl super::Dac12 {
         }
     }
 
-    #[doc = "D/A Output Amplifier Control Register"]
     #[inline(always)]
     pub const fn daampcr(
         &self,
@@ -91,7 +87,6 @@ impl super::Dac12 {
         }
     }
 
-    #[doc = "D/A Amplifier Stabilization Wait Control Register"]
     #[inline(always)]
     pub const fn daaswcr(
         &self,
@@ -103,7 +98,6 @@ impl super::Dac12 {
         }
     }
 
-    #[doc = "D/A A/D Synchronous Unit Select Register"]
     #[inline(always)]
     pub const fn daadusr(
         &self,
@@ -121,7 +115,7 @@ pub struct Dadr_SPEC;
 impl crate::sealed::RegSpec for Dadr_SPEC {
     type DataType = u16;
 }
-#[doc = "D/A Data Register %s"]
+
 pub type Dadr = crate::RegValueT<Dadr_SPEC>;
 
 impl NoBitfieldReg<Dadr_SPEC> for Dadr {}
@@ -138,30 +132,83 @@ pub struct Dacr_SPEC;
 impl crate::sealed::RegSpec for Dacr_SPEC {
     type DataType = u8;
 }
-#[doc = "D/A Control Register"]
+
 pub type Dacr = crate::RegValueT<Dacr_SPEC>;
 
 impl Dacr {
-    #[doc = "D/A Enable"]
     #[inline(always)]
     pub fn dae(
         self,
-    ) -> crate::common::RegisterField<5, 0x1, 1, 0, dacr::Dae, Dacr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<5,0x1,1,0,dacr::Dae, Dacr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        5,
+        0x1,
+        1,
+        0,
+        dacr::Dae,
+        dacr::Dae,
+        Dacr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            5,
+            0x1,
+            1,
+            0,
+            dacr::Dae,
+            dacr::Dae,
+            Dacr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "D/A Output Enable 0"]
+
     #[inline(always)]
     pub fn daoe0(
         self,
-    ) -> crate::common::RegisterField<6, 0x1, 1, 0, dacr::Daoe0, Dacr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<6,0x1,1,0,dacr::Daoe0, Dacr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        6,
+        0x1,
+        1,
+        0,
+        dacr::Daoe0,
+        dacr::Daoe0,
+        Dacr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            6,
+            0x1,
+            1,
+            0,
+            dacr::Daoe0,
+            dacr::Daoe0,
+            Dacr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "D/A Output Enable 1"]
+
     #[inline(always)]
     pub fn daoe1(
         self,
-    ) -> crate::common::RegisterField<7, 0x1, 1, 0, dacr::Daoe1, Dacr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<7,0x1,1,0,dacr::Daoe1, Dacr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        7,
+        0x1,
+        1,
+        0,
+        dacr::Daoe1,
+        dacr::Daoe1,
+        Dacr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            7,
+            0x1,
+            1,
+            0,
+            dacr::Daoe1,
+            dacr::Daoe1,
+            Dacr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Dacr {
@@ -176,27 +223,24 @@ pub mod dacr {
     pub struct Dae_SPEC;
     pub type Dae = crate::EnumBitfieldStruct<u8, Dae_SPEC>;
     impl Dae {
-        #[doc = "Control D/A conversion of channels 0 and 1 individually"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Control D/A conversion of channels 0 and 1 collectively"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Daoe0_SPEC;
     pub type Daoe0 = crate::EnumBitfieldStruct<u8, Daoe0_SPEC>;
     impl Daoe0 {
-        #[doc = "Disable D/A conversion and analog output of channel 0 (DA0)"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Enable D/A conversion and analog output of channel 0 (DA0)"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Daoe1_SPEC;
     pub type Daoe1 = crate::EnumBitfieldStruct<u8, Daoe1_SPEC>;
     impl Daoe1 {
-        #[doc = "Disable D/A conversion and analog output of channel 1 (DA1)"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Enable D/A conversion and analog output of channel 1 (DA1)"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -206,17 +250,33 @@ pub struct Dadpr_SPEC;
 impl crate::sealed::RegSpec for Dadpr_SPEC {
     type DataType = u8;
 }
-#[doc = "DADRn Format Select Register"]
+
 pub type Dadpr = crate::RegValueT<Dadpr_SPEC>;
 
 impl Dadpr {
-    #[doc = "DADRn Format Select"]
     #[inline(always)]
     pub fn dpsel(
         self,
-    ) -> crate::common::RegisterField<7, 0x1, 1, 0, dadpr::Dpsel, Dadpr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<7,0x1,1,0,dadpr::Dpsel, Dadpr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        7,
+        0x1,
+        1,
+        0,
+        dadpr::Dpsel,
+        dadpr::Dpsel,
+        Dadpr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            7,
+            0x1,
+            1,
+            0,
+            dadpr::Dpsel,
+            dadpr::Dpsel,
+            Dadpr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Dadpr {
@@ -231,9 +291,8 @@ pub mod dadpr {
     pub struct Dpsel_SPEC;
     pub type Dpsel = crate::EnumBitfieldStruct<u8, Dpsel_SPEC>;
     impl Dpsel {
-        #[doc = "Right-justified format"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Left-justified format"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -243,17 +302,33 @@ pub struct Daadscr_SPEC;
 impl crate::sealed::RegSpec for Daadscr_SPEC {
     type DataType = u8;
 }
-#[doc = "D/A A/D Synchronous Start Control Register"]
+
 pub type Daadscr = crate::RegValueT<Daadscr_SPEC>;
 
 impl Daadscr {
-    #[doc = "D/A A/D Synchronous Conversion"]
     #[inline(always)]
     pub fn daadst(
         self,
-    ) -> crate::common::RegisterField<7, 0x1, 1, 0, daadscr::Daadst, Daadscr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<7,0x1,1,0,daadscr::Daadst, Daadscr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        7,
+        0x1,
+        1,
+        0,
+        daadscr::Daadst,
+        daadscr::Daadst,
+        Daadscr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            7,
+            0x1,
+            1,
+            0,
+            daadscr::Daadst,
+            daadscr::Daadst,
+            Daadscr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Daadscr {
@@ -268,9 +343,8 @@ pub mod daadscr {
     pub struct Daadst_SPEC;
     pub type Daadst = crate::EnumBitfieldStruct<u8, Daadst_SPEC>;
     impl Daadst {
-        #[doc = "Do not synchronize DAC12 with ADC12 (unit 1) operation (disable interference reduction between D/A and A/D conversion)."]
         pub const _0: Self = Self::new(0);
-        #[doc = "Synchronize DAC12 with ADC12 (unit 1) operation (enable interference reduction between D/A and A/D conversion)."]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -280,25 +354,58 @@ pub struct Daampcr_SPEC;
 impl crate::sealed::RegSpec for Daampcr_SPEC {
     type DataType = u8;
 }
-#[doc = "D/A Output Amplifier Control Register"]
+
 pub type Daampcr = crate::RegValueT<Daampcr_SPEC>;
 
 impl Daampcr {
-    #[doc = "Amplifier Control 0"]
     #[inline(always)]
     pub fn daamp0(
         self,
-    ) -> crate::common::RegisterField<6, 0x1, 1, 0, daampcr::Daamp0, Daampcr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<6,0x1,1,0,daampcr::Daamp0, Daampcr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        6,
+        0x1,
+        1,
+        0,
+        daampcr::Daamp0,
+        daampcr::Daamp0,
+        Daampcr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            6,
+            0x1,
+            1,
+            0,
+            daampcr::Daamp0,
+            daampcr::Daamp0,
+            Daampcr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Amplifier Control 1"]
+
     #[inline(always)]
     pub fn daamp1(
         self,
-    ) -> crate::common::RegisterField<7, 0x1, 1, 0, daampcr::Daamp1, Daampcr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<7,0x1,1,0,daampcr::Daamp1, Daampcr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        7,
+        0x1,
+        1,
+        0,
+        daampcr::Daamp1,
+        daampcr::Daamp1,
+        Daampcr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            7,
+            0x1,
+            1,
+            0,
+            daampcr::Daamp1,
+            daampcr::Daamp1,
+            Daampcr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Daampcr {
@@ -313,18 +420,16 @@ pub mod daampcr {
     pub struct Daamp0_SPEC;
     pub type Daamp0 = crate::EnumBitfieldStruct<u8, Daamp0_SPEC>;
     impl Daamp0 {
-        #[doc = "Do not use channel 0 output amplifier"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Use channel 0 output amplifier"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Daamp1_SPEC;
     pub type Daamp1 = crate::EnumBitfieldStruct<u8, Daamp1_SPEC>;
     impl Daamp1 {
-        #[doc = "Do not use channel 1 output amplifier"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Use channel 1 output amplifier"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -334,25 +439,58 @@ pub struct Daaswcr_SPEC;
 impl crate::sealed::RegSpec for Daaswcr_SPEC {
     type DataType = u8;
 }
-#[doc = "D/A Amplifier Stabilization Wait Control Register"]
+
 pub type Daaswcr = crate::RegValueT<Daaswcr_SPEC>;
 
 impl Daaswcr {
-    #[doc = "D/A Amplifier Stabilization Wait 0"]
     #[inline(always)]
     pub fn daasw0(
         self,
-    ) -> crate::common::RegisterField<6, 0x1, 1, 0, daaswcr::Daasw0, Daaswcr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<6,0x1,1,0,daaswcr::Daasw0, Daaswcr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        6,
+        0x1,
+        1,
+        0,
+        daaswcr::Daasw0,
+        daaswcr::Daasw0,
+        Daaswcr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            6,
+            0x1,
+            1,
+            0,
+            daaswcr::Daasw0,
+            daaswcr::Daasw0,
+            Daaswcr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "D/A Amplifier Stabilization Wait 1"]
+
     #[inline(always)]
     pub fn daasw1(
         self,
-    ) -> crate::common::RegisterField<7, 0x1, 1, 0, daaswcr::Daasw1, Daaswcr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<7,0x1,1,0,daaswcr::Daasw1, Daaswcr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        7,
+        0x1,
+        1,
+        0,
+        daaswcr::Daasw1,
+        daaswcr::Daasw1,
+        Daaswcr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            7,
+            0x1,
+            1,
+            0,
+            daaswcr::Daasw1,
+            daaswcr::Daasw1,
+            Daaswcr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Daaswcr {
@@ -367,18 +505,16 @@ pub mod daaswcr {
     pub struct Daasw0_SPEC;
     pub type Daasw0 = crate::EnumBitfieldStruct<u8, Daasw0_SPEC>;
     impl Daasw0 {
-        #[doc = "Amplifier stabilization wait off (output) for channel 0"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Amplifier stabilization wait on (high-Z) for channel 0"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Daasw1_SPEC;
     pub type Daasw1 = crate::EnumBitfieldStruct<u8, Daasw1_SPEC>;
     impl Daasw1 {
-        #[doc = "Amplifier stabilization wait off (output) for channel 1"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Amplifier stabilization wait on (high-Z) for channel 1"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -388,11 +524,10 @@ pub struct Daadusr_SPEC;
 impl crate::sealed::RegSpec for Daadusr_SPEC {
     type DataType = u8;
 }
-#[doc = "D/A A/D Synchronous Unit Select Register"]
+
 pub type Daadusr = crate::RegValueT<Daadusr_SPEC>;
 
 impl Daadusr {
-    #[doc = "A/D Unit 1 Select"]
     #[inline(always)]
     pub fn amadsel1(
         self,
@@ -402,6 +537,7 @@ impl Daadusr {
         1,
         0,
         daadusr::Amadsel1,
+        daadusr::Amadsel1,
         Daadusr_SPEC,
         crate::common::RW,
     > {
@@ -410,6 +546,7 @@ impl Daadusr {
             0x1,
             1,
             0,
+            daadusr::Amadsel1,
             daadusr::Amadsel1,
             Daadusr_SPEC,
             crate::common::RW,
@@ -428,9 +565,8 @@ pub mod daadusr {
     pub struct Amadsel1_SPEC;
     pub type Amadsel1 = crate::EnumBitfieldStruct<u8, Amadsel1_SPEC>;
     impl Amadsel1 {
-        #[doc = "Do not select unit 1"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Select unit 1"]
+
         pub const _1: Self = Self::new(1);
     }
 }

@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.1, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:14:39 +0000
+// Generated from SVD 1.1, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:16:53 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Fcache {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "Flash Cache Enable Register"]
+
     #[inline(always)]
     pub const fn fcachee(
         &self,
@@ -45,7 +45,6 @@ impl super::Fcache {
         }
     }
 
-    #[doc = "Flash Cache Invalidate Register"]
     #[inline(always)]
     pub const fn fcacheiv(
         &self,
@@ -63,18 +62,18 @@ pub struct Fcachee_SPEC;
 impl crate::sealed::RegSpec for Fcachee_SPEC {
     type DataType = u16;
 }
-#[doc = "Flash Cache Enable Register"]
+
 pub type Fcachee = crate::RegValueT<Fcachee_SPEC>;
 
 impl Fcachee {
-    #[doc = "These bits are read as 000000000000000. The write value should be 000000000000000."]
     #[inline(always)]
     pub fn reserved(
         self,
-    ) -> crate::common::RegisterField<1, 0x7fff, 1, 0, u16, Fcachee_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<1,0x7fff,1,0,u16, Fcachee_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<1, 0x7fff, 1, 0, u16, u16, Fcachee_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<1,0x7fff,1,0,u16,u16,Fcachee_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "FCACHE Enable"]
+
     #[inline(always)]
     pub fn fcacheen(
         self,
@@ -84,6 +83,7 @@ impl Fcachee {
         1,
         0,
         fcachee::Fcacheen,
+        fcachee::Fcacheen,
         Fcachee_SPEC,
         crate::common::RW,
     > {
@@ -92,6 +92,7 @@ impl Fcachee {
             0x1,
             1,
             0,
+            fcachee::Fcacheen,
             fcachee::Fcacheen,
             Fcachee_SPEC,
             crate::common::RW,
@@ -110,9 +111,8 @@ pub mod fcachee {
     pub struct Fcacheen_SPEC;
     pub type Fcacheen = crate::EnumBitfieldStruct<u8, Fcacheen_SPEC>;
     impl Fcacheen {
-        #[doc = "FCACHE is disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "FCACHE is enabled"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -122,18 +122,18 @@ pub struct Fcacheiv_SPEC;
 impl crate::sealed::RegSpec for Fcacheiv_SPEC {
     type DataType = u16;
 }
-#[doc = "Flash Cache Invalidate Register"]
+
 pub type Fcacheiv = crate::RegValueT<Fcacheiv_SPEC>;
 
 impl Fcacheiv {
-    #[doc = "These bits are read as 000000000000000. The write value should be 000000000000000."]
     #[inline(always)]
     pub fn reserved(
         self,
-    ) -> crate::common::RegisterField<1, 0x7fff, 1, 0, u16, Fcacheiv_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<1,0x7fff,1,0,u16, Fcacheiv_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<1, 0x7fff, 1, 0, u16, u16, Fcacheiv_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<1,0x7fff,1,0,u16,u16,Fcacheiv_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "FCACHE Invalidation"]
+
     #[inline(always)]
     pub fn fcacheiv(
         self,
@@ -143,6 +143,7 @@ impl Fcacheiv {
         1,
         0,
         fcacheiv::Fcacheiv,
+        fcacheiv::Fcacheiv,
         Fcacheiv_SPEC,
         crate::common::RW,
     > {
@@ -151,6 +152,7 @@ impl Fcacheiv {
             0x1,
             1,
             0,
+            fcacheiv::Fcacheiv,
             fcacheiv::Fcacheiv,
             Fcacheiv_SPEC,
             crate::common::RW,
@@ -169,9 +171,8 @@ pub mod fcacheiv {
     pub struct Fcacheiv_SPEC;
     pub type Fcacheiv = crate::EnumBitfieldStruct<u8, Fcacheiv_SPEC>;
     impl Fcacheiv {
-        #[doc = "(Read)not in progress / (Write) no effect."]
         pub const _0: Self = Self::new(0);
-        #[doc = "(Read)in progress /(Write)  Starting Cache Invalidation"]
+
         pub const _1: Self = Self::new(1);
     }
 }

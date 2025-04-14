@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.40.00, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:15:03 +0000
+// Generated from SVD 1.40.00, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:17:21 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Dtc {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "DTC Control Register"]
+
     #[inline(always)]
     pub const fn dtccr(&self) -> &'static crate::common::Reg<self::Dtccr_SPEC, crate::common::RW> {
         unsafe {
@@ -43,7 +43,6 @@ impl super::Dtc {
         }
     }
 
-    #[doc = "DTC Vector Base Register"]
     #[inline(always)]
     pub const fn dtcvbr(
         &self,
@@ -55,7 +54,6 @@ impl super::Dtc {
         }
     }
 
-    #[doc = "DTC Module Start Register"]
     #[inline(always)]
     pub const fn dtcst(&self) -> &'static crate::common::Reg<self::Dtcst_SPEC, crate::common::RW> {
         unsafe {
@@ -65,7 +63,6 @@ impl super::Dtc {
         }
     }
 
-    #[doc = "DTC Status Register"]
     #[inline(always)]
     pub const fn dtcsts(&self) -> &'static crate::common::Reg<self::Dtcsts_SPEC, crate::common::R> {
         unsafe {
@@ -81,16 +78,33 @@ pub struct Dtccr_SPEC;
 impl crate::sealed::RegSpec for Dtccr_SPEC {
     type DataType = u8;
 }
-#[doc = "DTC Control Register"]
+
 pub type Dtccr = crate::RegValueT<Dtccr_SPEC>;
 
 impl Dtccr {
-    #[doc = "DTC Transfer Information Read Skip Enable"]
     #[inline(always)]
     pub fn rrs(
         self,
-    ) -> crate::common::RegisterField<4, 0x1, 1, 0, dtccr::Rrs, Dtccr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<4,0x1,1,0,dtccr::Rrs, Dtccr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        4,
+        0x1,
+        1,
+        0,
+        dtccr::Rrs,
+        dtccr::Rrs,
+        Dtccr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            4,
+            0x1,
+            1,
+            0,
+            dtccr::Rrs,
+            dtccr::Rrs,
+            Dtccr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Dtccr {
@@ -105,9 +119,8 @@ pub mod dtccr {
     pub struct Rrs_SPEC;
     pub type Rrs = crate::EnumBitfieldStruct<u8, Rrs_SPEC>;
     impl Rrs {
-        #[doc = "Transfer information read is not skipped"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Transfer information read is skipped when vector numbers match"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -117,7 +130,7 @@ pub struct Dtcvbr_SPEC;
 impl crate::sealed::RegSpec for Dtcvbr_SPEC {
     type DataType = u32;
 }
-#[doc = "DTC Vector Base Register"]
+
 pub type Dtcvbr = crate::RegValueT<Dtcvbr_SPEC>;
 
 impl NoBitfieldReg<Dtcvbr_SPEC> for Dtcvbr {}
@@ -134,17 +147,33 @@ pub struct Dtcst_SPEC;
 impl crate::sealed::RegSpec for Dtcst_SPEC {
     type DataType = u8;
 }
-#[doc = "DTC Module Start Register"]
+
 pub type Dtcst = crate::RegValueT<Dtcst_SPEC>;
 
 impl Dtcst {
-    #[doc = "DTC Module Start"]
     #[inline(always)]
     pub fn dtcst(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, dtcst::Dtcst, Dtcst_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,dtcst::Dtcst, Dtcst_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        dtcst::Dtcst,
+        dtcst::Dtcst,
+        Dtcst_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            dtcst::Dtcst,
+            dtcst::Dtcst,
+            Dtcst_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Dtcst {
@@ -159,9 +188,8 @@ pub mod dtcst {
     pub struct Dtcst_SPEC;
     pub type Dtcst = crate::EnumBitfieldStruct<u8, Dtcst_SPEC>;
     impl Dtcst {
-        #[doc = "DTC module stopped."]
         pub const _0: Self = Self::new(0);
-        #[doc = "DTC module started."]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -171,24 +199,40 @@ pub struct Dtcsts_SPEC;
 impl crate::sealed::RegSpec for Dtcsts_SPEC {
     type DataType = u16;
 }
-#[doc = "DTC Status Register"]
+
 pub type Dtcsts = crate::RegValueT<Dtcsts_SPEC>;
 
 impl Dtcsts {
-    #[doc = "DTC-Activating Vector Number Monitoring"]
     #[inline(always)]
     pub fn vecn(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Dtcsts_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Dtcsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Dtcsts_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Dtcsts_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "DTC Active Flag"]
+
     #[inline(always)]
     pub fn act(
         self,
-    ) -> crate::common::RegisterField<15, 0x1, 1, 0, dtcsts::Act, Dtcsts_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<15,0x1,1,0,dtcsts::Act, Dtcsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        15,
+        0x1,
+        1,
+        0,
+        dtcsts::Act,
+        dtcsts::Act,
+        Dtcsts_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            15,
+            0x1,
+            1,
+            0,
+            dtcsts::Act,
+            dtcsts::Act,
+            Dtcsts_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Dtcsts {
@@ -203,9 +247,8 @@ pub mod dtcsts {
     pub struct Act_SPEC;
     pub type Act = crate::EnumBitfieldStruct<u8, Act_SPEC>;
     impl Act {
-        #[doc = "DTC transfer operation is not in progress."]
         pub const _0: Self = Self::new(0);
-        #[doc = "DTC transfer operation is in progress."]
+
         pub const _1: Self = Self::new(1);
     }
 }

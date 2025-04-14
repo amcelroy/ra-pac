@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.2, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:19:02 +0000
+// Generated from SVD 1.2, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:21:54 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Tsd {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "Temperature Sensor Calibration Data Register"]
+
     #[inline(always)]
     pub const fn tscdr(&self) -> &'static crate::common::Reg<self::Tscdr_SPEC, crate::common::R> {
         unsafe {
@@ -49,23 +49,23 @@ pub struct Tscdr_SPEC;
 impl crate::sealed::RegSpec for Tscdr_SPEC {
     type DataType = u32;
 }
-#[doc = "Temperature Sensor Calibration Data Register"]
+
 pub type Tscdr = crate::RegValueT<Tscdr_SPEC>;
 
 impl Tscdr {
-    #[doc = "Temperature sensor calibration data is a digital value obtained using the 12-bit A/D converter unit 0 to convert the voltage output by the temperature sensor under the condition Ta = Tj = 127°C and AVCC0 = 3.3 V."]
     #[inline(always)]
     pub fn tscd(
         self,
-    ) -> crate::common::RegisterField<0, 0xfff, 1, 0, u16, Tscdr_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xfff,1,0,u16, Tscdr_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xfff, 1, 0, u16, u16, Tscdr_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xfff,1,0,u16,u16,Tscdr_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "These bits are read as 00000000000000000000."]
+
     #[inline(always)]
     pub fn reserved(
         self,
-    ) -> crate::common::RegisterField<12, 0xfffff, 1, 0, u32, Tscdr_SPEC, crate::common::R> {
-        crate::common::RegisterField::<12,0xfffff,1,0,u32, Tscdr_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<12, 0xfffff, 1, 0, u32, u32, Tscdr_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<12,0xfffff,1,0,u32,u32,Tscdr_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Tscdr {

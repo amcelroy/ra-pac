@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.20.00, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:16:31 +0000
+// Generated from SVD 1.20.00, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:19:04 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::CanfdB {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "Channel 0 Nominal Bitrate Configuration Register"]
+
     #[inline(always)]
     pub const fn cfdc0ncfg(
         &self,
@@ -45,7 +45,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Channel 0 Control Register"]
     #[inline(always)]
     pub const fn cfdc0ctr(
         &self,
@@ -57,7 +56,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Channel 0 Status Register"]
     #[inline(always)]
     pub const fn cfdc0sts(
         &self,
@@ -69,7 +67,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Channel 0 Error Flag Register"]
     #[inline(always)]
     pub const fn cfdc0erfl(
         &self,
@@ -81,7 +78,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Global Configuration Register"]
     #[inline(always)]
     pub const fn cfdgcfg(
         &self,
@@ -93,7 +89,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Global Control Register"]
     #[inline(always)]
     pub const fn cfdgctr(
         &self,
@@ -105,7 +100,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Global Status Register"]
     #[inline(always)]
     pub const fn cfdgsts(
         &self,
@@ -117,7 +111,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Global Error Flag Register"]
     #[inline(always)]
     pub const fn cfdgerfl(
         &self,
@@ -129,7 +122,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Global Timestamp Counter Register"]
     #[inline(always)]
     pub const fn cfdgtsc(
         &self,
@@ -141,7 +133,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Global Acceptance Filter List Entry Control Register"]
     #[inline(always)]
     pub const fn cfdgaflectr(
         &self,
@@ -153,7 +144,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Global Acceptance Filter List Configuration Register"]
     #[inline(always)]
     pub const fn cfdgaflcfg(
         &self,
@@ -165,7 +155,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer Number Register"]
     #[inline(always)]
     pub const fn cfdrmnb(
         &self,
@@ -177,7 +166,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer New Data Register"]
     #[inline(always)]
     pub const fn cfdrmnd(
         &self,
@@ -189,7 +177,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer Interrupt Enable Configuration Register"]
     #[inline(always)]
     pub const fn cfdrmiec(
         &self,
@@ -201,7 +188,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Configuration/Control Registers %s"]
     #[inline(always)]
     pub const fn cfdrfcc(
         &self,
@@ -215,7 +201,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Status Registers %s"]
     #[inline(always)]
     pub const fn cfdrfsts(
         &self,
@@ -229,7 +214,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Pointer Control Registers %s"]
     #[inline(always)]
     pub const fn cfdrfpctr(
         &self,
@@ -243,7 +227,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Common FIFO Configuration/Control Register"]
     #[inline(always)]
     pub const fn cfdcfcc(
         &self,
@@ -255,7 +238,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Common FIFO Status Register"]
     #[inline(always)]
     pub const fn cfdcfsts(
         &self,
@@ -267,7 +249,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Common FIFO Pointer Control Register"]
     #[inline(always)]
     pub const fn cfdcfpctr(
         &self,
@@ -279,7 +260,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "FIFO Empty Status Register"]
     #[inline(always)]
     pub const fn cfdfests(
         &self,
@@ -291,7 +271,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "FIFO Full Status Register"]
     #[inline(always)]
     pub const fn cfdffsts(
         &self,
@@ -303,7 +282,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "FIFO Message Lost Status Register"]
     #[inline(always)]
     pub const fn cfdfmsts(
         &self,
@@ -315,7 +293,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Interrupt Flag Status Register"]
     #[inline(always)]
     pub const fn cfdrfists(
         &self,
@@ -327,7 +304,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Control Registers %s"]
     #[inline(always)]
     pub const fn cfdtmc(
         &self,
@@ -341,7 +317,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Status Registers %s"]
     #[inline(always)]
     pub const fn cfdtmsts(
         &self,
@@ -355,7 +330,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Transmission Request Status Register"]
     #[inline(always)]
     pub const fn cfdtmtrsts(
         &self,
@@ -367,7 +341,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Transmission Abort Request Status Register"]
     #[inline(always)]
     pub const fn cfdtmtarsts(
         &self,
@@ -379,7 +352,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Transmission Completion Status Register"]
     #[inline(always)]
     pub const fn cfdtmtcsts(
         &self,
@@ -391,7 +363,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Transmission Abort Status Register"]
     #[inline(always)]
     pub const fn cfdtmtasts(
         &self,
@@ -403,7 +374,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Interrupt Enable Configuration Register"]
     #[inline(always)]
     pub const fn cfdtmiec(
         &self,
@@ -415,7 +385,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Queue Configuration/Control Register"]
     #[inline(always)]
     pub const fn cfdtxqcc(
         &self,
@@ -427,7 +396,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Queue Status Register"]
     #[inline(always)]
     pub const fn cfdtxqsts(
         &self,
@@ -439,7 +407,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Queue Pointer Control Register"]
     #[inline(always)]
     pub const fn cfdtxqpctr(
         &self,
@@ -451,7 +418,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX History List Configuration/Control Register"]
     #[inline(always)]
     pub const fn cfdthlcc(
         &self,
@@ -463,7 +429,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX History List Status Register"]
     #[inline(always)]
     pub const fn cfdthlsts(
         &self,
@@ -475,7 +440,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX History List Pointer Control Register"]
     #[inline(always)]
     pub const fn cfdthlpctr(
         &self,
@@ -487,7 +451,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Global TX Interrupt Status Register"]
     #[inline(always)]
     pub const fn cfdgtintsts(
         &self,
@@ -499,7 +462,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Global Test Configuration Register"]
     #[inline(always)]
     pub const fn cfdgtstcfg(
         &self,
@@ -511,7 +473,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Global Test Control Register"]
     #[inline(always)]
     pub const fn cfdgtstctr(
         &self,
@@ -523,7 +484,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Global FD Configuration Register"]
     #[inline(always)]
     pub const fn cfdgfdcfg(
         &self,
@@ -535,7 +495,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Global Lock Key Register"]
     #[inline(always)]
     pub const fn cfdglockk(
         &self,
@@ -547,7 +506,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Global AFL Ignore Entry Register"]
     #[inline(always)]
     pub const fn cfdgaflignent(
         &self,
@@ -559,7 +517,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Global AFL Ignore Control Register"]
     #[inline(always)]
     pub const fn cfdgaflignctr(
         &self,
@@ -571,7 +528,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "DMA Transfer Control Register"]
     #[inline(always)]
     pub const fn cfdcdtct(
         &self,
@@ -583,7 +539,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "DMA Transfer Status Register"]
     #[inline(always)]
     pub const fn cfdcdtsts(
         &self,
@@ -595,7 +550,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Global SW reset Register"]
     #[inline(always)]
     pub const fn cfdgrstc(
         &self,
@@ -607,7 +561,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Channel 0 Data Bitrate Configuration Register"]
     #[inline(always)]
     pub const fn cfdc0dcfg(
         &self,
@@ -619,7 +572,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Channel 0 CANFD Configuration Register"]
     #[inline(always)]
     pub const fn cfdc0fdcfg(
         &self,
@@ -631,7 +583,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Channel 0 CANFD Control Register"]
     #[inline(always)]
     pub const fn cfdc0fdctr(
         &self,
@@ -643,7 +594,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Channel 0 CANFD Status Register"]
     #[inline(always)]
     pub const fn cfdc0fdsts(
         &self,
@@ -655,7 +605,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Channel 0 CANFD CRC Register"]
     #[inline(always)]
     pub const fn cfdc0fdcrc(
         &self,
@@ -667,7 +616,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Global Acceptance Filter List ID Registers"]
     #[inline(always)]
     pub const fn cfdgaflid(
         &self,
@@ -681,7 +629,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Global Acceptance Filter List Mask Registers"]
     #[inline(always)]
     pub const fn cfdgaflm(
         &self,
@@ -695,7 +642,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Global Acceptance Filter List Pointer 0 Registers"]
     #[inline(always)]
     pub const fn cfdgaflp0(
         &self,
@@ -709,7 +655,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Global Acceptance Filter List Pointer 1 Registers"]
     #[inline(always)]
     pub const fn cfdgaflp1(
         &self,
@@ -723,7 +668,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RAM Test Page Access Registers %s"]
     #[inline(always)]
     pub const fn cfdrpgacc(
         &self,
@@ -737,7 +681,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Access ID Register %s"]
     #[inline(always)]
     pub const fn cfdrfid(
         &self,
@@ -751,7 +694,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Access Pointer Register %s"]
     #[inline(always)]
     pub const fn cfdrfptr(
         &self,
@@ -765,7 +707,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Access CANFD Status Register %s"]
     #[inline(always)]
     pub const fn cfdrffdsts(
         &self,
@@ -779,7 +720,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Access Data Field 0 Register %s"]
     #[inline(always)]
     pub const fn cfdrfdf_0(
         &self,
@@ -793,7 +733,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Access Data Field 1 Register %s"]
     #[inline(always)]
     pub const fn cfdrfdf_1(
         &self,
@@ -807,7 +746,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Access Data Field 2 Register %s"]
     #[inline(always)]
     pub const fn cfdrfdf_2(
         &self,
@@ -821,7 +759,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Access Data Field 3 Register %s"]
     #[inline(always)]
     pub const fn cfdrfdf_3(
         &self,
@@ -835,7 +772,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Access Data Field 4 Register %s"]
     #[inline(always)]
     pub const fn cfdrfdf_4(
         &self,
@@ -849,7 +785,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Access Data Field 5 Register %s"]
     #[inline(always)]
     pub const fn cfdrfdf_5(
         &self,
@@ -863,7 +798,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Access Data Field 6 Register %s"]
     #[inline(always)]
     pub const fn cfdrfdf_6(
         &self,
@@ -877,7 +811,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Access Data Field 7 Register %s"]
     #[inline(always)]
     pub const fn cfdrfdf_7(
         &self,
@@ -891,7 +824,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Access Data Field 8 Register %s"]
     #[inline(always)]
     pub const fn cfdrfdf_8(
         &self,
@@ -905,7 +837,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Access Data Field 9 Register %s"]
     #[inline(always)]
     pub const fn cfdrfdf_9(
         &self,
@@ -919,7 +850,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Access Data Field 10 Register %s"]
     #[inline(always)]
     pub const fn cfdrfdf_10(
         &self,
@@ -933,7 +863,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Access Data Field 11 Register %s"]
     #[inline(always)]
     pub const fn cfdrfdf_11(
         &self,
@@ -947,7 +876,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Access Data Field 12 Register %s"]
     #[inline(always)]
     pub const fn cfdrfdf_12(
         &self,
@@ -961,7 +889,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Access Data Field 13 Register %s"]
     #[inline(always)]
     pub const fn cfdrfdf_13(
         &self,
@@ -975,7 +902,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Access Data Field 14 Register %s"]
     #[inline(always)]
     pub const fn cfdrfdf_14(
         &self,
@@ -989,7 +915,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX FIFO Access Data Field 15 Register %s"]
     #[inline(always)]
     pub const fn cfdrfdf_15(
         &self,
@@ -1003,7 +928,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Common FIFO Access ID Register"]
     #[inline(always)]
     pub const fn cfdcfid(
         &self,
@@ -1015,7 +939,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Common FIFO Access Pointer Register"]
     #[inline(always)]
     pub const fn cfdcfptr(
         &self,
@@ -1027,7 +950,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Common FIFO Access CANFD Control/Status Register"]
     #[inline(always)]
     pub const fn cfdcffdcsts(
         &self,
@@ -1039,7 +961,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "Common FIFO Access Data Field %s Registers"]
     #[inline(always)]
     pub const fn cfdcfdf(
         &self,
@@ -1053,7 +974,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer ID Registers"]
     #[inline(always)]
     pub const fn cfdtmid(
         &self,
@@ -1067,7 +987,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Pointer Register"]
     #[inline(always)]
     pub const fn cfdtmptr(
         &self,
@@ -1081,7 +1000,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer CANFD Control Register"]
     #[inline(always)]
     pub const fn cfdtmfdctr(
         &self,
@@ -1095,7 +1013,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Data Field Register"]
     #[inline(always)]
     pub const fn cfdtmdf_0(
         &self,
@@ -1109,7 +1026,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Data Field Register"]
     #[inline(always)]
     pub const fn cfdtmdf_1(
         &self,
@@ -1123,7 +1039,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Data Field Register"]
     #[inline(always)]
     pub const fn cfdtmdf_2(
         &self,
@@ -1137,7 +1052,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Data Field Register"]
     #[inline(always)]
     pub const fn cfdtmdf_3(
         &self,
@@ -1151,7 +1065,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Data Field Register"]
     #[inline(always)]
     pub const fn cfdtmdf_4(
         &self,
@@ -1165,7 +1078,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Data Field Register"]
     #[inline(always)]
     pub const fn cfdtmdf_5(
         &self,
@@ -1179,7 +1091,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Data Field Register"]
     #[inline(always)]
     pub const fn cfdtmdf_6(
         &self,
@@ -1193,7 +1104,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Data Field Register"]
     #[inline(always)]
     pub const fn cfdtmdf_7(
         &self,
@@ -1207,7 +1117,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Data Field Register"]
     #[inline(always)]
     pub const fn cfdtmdf_8(
         &self,
@@ -1221,7 +1130,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Data Field Register"]
     #[inline(always)]
     pub const fn cfdtmdf_9(
         &self,
@@ -1235,7 +1143,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Data Field Register"]
     #[inline(always)]
     pub const fn cfdtmdf_10(
         &self,
@@ -1249,7 +1156,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Data Field Register"]
     #[inline(always)]
     pub const fn cfdtmdf_11(
         &self,
@@ -1263,7 +1169,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Data Field Register"]
     #[inline(always)]
     pub const fn cfdtmdf_12(
         &self,
@@ -1277,7 +1182,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Data Field Register"]
     #[inline(always)]
     pub const fn cfdtmdf_13(
         &self,
@@ -1291,7 +1195,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Data Field Register"]
     #[inline(always)]
     pub const fn cfdtmdf_14(
         &self,
@@ -1305,7 +1208,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX Message Buffer Data Field Register"]
     #[inline(always)]
     pub const fn cfdtmdf_15(
         &self,
@@ -1319,7 +1221,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX History List Access Register 0"]
     #[inline(always)]
     pub const fn cfdthlacc0(
         &self,
@@ -1331,7 +1232,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "TX History List Access Register 1"]
     #[inline(always)]
     pub const fn cfdthlacc1(
         &self,
@@ -1343,7 +1243,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer ID Registers"]
     #[inline(always)]
     pub const fn cfdrmid(
         &self,
@@ -1357,7 +1256,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer Pointer Registers"]
     #[inline(always)]
     pub const fn cfdrmptr(
         &self,
@@ -1371,7 +1269,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer CANFD Status Registers"]
     #[inline(always)]
     pub const fn cfdrmfdsts(
         &self,
@@ -1385,7 +1282,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer Data Field 0 Registers"]
     #[inline(always)]
     pub const fn cfdrmdf_0(
         &self,
@@ -1399,7 +1295,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer Data Field 1 Registers"]
     #[inline(always)]
     pub const fn cfdrmdf_1(
         &self,
@@ -1413,7 +1308,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer Data Field 2 Registers"]
     #[inline(always)]
     pub const fn cfdrmdf_2(
         &self,
@@ -1427,7 +1321,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer Data Field 3 Registers"]
     #[inline(always)]
     pub const fn cfdrmdf_3(
         &self,
@@ -1441,7 +1334,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer Data Field 4 Registers"]
     #[inline(always)]
     pub const fn cfdrmdf_4(
         &self,
@@ -1455,7 +1347,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer Data Field 5 Registers"]
     #[inline(always)]
     pub const fn cfdrmdf_5(
         &self,
@@ -1469,7 +1360,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer Data Field 6 Registers"]
     #[inline(always)]
     pub const fn cfdrmdf_6(
         &self,
@@ -1483,7 +1373,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer Data Field 7 Registers"]
     #[inline(always)]
     pub const fn cfdrmdf_7(
         &self,
@@ -1497,7 +1386,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer Data Field 8 Registers"]
     #[inline(always)]
     pub const fn cfdrmdf_8(
         &self,
@@ -1511,7 +1399,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer Data Field 9 Registers"]
     #[inline(always)]
     pub const fn cfdrmdf_9(
         &self,
@@ -1525,7 +1412,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer Data Field 10 Registers"]
     #[inline(always)]
     pub const fn cfdrmdf_10(
         &self,
@@ -1539,7 +1425,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer Data Field 11 Registers"]
     #[inline(always)]
     pub const fn cfdrmdf_11(
         &self,
@@ -1553,7 +1438,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer Data Field 12 Registers"]
     #[inline(always)]
     pub const fn cfdrmdf_12(
         &self,
@@ -1567,7 +1451,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer Data Field 13 Registers"]
     #[inline(always)]
     pub const fn cfdrmdf_13(
         &self,
@@ -1581,7 +1464,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer Data Field 14 Registers"]
     #[inline(always)]
     pub const fn cfdrmdf_14(
         &self,
@@ -1595,7 +1477,6 @@ impl super::CanfdB {
         }
     }
 
-    #[doc = "RX Message Buffer Data Field 15 Registers"]
     #[inline(always)]
     pub const fn cfdrmdf_15(
         &self,
@@ -1615,37 +1496,40 @@ pub struct Cfdc0Ncfg_SPEC;
 impl crate::sealed::RegSpec for Cfdc0Ncfg_SPEC {
     type DataType = u32;
 }
-#[doc = "Channel 0 Nominal Bitrate Configuration Register"]
+
 pub type Cfdc0Ncfg = crate::RegValueT<Cfdc0Ncfg_SPEC>;
 
 impl Cfdc0Ncfg {
-    #[doc = "Channel Nominal Baud Rate Prescaler"]
     #[inline(always)]
     pub fn nbrp(
         self,
-    ) -> crate::common::RegisterField<0, 0x3ff, 1, 0, u16, Cfdc0Ncfg_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0x3ff,1,0,u16, Cfdc0Ncfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0x3ff, 1, 0, u16, u16, Cfdc0Ncfg_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<0,0x3ff,1,0,u16,u16,Cfdc0Ncfg_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Resynchronization Jump Width"]
+
     #[inline(always)]
     pub fn nsjw(
         self,
-    ) -> crate::common::RegisterField<10, 0x7f, 1, 0, u8, Cfdc0Ncfg_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<10,0x7f,1,0,u8, Cfdc0Ncfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<10, 0x7f, 1, 0, u8, u8, Cfdc0Ncfg_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<10,0x7f,1,0,u8,u8,Cfdc0Ncfg_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Timing Segment 1"]
+
     #[inline(always)]
     pub fn ntseg1(
         self,
-    ) -> crate::common::RegisterField<17, 0xff, 1, 0, u8, Cfdc0Ncfg_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<17,0xff,1,0,u8, Cfdc0Ncfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<17, 0xff, 1, 0, u8, u8, Cfdc0Ncfg_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<17,0xff,1,0,u8,u8,Cfdc0Ncfg_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Timing Segment 2"]
+
     #[inline(always)]
     pub fn ntseg2(
         self,
-    ) -> crate::common::RegisterField<25, 0x7f, 1, 0, u8, Cfdc0Ncfg_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<25,0x7f,1,0,u8, Cfdc0Ncfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<25, 0x7f, 1, 0, u8, u8, Cfdc0Ncfg_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<25,0x7f,1,0,u8,u8,Cfdc0Ncfg_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdc0Ncfg {
@@ -1661,83 +1545,160 @@ pub struct Cfdc0Ctr_SPEC;
 impl crate::sealed::RegSpec for Cfdc0Ctr_SPEC {
     type DataType = u32;
 }
-#[doc = "Channel 0 Control Register"]
+
 pub type Cfdc0Ctr = crate::RegValueT<Cfdc0Ctr_SPEC>;
 
 impl Cfdc0Ctr {
-    #[doc = "Channel Mode Control"]
     #[inline(always)]
     pub fn chmdc(
         self,
-    ) -> crate::common::RegisterField<0, 0x3, 1, 0, cfdc0ctr::Chmdc, Cfdc0Ctr_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        0,
+        0x3,
+        1,
+        0,
+        cfdc0ctr::Chmdc,
+        cfdc0ctr::Chmdc,
+        Cfdc0Ctr_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             0,
             0x3,
             1,
             0,
             cfdc0ctr::Chmdc,
+            cfdc0ctr::Chmdc,
             Cfdc0Ctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Channel Sleep Request"]
+
     #[inline(always)]
     pub fn cslpr(
         self,
-    ) -> crate::common::RegisterField<2, 0x1, 1, 0, cfdc0ctr::Cslpr, Cfdc0Ctr_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        2,
+        0x1,
+        1,
+        0,
+        cfdc0ctr::Cslpr,
+        cfdc0ctr::Cslpr,
+        Cfdc0Ctr_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             2,
             0x1,
             1,
             0,
             cfdc0ctr::Cslpr,
+            cfdc0ctr::Cslpr,
             Cfdc0Ctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Return from Bus-Off"]
+
     #[inline(always)]
     pub fn rtbo(
         self,
-    ) -> crate::common::RegisterField<3, 0x1, 1, 0, cfdc0ctr::Rtbo, Cfdc0Ctr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<3,0x1,1,0,cfdc0ctr::Rtbo, Cfdc0Ctr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        3,
+        0x1,
+        1,
+        0,
+        cfdc0ctr::Rtbo,
+        cfdc0ctr::Rtbo,
+        Cfdc0Ctr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            3,
+            0x1,
+            1,
+            0,
+            cfdc0ctr::Rtbo,
+            cfdc0ctr::Rtbo,
+            Cfdc0Ctr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Bus Error Interrupt Enable"]
+
     #[inline(always)]
     pub fn beie(
         self,
-    ) -> crate::common::RegisterField<8, 0x1, 1, 0, cfdc0ctr::Beie, Cfdc0Ctr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<8,0x1,1,0,cfdc0ctr::Beie, Cfdc0Ctr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        8,
+        0x1,
+        1,
+        0,
+        cfdc0ctr::Beie,
+        cfdc0ctr::Beie,
+        Cfdc0Ctr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            8,
+            0x1,
+            1,
+            0,
+            cfdc0ctr::Beie,
+            cfdc0ctr::Beie,
+            Cfdc0Ctr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Error Warning Interrupt Enable"]
+
     #[inline(always)]
     pub fn ewie(
         self,
-    ) -> crate::common::RegisterField<9, 0x1, 1, 0, cfdc0ctr::Ewie, Cfdc0Ctr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<9,0x1,1,0,cfdc0ctr::Ewie, Cfdc0Ctr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        9,
+        0x1,
+        1,
+        0,
+        cfdc0ctr::Ewie,
+        cfdc0ctr::Ewie,
+        Cfdc0Ctr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            9,
+            0x1,
+            1,
+            0,
+            cfdc0ctr::Ewie,
+            cfdc0ctr::Ewie,
+            Cfdc0Ctr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Error Passive Interrupt Enable"]
+
     #[inline(always)]
     pub fn epie(
         self,
-    ) -> crate::common::RegisterField<10, 0x1, 1, 0, cfdc0ctr::Epie, Cfdc0Ctr_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        10,
+        0x1,
+        1,
+        0,
+        cfdc0ctr::Epie,
+        cfdc0ctr::Epie,
+        Cfdc0Ctr_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             10,
             0x1,
             1,
             0,
             cfdc0ctr::Epie,
+            cfdc0ctr::Epie,
             Cfdc0Ctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Bus-Off Entry Interrupt Enable"]
+
     #[inline(always)]
     pub fn boeie(
         self,
@@ -1746,6 +1707,7 @@ impl Cfdc0Ctr {
         0x1,
         1,
         0,
+        cfdc0ctr::Boeie,
         cfdc0ctr::Boeie,
         Cfdc0Ctr_SPEC,
         crate::common::RW,
@@ -1756,11 +1718,12 @@ impl Cfdc0Ctr {
             1,
             0,
             cfdc0ctr::Boeie,
+            cfdc0ctr::Boeie,
             Cfdc0Ctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Bus-Off Recovery Interrupt Enable"]
+
     #[inline(always)]
     pub fn borie(
         self,
@@ -1769,6 +1732,7 @@ impl Cfdc0Ctr {
         0x1,
         1,
         0,
+        cfdc0ctr::Borie,
         cfdc0ctr::Borie,
         Cfdc0Ctr_SPEC,
         crate::common::RW,
@@ -1779,75 +1743,112 @@ impl Cfdc0Ctr {
             1,
             0,
             cfdc0ctr::Borie,
+            cfdc0ctr::Borie,
             Cfdc0Ctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Overload Interrupt Enable"]
+
     #[inline(always)]
     pub fn olie(
         self,
-    ) -> crate::common::RegisterField<13, 0x1, 1, 0, cfdc0ctr::Olie, Cfdc0Ctr_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        13,
+        0x1,
+        1,
+        0,
+        cfdc0ctr::Olie,
+        cfdc0ctr::Olie,
+        Cfdc0Ctr_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             13,
             0x1,
             1,
             0,
             cfdc0ctr::Olie,
+            cfdc0ctr::Olie,
             Cfdc0Ctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Bus Lock Interrupt Enable"]
+
     #[inline(always)]
     pub fn blie(
         self,
-    ) -> crate::common::RegisterField<14, 0x1, 1, 0, cfdc0ctr::Blie, Cfdc0Ctr_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        14,
+        0x1,
+        1,
+        0,
+        cfdc0ctr::Blie,
+        cfdc0ctr::Blie,
+        Cfdc0Ctr_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             14,
             0x1,
             1,
             0,
             cfdc0ctr::Blie,
+            cfdc0ctr::Blie,
             Cfdc0Ctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Arbitration Lost Interrupt Enable"]
+
     #[inline(always)]
     pub fn alie(
         self,
-    ) -> crate::common::RegisterField<15, 0x1, 1, 0, cfdc0ctr::Alie, Cfdc0Ctr_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        15,
+        0x1,
+        1,
+        0,
+        cfdc0ctr::Alie,
+        cfdc0ctr::Alie,
+        Cfdc0Ctr_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             15,
             0x1,
             1,
             0,
             cfdc0ctr::Alie,
+            cfdc0ctr::Alie,
             Cfdc0Ctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Transmission Abort Interrupt Enable"]
+
     #[inline(always)]
     pub fn taie(
         self,
-    ) -> crate::common::RegisterField<16, 0x1, 1, 0, cfdc0ctr::Taie, Cfdc0Ctr_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        16,
+        0x1,
+        1,
+        0,
+        cfdc0ctr::Taie,
+        cfdc0ctr::Taie,
+        Cfdc0Ctr_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             16,
             0x1,
             1,
             0,
             cfdc0ctr::Taie,
+            cfdc0ctr::Taie,
             Cfdc0Ctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Error Occurrence Counter Overflow Interrupt Enable"]
+
     #[inline(always)]
     pub fn eocoie(
         self,
@@ -1856,6 +1857,7 @@ impl Cfdc0Ctr {
         0x1,
         1,
         0,
+        cfdc0ctr::Eocoie,
         cfdc0ctr::Eocoie,
         Cfdc0Ctr_SPEC,
         crate::common::RW,
@@ -1866,11 +1868,12 @@ impl Cfdc0Ctr {
             1,
             0,
             cfdc0ctr::Eocoie,
+            cfdc0ctr::Eocoie,
             Cfdc0Ctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Successful Occurrence Counter Overflow Interrupt Enable"]
+
     #[inline(always)]
     pub fn socoie(
         self,
@@ -1879,6 +1882,7 @@ impl Cfdc0Ctr {
         0x1,
         1,
         0,
+        cfdc0ctr::Socoie,
         cfdc0ctr::Socoie,
         Cfdc0Ctr_SPEC,
         crate::common::RW,
@@ -1889,11 +1893,12 @@ impl Cfdc0Ctr {
             1,
             0,
             cfdc0ctr::Socoie,
+            cfdc0ctr::Socoie,
             Cfdc0Ctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Transceiver Delay Compensation Violation Interrupt Enable"]
+
     #[inline(always)]
     pub fn tdcvfie(
         self,
@@ -1902,6 +1907,7 @@ impl Cfdc0Ctr {
         0x1,
         1,
         0,
+        cfdc0ctr::Tdcvfie,
         cfdc0ctr::Tdcvfie,
         Cfdc0Ctr_SPEC,
         crate::common::RW,
@@ -1912,81 +1918,160 @@ impl Cfdc0Ctr {
             1,
             0,
             cfdc0ctr::Tdcvfie,
+            cfdc0ctr::Tdcvfie,
             Cfdc0Ctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Channel Bus-Off Mode"]
+
     #[inline(always)]
     pub fn bom(
         self,
-    ) -> crate::common::RegisterField<21, 0x3, 1, 0, cfdc0ctr::Bom, Cfdc0Ctr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<21,0x3,1,0,cfdc0ctr::Bom, Cfdc0Ctr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        21,
+        0x3,
+        1,
+        0,
+        cfdc0ctr::Bom,
+        cfdc0ctr::Bom,
+        Cfdc0Ctr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            21,
+            0x3,
+            1,
+            0,
+            cfdc0ctr::Bom,
+            cfdc0ctr::Bom,
+            Cfdc0Ctr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Channel Error Display"]
+
     #[inline(always)]
     pub fn errd(
         self,
-    ) -> crate::common::RegisterField<23, 0x1, 1, 0, cfdc0ctr::Errd, Cfdc0Ctr_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        23,
+        0x1,
+        1,
+        0,
+        cfdc0ctr::Errd,
+        cfdc0ctr::Errd,
+        Cfdc0Ctr_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             23,
             0x1,
             1,
             0,
             cfdc0ctr::Errd,
+            cfdc0ctr::Errd,
             Cfdc0Ctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Channel Test Mode Enable"]
+
     #[inline(always)]
     pub fn ctme(
         self,
-    ) -> crate::common::RegisterField<24, 0x1, 1, 0, cfdc0ctr::Ctme, Cfdc0Ctr_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        24,
+        0x1,
+        1,
+        0,
+        cfdc0ctr::Ctme,
+        cfdc0ctr::Ctme,
+        Cfdc0Ctr_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             24,
             0x1,
             1,
             0,
             cfdc0ctr::Ctme,
+            cfdc0ctr::Ctme,
             Cfdc0Ctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Channel Test Mode Select"]
+
     #[inline(always)]
     pub fn ctms(
         self,
-    ) -> crate::common::RegisterField<25, 0x3, 1, 0, cfdc0ctr::Ctms, Cfdc0Ctr_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        25,
+        0x3,
+        1,
+        0,
+        cfdc0ctr::Ctms,
+        cfdc0ctr::Ctms,
+        Cfdc0Ctr_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             25,
             0x3,
             1,
             0,
             cfdc0ctr::Ctms,
+            cfdc0ctr::Ctms,
             Cfdc0Ctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Bit Flip Test"]
+
     #[inline(always)]
     pub fn bft(
         self,
-    ) -> crate::common::RegisterField<30, 0x1, 1, 0, cfdc0ctr::Bft, Cfdc0Ctr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<30,0x1,1,0,cfdc0ctr::Bft, Cfdc0Ctr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        30,
+        0x1,
+        1,
+        0,
+        cfdc0ctr::Bft,
+        cfdc0ctr::Bft,
+        Cfdc0Ctr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            30,
+            0x1,
+            1,
+            0,
+            cfdc0ctr::Bft,
+            cfdc0ctr::Bft,
+            Cfdc0Ctr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Restricted Operation Mode"]
+
     #[inline(always)]
     pub fn rom(
         self,
-    ) -> crate::common::RegisterField<31, 0x1, 1, 0, cfdc0ctr::Rom, Cfdc0Ctr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<31,0x1,1,0,cfdc0ctr::Rom, Cfdc0Ctr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        31,
+        0x1,
+        1,
+        0,
+        cfdc0ctr::Rom,
+        cfdc0ctr::Rom,
+        Cfdc0Ctr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            31,
+            0x1,
+            1,
+            0,
+            cfdc0ctr::Rom,
+            cfdc0ctr::Rom,
+            Cfdc0Ctr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Cfdc0Ctr {
@@ -2001,201 +2086,180 @@ pub mod cfdc0ctr {
     pub struct Chmdc_SPEC;
     pub type Chmdc = crate::EnumBitfieldStruct<u8, Chmdc_SPEC>;
     impl Chmdc {
-        #[doc = "Channel operation mode request"]
         pub const _00: Self = Self::new(0);
-        #[doc = "Channel reset request"]
+
         pub const _01: Self = Self::new(1);
-        #[doc = "Channel halt request"]
+
         pub const _10: Self = Self::new(2);
-        #[doc = "Keep current value"]
+
         pub const _11: Self = Self::new(3);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cslpr_SPEC;
     pub type Cslpr = crate::EnumBitfieldStruct<u8, Cslpr_SPEC>;
     impl Cslpr {
-        #[doc = "Channel sleep request disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel sleep request enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Rtbo_SPEC;
     pub type Rtbo = crate::EnumBitfieldStruct<u8, Rtbo_SPEC>;
     impl Rtbo {
-        #[doc = "Channel is not forced to return from bus-off"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel is forced to return from bus-off"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Beie_SPEC;
     pub type Beie = crate::EnumBitfieldStruct<u8, Beie_SPEC>;
     impl Beie {
-        #[doc = "Bus error interrupt disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Bus error interrupt enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Ewie_SPEC;
     pub type Ewie = crate::EnumBitfieldStruct<u8, Ewie_SPEC>;
     impl Ewie {
-        #[doc = "Error warning interrupt disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Error warning interrupt enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Epie_SPEC;
     pub type Epie = crate::EnumBitfieldStruct<u8, Epie_SPEC>;
     impl Epie {
-        #[doc = "Error passive interrupt disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Error passive interrupt enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Boeie_SPEC;
     pub type Boeie = crate::EnumBitfieldStruct<u8, Boeie_SPEC>;
     impl Boeie {
-        #[doc = "Bus-off entry interrupt disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Bus-off entry interrupt enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Borie_SPEC;
     pub type Borie = crate::EnumBitfieldStruct<u8, Borie_SPEC>;
     impl Borie {
-        #[doc = "Bus-off recovery interrupt disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Bus-off recovery interrupt enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Olie_SPEC;
     pub type Olie = crate::EnumBitfieldStruct<u8, Olie_SPEC>;
     impl Olie {
-        #[doc = "Overload interrupt disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Overload interrupt enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Blie_SPEC;
     pub type Blie = crate::EnumBitfieldStruct<u8, Blie_SPEC>;
     impl Blie {
-        #[doc = "Bus lock interrupt disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Bus lock interrupt enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Alie_SPEC;
     pub type Alie = crate::EnumBitfieldStruct<u8, Alie_SPEC>;
     impl Alie {
-        #[doc = "Arbitration lost interrupt disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Arbitration lost interrupt enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Taie_SPEC;
     pub type Taie = crate::EnumBitfieldStruct<u8, Taie_SPEC>;
     impl Taie {
-        #[doc = "TX abort interrupt disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX abort interrupt enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Eocoie_SPEC;
     pub type Eocoie = crate::EnumBitfieldStruct<u8, Eocoie_SPEC>;
     impl Eocoie {
-        #[doc = "Error occurrence counter overflow interrupt disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Error occurrence counter overflow interrupt enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Socoie_SPEC;
     pub type Socoie = crate::EnumBitfieldStruct<u8, Socoie_SPEC>;
     impl Socoie {
-        #[doc = "Successful occurrence counter overflow interrupt disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Successful occurrence counter overflow interrupt enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Tdcvfie_SPEC;
     pub type Tdcvfie = crate::EnumBitfieldStruct<u8, Tdcvfie_SPEC>;
     impl Tdcvfie {
-        #[doc = "Transceiver delay compensation violation interrupt disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Transceiver delay compensation violation interrupt enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Bom_SPEC;
     pub type Bom = crate::EnumBitfieldStruct<u8, Bom_SPEC>;
     impl Bom {
-        #[doc = "Normal mode (comply with ISO 11898-1)"]
         pub const _00: Self = Self::new(0);
-        #[doc = "Entry to Halt mode automatically at bus-off start"]
+
         pub const _01: Self = Self::new(1);
-        #[doc = "Entry to Halt mode automatically at bus-off end"]
+
         pub const _10: Self = Self::new(2);
-        #[doc = "Entry to Halt mode (during bus-off recovery period) by software"]
+
         pub const _11: Self = Self::new(3);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Errd_SPEC;
     pub type Errd = crate::EnumBitfieldStruct<u8, Errd_SPEC>;
     impl Errd {
-        #[doc = "Only the first set of error codes displayed"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Accumulated error codes displayed"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Ctme_SPEC;
     pub type Ctme = crate::EnumBitfieldStruct<u8, Ctme_SPEC>;
     impl Ctme {
-        #[doc = "Channel test mode disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel test mode enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Ctms_SPEC;
     pub type Ctms = crate::EnumBitfieldStruct<u8, Ctms_SPEC>;
     impl Ctms {
-        #[doc = "Basic test mode"]
         pub const _00: Self = Self::new(0);
-        #[doc = "Listen-only mode"]
+
         pub const _01: Self = Self::new(1);
-        #[doc = "Self-test mode 0 (External loopback mode)"]
+
         pub const _10: Self = Self::new(2);
-        #[doc = "Self-test mode 1 (Internal loopback mode)"]
+
         pub const _11: Self = Self::new(3);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Bft_SPEC;
     pub type Bft = crate::EnumBitfieldStruct<u8, Bft_SPEC>;
     impl Bft {
-        #[doc = "First data bit of reception stream not inverted"]
         pub const _0: Self = Self::new(0);
-        #[doc = "First data bit of reception stream inverted"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Rom_SPEC;
     pub type Rom = crate::EnumBitfieldStruct<u8, Rom_SPEC>;
     impl Rom {
-        #[doc = "Restricted operation mode disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Restricted operation mode enabled"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -2205,11 +2269,10 @@ pub struct Cfdc0Sts_SPEC;
 impl crate::sealed::RegSpec for Cfdc0Sts_SPEC {
     type DataType = u32;
 }
-#[doc = "Channel 0 Status Register"]
+
 pub type Cfdc0Sts = crate::RegValueT<Cfdc0Sts_SPEC>;
 
 impl Cfdc0Sts {
-    #[doc = "Channel Reset Status"]
     #[inline(always)]
     pub fn crststs(
         self,
@@ -2218,6 +2281,7 @@ impl Cfdc0Sts {
         0x1,
         1,
         0,
+        cfdc0sts::Crststs,
         cfdc0sts::Crststs,
         Cfdc0Sts_SPEC,
         crate::common::R,
@@ -2228,11 +2292,12 @@ impl Cfdc0Sts {
             1,
             0,
             cfdc0sts::Crststs,
+            cfdc0sts::Crststs,
             Cfdc0Sts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "Channel Halt Status"]
+
     #[inline(always)]
     pub fn chltsts(
         self,
@@ -2241,6 +2306,7 @@ impl Cfdc0Sts {
         0x1,
         1,
         0,
+        cfdc0sts::Chltsts,
         cfdc0sts::Chltsts,
         Cfdc0Sts_SPEC,
         crate::common::R,
@@ -2251,11 +2317,12 @@ impl Cfdc0Sts {
             1,
             0,
             cfdc0sts::Chltsts,
+            cfdc0sts::Chltsts,
             Cfdc0Sts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "Channel Sleep Status"]
+
     #[inline(always)]
     pub fn cslpsts(
         self,
@@ -2264,6 +2331,7 @@ impl Cfdc0Sts {
         0x1,
         1,
         0,
+        cfdc0sts::Cslpsts,
         cfdc0sts::Cslpsts,
         Cfdc0Sts_SPEC,
         crate::common::R,
@@ -2274,95 +2342,174 @@ impl Cfdc0Sts {
             1,
             0,
             cfdc0sts::Cslpsts,
+            cfdc0sts::Cslpsts,
             Cfdc0Sts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "Channel Error Passive Status"]
+
     #[inline(always)]
     pub fn epsts(
         self,
-    ) -> crate::common::RegisterField<3, 0x1, 1, 0, cfdc0sts::Epsts, Cfdc0Sts_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<3,0x1,1,0,cfdc0sts::Epsts, Cfdc0Sts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        3,
+        0x1,
+        1,
+        0,
+        cfdc0sts::Epsts,
+        cfdc0sts::Epsts,
+        Cfdc0Sts_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            3,
+            0x1,
+            1,
+            0,
+            cfdc0sts::Epsts,
+            cfdc0sts::Epsts,
+            Cfdc0Sts_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "Channel Bus-Off Status"]
+
     #[inline(always)]
     pub fn bosts(
         self,
-    ) -> crate::common::RegisterField<4, 0x1, 1, 0, cfdc0sts::Bosts, Cfdc0Sts_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<4,0x1,1,0,cfdc0sts::Bosts, Cfdc0Sts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        4,
+        0x1,
+        1,
+        0,
+        cfdc0sts::Bosts,
+        cfdc0sts::Bosts,
+        Cfdc0Sts_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            4,
+            0x1,
+            1,
+            0,
+            cfdc0sts::Bosts,
+            cfdc0sts::Bosts,
+            Cfdc0Sts_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "Channel Transmit Status"]
+
     #[inline(always)]
     pub fn trmsts(
         self,
-    ) -> crate::common::RegisterField<5, 0x1, 1, 0, cfdc0sts::Trmsts, Cfdc0Sts_SPEC, crate::common::R>
-    {
+    ) -> crate::common::RegisterField<
+        5,
+        0x1,
+        1,
+        0,
+        cfdc0sts::Trmsts,
+        cfdc0sts::Trmsts,
+        Cfdc0Sts_SPEC,
+        crate::common::R,
+    > {
         crate::common::RegisterField::<
             5,
             0x1,
             1,
             0,
             cfdc0sts::Trmsts,
+            cfdc0sts::Trmsts,
             Cfdc0Sts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "Channel Receive Status"]
+
     #[inline(always)]
     pub fn recsts(
         self,
-    ) -> crate::common::RegisterField<6, 0x1, 1, 0, cfdc0sts::Recsts, Cfdc0Sts_SPEC, crate::common::R>
-    {
+    ) -> crate::common::RegisterField<
+        6,
+        0x1,
+        1,
+        0,
+        cfdc0sts::Recsts,
+        cfdc0sts::Recsts,
+        Cfdc0Sts_SPEC,
+        crate::common::R,
+    > {
         crate::common::RegisterField::<
             6,
             0x1,
             1,
             0,
             cfdc0sts::Recsts,
+            cfdc0sts::Recsts,
             Cfdc0Sts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "Channel Communication Status"]
+
     #[inline(always)]
     pub fn comsts(
         self,
-    ) -> crate::common::RegisterField<7, 0x1, 1, 0, cfdc0sts::Comsts, Cfdc0Sts_SPEC, crate::common::R>
-    {
+    ) -> crate::common::RegisterField<
+        7,
+        0x1,
+        1,
+        0,
+        cfdc0sts::Comsts,
+        cfdc0sts::Comsts,
+        Cfdc0Sts_SPEC,
+        crate::common::R,
+    > {
         crate::common::RegisterField::<
             7,
             0x1,
             1,
             0,
             cfdc0sts::Comsts,
+            cfdc0sts::Comsts,
             Cfdc0Sts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "Error State Indication Flag"]
+
     #[inline(always)]
     pub fn esif(
         self,
-    ) -> crate::common::RegisterField<8, 0x1, 1, 0, cfdc0sts::Esif, Cfdc0Sts_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<8,0x1,1,0,cfdc0sts::Esif, Cfdc0Sts_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        8,
+        0x1,
+        1,
+        0,
+        cfdc0sts::Esif,
+        cfdc0sts::Esif,
+        Cfdc0Sts_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            8,
+            0x1,
+            1,
+            0,
+            cfdc0sts::Esif,
+            cfdc0sts::Esif,
+            Cfdc0Sts_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Reception Error Count"]
+
     #[inline(always)]
     pub fn rec(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdc0Sts_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdc0Sts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdc0Sts_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdc0Sts_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "Transmission Error Count"]
+
     #[inline(always)]
     pub fn tec(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdc0Sts_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdc0Sts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdc0Sts_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdc0Sts_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdc0Sts {
@@ -2377,81 +2524,72 @@ pub mod cfdc0sts {
     pub struct Crststs_SPEC;
     pub type Crststs = crate::EnumBitfieldStruct<u8, Crststs_SPEC>;
     impl Crststs {
-        #[doc = "Channel not in Reset mode"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel in Reset mode"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Chltsts_SPEC;
     pub type Chltsts = crate::EnumBitfieldStruct<u8, Chltsts_SPEC>;
     impl Chltsts {
-        #[doc = "Channel not in Halt mode"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel in Halt mode"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cslpsts_SPEC;
     pub type Cslpsts = crate::EnumBitfieldStruct<u8, Cslpsts_SPEC>;
     impl Cslpsts {
-        #[doc = "Channel not in Sleep mode"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel in Sleep mode"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Epsts_SPEC;
     pub type Epsts = crate::EnumBitfieldStruct<u8, Epsts_SPEC>;
     impl Epsts {
-        #[doc = "Channel not in error passive state"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel in error passive state"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Bosts_SPEC;
     pub type Bosts = crate::EnumBitfieldStruct<u8, Bosts_SPEC>;
     impl Bosts {
-        #[doc = "Channel not in bus-off state"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel in bus-off state"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Trmsts_SPEC;
     pub type Trmsts = crate::EnumBitfieldStruct<u8, Trmsts_SPEC>;
     impl Trmsts {
-        #[doc = "Channel is not transmitting"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel is transmitting"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Recsts_SPEC;
     pub type Recsts = crate::EnumBitfieldStruct<u8, Recsts_SPEC>;
     impl Recsts {
-        #[doc = "Channel is not receiving"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel is receiving"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Comsts_SPEC;
     pub type Comsts = crate::EnumBitfieldStruct<u8, Comsts_SPEC>;
     impl Comsts {
-        #[doc = "Channel is not ready for communication"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel is ready for communication"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Esif_SPEC;
     pub type Esif = crate::EnumBitfieldStruct<u8, Esif_SPEC>;
     impl Esif {
-        #[doc = "No CANFD message has been received when the ESI flag was set"]
         pub const _0: Self = Self::new(0);
-        #[doc = "At least one CANFD message was received when the ESI flag was set"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -2461,59 +2599,85 @@ pub struct Cfdc0Erfl_SPEC;
 impl crate::sealed::RegSpec for Cfdc0Erfl_SPEC {
     type DataType = u32;
 }
-#[doc = "Channel 0 Error Flag Register"]
+
 pub type Cfdc0Erfl = crate::RegValueT<Cfdc0Erfl_SPEC>;
 
 impl Cfdc0Erfl {
-    #[doc = "Bus Error Flag"]
     #[inline(always)]
     pub fn bef(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, cfdc0erfl::Bef, Cfdc0Erfl_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        cfdc0erfl::Bef,
+        cfdc0erfl::Bef,
+        Cfdc0Erfl_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             0,
             0x1,
             1,
             0,
             cfdc0erfl::Bef,
+            cfdc0erfl::Bef,
             Cfdc0Erfl_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Error Warning Flag"]
+
     #[inline(always)]
     pub fn ewf(
         self,
-    ) -> crate::common::RegisterField<1, 0x1, 1, 0, cfdc0erfl::Ewf, Cfdc0Erfl_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        1,
+        0x1,
+        1,
+        0,
+        cfdc0erfl::Ewf,
+        cfdc0erfl::Ewf,
+        Cfdc0Erfl_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             1,
             0x1,
             1,
             0,
             cfdc0erfl::Ewf,
+            cfdc0erfl::Ewf,
             Cfdc0Erfl_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Error Passive Flag"]
+
     #[inline(always)]
     pub fn epf(
         self,
-    ) -> crate::common::RegisterField<2, 0x1, 1, 0, cfdc0erfl::Epf, Cfdc0Erfl_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        2,
+        0x1,
+        1,
+        0,
+        cfdc0erfl::Epf,
+        cfdc0erfl::Epf,
+        Cfdc0Erfl_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             2,
             0x1,
             1,
             0,
             cfdc0erfl::Epf,
+            cfdc0erfl::Epf,
             Cfdc0Erfl_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Bus-Off Entry Flag"]
+
     #[inline(always)]
     pub fn boef(
         self,
@@ -2522,6 +2686,7 @@ impl Cfdc0Erfl {
         0x1,
         1,
         0,
+        cfdc0erfl::Boef,
         cfdc0erfl::Boef,
         Cfdc0Erfl_SPEC,
         crate::common::RW,
@@ -2532,11 +2697,12 @@ impl Cfdc0Erfl {
             1,
             0,
             cfdc0erfl::Boef,
+            cfdc0erfl::Boef,
             Cfdc0Erfl_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Bus-Off Recovery Flag"]
+
     #[inline(always)]
     pub fn borf(
         self,
@@ -2545,6 +2711,7 @@ impl Cfdc0Erfl {
         0x1,
         1,
         0,
+        cfdc0erfl::Borf,
         cfdc0erfl::Borf,
         Cfdc0Erfl_SPEC,
         crate::common::RW,
@@ -2555,11 +2722,12 @@ impl Cfdc0Erfl {
             1,
             0,
             cfdc0erfl::Borf,
+            cfdc0erfl::Borf,
             Cfdc0Erfl_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Overload Flag"]
+
     #[inline(always)]
     pub fn ovlf(
         self,
@@ -2568,6 +2736,7 @@ impl Cfdc0Erfl {
         0x1,
         1,
         0,
+        cfdc0erfl::Ovlf,
         cfdc0erfl::Ovlf,
         Cfdc0Erfl_SPEC,
         crate::common::RW,
@@ -2578,43 +2747,62 @@ impl Cfdc0Erfl {
             1,
             0,
             cfdc0erfl::Ovlf,
+            cfdc0erfl::Ovlf,
             Cfdc0Erfl_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Bus Lock Flag"]
+
     #[inline(always)]
     pub fn blf(
         self,
-    ) -> crate::common::RegisterField<6, 0x1, 1, 0, cfdc0erfl::Blf, Cfdc0Erfl_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        6,
+        0x1,
+        1,
+        0,
+        cfdc0erfl::Blf,
+        cfdc0erfl::Blf,
+        Cfdc0Erfl_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             6,
             0x1,
             1,
             0,
             cfdc0erfl::Blf,
+            cfdc0erfl::Blf,
             Cfdc0Erfl_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Arbitration Lost Flag"]
+
     #[inline(always)]
     pub fn alf(
         self,
-    ) -> crate::common::RegisterField<7, 0x1, 1, 0, cfdc0erfl::Alf, Cfdc0Erfl_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        7,
+        0x1,
+        1,
+        0,
+        cfdc0erfl::Alf,
+        cfdc0erfl::Alf,
+        Cfdc0Erfl_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             7,
             0x1,
             1,
             0,
             cfdc0erfl::Alf,
+            cfdc0erfl::Alf,
             Cfdc0Erfl_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Stuff Error"]
+
     #[inline(always)]
     pub fn serr(
         self,
@@ -2623,6 +2811,7 @@ impl Cfdc0Erfl {
         0x1,
         1,
         0,
+        cfdc0erfl::Serr,
         cfdc0erfl::Serr,
         Cfdc0Erfl_SPEC,
         crate::common::RW,
@@ -2633,11 +2822,12 @@ impl Cfdc0Erfl {
             1,
             0,
             cfdc0erfl::Serr,
+            cfdc0erfl::Serr,
             Cfdc0Erfl_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Form Error"]
+
     #[inline(always)]
     pub fn ferr(
         self,
@@ -2646,6 +2836,7 @@ impl Cfdc0Erfl {
         0x1,
         1,
         0,
+        cfdc0erfl::Ferr,
         cfdc0erfl::Ferr,
         Cfdc0Erfl_SPEC,
         crate::common::RW,
@@ -2656,11 +2847,12 @@ impl Cfdc0Erfl {
             1,
             0,
             cfdc0erfl::Ferr,
+            cfdc0erfl::Ferr,
             Cfdc0Erfl_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Acknowledge Error"]
+
     #[inline(always)]
     pub fn aerr(
         self,
@@ -2669,6 +2861,7 @@ impl Cfdc0Erfl {
         0x1,
         1,
         0,
+        cfdc0erfl::Aerr,
         cfdc0erfl::Aerr,
         Cfdc0Erfl_SPEC,
         crate::common::RW,
@@ -2679,11 +2872,12 @@ impl Cfdc0Erfl {
             1,
             0,
             cfdc0erfl::Aerr,
+            cfdc0erfl::Aerr,
             Cfdc0Erfl_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "CRC Error"]
+
     #[inline(always)]
     pub fn cerr(
         self,
@@ -2692,6 +2886,7 @@ impl Cfdc0Erfl {
         0x1,
         1,
         0,
+        cfdc0erfl::Cerr,
         cfdc0erfl::Cerr,
         Cfdc0Erfl_SPEC,
         crate::common::RW,
@@ -2702,11 +2897,12 @@ impl Cfdc0Erfl {
             1,
             0,
             cfdc0erfl::Cerr,
+            cfdc0erfl::Cerr,
             Cfdc0Erfl_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Bit 1 Error"]
+
     #[inline(always)]
     pub fn b1err(
         self,
@@ -2715,6 +2911,7 @@ impl Cfdc0Erfl {
         0x1,
         1,
         0,
+        cfdc0erfl::B1Err,
         cfdc0erfl::B1Err,
         Cfdc0Erfl_SPEC,
         crate::common::RW,
@@ -2725,11 +2922,12 @@ impl Cfdc0Erfl {
             1,
             0,
             cfdc0erfl::B1Err,
+            cfdc0erfl::B1Err,
             Cfdc0Erfl_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Bit 0 Error"]
+
     #[inline(always)]
     pub fn b0err(
         self,
@@ -2738,6 +2936,7 @@ impl Cfdc0Erfl {
         0x1,
         1,
         0,
+        cfdc0erfl::B0Err,
         cfdc0erfl::B0Err,
         Cfdc0Erfl_SPEC,
         crate::common::RW,
@@ -2748,11 +2947,12 @@ impl Cfdc0Erfl {
             1,
             0,
             cfdc0erfl::B0Err,
+            cfdc0erfl::B0Err,
             Cfdc0Erfl_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Acknowledge Delimiter Error"]
+
     #[inline(always)]
     pub fn aderr(
         self,
@@ -2761,6 +2961,7 @@ impl Cfdc0Erfl {
         0x1,
         1,
         0,
+        cfdc0erfl::Aderr,
         cfdc0erfl::Aderr,
         Cfdc0Erfl_SPEC,
         crate::common::RW,
@@ -2771,16 +2972,18 @@ impl Cfdc0Erfl {
             1,
             0,
             cfdc0erfl::Aderr,
+            cfdc0erfl::Aderr,
             Cfdc0Erfl_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "CRC Register value"]
+
     #[inline(always)]
     pub fn crcreg(
         self,
-    ) -> crate::common::RegisterField<16, 0x7fff, 1, 0, u16, Cfdc0Erfl_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0x7fff,1,0,u16, Cfdc0Erfl_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0x7fff, 1, 0, u16, u16, Cfdc0Erfl_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<16,0x7fff,1,0,u16,u16,Cfdc0Erfl_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdc0Erfl {
@@ -2795,135 +2998,120 @@ pub mod cfdc0erfl {
     pub struct Bef_SPEC;
     pub type Bef = crate::EnumBitfieldStruct<u8, Bef_SPEC>;
     impl Bef {
-        #[doc = "Channel bus error not detected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel bus error detected"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Ewf_SPEC;
     pub type Ewf = crate::EnumBitfieldStruct<u8, Ewf_SPEC>;
     impl Ewf {
-        #[doc = "Channel error warning not detected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel error warning detected"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Epf_SPEC;
     pub type Epf = crate::EnumBitfieldStruct<u8, Epf_SPEC>;
     impl Epf {
-        #[doc = "Channel error passive not detected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel error passive detected"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Boef_SPEC;
     pub type Boef = crate::EnumBitfieldStruct<u8, Boef_SPEC>;
     impl Boef {
-        #[doc = "Channel bus-off entry not detected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel bus-off entry detected"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Borf_SPEC;
     pub type Borf = crate::EnumBitfieldStruct<u8, Borf_SPEC>;
     impl Borf {
-        #[doc = "Channel bus-off recovery not detected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel bus-off recovery detected"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Ovlf_SPEC;
     pub type Ovlf = crate::EnumBitfieldStruct<u8, Ovlf_SPEC>;
     impl Ovlf {
-        #[doc = "Channel overload not detected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel overload detected"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Blf_SPEC;
     pub type Blf = crate::EnumBitfieldStruct<u8, Blf_SPEC>;
     impl Blf {
-        #[doc = "Channel bus lock not detected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel bus lock detected"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Alf_SPEC;
     pub type Alf = crate::EnumBitfieldStruct<u8, Alf_SPEC>;
     impl Alf {
-        #[doc = "Channel arbitration lost not detected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel arbitration lost detected"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Serr_SPEC;
     pub type Serr = crate::EnumBitfieldStruct<u8, Serr_SPEC>;
     impl Serr {
-        #[doc = "Channel stuff error not detected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel stuff error detected"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Ferr_SPEC;
     pub type Ferr = crate::EnumBitfieldStruct<u8, Ferr_SPEC>;
     impl Ferr {
-        #[doc = "Channel form error not detected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel form error detected"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Aerr_SPEC;
     pub type Aerr = crate::EnumBitfieldStruct<u8, Aerr_SPEC>;
     impl Aerr {
-        #[doc = "Channel acknowledge error not detected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel acknowledge error detected"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cerr_SPEC;
     pub type Cerr = crate::EnumBitfieldStruct<u8, Cerr_SPEC>;
     impl Cerr {
-        #[doc = "Channel CRC error not detected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel CRC error detected"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct B1Err_SPEC;
     pub type B1Err = crate::EnumBitfieldStruct<u8, B1Err_SPEC>;
     impl B1Err {
-        #[doc = "Channel bit 1 error not detected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel bit 1 error detected"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct B0Err_SPEC;
     pub type B0Err = crate::EnumBitfieldStruct<u8, B0Err_SPEC>;
     impl B0Err {
-        #[doc = "Channel bit 0 error not detected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel bit 0 error detected"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Aderr_SPEC;
     pub type Aderr = crate::EnumBitfieldStruct<u8, Aderr_SPEC>;
     impl Aderr {
-        #[doc = "Channel acknowledge delimiter error not detected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel acknowledge delimiter error detected"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -2933,79 +3121,198 @@ pub struct Cfdgcfg_SPEC;
 impl crate::sealed::RegSpec for Cfdgcfg_SPEC {
     type DataType = u32;
 }
-#[doc = "Global Configuration Register"]
+
 pub type Cfdgcfg = crate::RegValueT<Cfdgcfg_SPEC>;
 
 impl Cfdgcfg {
-    #[doc = "Transmission Priority"]
     #[inline(always)]
     pub fn tpri(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, cfdgcfg::Tpri, Cfdgcfg_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,cfdgcfg::Tpri, Cfdgcfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        cfdgcfg::Tpri,
+        cfdgcfg::Tpri,
+        Cfdgcfg_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            cfdgcfg::Tpri,
+            cfdgcfg::Tpri,
+            Cfdgcfg_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "DLC Check Enable"]
+
     #[inline(always)]
     pub fn dce(
         self,
-    ) -> crate::common::RegisterField<1, 0x1, 1, 0, cfdgcfg::Dce, Cfdgcfg_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<1,0x1,1,0,cfdgcfg::Dce, Cfdgcfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        1,
+        0x1,
+        1,
+        0,
+        cfdgcfg::Dce,
+        cfdgcfg::Dce,
+        Cfdgcfg_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            1,
+            0x1,
+            1,
+            0,
+            cfdgcfg::Dce,
+            cfdgcfg::Dce,
+            Cfdgcfg_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "DLC Replacement Enable"]
+
     #[inline(always)]
     pub fn dre(
         self,
-    ) -> crate::common::RegisterField<2, 0x1, 1, 0, cfdgcfg::Dre, Cfdgcfg_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<2,0x1,1,0,cfdgcfg::Dre, Cfdgcfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        2,
+        0x1,
+        1,
+        0,
+        cfdgcfg::Dre,
+        cfdgcfg::Dre,
+        Cfdgcfg_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            2,
+            0x1,
+            1,
+            0,
+            cfdgcfg::Dre,
+            cfdgcfg::Dre,
+            Cfdgcfg_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Mirror Mode Enable"]
+
     #[inline(always)]
     pub fn mme(
         self,
-    ) -> crate::common::RegisterField<3, 0x1, 1, 0, cfdgcfg::Mme, Cfdgcfg_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<3,0x1,1,0,cfdgcfg::Mme, Cfdgcfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        3,
+        0x1,
+        1,
+        0,
+        cfdgcfg::Mme,
+        cfdgcfg::Mme,
+        Cfdgcfg_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            3,
+            0x1,
+            1,
+            0,
+            cfdgcfg::Mme,
+            cfdgcfg::Mme,
+            Cfdgcfg_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Data Link Controller Clock Select"]
+
     #[inline(always)]
     pub fn dcs(
         self,
-    ) -> crate::common::RegisterField<4, 0x1, 1, 0, cfdgcfg::Dcs, Cfdgcfg_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<4,0x1,1,0,cfdgcfg::Dcs, Cfdgcfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        4,
+        0x1,
+        1,
+        0,
+        cfdgcfg::Dcs,
+        cfdgcfg::Dcs,
+        Cfdgcfg_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            4,
+            0x1,
+            1,
+            0,
+            cfdgcfg::Dcs,
+            cfdgcfg::Dcs,
+            Cfdgcfg_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "CANFD Message Payload Overflow Configuration"]
+
     #[inline(always)]
     pub fn cmpoc(
         self,
-    ) -> crate::common::RegisterField<5, 0x1, 1, 0, cfdgcfg::Cmpoc, Cfdgcfg_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<5,0x1,1,0,cfdgcfg::Cmpoc, Cfdgcfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        5,
+        0x1,
+        1,
+        0,
+        cfdgcfg::Cmpoc,
+        cfdgcfg::Cmpoc,
+        Cfdgcfg_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            5,
+            0x1,
+            1,
+            0,
+            cfdgcfg::Cmpoc,
+            cfdgcfg::Cmpoc,
+            Cfdgcfg_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Timestamp Prescaler"]
+
     #[inline(always)]
     pub fn tsp(
         self,
-    ) -> crate::common::RegisterField<8, 0xf, 1, 0, u8, Cfdgcfg_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0xf,1,0,u8, Cfdgcfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xf, 1, 0, u8, u8, Cfdgcfg_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<8,0xf,1,0,u8,u8,Cfdgcfg_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Timestamp Source Select"]
+
     #[inline(always)]
     pub fn tsss(
         self,
-    ) -> crate::common::RegisterField<12, 0x1, 1, 0, cfdgcfg::Tsss, Cfdgcfg_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<12,0x1,1,0,cfdgcfg::Tsss, Cfdgcfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        12,
+        0x1,
+        1,
+        0,
+        cfdgcfg::Tsss,
+        cfdgcfg::Tsss,
+        Cfdgcfg_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            12,
+            0x1,
+            1,
+            0,
+            cfdgcfg::Tsss,
+            cfdgcfg::Tsss,
+            Cfdgcfg_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Interval Timer Reference Clock Prescaler"]
+
     #[inline(always)]
     pub fn itrcp(
         self,
-    ) -> crate::common::RegisterField<16, 0xffff, 1, 0, u16, Cfdgcfg_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xffff,1,0,u16, Cfdgcfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xffff, 1, 0, u16, u16, Cfdgcfg_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xffff,1,0,u16,u16,Cfdgcfg_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdgcfg {
@@ -3020,63 +3327,56 @@ pub mod cfdgcfg {
     pub struct Tpri_SPEC;
     pub type Tpri = crate::EnumBitfieldStruct<u8, Tpri_SPEC>;
     impl Tpri {
-        #[doc = "ID priority"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Message buffer number priority"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Dce_SPEC;
     pub type Dce = crate::EnumBitfieldStruct<u8, Dce_SPEC>;
     impl Dce {
-        #[doc = "DLC check disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "DLC check enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Dre_SPEC;
     pub type Dre = crate::EnumBitfieldStruct<u8, Dre_SPEC>;
     impl Dre {
-        #[doc = "DLC replacement disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "DLC replacement enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Mme_SPEC;
     pub type Mme = crate::EnumBitfieldStruct<u8, Mme_SPEC>;
     impl Mme {
-        #[doc = "Mirror mode disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Mirror mode enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Dcs_SPEC;
     pub type Dcs = crate::EnumBitfieldStruct<u8, Dcs_SPEC>;
     impl Dcs {
-        #[doc = "Internal clean clock"]
         pub const _0: Self = Self::new(0);
-        #[doc = "External clock source connected to CANMCLK pin"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cmpoc_SPEC;
     pub type Cmpoc = crate::EnumBitfieldStruct<u8, Cmpoc_SPEC>;
     impl Cmpoc {
-        #[doc = "Message is rejected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Message payload is cut to fit to configured message size"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Tsss_SPEC;
     pub type Tsss = crate::EnumBitfieldStruct<u8, Tsss_SPEC>;
     impl Tsss {
-        #[doc = "Source clock for timestamp counter is peripheral clock"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Source clock for timestamp counter is bit time clock"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -3086,59 +3386,135 @@ pub struct Cfdgctr_SPEC;
 impl crate::sealed::RegSpec for Cfdgctr_SPEC {
     type DataType = u32;
 }
-#[doc = "Global Control Register"]
+
 pub type Cfdgctr = crate::RegValueT<Cfdgctr_SPEC>;
 
 impl Cfdgctr {
-    #[doc = "Global Mode Control"]
     #[inline(always)]
     pub fn gmdc(
         self,
-    ) -> crate::common::RegisterField<0, 0x3, 1, 0, cfdgctr::Gmdc, Cfdgctr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x3,1,0,cfdgctr::Gmdc, Cfdgctr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x3,
+        1,
+        0,
+        cfdgctr::Gmdc,
+        cfdgctr::Gmdc,
+        Cfdgctr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x3,
+            1,
+            0,
+            cfdgctr::Gmdc,
+            cfdgctr::Gmdc,
+            Cfdgctr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Global Sleep Request"]
+
     #[inline(always)]
     pub fn gslpr(
         self,
-    ) -> crate::common::RegisterField<2, 0x1, 1, 0, cfdgctr::Gslpr, Cfdgctr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<2,0x1,1,0,cfdgctr::Gslpr, Cfdgctr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        2,
+        0x1,
+        1,
+        0,
+        cfdgctr::Gslpr,
+        cfdgctr::Gslpr,
+        Cfdgctr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            2,
+            0x1,
+            1,
+            0,
+            cfdgctr::Gslpr,
+            cfdgctr::Gslpr,
+            Cfdgctr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "DLC Check Interrupt Enable"]
+
     #[inline(always)]
     pub fn deie(
         self,
-    ) -> crate::common::RegisterField<8, 0x1, 1, 0, cfdgctr::Deie, Cfdgctr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<8,0x1,1,0,cfdgctr::Deie, Cfdgctr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        8,
+        0x1,
+        1,
+        0,
+        cfdgctr::Deie,
+        cfdgctr::Deie,
+        Cfdgctr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            8,
+            0x1,
+            1,
+            0,
+            cfdgctr::Deie,
+            cfdgctr::Deie,
+            Cfdgctr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Message Lost Error Interrupt Enable"]
+
     #[inline(always)]
     pub fn meie(
         self,
-    ) -> crate::common::RegisterField<9, 0x1, 1, 0, cfdgctr::Meie, Cfdgctr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<9,0x1,1,0,cfdgctr::Meie, Cfdgctr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        9,
+        0x1,
+        1,
+        0,
+        cfdgctr::Meie,
+        cfdgctr::Meie,
+        Cfdgctr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            9,
+            0x1,
+            1,
+            0,
+            cfdgctr::Meie,
+            cfdgctr::Meie,
+            Cfdgctr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "TX History List Entry Lost Interrupt Enable"]
+
     #[inline(always)]
     pub fn thleie(
         self,
-    ) -> crate::common::RegisterField<10, 0x1, 1, 0, cfdgctr::Thleie, Cfdgctr_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        10,
+        0x1,
+        1,
+        0,
+        cfdgctr::Thleie,
+        cfdgctr::Thleie,
+        Cfdgctr_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             10,
             0x1,
             1,
             0,
             cfdgctr::Thleie,
+            cfdgctr::Thleie,
             Cfdgctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "CANFD Message Payload Overflow Flag Interrupt Enable"]
+
     #[inline(always)]
     pub fn cmpofie(
         self,
@@ -3147,6 +3523,7 @@ impl Cfdgctr {
         0x1,
         1,
         0,
+        cfdgctr::Cmpofie,
         cfdgctr::Cmpofie,
         Cfdgctr_SPEC,
         crate::common::RW,
@@ -3157,17 +3534,35 @@ impl Cfdgctr {
             1,
             0,
             cfdgctr::Cmpofie,
+            cfdgctr::Cmpofie,
             Cfdgctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Timestamp Reset"]
+
     #[inline(always)]
     pub fn tsrst(
         self,
-    ) -> crate::common::RegisterField<16, 0x1, 1, 0, cfdgctr::Tsrst, Cfdgctr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<16,0x1,1,0,cfdgctr::Tsrst, Cfdgctr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        16,
+        0x1,
+        1,
+        0,
+        cfdgctr::Tsrst,
+        cfdgctr::Tsrst,
+        Cfdgctr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            16,
+            0x1,
+            1,
+            0,
+            cfdgctr::Tsrst,
+            cfdgctr::Tsrst,
+            Cfdgctr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Cfdgctr {
@@ -3182,67 +3577,60 @@ pub mod cfdgctr {
     pub struct Gmdc_SPEC;
     pub type Gmdc = crate::EnumBitfieldStruct<u8, Gmdc_SPEC>;
     impl Gmdc {
-        #[doc = "Global operation mode request"]
         pub const _00: Self = Self::new(0);
-        #[doc = "Global reset mode request"]
+
         pub const _01: Self = Self::new(1);
-        #[doc = "Global halt mode request"]
+
         pub const _10: Self = Self::new(2);
-        #[doc = "Keep current value"]
+
         pub const _11: Self = Self::new(3);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Gslpr_SPEC;
     pub type Gslpr = crate::EnumBitfieldStruct<u8, Gslpr_SPEC>;
     impl Gslpr {
-        #[doc = "Global sleep request disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Global sleep request enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Deie_SPEC;
     pub type Deie = crate::EnumBitfieldStruct<u8, Deie_SPEC>;
     impl Deie {
-        #[doc = "DLC check interrupt disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "DLC check interrupt enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Meie_SPEC;
     pub type Meie = crate::EnumBitfieldStruct<u8, Meie_SPEC>;
     impl Meie {
-        #[doc = "Message lost error interrupt disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Message lost error interrupt enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Thleie_SPEC;
     pub type Thleie = crate::EnumBitfieldStruct<u8, Thleie_SPEC>;
     impl Thleie {
-        #[doc = "TX history list entry lost interrupt disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX history list entry lost interrupt enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cmpofie_SPEC;
     pub type Cmpofie = crate::EnumBitfieldStruct<u8, Cmpofie_SPEC>;
     impl Cmpofie {
-        #[doc = "CANFD message payload overflow flag interrupt disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "CANFD message payload overflow flag interrupt enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Tsrst_SPEC;
     pub type Tsrst = crate::EnumBitfieldStruct<u8, Tsrst_SPEC>;
     impl Tsrst {
-        #[doc = "Timestamp not reset"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Timestamp reset"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -3252,45 +3640,104 @@ pub struct Cfdgsts_SPEC;
 impl crate::sealed::RegSpec for Cfdgsts_SPEC {
     type DataType = u32;
 }
-#[doc = "Global Status Register"]
+
 pub type Cfdgsts = crate::RegValueT<Cfdgsts_SPEC>;
 
 impl Cfdgsts {
-    #[doc = "Global Reset Status"]
     #[inline(always)]
     pub fn grststs(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, cfdgsts::Grststs, Cfdgsts_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,cfdgsts::Grststs, Cfdgsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        cfdgsts::Grststs,
+        cfdgsts::Grststs,
+        Cfdgsts_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            cfdgsts::Grststs,
+            cfdgsts::Grststs,
+            Cfdgsts_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "Global Halt Status"]
+
     #[inline(always)]
     pub fn ghltsts(
         self,
-    ) -> crate::common::RegisterField<1, 0x1, 1, 0, cfdgsts::Ghltsts, Cfdgsts_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<1,0x1,1,0,cfdgsts::Ghltsts, Cfdgsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        1,
+        0x1,
+        1,
+        0,
+        cfdgsts::Ghltsts,
+        cfdgsts::Ghltsts,
+        Cfdgsts_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            1,
+            0x1,
+            1,
+            0,
+            cfdgsts::Ghltsts,
+            cfdgsts::Ghltsts,
+            Cfdgsts_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "Global Sleep Status"]
+
     #[inline(always)]
     pub fn gslpsts(
         self,
-    ) -> crate::common::RegisterField<2, 0x1, 1, 0, cfdgsts::Gslpsts, Cfdgsts_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<2,0x1,1,0,cfdgsts::Gslpsts, Cfdgsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        2,
+        0x1,
+        1,
+        0,
+        cfdgsts::Gslpsts,
+        cfdgsts::Gslpsts,
+        Cfdgsts_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            2,
+            0x1,
+            1,
+            0,
+            cfdgsts::Gslpsts,
+            cfdgsts::Gslpsts,
+            Cfdgsts_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "Global RAM Initialization"]
+
     #[inline(always)]
     pub fn graminit(
         self,
-    ) -> crate::common::RegisterField<3, 0x1, 1, 0, cfdgsts::Graminit, Cfdgsts_SPEC, crate::common::R>
-    {
+    ) -> crate::common::RegisterField<
+        3,
+        0x1,
+        1,
+        0,
+        cfdgsts::Graminit,
+        cfdgsts::Graminit,
+        Cfdgsts_SPEC,
+        crate::common::R,
+    > {
         crate::common::RegisterField::<
             3,
             0x1,
             1,
             0,
+            cfdgsts::Graminit,
             cfdgsts::Graminit,
             Cfdgsts_SPEC,
             crate::common::R,
@@ -3309,36 +3756,32 @@ pub mod cfdgsts {
     pub struct Grststs_SPEC;
     pub type Grststs = crate::EnumBitfieldStruct<u8, Grststs_SPEC>;
     impl Grststs {
-        #[doc = "Not in Reset mode"]
         pub const _0: Self = Self::new(0);
-        #[doc = "In Reset mode"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Ghltsts_SPEC;
     pub type Ghltsts = crate::EnumBitfieldStruct<u8, Ghltsts_SPEC>;
     impl Ghltsts {
-        #[doc = "Not in Halt mode"]
         pub const _0: Self = Self::new(0);
-        #[doc = "In Halt mode"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Gslpsts_SPEC;
     pub type Gslpsts = crate::EnumBitfieldStruct<u8, Gslpsts_SPEC>;
     impl Gslpsts {
-        #[doc = "Not in Sleep mode"]
         pub const _0: Self = Self::new(0);
-        #[doc = "In Sleep mode"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Graminit_SPEC;
     pub type Graminit = crate::EnumBitfieldStruct<u8, Graminit_SPEC>;
     impl Graminit {
-        #[doc = "RAM initialization is complete"]
         pub const _0: Self = Self::new(0);
-        #[doc = "RAM initialization is ongoing"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -3348,61 +3791,129 @@ pub struct Cfdgerfl_SPEC;
 impl crate::sealed::RegSpec for Cfdgerfl_SPEC {
     type DataType = u32;
 }
-#[doc = "Global Error Flag Register"]
+
 pub type Cfdgerfl = crate::RegValueT<Cfdgerfl_SPEC>;
 
 impl Cfdgerfl {
-    #[doc = "DLC Error Flag"]
     #[inline(always)]
     pub fn def(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, cfdgerfl::Def, Cfdgerfl_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,cfdgerfl::Def, Cfdgerfl_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        cfdgerfl::Def,
+        cfdgerfl::Def,
+        Cfdgerfl_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            cfdgerfl::Def,
+            cfdgerfl::Def,
+            Cfdgerfl_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Message Lost Error Status"]
+
     #[inline(always)]
     pub fn mes(
         self,
-    ) -> crate::common::RegisterField<1, 0x1, 1, 0, cfdgerfl::Mes, Cfdgerfl_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<1,0x1,1,0,cfdgerfl::Mes, Cfdgerfl_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        1,
+        0x1,
+        1,
+        0,
+        cfdgerfl::Mes,
+        cfdgerfl::Mes,
+        Cfdgerfl_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            1,
+            0x1,
+            1,
+            0,
+            cfdgerfl::Mes,
+            cfdgerfl::Mes,
+            Cfdgerfl_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "TX History List Entry Lost Error Status"]
+
     #[inline(always)]
     pub fn thles(
         self,
-    ) -> crate::common::RegisterField<2, 0x1, 1, 0, cfdgerfl::Thles, Cfdgerfl_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<2,0x1,1,0,cfdgerfl::Thles, Cfdgerfl_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        2,
+        0x1,
+        1,
+        0,
+        cfdgerfl::Thles,
+        cfdgerfl::Thles,
+        Cfdgerfl_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            2,
+            0x1,
+            1,
+            0,
+            cfdgerfl::Thles,
+            cfdgerfl::Thles,
+            Cfdgerfl_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "CANFD Message Payload Overflow Flag"]
+
     #[inline(always)]
     pub fn cmpof(
         self,
-    ) -> crate::common::RegisterField<3, 0x1, 1, 0, cfdgerfl::Cmpof, Cfdgerfl_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        3,
+        0x1,
+        1,
+        0,
+        cfdgerfl::Cmpof,
+        cfdgerfl::Cmpof,
+        Cfdgerfl_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             3,
             0x1,
             1,
             0,
             cfdgerfl::Cmpof,
+            cfdgerfl::Cmpof,
             Cfdgerfl_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "ECC Error Flag"]
+
     #[inline(always)]
     pub fn eef0(
         self,
-    ) -> crate::common::RegisterField<16, 0x1, 1, 0, cfdgerfl::Eef0, Cfdgerfl_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        16,
+        0x1,
+        1,
+        0,
+        cfdgerfl::Eef0,
+        cfdgerfl::Eef0,
+        Cfdgerfl_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             16,
             0x1,
             1,
             0,
+            cfdgerfl::Eef0,
             cfdgerfl::Eef0,
             Cfdgerfl_SPEC,
             crate::common::RW,
@@ -3421,45 +3932,40 @@ pub mod cfdgerfl {
     pub struct Def_SPEC;
     pub type Def = crate::EnumBitfieldStruct<u8, Def_SPEC>;
     impl Def {
-        #[doc = "DLC error not detected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "DLC error detected"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Mes_SPEC;
     pub type Mes = crate::EnumBitfieldStruct<u8, Mes_SPEC>;
     impl Mes {
-        #[doc = "Message lost error not detected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Message lost error detected"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Thles_SPEC;
     pub type Thles = crate::EnumBitfieldStruct<u8, Thles_SPEC>;
     impl Thles {
-        #[doc = "TX history list entry lost error not detected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX history list entry lost error detected"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cmpof_SPEC;
     pub type Cmpof = crate::EnumBitfieldStruct<u8, Cmpof_SPEC>;
     impl Cmpof {
-        #[doc = "CANFD message payload overflow not detected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "CANFD message payload overflow detected"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Eef0_SPEC;
     pub type Eef0 = crate::EnumBitfieldStruct<u8, Eef0_SPEC>;
     impl Eef0 {
-        #[doc = "ECC error not detected during TX-SCAN"]
         pub const _0: Self = Self::new(0);
-        #[doc = "ECC error detected during TX-SCAN"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -3469,16 +3975,16 @@ pub struct Cfdgtsc_SPEC;
 impl crate::sealed::RegSpec for Cfdgtsc_SPEC {
     type DataType = u32;
 }
-#[doc = "Global Timestamp Counter Register"]
+
 pub type Cfdgtsc = crate::RegValueT<Cfdgtsc_SPEC>;
 
 impl Cfdgtsc {
-    #[doc = "Timestamp value"]
     #[inline(always)]
     pub fn ts(
         self,
-    ) -> crate::common::RegisterField<0, 0xffff, 1, 0, u16, Cfdgtsc_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xffff,1,0,u16, Cfdgtsc_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xffff, 1, 0, u16, u16, Cfdgtsc_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<0,0xffff,1,0,u16,u16,Cfdgtsc_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdgtsc {
@@ -3494,18 +4000,17 @@ pub struct Cfdgaflectr_SPEC;
 impl crate::sealed::RegSpec for Cfdgaflectr_SPEC {
     type DataType = u32;
 }
-#[doc = "Global Acceptance Filter List Entry Control Register"]
+
 pub type Cfdgaflectr = crate::RegValueT<Cfdgaflectr_SPEC>;
 
 impl Cfdgaflectr {
-    #[doc = "Acceptance Filter List Page Number"]
     #[inline(always)]
     pub fn aflpn(
         self,
     ) -> crate::common::RegisterFieldBool<0, 1, 0, Cfdgaflectr_SPEC, crate::common::RW> {
         crate::common::RegisterFieldBool::<0,1,0,Cfdgaflectr_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Acceptance Filter List Data Access Enable"]
+
     #[inline(always)]
     pub fn afldae(
         self,
@@ -3515,6 +4020,7 @@ impl Cfdgaflectr {
         1,
         0,
         cfdgaflectr::Afldae,
+        cfdgaflectr::Afldae,
         Cfdgaflectr_SPEC,
         crate::common::RW,
     > {
@@ -3523,6 +4029,7 @@ impl Cfdgaflectr {
             0x1,
             1,
             0,
+            cfdgaflectr::Afldae,
             cfdgaflectr::Afldae,
             Cfdgaflectr_SPEC,
             crate::common::RW,
@@ -3541,9 +4048,8 @@ pub mod cfdgaflectr {
     pub struct Afldae_SPEC;
     pub type Afldae = crate::EnumBitfieldStruct<u8, Afldae_SPEC>;
     impl Afldae {
-        #[doc = "Acceptance Filter List data access disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Acceptance Filter List data access enabled"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -3553,16 +4059,16 @@ pub struct Cfdgaflcfg_SPEC;
 impl crate::sealed::RegSpec for Cfdgaflcfg_SPEC {
     type DataType = u32;
 }
-#[doc = "Global Acceptance Filter List Configuration Register"]
+
 pub type Cfdgaflcfg = crate::RegValueT<Cfdgaflcfg_SPEC>;
 
 impl Cfdgaflcfg {
-    #[doc = "Rule Number"]
     #[inline(always)]
     pub fn rnc0(
         self,
-    ) -> crate::common::RegisterField<16, 0x3f, 1, 0, u8, Cfdgaflcfg_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0x3f,1,0,u8, Cfdgaflcfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0x3f, 1, 0, u8, u8, Cfdgaflcfg_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0x3f,1,0,u8,u8,Cfdgaflcfg_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdgaflcfg {
@@ -3578,24 +4084,40 @@ pub struct Cfdrmnb_SPEC;
 impl crate::sealed::RegSpec for Cfdrmnb_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer Number Register"]
+
 pub type Cfdrmnb = crate::RegValueT<Cfdrmnb_SPEC>;
 
 impl Cfdrmnb {
-    #[doc = "Number of RX Message Buffers"]
     #[inline(always)]
     pub fn nrxmb(
         self,
-    ) -> crate::common::RegisterField<0, 0x3f, 1, 0, u8, Cfdrmnb_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0x3f,1,0,u8, Cfdrmnb_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0x3f, 1, 0, u8, u8, Cfdrmnb_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<0,0x3f,1,0,u8,u8,Cfdrmnb_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Reception Message Buffer Payload Data Size"]
+
     #[inline(always)]
     pub fn rmpls(
         self,
-    ) -> crate::common::RegisterField<8, 0x7, 1, 0, cfdrmnb::Rmpls, Cfdrmnb_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<8,0x7,1,0,cfdrmnb::Rmpls, Cfdrmnb_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        8,
+        0x7,
+        1,
+        0,
+        cfdrmnb::Rmpls,
+        cfdrmnb::Rmpls,
+        Cfdrmnb_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            8,
+            0x7,
+            1,
+            0,
+            cfdrmnb::Rmpls,
+            cfdrmnb::Rmpls,
+            Cfdrmnb_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Cfdrmnb {
@@ -3610,21 +4132,20 @@ pub mod cfdrmnb {
     pub struct Rmpls_SPEC;
     pub type Rmpls = crate::EnumBitfieldStruct<u8, Rmpls_SPEC>;
     impl Rmpls {
-        #[doc = "8 bytes"]
         pub const _000: Self = Self::new(0);
-        #[doc = "12 bytes"]
+
         pub const _001: Self = Self::new(1);
-        #[doc = "16 bytes"]
+
         pub const _010: Self = Self::new(2);
-        #[doc = "20 bytes"]
+
         pub const _011: Self = Self::new(3);
-        #[doc = "24 bytes"]
+
         pub const _100: Self = Self::new(4);
-        #[doc = "32 bytes"]
+
         pub const _101: Self = Self::new(5);
-        #[doc = "48 bytes"]
+
         pub const _110: Self = Self::new(6);
-        #[doc = "64 bytes"]
+
         pub const _111: Self = Self::new(7);
     }
 }
@@ -3634,11 +4155,10 @@ pub struct Cfdrmnd_SPEC;
 impl crate::sealed::RegSpec for Cfdrmnd_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer New Data Register"]
+
 pub type Cfdrmnd = crate::RegValueT<Cfdrmnd_SPEC>;
 
 impl Cfdrmnd {
-    #[doc = "RX Message Buffer New Data Status"]
     #[inline(always)]
     pub fn rmns(
         self,
@@ -3648,6 +4168,7 @@ impl Cfdrmnd {
         1,
         0,
         cfdrmnd::Rmns,
+        cfdrmnd::Rmns,
         Cfdrmnd_SPEC,
         crate::common::RW,
     > {
@@ -3656,6 +4177,7 @@ impl Cfdrmnd {
             0xffffffff,
             1,
             0,
+            cfdrmnd::Rmns,
             cfdrmnd::Rmns,
             Cfdrmnd_SPEC,
             crate::common::RW,
@@ -3674,9 +4196,8 @@ pub mod cfdrmnd {
     pub struct Rmns_SPEC;
     pub type Rmns = crate::EnumBitfieldStruct<u8, Rmns_SPEC>;
     impl Rmns {
-        #[doc = "New data not stored in corresponding RX message buffer"]
         pub const _0: Self = Self::new(0);
-        #[doc = "New data stored in corresponding RX message buffer"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -3686,11 +4207,10 @@ pub struct Cfdrmiec_SPEC;
 impl crate::sealed::RegSpec for Cfdrmiec_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer Interrupt Enable Configuration Register"]
+
 pub type Cfdrmiec = crate::RegValueT<Cfdrmiec_SPEC>;
 
 impl Cfdrmiec {
-    #[doc = "RX Message Buffer Interrupt Enable"]
     #[inline(always)]
     pub fn rmieg(
         self,
@@ -3700,6 +4220,7 @@ impl Cfdrmiec {
         1,
         0,
         cfdrmiec::RmiEg,
+        cfdrmiec::RmiEg,
         Cfdrmiec_SPEC,
         crate::common::RW,
     > {
@@ -3708,6 +4229,7 @@ impl Cfdrmiec {
             0xffffffff,
             1,
             0,
+            cfdrmiec::RmiEg,
             cfdrmiec::RmiEg,
             Cfdrmiec_SPEC,
             crate::common::RW,
@@ -3726,9 +4248,8 @@ pub mod cfdrmiec {
     pub struct RmiEg_SPEC;
     pub type RmiEg = crate::EnumBitfieldStruct<u8, RmiEg_SPEC>;
     impl RmiEg {
-        #[doc = "RX Message Buffer Interrupt disabled for corresponding RX message buffer"]
         pub const _0: Self = Self::new(0);
-        #[doc = "RX Message Buffer Interrupt enabled for corresponding RX message buffer"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -3738,61 +4259,154 @@ pub struct Cfdrfcc_SPEC;
 impl crate::sealed::RegSpec for Cfdrfcc_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Configuration/Control Registers %s"]
+
 pub type Cfdrfcc = crate::RegValueT<Cfdrfcc_SPEC>;
 
 impl Cfdrfcc {
-    #[doc = "RX FIFO Enable"]
     #[inline(always)]
     pub fn rfe(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, cfdrfcc::Rfe, Cfdrfcc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,cfdrfcc::Rfe, Cfdrfcc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        cfdrfcc::Rfe,
+        cfdrfcc::Rfe,
+        Cfdrfcc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            cfdrfcc::Rfe,
+            cfdrfcc::Rfe,
+            Cfdrfcc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "RX FIFO Interrupt Enable"]
+
     #[inline(always)]
     pub fn rfie(
         self,
-    ) -> crate::common::RegisterField<1, 0x1, 1, 0, cfdrfcc::Rfie, Cfdrfcc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<1,0x1,1,0,cfdrfcc::Rfie, Cfdrfcc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        1,
+        0x1,
+        1,
+        0,
+        cfdrfcc::Rfie,
+        cfdrfcc::Rfie,
+        Cfdrfcc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            1,
+            0x1,
+            1,
+            0,
+            cfdrfcc::Rfie,
+            cfdrfcc::Rfie,
+            Cfdrfcc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Rx FIFO Payload Data Size Configuration"]
+
     #[inline(always)]
     pub fn rfpls(
         self,
-    ) -> crate::common::RegisterField<4, 0x7, 1, 0, cfdrfcc::Rfpls, Cfdrfcc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<4,0x7,1,0,cfdrfcc::Rfpls, Cfdrfcc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        4,
+        0x7,
+        1,
+        0,
+        cfdrfcc::Rfpls,
+        cfdrfcc::Rfpls,
+        Cfdrfcc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            4,
+            0x7,
+            1,
+            0,
+            cfdrfcc::Rfpls,
+            cfdrfcc::Rfpls,
+            Cfdrfcc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "RX FIFO Depth Configuration"]
+
     #[inline(always)]
     pub fn rfdc(
         self,
-    ) -> crate::common::RegisterField<8, 0x7, 1, 0, cfdrfcc::Rfdc, Cfdrfcc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<8,0x7,1,0,cfdrfcc::Rfdc, Cfdrfcc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        8,
+        0x7,
+        1,
+        0,
+        cfdrfcc::Rfdc,
+        cfdrfcc::Rfdc,
+        Cfdrfcc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            8,
+            0x7,
+            1,
+            0,
+            cfdrfcc::Rfdc,
+            cfdrfcc::Rfdc,
+            Cfdrfcc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "RX FIFO Interrupt Mode"]
+
     #[inline(always)]
     pub fn rfim(
         self,
-    ) -> crate::common::RegisterField<12, 0x1, 1, 0, cfdrfcc::Rfim, Cfdrfcc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<12,0x1,1,0,cfdrfcc::Rfim, Cfdrfcc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        12,
+        0x1,
+        1,
+        0,
+        cfdrfcc::Rfim,
+        cfdrfcc::Rfim,
+        Cfdrfcc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            12,
+            0x1,
+            1,
+            0,
+            cfdrfcc::Rfim,
+            cfdrfcc::Rfim,
+            Cfdrfcc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "RX FIFO Interrupt Generation Counter Value"]
+
     #[inline(always)]
     pub fn rfigcv(
         self,
-    ) -> crate::common::RegisterField<13, 0x7, 1, 0, cfdrfcc::Rfigcv, Cfdrfcc_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        13,
+        0x7,
+        1,
+        0,
+        cfdrfcc::Rfigcv,
+        cfdrfcc::Rfigcv,
+        Cfdrfcc_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             13,
             0x7,
             1,
             0,
+            cfdrfcc::Rfigcv,
             cfdrfcc::Rfigcv,
             Cfdrfcc_SPEC,
             crate::common::RW,
@@ -3811,90 +4425,84 @@ pub mod cfdrfcc {
     pub struct Rfe_SPEC;
     pub type Rfe = crate::EnumBitfieldStruct<u8, Rfe_SPEC>;
     impl Rfe {
-        #[doc = "FIFO disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "FIFO enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Rfie_SPEC;
     pub type Rfie = crate::EnumBitfieldStruct<u8, Rfie_SPEC>;
     impl Rfie {
-        #[doc = "FIFO interrupt generation disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "FIFO interrupt generation enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Rfpls_SPEC;
     pub type Rfpls = crate::EnumBitfieldStruct<u8, Rfpls_SPEC>;
     impl Rfpls {
-        #[doc = "8 bytes"]
         pub const _000: Self = Self::new(0);
-        #[doc = "12 bytes"]
+
         pub const _001: Self = Self::new(1);
-        #[doc = "16 bytes"]
+
         pub const _010: Self = Self::new(2);
-        #[doc = "20 bytes"]
+
         pub const _011: Self = Self::new(3);
-        #[doc = "24 bytes"]
+
         pub const _100: Self = Self::new(4);
-        #[doc = "32 bytes"]
+
         pub const _101: Self = Self::new(5);
-        #[doc = "48 bytes"]
+
         pub const _110: Self = Self::new(6);
-        #[doc = "64 bytes"]
+
         pub const _111: Self = Self::new(7);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Rfdc_SPEC;
     pub type Rfdc = crate::EnumBitfieldStruct<u8, Rfdc_SPEC>;
     impl Rfdc {
-        #[doc = "FIFO Depth = 0 message"]
         pub const _000: Self = Self::new(0);
-        #[doc = "FIFO Depth = 4 messages"]
+
         pub const _001: Self = Self::new(1);
-        #[doc = "FIFO Depth = 8 messages"]
+
         pub const _010: Self = Self::new(2);
-        #[doc = "FIFO Depth = 16 messages"]
+
         pub const _011: Self = Self::new(3);
-        #[doc = "FIFO Depth = 32 messages"]
+
         pub const _100: Self = Self::new(4);
-        #[doc = "FIFO Depth = 48 messages"]
+
         pub const _101: Self = Self::new(5);
-        #[doc = "Reserved"]
+
         pub const _110: Self = Self::new(6);
-        #[doc = "Reserved"]
+
         pub const _111: Self = Self::new(7);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Rfim_SPEC;
     pub type Rfim = crate::EnumBitfieldStruct<u8, Rfim_SPEC>;
     impl Rfim {
-        #[doc = "Interrupt generated when RX FIFO counter reaches RFIGCV value from values smaller than RFIGCV"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Interrupt generated at the end of every received message storage"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Rfigcv_SPEC;
     pub type Rfigcv = crate::EnumBitfieldStruct<u8, Rfigcv_SPEC>;
     impl Rfigcv {
-        #[doc = "Interrupt generated when FIFO is 1/8th full"]
         pub const _000: Self = Self::new(0);
-        #[doc = "Interrupt generated when FIFO is 1/4th full"]
+
         pub const _001: Self = Self::new(1);
-        #[doc = "Interrupt generated when FIFO is 3/8th full"]
+
         pub const _010: Self = Self::new(2);
-        #[doc = "Interrupt generated when FIFO is 1/2 full"]
+
         pub const _011: Self = Self::new(3);
-        #[doc = "Interrupt generated when FIFO is 5/8th full"]
+
         pub const _100: Self = Self::new(4);
-        #[doc = "Interrupt generated when FIFO is 3/4th full"]
+
         pub const _101: Self = Self::new(5);
-        #[doc = "Interrupt generated when FIFO is 7/8th full"]
+
         pub const _110: Self = Self::new(6);
-        #[doc = "Interrupt generated when FIFO is full"]
+
         pub const _111: Self = Self::new(7);
     }
 }
@@ -3904,56 +4512,115 @@ pub struct Cfdrfsts_SPEC;
 impl crate::sealed::RegSpec for Cfdrfsts_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Status Registers %s"]
+
 pub type Cfdrfsts = crate::RegValueT<Cfdrfsts_SPEC>;
 
 impl Cfdrfsts {
-    #[doc = "RX FIFO Empty"]
     #[inline(always)]
     pub fn rfemp(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, cfdrfsts::Rfemp, Cfdrfsts_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,cfdrfsts::Rfemp, Cfdrfsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        cfdrfsts::Rfemp,
+        cfdrfsts::Rfemp,
+        Cfdrfsts_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            cfdrfsts::Rfemp,
+            cfdrfsts::Rfemp,
+            Cfdrfsts_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "RX FIFO Full"]
+
     #[inline(always)]
     pub fn rffll(
         self,
-    ) -> crate::common::RegisterField<1, 0x1, 1, 0, cfdrfsts::Rffll, Cfdrfsts_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<1,0x1,1,0,cfdrfsts::Rffll, Cfdrfsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        1,
+        0x1,
+        1,
+        0,
+        cfdrfsts::Rffll,
+        cfdrfsts::Rffll,
+        Cfdrfsts_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            1,
+            0x1,
+            1,
+            0,
+            cfdrfsts::Rffll,
+            cfdrfsts::Rffll,
+            Cfdrfsts_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "RX FIFO Message Lost"]
+
     #[inline(always)]
     pub fn rfmlt(
         self,
-    ) -> crate::common::RegisterField<2, 0x1, 1, 0, cfdrfsts::Rfmlt, Cfdrfsts_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        2,
+        0x1,
+        1,
+        0,
+        cfdrfsts::Rfmlt,
+        cfdrfsts::Rfmlt,
+        Cfdrfsts_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             2,
             0x1,
             1,
             0,
             cfdrfsts::Rfmlt,
+            cfdrfsts::Rfmlt,
             Cfdrfsts_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "RX FIFO Interrupt Flag"]
+
     #[inline(always)]
     pub fn rfif(
         self,
-    ) -> crate::common::RegisterField<3, 0x1, 1, 0, cfdrfsts::Rfif, Cfdrfsts_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<3,0x1,1,0,cfdrfsts::Rfif, Cfdrfsts_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        3,
+        0x1,
+        1,
+        0,
+        cfdrfsts::Rfif,
+        cfdrfsts::Rfif,
+        Cfdrfsts_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            3,
+            0x1,
+            1,
+            0,
+            cfdrfsts::Rfif,
+            cfdrfsts::Rfif,
+            Cfdrfsts_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "RX FIFO Message Count"]
+
     #[inline(always)]
     pub fn rfmc(
         self,
-    ) -> crate::common::RegisterField<8, 0x3f, 1, 0, u8, Cfdrfsts_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0x3f,1,0,u8, Cfdrfsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0x3f, 1, 0, u8, u8, Cfdrfsts_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0x3f,1,0,u8,u8,Cfdrfsts_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrfsts {
@@ -3968,36 +4635,32 @@ pub mod cfdrfsts {
     pub struct Rfemp_SPEC;
     pub type Rfemp = crate::EnumBitfieldStruct<u8, Rfemp_SPEC>;
     impl Rfemp {
-        #[doc = "FIFO not empty"]
         pub const _0: Self = Self::new(0);
-        #[doc = "FIFO empty"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Rffll_SPEC;
     pub type Rffll = crate::EnumBitfieldStruct<u8, Rffll_SPEC>;
     impl Rffll {
-        #[doc = "FIFO not full"]
         pub const _0: Self = Self::new(0);
-        #[doc = "FIFO full"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Rfmlt_SPEC;
     pub type Rfmlt = crate::EnumBitfieldStruct<u8, Rfmlt_SPEC>;
     impl Rfmlt {
-        #[doc = "No message lost in FIFO"]
         pub const _0: Self = Self::new(0);
-        #[doc = "FIFO message lost"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Rfif_SPEC;
     pub type Rfif = crate::EnumBitfieldStruct<u8, Rfif_SPEC>;
     impl Rfif {
-        #[doc = "FIFO interrupt condition not satisfied"]
         pub const _0: Self = Self::new(0);
-        #[doc = "FIFO interrupt condition satisfied"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -4007,16 +4670,15 @@ pub struct Cfdrfpctr_SPEC;
 impl crate::sealed::RegSpec for Cfdrfpctr_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Pointer Control Registers %s"]
+
 pub type Cfdrfpctr = crate::RegValueT<Cfdrfpctr_SPEC>;
 
 impl Cfdrfpctr {
-    #[doc = "RX FIFO Pointer Control"]
     #[inline(always)]
     pub fn rfpc(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrfpctr_SPEC, crate::common::W> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrfpctr_SPEC,crate::common::W>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrfpctr_SPEC, crate::common::W> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrfpctr_SPEC,crate::common::W>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrfpctr {
@@ -4032,119 +4694,272 @@ pub struct Cfdcfcc_SPEC;
 impl crate::sealed::RegSpec for Cfdcfcc_SPEC {
     type DataType = u32;
 }
-#[doc = "Common FIFO Configuration/Control Register"]
+
 pub type Cfdcfcc = crate::RegValueT<Cfdcfcc_SPEC>;
 
 impl Cfdcfcc {
-    #[doc = "Common FIFO Enable"]
     #[inline(always)]
     pub fn cfe(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, cfdcfcc::Cfe, Cfdcfcc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,cfdcfcc::Cfe, Cfdcfcc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        cfdcfcc::Cfe,
+        cfdcfcc::Cfe,
+        Cfdcfcc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            cfdcfcc::Cfe,
+            cfdcfcc::Cfe,
+            Cfdcfcc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Common FIFO RX Interrupt Enable"]
+
     #[inline(always)]
     pub fn cfrxie(
         self,
-    ) -> crate::common::RegisterField<1, 0x1, 1, 0, cfdcfcc::Cfrxie, Cfdcfcc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<1,0x1,1,0,cfdcfcc::Cfrxie, Cfdcfcc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        1,
+        0x1,
+        1,
+        0,
+        cfdcfcc::Cfrxie,
+        cfdcfcc::Cfrxie,
+        Cfdcfcc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            1,
+            0x1,
+            1,
+            0,
+            cfdcfcc::Cfrxie,
+            cfdcfcc::Cfrxie,
+            Cfdcfcc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Common FIFO TX Interrupt Enable"]
+
     #[inline(always)]
     pub fn cftxie(
         self,
-    ) -> crate::common::RegisterField<2, 0x1, 1, 0, cfdcfcc::Cftxie, Cfdcfcc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<2,0x1,1,0,cfdcfcc::Cftxie, Cfdcfcc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        2,
+        0x1,
+        1,
+        0,
+        cfdcfcc::Cftxie,
+        cfdcfcc::Cftxie,
+        Cfdcfcc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            2,
+            0x1,
+            1,
+            0,
+            cfdcfcc::Cftxie,
+            cfdcfcc::Cftxie,
+            Cfdcfcc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Common FIFO Payload Data Size Configuration"]
+
     #[inline(always)]
     pub fn cfpls(
         self,
-    ) -> crate::common::RegisterField<4, 0x7, 1, 0, cfdcfcc::Cfpls, Cfdcfcc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<4,0x7,1,0,cfdcfcc::Cfpls, Cfdcfcc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        4,
+        0x7,
+        1,
+        0,
+        cfdcfcc::Cfpls,
+        cfdcfcc::Cfpls,
+        Cfdcfcc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            4,
+            0x7,
+            1,
+            0,
+            cfdcfcc::Cfpls,
+            cfdcfcc::Cfpls,
+            Cfdcfcc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Common FIFO Mode"]
+
     #[inline(always)]
     pub fn cfm(
         self,
-    ) -> crate::common::RegisterField<8, 0x1, 1, 0, cfdcfcc::Cfm, Cfdcfcc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<8,0x1,1,0,cfdcfcc::Cfm, Cfdcfcc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        8,
+        0x1,
+        1,
+        0,
+        cfdcfcc::Cfm,
+        cfdcfcc::Cfm,
+        Cfdcfcc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            8,
+            0x1,
+            1,
+            0,
+            cfdcfcc::Cfm,
+            cfdcfcc::Cfm,
+            Cfdcfcc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Common FIFO Interval Timer Source Select"]
+
     #[inline(always)]
     pub fn cfitss(
         self,
-    ) -> crate::common::RegisterField<10, 0x1, 1, 0, cfdcfcc::Cfitss, Cfdcfcc_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        10,
+        0x1,
+        1,
+        0,
+        cfdcfcc::Cfitss,
+        cfdcfcc::Cfitss,
+        Cfdcfcc_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             10,
             0x1,
             1,
             0,
             cfdcfcc::Cfitss,
+            cfdcfcc::Cfitss,
             Cfdcfcc_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Common FIFO Interval Timer Resolution"]
+
     #[inline(always)]
     pub fn cfitr(
         self,
-    ) -> crate::common::RegisterField<11, 0x1, 1, 0, cfdcfcc::Cfitr, Cfdcfcc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<11,0x1,1,0,cfdcfcc::Cfitr, Cfdcfcc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        11,
+        0x1,
+        1,
+        0,
+        cfdcfcc::Cfitr,
+        cfdcfcc::Cfitr,
+        Cfdcfcc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            11,
+            0x1,
+            1,
+            0,
+            cfdcfcc::Cfitr,
+            cfdcfcc::Cfitr,
+            Cfdcfcc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Common FIFO Interrupt Mode"]
+
     #[inline(always)]
     pub fn cfim(
         self,
-    ) -> crate::common::RegisterField<12, 0x1, 1, 0, cfdcfcc::Cfim, Cfdcfcc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<12,0x1,1,0,cfdcfcc::Cfim, Cfdcfcc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        12,
+        0x1,
+        1,
+        0,
+        cfdcfcc::Cfim,
+        cfdcfcc::Cfim,
+        Cfdcfcc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            12,
+            0x1,
+            1,
+            0,
+            cfdcfcc::Cfim,
+            cfdcfcc::Cfim,
+            Cfdcfcc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Common FIFO Interrupt Generation Counter Value"]
+
     #[inline(always)]
     pub fn cfigcv(
         self,
-    ) -> crate::common::RegisterField<13, 0x7, 1, 0, cfdcfcc::Cfigcv, Cfdcfcc_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        13,
+        0x7,
+        1,
+        0,
+        cfdcfcc::Cfigcv,
+        cfdcfcc::Cfigcv,
+        Cfdcfcc_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             13,
             0x7,
             1,
             0,
             cfdcfcc::Cfigcv,
+            cfdcfcc::Cfigcv,
             Cfdcfcc_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Common FIFO TX Message Buffer Link"]
+
     #[inline(always)]
     pub fn cftml(
         self,
-    ) -> crate::common::RegisterField<16, 0x3, 1, 0, u8, Cfdcfcc_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0x3,1,0,u8, Cfdcfcc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0x3, 1, 0, u8, u8, Cfdcfcc_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<16,0x3,1,0,u8,u8,Cfdcfcc_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Common FIFO Depth Configuration"]
+
     #[inline(always)]
     pub fn cfdc(
         self,
-    ) -> crate::common::RegisterField<21, 0x7, 1, 0, cfdcfcc::Cfdc, Cfdcfcc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<21,0x7,1,0,cfdcfcc::Cfdc, Cfdcfcc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        21,
+        0x7,
+        1,
+        0,
+        cfdcfcc::Cfdc,
+        cfdcfcc::Cfdc,
+        Cfdcfcc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            21,
+            0x7,
+            1,
+            0,
+            cfdcfcc::Cfdc,
+            cfdcfcc::Cfdc,
+            Cfdcfcc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Common FIFO Interval Transmission Time"]
+
     #[inline(always)]
     pub fn cfitt(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdcfcc_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdcfcc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdcfcc_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdcfcc_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdcfcc {
@@ -4159,126 +4974,116 @@ pub mod cfdcfcc {
     pub struct Cfe_SPEC;
     pub type Cfe = crate::EnumBitfieldStruct<u8, Cfe_SPEC>;
     impl Cfe {
-        #[doc = "FIFO disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "FIFO enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cfrxie_SPEC;
     pub type Cfrxie = crate::EnumBitfieldStruct<u8, Cfrxie_SPEC>;
     impl Cfrxie {
-        #[doc = "FIFO interrupt generation disabled for Frame RX"]
         pub const _0: Self = Self::new(0);
-        #[doc = "FIFO interrupt generation enabled for Frame RX"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cftxie_SPEC;
     pub type Cftxie = crate::EnumBitfieldStruct<u8, Cftxie_SPEC>;
     impl Cftxie {
-        #[doc = "FIFO interrupt generation disabled for Frame TX"]
         pub const _0: Self = Self::new(0);
-        #[doc = "FIFO interrupt generation enabled for Frame TX"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cfpls_SPEC;
     pub type Cfpls = crate::EnumBitfieldStruct<u8, Cfpls_SPEC>;
     impl Cfpls {
-        #[doc = "8 bytes"]
         pub const _000: Self = Self::new(0);
-        #[doc = "12 bytes"]
+
         pub const _001: Self = Self::new(1);
-        #[doc = "16 bytes"]
+
         pub const _010: Self = Self::new(2);
-        #[doc = "20 bytes"]
+
         pub const _011: Self = Self::new(3);
-        #[doc = "24 bytes"]
+
         pub const _100: Self = Self::new(4);
-        #[doc = "32 bytes"]
+
         pub const _101: Self = Self::new(5);
-        #[doc = "48 bytes"]
+
         pub const _110: Self = Self::new(6);
-        #[doc = "64 bytes"]
+
         pub const _111: Self = Self::new(7);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cfm_SPEC;
     pub type Cfm = crate::EnumBitfieldStruct<u8, Cfm_SPEC>;
     impl Cfm {
-        #[doc = "RX FIFO mode"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX FIFO mode"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cfitss_SPEC;
     pub type Cfitss = crate::EnumBitfieldStruct<u8, Cfitss_SPEC>;
     impl Cfitss {
-        #[doc = "Reference clock (× 1 / × 10 period)"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Bit time clock of related channel (FIFO is linked to fixed channel)"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cfitr_SPEC;
     pub type Cfitr = crate::EnumBitfieldStruct<u8, Cfitr_SPEC>;
     impl Cfitr {
-        #[doc = "Reference clock period × 1"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Reference clock period × 10"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cfim_SPEC;
     pub type Cfim = crate::EnumBitfieldStruct<u8, Cfim_SPEC>;
     impl Cfim {
-        #[doc = "RX FIFO mode: RX interrupt generated when Common FIFO counter reaches CFIGCV value from a lower value TX FIFO mode: TX interrupt generated when Common FIFO transmits the last message successfully"]
         pub const _0: Self = Self::new(0);
-        #[doc = "RX FIFO mode: RX interrupt generated at the end of every received message storage TX FIFO mode: interrupt generated for every successfully transmitted message"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cfigcv_SPEC;
     pub type Cfigcv = crate::EnumBitfieldStruct<u8, Cfigcv_SPEC>;
     impl Cfigcv {
-        #[doc = "Interrupt generated when FIFO is 1/8th full"]
         pub const _000: Self = Self::new(0);
-        #[doc = "Interrupt generated when FIFO is 1/4th full"]
+
         pub const _001: Self = Self::new(1);
-        #[doc = "Interrupt generated when FIFO is 3/8th full"]
+
         pub const _010: Self = Self::new(2);
-        #[doc = "Interrupt generated when FIFO is 1/2 full"]
+
         pub const _011: Self = Self::new(3);
-        #[doc = "Interrupt generated when FIFO is 5/8th full"]
+
         pub const _100: Self = Self::new(4);
-        #[doc = "Interrupt generated when FIFO is 3/4th full"]
+
         pub const _101: Self = Self::new(5);
-        #[doc = "Interrupt generated when FIFO is 7/8th full"]
+
         pub const _110: Self = Self::new(6);
-        #[doc = "Interrupt generated when FIFO is full"]
+
         pub const _111: Self = Self::new(7);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cfdc_SPEC;
     pub type Cfdc = crate::EnumBitfieldStruct<u8, Cfdc_SPEC>;
     impl Cfdc {
-        #[doc = "FIFO Depth = 0 message"]
         pub const _000: Self = Self::new(0);
-        #[doc = "FIFO Depth = 4 messages"]
+
         pub const _001: Self = Self::new(1);
-        #[doc = "FIFO Depth = 8 messages"]
+
         pub const _010: Self = Self::new(2);
-        #[doc = "FIFO Depth = 16 messages"]
+
         pub const _011: Self = Self::new(3);
-        #[doc = "FIFO Depth = 32 messages"]
+
         pub const _100: Self = Self::new(4);
-        #[doc = "FIFO Depth = 48 messages"]
+
         pub const _101: Self = Self::new(5);
-        #[doc = "FIFO Depth = Reserved"]
+
         pub const _110: Self = Self::new(6);
-        #[doc = "FIFO Depth = Reserved"]
+
         pub const _111: Self = Self::new(7);
     }
 }
@@ -4288,43 +5093,85 @@ pub struct Cfdcfsts_SPEC;
 impl crate::sealed::RegSpec for Cfdcfsts_SPEC {
     type DataType = u32;
 }
-#[doc = "Common FIFO Status Register"]
+
 pub type Cfdcfsts = crate::RegValueT<Cfdcfsts_SPEC>;
 
 impl Cfdcfsts {
-    #[doc = "Common FIFO Empty"]
     #[inline(always)]
     pub fn cfemp(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, cfdcfsts::Cfemp, Cfdcfsts_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,cfdcfsts::Cfemp, Cfdcfsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        cfdcfsts::Cfemp,
+        cfdcfsts::Cfemp,
+        Cfdcfsts_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            cfdcfsts::Cfemp,
+            cfdcfsts::Cfemp,
+            Cfdcfsts_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "Common FIFO Full"]
+
     #[inline(always)]
     pub fn cffll(
         self,
-    ) -> crate::common::RegisterField<1, 0x1, 1, 0, cfdcfsts::Cffll, Cfdcfsts_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<1,0x1,1,0,cfdcfsts::Cffll, Cfdcfsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        1,
+        0x1,
+        1,
+        0,
+        cfdcfsts::Cffll,
+        cfdcfsts::Cffll,
+        Cfdcfsts_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            1,
+            0x1,
+            1,
+            0,
+            cfdcfsts::Cffll,
+            cfdcfsts::Cffll,
+            Cfdcfsts_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "Common FIFO Message Lost"]
+
     #[inline(always)]
     pub fn cfmlt(
         self,
-    ) -> crate::common::RegisterField<2, 0x1, 1, 0, cfdcfsts::Cfmlt, Cfdcfsts_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        2,
+        0x1,
+        1,
+        0,
+        cfdcfsts::Cfmlt,
+        cfdcfsts::Cfmlt,
+        Cfdcfsts_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             2,
             0x1,
             1,
             0,
             cfdcfsts::Cfmlt,
+            cfdcfsts::Cfmlt,
             Cfdcfsts_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Common RX FIFO Interrupt Flag"]
+
     #[inline(always)]
     pub fn cfrxif(
         self,
@@ -4333,6 +5180,7 @@ impl Cfdcfsts {
         0x1,
         1,
         0,
+        cfdcfsts::Cfrxif,
         cfdcfsts::Cfrxif,
         Cfdcfsts_SPEC,
         crate::common::RW,
@@ -4343,11 +5191,12 @@ impl Cfdcfsts {
             1,
             0,
             cfdcfsts::Cfrxif,
+            cfdcfsts::Cfrxif,
             Cfdcfsts_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Common TX FIFO Interrupt Flag"]
+
     #[inline(always)]
     pub fn cftxif(
         self,
@@ -4356,6 +5205,7 @@ impl Cfdcfsts {
         0x1,
         1,
         0,
+        cfdcfsts::Cftxif,
         cfdcfsts::Cftxif,
         Cfdcfsts_SPEC,
         crate::common::RW,
@@ -4366,16 +5216,17 @@ impl Cfdcfsts {
             1,
             0,
             cfdcfsts::Cftxif,
+            cfdcfsts::Cftxif,
             Cfdcfsts_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Common FIFO Message Count"]
+
     #[inline(always)]
     pub fn cfmc(
         self,
-    ) -> crate::common::RegisterField<8, 0x3f, 1, 0, u8, Cfdcfsts_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0x3f,1,0,u8, Cfdcfsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0x3f, 1, 0, u8, u8, Cfdcfsts_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0x3f,1,0,u8,u8,Cfdcfsts_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdcfsts {
@@ -4390,45 +5241,40 @@ pub mod cfdcfsts {
     pub struct Cfemp_SPEC;
     pub type Cfemp = crate::EnumBitfieldStruct<u8, Cfemp_SPEC>;
     impl Cfemp {
-        #[doc = "FIFO not empty"]
         pub const _0: Self = Self::new(0);
-        #[doc = "FIFO empty"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cffll_SPEC;
     pub type Cffll = crate::EnumBitfieldStruct<u8, Cffll_SPEC>;
     impl Cffll {
-        #[doc = "FIFO not full"]
         pub const _0: Self = Self::new(0);
-        #[doc = "FIFO full"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cfmlt_SPEC;
     pub type Cfmlt = crate::EnumBitfieldStruct<u8, Cfmlt_SPEC>;
     impl Cfmlt {
-        #[doc = "Number of message lost in FIFO"]
         pub const _0: Self = Self::new(0);
-        #[doc = "FIFO message lost"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cfrxif_SPEC;
     pub type Cfrxif = crate::EnumBitfieldStruct<u8, Cfrxif_SPEC>;
     impl Cfrxif {
-        #[doc = "FIFO interrupt condition not satisfied after frame reception"]
         pub const _0: Self = Self::new(0);
-        #[doc = "FIFO interrupt condition satisfied after frame reception"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cftxif_SPEC;
     pub type Cftxif = crate::EnumBitfieldStruct<u8, Cftxif_SPEC>;
     impl Cftxif {
-        #[doc = "FIFO interrupt condition not satisfied after frame transmission"]
         pub const _0: Self = Self::new(0);
-        #[doc = "FIFO Interrupt condition satisfied after frame transmission"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -4438,16 +5284,15 @@ pub struct Cfdcfpctr_SPEC;
 impl crate::sealed::RegSpec for Cfdcfpctr_SPEC {
     type DataType = u32;
 }
-#[doc = "Common FIFO Pointer Control Register"]
+
 pub type Cfdcfpctr = crate::RegValueT<Cfdcfpctr_SPEC>;
 
 impl Cfdcfpctr {
-    #[doc = "Common FIFO Pointer Control"]
     #[inline(always)]
     pub fn cfpc(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdcfpctr_SPEC, crate::common::W> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdcfpctr_SPEC,crate::common::W>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdcfpctr_SPEC, crate::common::W> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdcfpctr_SPEC,crate::common::W>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdcfpctr {
@@ -4463,33 +5308,58 @@ pub struct Cfdfests_SPEC;
 impl crate::sealed::RegSpec for Cfdfests_SPEC {
     type DataType = u32;
 }
-#[doc = "FIFO Empty Status Register"]
+
 pub type Cfdfests = crate::RegValueT<Cfdfests_SPEC>;
 
 impl Cfdfests {
-    #[doc = "RX FIFO Empty Status"]
     #[inline(always)]
     pub fn rfxemp(
         self,
-    ) -> crate::common::RegisterField<0, 0x3, 1, 0, cfdfests::Rfxemp, Cfdfests_SPEC, crate::common::R>
-    {
+    ) -> crate::common::RegisterField<
+        0,
+        0x3,
+        1,
+        0,
+        cfdfests::Rfxemp,
+        cfdfests::Rfxemp,
+        Cfdfests_SPEC,
+        crate::common::R,
+    > {
         crate::common::RegisterField::<
             0,
             0x3,
             1,
             0,
             cfdfests::Rfxemp,
+            cfdfests::Rfxemp,
             Cfdfests_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "Common FIFO Empty Status"]
+
     #[inline(always)]
     pub fn cfemp(
         self,
-    ) -> crate::common::RegisterField<8, 0x1, 1, 0, cfdfests::Cfemp, Cfdfests_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<8,0x1,1,0,cfdfests::Cfemp, Cfdfests_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        8,
+        0x1,
+        1,
+        0,
+        cfdfests::Cfemp,
+        cfdfests::Cfemp,
+        Cfdfests_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            8,
+            0x1,
+            1,
+            0,
+            cfdfests::Cfemp,
+            cfdfests::Cfemp,
+            Cfdfests_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Cfdfests {
@@ -4504,18 +5374,16 @@ pub mod cfdfests {
     pub struct Rfxemp_SPEC;
     pub type Rfxemp = crate::EnumBitfieldStruct<u8, Rfxemp_SPEC>;
     impl Rfxemp {
-        #[doc = "Corresponding FIFO not empty"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Corresponding FIFO empty"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cfemp_SPEC;
     pub type Cfemp = crate::EnumBitfieldStruct<u8, Cfemp_SPEC>;
     impl Cfemp {
-        #[doc = "Corresponding FIFO not empty"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Corresponding FIFO empty"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -4525,33 +5393,58 @@ pub struct Cfdffsts_SPEC;
 impl crate::sealed::RegSpec for Cfdffsts_SPEC {
     type DataType = u32;
 }
-#[doc = "FIFO Full Status Register"]
+
 pub type Cfdffsts = crate::RegValueT<Cfdffsts_SPEC>;
 
 impl Cfdffsts {
-    #[doc = "RX FIF0 Full Status"]
     #[inline(always)]
     pub fn rfxfll(
         self,
-    ) -> crate::common::RegisterField<0, 0x3, 1, 0, cfdffsts::Rfxfll, Cfdffsts_SPEC, crate::common::R>
-    {
+    ) -> crate::common::RegisterField<
+        0,
+        0x3,
+        1,
+        0,
+        cfdffsts::Rfxfll,
+        cfdffsts::Rfxfll,
+        Cfdffsts_SPEC,
+        crate::common::R,
+    > {
         crate::common::RegisterField::<
             0,
             0x3,
             1,
             0,
             cfdffsts::Rfxfll,
+            cfdffsts::Rfxfll,
             Cfdffsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "Common FIF0 Full Status"]
+
     #[inline(always)]
     pub fn cffll(
         self,
-    ) -> crate::common::RegisterField<8, 0x1, 1, 0, cfdffsts::Cffll, Cfdffsts_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<8,0x1,1,0,cfdffsts::Cffll, Cfdffsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        8,
+        0x1,
+        1,
+        0,
+        cfdffsts::Cffll,
+        cfdffsts::Cffll,
+        Cfdffsts_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            8,
+            0x1,
+            1,
+            0,
+            cfdffsts::Cffll,
+            cfdffsts::Cffll,
+            Cfdffsts_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Cfdffsts {
@@ -4566,18 +5459,16 @@ pub mod cfdffsts {
     pub struct Rfxfll_SPEC;
     pub type Rfxfll = crate::EnumBitfieldStruct<u8, Rfxfll_SPEC>;
     impl Rfxfll {
-        #[doc = "Corresponding FIFO not full"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Corresponding FIFO full"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cffll_SPEC;
     pub type Cffll = crate::EnumBitfieldStruct<u8, Cffll_SPEC>;
     impl Cffll {
-        #[doc = "Corresponding FIFO not full"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Corresponding FIFO full"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -4587,33 +5478,58 @@ pub struct Cfdfmsts_SPEC;
 impl crate::sealed::RegSpec for Cfdfmsts_SPEC {
     type DataType = u32;
 }
-#[doc = "FIFO Message Lost Status Register"]
+
 pub type Cfdfmsts = crate::RegValueT<Cfdfmsts_SPEC>;
 
 impl Cfdfmsts {
-    #[doc = "RX FIFO Message Lost Status"]
     #[inline(always)]
     pub fn rfxmlt(
         self,
-    ) -> crate::common::RegisterField<0, 0x3, 1, 0, cfdfmsts::Rfxmlt, Cfdfmsts_SPEC, crate::common::R>
-    {
+    ) -> crate::common::RegisterField<
+        0,
+        0x3,
+        1,
+        0,
+        cfdfmsts::Rfxmlt,
+        cfdfmsts::Rfxmlt,
+        Cfdfmsts_SPEC,
+        crate::common::R,
+    > {
         crate::common::RegisterField::<
             0,
             0x3,
             1,
             0,
             cfdfmsts::Rfxmlt,
+            cfdfmsts::Rfxmlt,
             Cfdfmsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "Common FIFO Message Lost Status"]
+
     #[inline(always)]
     pub fn cfmlt(
         self,
-    ) -> crate::common::RegisterField<8, 0x1, 1, 0, cfdfmsts::Cfmlt, Cfdfmsts_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<8,0x1,1,0,cfdfmsts::Cfmlt, Cfdfmsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        8,
+        0x1,
+        1,
+        0,
+        cfdfmsts::Cfmlt,
+        cfdfmsts::Cfmlt,
+        Cfdfmsts_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            8,
+            0x1,
+            1,
+            0,
+            cfdfmsts::Cfmlt,
+            cfdfmsts::Cfmlt,
+            Cfdfmsts_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Cfdfmsts {
@@ -4628,18 +5544,16 @@ pub mod cfdfmsts {
     pub struct Rfxmlt_SPEC;
     pub type Rfxmlt = crate::EnumBitfieldStruct<u8, Rfxmlt_SPEC>;
     impl Rfxmlt {
-        #[doc = "Corresponding FIFO Message Lost flag not set"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Corresponding FIFO Message Lost flag set"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cfmlt_SPEC;
     pub type Cfmlt = crate::EnumBitfieldStruct<u8, Cfmlt_SPEC>;
     impl Cfmlt {
-        #[doc = "Corresponding FIFO Message Lost flag not set"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Corresponding FIFO Message Lost flag set"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -4649,11 +5563,10 @@ pub struct Cfdrfists_SPEC;
 impl crate::sealed::RegSpec for Cfdrfists_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Interrupt Flag Status Register"]
+
 pub type Cfdrfists = crate::RegValueT<Cfdrfists_SPEC>;
 
 impl Cfdrfists {
-    #[doc = "RX FIFO\\[x\\] Interrupt Flag Status"]
     #[inline(always)]
     pub fn rfxif(
         self,
@@ -4663,6 +5576,7 @@ impl Cfdrfists {
         1,
         0,
         cfdrfists::Rfxif,
+        cfdrfists::Rfxif,
         Cfdrfists_SPEC,
         crate::common::R,
     > {
@@ -4671,6 +5585,7 @@ impl Cfdrfists {
             0x3,
             1,
             0,
+            cfdrfists::Rfxif,
             cfdrfists::Rfxif,
             Cfdrfists_SPEC,
             crate::common::R,
@@ -4689,9 +5604,8 @@ pub mod cfdrfists {
     pub struct Rfxif_SPEC;
     pub type Rfxif = crate::EnumBitfieldStruct<u8, Rfxif_SPEC>;
     impl Rfxif {
-        #[doc = "Corresponding RX FIFO Interrupt flag not set"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Corresponding RX FIFO Interrupt flag set"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -4701,33 +5615,83 @@ pub struct Cfdtmc_SPEC;
 impl crate::sealed::RegSpec for Cfdtmc_SPEC {
     type DataType = u8;
 }
-#[doc = "TX Message Buffer Control Registers %s"]
+
 pub type Cfdtmc = crate::RegValueT<Cfdtmc_SPEC>;
 
 impl Cfdtmc {
-    #[doc = "TX Message Buffer Transmission Request"]
     #[inline(always)]
     pub fn tmtr(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, cfdtmc::Tmtr, Cfdtmc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,cfdtmc::Tmtr, Cfdtmc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        cfdtmc::Tmtr,
+        cfdtmc::Tmtr,
+        Cfdtmc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            cfdtmc::Tmtr,
+            cfdtmc::Tmtr,
+            Cfdtmc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "TX Message Buffer Transmission Abort Request"]
+
     #[inline(always)]
     pub fn tmtar(
         self,
-    ) -> crate::common::RegisterField<1, 0x1, 1, 0, cfdtmc::Tmtar, Cfdtmc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<1,0x1,1,0,cfdtmc::Tmtar, Cfdtmc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        1,
+        0x1,
+        1,
+        0,
+        cfdtmc::Tmtar,
+        cfdtmc::Tmtar,
+        Cfdtmc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            1,
+            0x1,
+            1,
+            0,
+            cfdtmc::Tmtar,
+            cfdtmc::Tmtar,
+            Cfdtmc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "TX Message Buffer One-shot Mode"]
+
     #[inline(always)]
     pub fn tmom(
         self,
-    ) -> crate::common::RegisterField<2, 0x1, 1, 0, cfdtmc::Tmom, Cfdtmc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<2,0x1,1,0,cfdtmc::Tmom, Cfdtmc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        2,
+        0x1,
+        1,
+        0,
+        cfdtmc::Tmom,
+        cfdtmc::Tmom,
+        Cfdtmc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            2,
+            0x1,
+            1,
+            0,
+            cfdtmc::Tmom,
+            cfdtmc::Tmom,
+            Cfdtmc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Cfdtmc {
@@ -4742,27 +5706,24 @@ pub mod cfdtmc {
     pub struct Tmtr_SPEC;
     pub type Tmtr = crate::EnumBitfieldStruct<u8, Tmtr_SPEC>;
     impl Tmtr {
-        #[doc = "TX Message buffer transmission not requested"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX message buffer transmission requested"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Tmtar_SPEC;
     pub type Tmtar = crate::EnumBitfieldStruct<u8, Tmtar_SPEC>;
     impl Tmtar {
-        #[doc = "TX message buffer transmission request abort not requested"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX message buffer transmission request abort requested"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Tmom_SPEC;
     pub type Tmom = crate::EnumBitfieldStruct<u8, Tmom_SPEC>;
     impl Tmom {
-        #[doc = "TX message buffer not configured in one-shot mode"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX message buffer configured in one-shot mode"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -4772,61 +5733,104 @@ pub struct Cfdtmsts_SPEC;
 impl crate::sealed::RegSpec for Cfdtmsts_SPEC {
     type DataType = u8;
 }
-#[doc = "TX Message Buffer Status Registers %s"]
+
 pub type Cfdtmsts = crate::RegValueT<Cfdtmsts_SPEC>;
 
 impl Cfdtmsts {
-    #[doc = "TX Message Buffer Transmission Status"]
     #[inline(always)]
     pub fn tmtsts(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, cfdtmsts::Tmtsts, Cfdtmsts_SPEC, crate::common::R>
-    {
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        cfdtmsts::Tmtsts,
+        cfdtmsts::Tmtsts,
+        Cfdtmsts_SPEC,
+        crate::common::R,
+    > {
         crate::common::RegisterField::<
             0,
             0x1,
             1,
             0,
             cfdtmsts::Tmtsts,
+            cfdtmsts::Tmtsts,
             Cfdtmsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "TX Message Buffer Transmission Result Flag"]
+
     #[inline(always)]
     pub fn tmtrf(
         self,
-    ) -> crate::common::RegisterField<1, 0x3, 1, 0, cfdtmsts::Tmtrf, Cfdtmsts_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        1,
+        0x3,
+        1,
+        0,
+        cfdtmsts::Tmtrf,
+        cfdtmsts::Tmtrf,
+        Cfdtmsts_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             1,
             0x3,
             1,
             0,
             cfdtmsts::Tmtrf,
+            cfdtmsts::Tmtrf,
             Cfdtmsts_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "TX Message Buffer Transmission Request Mirrored"]
+
     #[inline(always)]
     pub fn tmtrm(
         self,
-    ) -> crate::common::RegisterField<3, 0x1, 1, 0, cfdtmsts::Tmtrm, Cfdtmsts_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<3,0x1,1,0,cfdtmsts::Tmtrm, Cfdtmsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        3,
+        0x1,
+        1,
+        0,
+        cfdtmsts::Tmtrm,
+        cfdtmsts::Tmtrm,
+        Cfdtmsts_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            3,
+            0x1,
+            1,
+            0,
+            cfdtmsts::Tmtrm,
+            cfdtmsts::Tmtrm,
+            Cfdtmsts_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "TX Message Buffer Transmission Abort Request Mirrored"]
+
     #[inline(always)]
     pub fn tmtarm(
         self,
-    ) -> crate::common::RegisterField<4, 0x1, 1, 0, cfdtmsts::Tmtarm, Cfdtmsts_SPEC, crate::common::R>
-    {
+    ) -> crate::common::RegisterField<
+        4,
+        0x1,
+        1,
+        0,
+        cfdtmsts::Tmtarm,
+        cfdtmsts::Tmtarm,
+        Cfdtmsts_SPEC,
+        crate::common::R,
+    > {
         crate::common::RegisterField::<
             4,
             0x1,
             1,
             0,
+            cfdtmsts::Tmtarm,
             cfdtmsts::Tmtarm,
             Cfdtmsts_SPEC,
             crate::common::R,
@@ -4845,40 +5849,36 @@ pub mod cfdtmsts {
     pub struct Tmtsts_SPEC;
     pub type Tmtsts = crate::EnumBitfieldStruct<u8, Tmtsts_SPEC>;
     impl Tmtsts {
-        #[doc = "No on-going transmission"]
         pub const _0: Self = Self::new(0);
-        #[doc = "On-going transmission"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Tmtrf_SPEC;
     pub type Tmtrf = crate::EnumBitfieldStruct<u8, Tmtrf_SPEC>;
     impl Tmtrf {
-        #[doc = "No result"]
         pub const _00: Self = Self::new(0);
-        #[doc = "Transmission aborted from the TX message buffer"]
+
         pub const _01: Self = Self::new(1);
-        #[doc = "Transmission successful from the TX message buffer and transmission abort was not requested"]
+
         pub const _10: Self = Self::new(2);
-        #[doc = "Transmission successful from the TX message buffer and transmission abort was requested"]
+
         pub const _11: Self = Self::new(3);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Tmtrm_SPEC;
     pub type Tmtrm = crate::EnumBitfieldStruct<u8, Tmtrm_SPEC>;
     impl Tmtrm {
-        #[doc = "TX message buffer transmission not requested"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX message buffer transmission requested"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Tmtarm_SPEC;
     pub type Tmtarm = crate::EnumBitfieldStruct<u8, Tmtarm_SPEC>;
     impl Tmtarm {
-        #[doc = "TX message buffer transmission request abort not requested"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX message buffer transmission request abort requested"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -4888,11 +5888,10 @@ pub struct Cfdtmtrsts_SPEC;
 impl crate::sealed::RegSpec for Cfdtmtrsts_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Transmission Request Status Register"]
+
 pub type Cfdtmtrsts = crate::RegValueT<Cfdtmtrsts_SPEC>;
 
 impl Cfdtmtrsts {
-    #[doc = "TX Message Buffer Transmission Request Status"]
     #[inline(always)]
     pub fn cfdtmtrsts(
         self,
@@ -4902,6 +5901,7 @@ impl Cfdtmtrsts {
         1,
         0,
         cfdtmtrsts::Cfdtmtrsts,
+        cfdtmtrsts::Cfdtmtrsts,
         Cfdtmtrsts_SPEC,
         crate::common::R,
     > {
@@ -4910,6 +5910,7 @@ impl Cfdtmtrsts {
             0xf,
             1,
             0,
+            cfdtmtrsts::Cfdtmtrsts,
             cfdtmtrsts::Cfdtmtrsts,
             Cfdtmtrsts_SPEC,
             crate::common::R,
@@ -4928,9 +5929,8 @@ pub mod cfdtmtrsts {
     pub struct Cfdtmtrsts_SPEC;
     pub type Cfdtmtrsts = crate::EnumBitfieldStruct<u8, Cfdtmtrsts_SPEC>;
     impl Cfdtmtrsts {
-        #[doc = "Transmission not requested for corresponding TX message buffer"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Transmission requested for corresponding TX message buffer"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -4940,11 +5940,10 @@ pub struct Cfdtmtarsts_SPEC;
 impl crate::sealed::RegSpec for Cfdtmtarsts_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Transmission Abort Request Status Register"]
+
 pub type Cfdtmtarsts = crate::RegValueT<Cfdtmtarsts_SPEC>;
 
 impl Cfdtmtarsts {
-    #[doc = "TX Message Buffer Transmission Abort Request Status"]
     #[inline(always)]
     pub fn cfdtmtarsts(
         self,
@@ -4954,6 +5953,7 @@ impl Cfdtmtarsts {
         1,
         0,
         cfdtmtarsts::Cfdtmtarsts,
+        cfdtmtarsts::Cfdtmtarsts,
         Cfdtmtarsts_SPEC,
         crate::common::R,
     > {
@@ -4962,6 +5962,7 @@ impl Cfdtmtarsts {
             0xf,
             1,
             0,
+            cfdtmtarsts::Cfdtmtarsts,
             cfdtmtarsts::Cfdtmtarsts,
             Cfdtmtarsts_SPEC,
             crate::common::R,
@@ -4980,9 +5981,8 @@ pub mod cfdtmtarsts {
     pub struct Cfdtmtarsts_SPEC;
     pub type Cfdtmtarsts = crate::EnumBitfieldStruct<u8, Cfdtmtarsts_SPEC>;
     impl Cfdtmtarsts {
-        #[doc = "Transmission abort not requested for corresponding TX message buffer"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Transmission abort requested for corresponding TX message buffer"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -4992,11 +5992,10 @@ pub struct Cfdtmtcsts_SPEC;
 impl crate::sealed::RegSpec for Cfdtmtcsts_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Transmission Completion Status Register"]
+
 pub type Cfdtmtcsts = crate::RegValueT<Cfdtmtcsts_SPEC>;
 
 impl Cfdtmtcsts {
-    #[doc = "TX Message Buffer Transmission Completion Status"]
     #[inline(always)]
     pub fn cfdtmtcsts(
         self,
@@ -5006,6 +6005,7 @@ impl Cfdtmtcsts {
         1,
         0,
         cfdtmtcsts::Cfdtmtcsts,
+        cfdtmtcsts::Cfdtmtcsts,
         Cfdtmtcsts_SPEC,
         crate::common::R,
     > {
@@ -5014,6 +6014,7 @@ impl Cfdtmtcsts {
             0xf,
             1,
             0,
+            cfdtmtcsts::Cfdtmtcsts,
             cfdtmtcsts::Cfdtmtcsts,
             Cfdtmtcsts_SPEC,
             crate::common::R,
@@ -5032,9 +6033,8 @@ pub mod cfdtmtcsts {
     pub struct Cfdtmtcsts_SPEC;
     pub type Cfdtmtcsts = crate::EnumBitfieldStruct<u8, Cfdtmtcsts_SPEC>;
     impl Cfdtmtcsts {
-        #[doc = "Transmission not complete for corresponding TX message buffer"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Transmission completed for corresponding TX message buffer"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -5044,11 +6044,10 @@ pub struct Cfdtmtasts_SPEC;
 impl crate::sealed::RegSpec for Cfdtmtasts_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Transmission Abort Status Register"]
+
 pub type Cfdtmtasts = crate::RegValueT<Cfdtmtasts_SPEC>;
 
 impl Cfdtmtasts {
-    #[doc = "TX Message Buffer Transmission Abort Status"]
     #[inline(always)]
     pub fn cfdtmtasts(
         self,
@@ -5058,6 +6057,7 @@ impl Cfdtmtasts {
         1,
         0,
         cfdtmtasts::Cfdtmtasts,
+        cfdtmtasts::Cfdtmtasts,
         Cfdtmtasts_SPEC,
         crate::common::R,
     > {
@@ -5066,6 +6066,7 @@ impl Cfdtmtasts {
             0xf,
             1,
             0,
+            cfdtmtasts::Cfdtmtasts,
             cfdtmtasts::Cfdtmtasts,
             Cfdtmtasts_SPEC,
             crate::common::R,
@@ -5084,9 +6085,8 @@ pub mod cfdtmtasts {
     pub struct Cfdtmtasts_SPEC;
     pub type Cfdtmtasts = crate::EnumBitfieldStruct<u8, Cfdtmtasts_SPEC>;
     impl Cfdtmtasts {
-        #[doc = "Transmission not aborted for corresponding TX message buffer"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Transmission aborted for corresponding TX message buffer"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -5096,21 +6096,29 @@ pub struct Cfdtmiec_SPEC;
 impl crate::sealed::RegSpec for Cfdtmiec_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Interrupt Enable Configuration Register"]
+
 pub type Cfdtmiec = crate::RegValueT<Cfdtmiec_SPEC>;
 
 impl Cfdtmiec {
-    #[doc = "TX Message Buffer Interrupt Enable"]
     #[inline(always)]
     pub fn tmieg(
         self,
-    ) -> crate::common::RegisterField<0, 0xf, 1, 0, cfdtmiec::TmiEg, Cfdtmiec_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        0,
+        0xf,
+        1,
+        0,
+        cfdtmiec::TmiEg,
+        cfdtmiec::TmiEg,
+        Cfdtmiec_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             0,
             0xf,
             1,
             0,
+            cfdtmiec::TmiEg,
             cfdtmiec::TmiEg,
             Cfdtmiec_SPEC,
             crate::common::RW,
@@ -5129,9 +6137,8 @@ pub mod cfdtmiec {
     pub struct TmiEg_SPEC;
     pub type TmiEg = crate::EnumBitfieldStruct<u8, TmiEg_SPEC>;
     impl TmiEg {
-        #[doc = "TX message buffer interrupt disabled for corresponding TX message buffer"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX message buffer interrupt enabled for corresponding TX message buffer"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -5141,19 +6148,35 @@ pub struct Cfdtxqcc_SPEC;
 impl crate::sealed::RegSpec for Cfdtxqcc_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Queue Configuration/Control Register"]
+
 pub type Cfdtxqcc = crate::RegValueT<Cfdtxqcc_SPEC>;
 
 impl Cfdtxqcc {
-    #[doc = "TX Queue Enable"]
     #[inline(always)]
     pub fn txqe(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, cfdtxqcc::Txqe, Cfdtxqcc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,cfdtxqcc::Txqe, Cfdtxqcc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        cfdtxqcc::Txqe,
+        cfdtxqcc::Txqe,
+        Cfdtxqcc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            cfdtxqcc::Txqe,
+            cfdtxqcc::Txqe,
+            Cfdtxqcc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "TX Queue TX Interrupt Enable"]
+
     #[inline(always)]
     pub fn txqtxie(
         self,
@@ -5162,6 +6185,7 @@ impl Cfdtxqcc {
         0x1,
         1,
         0,
+        cfdtxqcc::Txqtxie,
         cfdtxqcc::Txqtxie,
         Cfdtxqcc_SPEC,
         crate::common::RW,
@@ -5172,37 +6196,56 @@ impl Cfdtxqcc {
             1,
             0,
             cfdtxqcc::Txqtxie,
+            cfdtxqcc::Txqtxie,
             Cfdtxqcc_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "TX Queue Interrupt Mode"]
+
     #[inline(always)]
     pub fn txqim(
         self,
-    ) -> crate::common::RegisterField<7, 0x1, 1, 0, cfdtxqcc::Txqim, Cfdtxqcc_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        7,
+        0x1,
+        1,
+        0,
+        cfdtxqcc::Txqim,
+        cfdtxqcc::Txqim,
+        Cfdtxqcc_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             7,
             0x1,
             1,
             0,
             cfdtxqcc::Txqim,
+            cfdtxqcc::Txqim,
             Cfdtxqcc_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "TX Queue Depth Configuration"]
+
     #[inline(always)]
     pub fn txqdc(
         self,
-    ) -> crate::common::RegisterField<8, 0x3, 1, 0, cfdtxqcc::Txqdc, Cfdtxqcc_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        8,
+        0x3,
+        1,
+        0,
+        cfdtxqcc::Txqdc,
+        cfdtxqcc::Txqdc,
+        Cfdtxqcc_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             8,
             0x3,
             1,
             0,
+            cfdtxqcc::Txqdc,
             cfdtxqcc::Txqdc,
             Cfdtxqcc_SPEC,
             crate::common::RW,
@@ -5221,40 +6264,36 @@ pub mod cfdtxqcc {
     pub struct Txqe_SPEC;
     pub type Txqe = crate::EnumBitfieldStruct<u8, Txqe_SPEC>;
     impl Txqe {
-        #[doc = "TX Queue disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX Queue enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Txqtxie_SPEC;
     pub type Txqtxie = crate::EnumBitfieldStruct<u8, Txqtxie_SPEC>;
     impl Txqtxie {
-        #[doc = "TX Queue TX interrupt disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX Queue TX interrupt enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Txqim_SPEC;
     pub type Txqim = crate::EnumBitfieldStruct<u8, Txqim_SPEC>;
     impl Txqim {
-        #[doc = "When the last message is successfully transmitted"]
         pub const _0: Self = Self::new(0);
-        #[doc = "At every successful transmission"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Txqdc_SPEC;
     pub type Txqdc = crate::EnumBitfieldStruct<u8, Txqdc_SPEC>;
     impl Txqdc {
-        #[doc = "0 messages"]
         pub const _0_X_00: Self = Self::new(0);
-        #[doc = "Reserved"]
+
         pub const _0_X_01: Self = Self::new(1);
-        #[doc = "3 messages"]
+
         pub const _0_X_10: Self = Self::new(0);
-        #[doc = "4 messages"]
+
         pub const _0_X_11: Self = Self::new(1);
     }
 }
@@ -5264,11 +6303,10 @@ pub struct Cfdtxqsts_SPEC;
 impl crate::sealed::RegSpec for Cfdtxqsts_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Queue Status Register"]
+
 pub type Cfdtxqsts = crate::RegValueT<Cfdtxqsts_SPEC>;
 
 impl Cfdtxqsts {
-    #[doc = "TX Queue Empty"]
     #[inline(always)]
     pub fn txqemp(
         self,
@@ -5277,6 +6315,7 @@ impl Cfdtxqsts {
         0x1,
         1,
         0,
+        cfdtxqsts::Txqemp,
         cfdtxqsts::Txqemp,
         Cfdtxqsts_SPEC,
         crate::common::R,
@@ -5287,11 +6326,12 @@ impl Cfdtxqsts {
             1,
             0,
             cfdtxqsts::Txqemp,
+            cfdtxqsts::Txqemp,
             Cfdtxqsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "TX Queue Full"]
+
     #[inline(always)]
     pub fn txqfll(
         self,
@@ -5300,6 +6340,7 @@ impl Cfdtxqsts {
         0x1,
         1,
         0,
+        cfdtxqsts::Txqfll,
         cfdtxqsts::Txqfll,
         Cfdtxqsts_SPEC,
         crate::common::R,
@@ -5310,11 +6351,12 @@ impl Cfdtxqsts {
             1,
             0,
             cfdtxqsts::Txqfll,
+            cfdtxqsts::Txqfll,
             Cfdtxqsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "TX Queue TX Interrupt Flag"]
+
     #[inline(always)]
     pub fn txqtxif(
         self,
@@ -5323,6 +6365,7 @@ impl Cfdtxqsts {
         0x1,
         1,
         0,
+        cfdtxqsts::Txqtxif,
         cfdtxqsts::Txqtxif,
         Cfdtxqsts_SPEC,
         crate::common::RW,
@@ -5333,16 +6376,17 @@ impl Cfdtxqsts {
             1,
             0,
             cfdtxqsts::Txqtxif,
+            cfdtxqsts::Txqtxif,
             Cfdtxqsts_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "TX Queue Message Count"]
+
     #[inline(always)]
     pub fn txqmc(
         self,
-    ) -> crate::common::RegisterField<8, 0x7, 1, 0, u8, Cfdtxqsts_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0x7,1,0,u8, Cfdtxqsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0x7, 1, 0, u8, u8, Cfdtxqsts_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0x7,1,0,u8,u8,Cfdtxqsts_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtxqsts {
@@ -5357,27 +6401,24 @@ pub mod cfdtxqsts {
     pub struct Txqemp_SPEC;
     pub type Txqemp = crate::EnumBitfieldStruct<u8, Txqemp_SPEC>;
     impl Txqemp {
-        #[doc = "TX Queue not empty"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX Queue empty"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Txqfll_SPEC;
     pub type Txqfll = crate::EnumBitfieldStruct<u8, Txqfll_SPEC>;
     impl Txqfll {
-        #[doc = "TX Queue not full"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX Queue full"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Txqtxif_SPEC;
     pub type Txqtxif = crate::EnumBitfieldStruct<u8, Txqtxif_SPEC>;
     impl Txqtxif {
-        #[doc = "TX Queue interrupt condition not satisfied after a frame TX"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX Queue interrupt condition satisfied after a frame TX"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -5387,16 +6428,16 @@ pub struct Cfdtxqpctr_SPEC;
 impl crate::sealed::RegSpec for Cfdtxqpctr_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Queue Pointer Control Register"]
+
 pub type Cfdtxqpctr = crate::RegValueT<Cfdtxqpctr_SPEC>;
 
 impl Cfdtxqpctr {
-    #[doc = "TX Queue Pointer Control"]
     #[inline(always)]
     pub fn txqpc(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdtxqpctr_SPEC, crate::common::W> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdtxqpctr_SPEC,crate::common::W>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdtxqpctr_SPEC, crate::common::W>
+    {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdtxqpctr_SPEC,crate::common::W>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtxqpctr {
@@ -5412,51 +6453,85 @@ pub struct Cfdthlcc_SPEC;
 impl crate::sealed::RegSpec for Cfdthlcc_SPEC {
     type DataType = u32;
 }
-#[doc = "TX History List Configuration/Control Register"]
+
 pub type Cfdthlcc = crate::RegValueT<Cfdthlcc_SPEC>;
 
 impl Cfdthlcc {
-    #[doc = "TX History List Enable"]
     #[inline(always)]
     pub fn thle(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, cfdthlcc::Thle, Cfdthlcc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,cfdthlcc::Thle, Cfdthlcc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        cfdthlcc::Thle,
+        cfdthlcc::Thle,
+        Cfdthlcc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            cfdthlcc::Thle,
+            cfdthlcc::Thle,
+            Cfdthlcc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "TX History List Interrupt Enable"]
+
     #[inline(always)]
     pub fn thlie(
         self,
-    ) -> crate::common::RegisterField<8, 0x1, 1, 0, cfdthlcc::Thlie, Cfdthlcc_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        8,
+        0x1,
+        1,
+        0,
+        cfdthlcc::Thlie,
+        cfdthlcc::Thlie,
+        Cfdthlcc_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             8,
             0x1,
             1,
             0,
             cfdthlcc::Thlie,
+            cfdthlcc::Thlie,
             Cfdthlcc_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "TX History List Interrupt Mode"]
+
     #[inline(always)]
     pub fn thlim(
         self,
-    ) -> crate::common::RegisterField<9, 0x1, 1, 0, cfdthlcc::Thlim, Cfdthlcc_SPEC, crate::common::RW>
-    {
+    ) -> crate::common::RegisterField<
+        9,
+        0x1,
+        1,
+        0,
+        cfdthlcc::Thlim,
+        cfdthlcc::Thlim,
+        Cfdthlcc_SPEC,
+        crate::common::RW,
+    > {
         crate::common::RegisterField::<
             9,
             0x1,
             1,
             0,
             cfdthlcc::Thlim,
+            cfdthlcc::Thlim,
             Cfdthlcc_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "TX History List Dedicated TX Enable"]
+
     #[inline(always)]
     pub fn thldte(
         self,
@@ -5466,6 +6541,7 @@ impl Cfdthlcc {
         1,
         0,
         cfdthlcc::Thldte,
+        cfdthlcc::Thldte,
         Cfdthlcc_SPEC,
         crate::common::RW,
     > {
@@ -5474,6 +6550,7 @@ impl Cfdthlcc {
             0x1,
             1,
             0,
+            cfdthlcc::Thldte,
             cfdthlcc::Thldte,
             Cfdthlcc_SPEC,
             crate::common::RW,
@@ -5492,36 +6569,32 @@ pub mod cfdthlcc {
     pub struct Thle_SPEC;
     pub type Thle = crate::EnumBitfieldStruct<u8, Thle_SPEC>;
     impl Thle {
-        #[doc = "TX History List disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX History List enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Thlie_SPEC;
     pub type Thlie = crate::EnumBitfieldStruct<u8, Thlie_SPEC>;
     impl Thlie {
-        #[doc = "TX History List Interrupt disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX History List Interrupt enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Thlim_SPEC;
     pub type Thlim = crate::EnumBitfieldStruct<u8, Thlim_SPEC>;
     impl Thlim {
-        #[doc = "Interrupt generated if TX History List level reaches ¾ of the TX History List depth"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Interrupt generated for every successfully stored entry"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Thldte_SPEC;
     pub type Thldte = crate::EnumBitfieldStruct<u8, Thldte_SPEC>;
     impl Thldte {
-        #[doc = "TX FIFO + TX Queue"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Flat TX MB + TX FIFO + TX Queue"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -5531,11 +6604,10 @@ pub struct Cfdthlsts_SPEC;
 impl crate::sealed::RegSpec for Cfdthlsts_SPEC {
     type DataType = u32;
 }
-#[doc = "TX History List Status Register"]
+
 pub type Cfdthlsts = crate::RegValueT<Cfdthlsts_SPEC>;
 
 impl Cfdthlsts {
-    #[doc = "TX History List Empty"]
     #[inline(always)]
     pub fn thlemp(
         self,
@@ -5544,6 +6616,7 @@ impl Cfdthlsts {
         0x1,
         1,
         0,
+        cfdthlsts::Thlemp,
         cfdthlsts::Thlemp,
         Cfdthlsts_SPEC,
         crate::common::R,
@@ -5554,11 +6627,12 @@ impl Cfdthlsts {
             1,
             0,
             cfdthlsts::Thlemp,
+            cfdthlsts::Thlemp,
             Cfdthlsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "TX History List Full"]
+
     #[inline(always)]
     pub fn thlfll(
         self,
@@ -5567,6 +6641,7 @@ impl Cfdthlsts {
         0x1,
         1,
         0,
+        cfdthlsts::Thlfll,
         cfdthlsts::Thlfll,
         Cfdthlsts_SPEC,
         crate::common::R,
@@ -5577,11 +6652,12 @@ impl Cfdthlsts {
             1,
             0,
             cfdthlsts::Thlfll,
+            cfdthlsts::Thlfll,
             Cfdthlsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "TX History List Entry Lost"]
+
     #[inline(always)]
     pub fn thlelt(
         self,
@@ -5590,6 +6666,7 @@ impl Cfdthlsts {
         0x1,
         1,
         0,
+        cfdthlsts::Thlelt,
         cfdthlsts::Thlelt,
         Cfdthlsts_SPEC,
         crate::common::RW,
@@ -5600,11 +6677,12 @@ impl Cfdthlsts {
             1,
             0,
             cfdthlsts::Thlelt,
+            cfdthlsts::Thlelt,
             Cfdthlsts_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "TX History List Interrupt Flag"]
+
     #[inline(always)]
     pub fn thlif(
         self,
@@ -5613,6 +6691,7 @@ impl Cfdthlsts {
         0x1,
         1,
         0,
+        cfdthlsts::Thlif,
         cfdthlsts::Thlif,
         Cfdthlsts_SPEC,
         crate::common::RW,
@@ -5623,16 +6702,17 @@ impl Cfdthlsts {
             1,
             0,
             cfdthlsts::Thlif,
+            cfdthlsts::Thlif,
             Cfdthlsts_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "TX History List Message Count"]
+
     #[inline(always)]
     pub fn thlmc(
         self,
-    ) -> crate::common::RegisterField<8, 0xf, 1, 0, u8, Cfdthlsts_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xf,1,0,u8, Cfdthlsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xf, 1, 0, u8, u8, Cfdthlsts_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xf,1,0,u8,u8,Cfdthlsts_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdthlsts {
@@ -5647,36 +6727,32 @@ pub mod cfdthlsts {
     pub struct Thlemp_SPEC;
     pub type Thlemp = crate::EnumBitfieldStruct<u8, Thlemp_SPEC>;
     impl Thlemp {
-        #[doc = "TX History List not empty"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX History List empty"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Thlfll_SPEC;
     pub type Thlfll = crate::EnumBitfieldStruct<u8, Thlfll_SPEC>;
     impl Thlfll {
-        #[doc = "TX History List not full"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX History List full"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Thlelt_SPEC;
     pub type Thlelt = crate::EnumBitfieldStruct<u8, Thlelt_SPEC>;
     impl Thlelt {
-        #[doc = "No entry lost in TX History List"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX History List entry Lost"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Thlif_SPEC;
     pub type Thlif = crate::EnumBitfieldStruct<u8, Thlif_SPEC>;
     impl Thlif {
-        #[doc = "TX History List interrupt condition not satisfied"]
         pub const _0: Self = Self::new(0);
-        #[doc = "TX History List interrupt condition satisfied"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -5686,16 +6762,16 @@ pub struct Cfdthlpctr_SPEC;
 impl crate::sealed::RegSpec for Cfdthlpctr_SPEC {
     type DataType = u32;
 }
-#[doc = "TX History List Pointer Control Register"]
+
 pub type Cfdthlpctr = crate::RegValueT<Cfdthlpctr_SPEC>;
 
 impl Cfdthlpctr {
-    #[doc = "TX History List Pointer Control"]
     #[inline(always)]
     pub fn thlpc(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdthlpctr_SPEC, crate::common::W> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdthlpctr_SPEC,crate::common::W>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdthlpctr_SPEC, crate::common::W>
+    {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdthlpctr_SPEC,crate::common::W>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdthlpctr {
@@ -5711,11 +6787,10 @@ pub struct Cfdgtintsts_SPEC;
 impl crate::sealed::RegSpec for Cfdgtintsts_SPEC {
     type DataType = u32;
 }
-#[doc = "Global TX Interrupt Status Register"]
+
 pub type Cfdgtintsts = crate::RegValueT<Cfdgtintsts_SPEC>;
 
 impl Cfdgtintsts {
-    #[doc = "TX Successful Interrupt Flag"]
     #[inline(always)]
     pub fn tsif0(
         self,
@@ -5724,6 +6799,7 @@ impl Cfdgtintsts {
         0x1,
         1,
         0,
+        cfdgtintsts::Tsif0,
         cfdgtintsts::Tsif0,
         Cfdgtintsts_SPEC,
         crate::common::R,
@@ -5734,11 +6810,12 @@ impl Cfdgtintsts {
             1,
             0,
             cfdgtintsts::Tsif0,
+            cfdgtintsts::Tsif0,
             Cfdgtintsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "TX Abort Interrupt Flag"]
+
     #[inline(always)]
     pub fn tai0(
         self,
@@ -5747,6 +6824,7 @@ impl Cfdgtintsts {
         0x1,
         1,
         0,
+        cfdgtintsts::Tai0,
         cfdgtintsts::Tai0,
         Cfdgtintsts_SPEC,
         crate::common::R,
@@ -5757,11 +6835,12 @@ impl Cfdgtintsts {
             1,
             0,
             cfdgtintsts::Tai0,
+            cfdgtintsts::Tai0,
             Cfdgtintsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "TX Queue Interrupt Flag"]
+
     #[inline(always)]
     pub fn tqif0(
         self,
@@ -5770,6 +6849,7 @@ impl Cfdgtintsts {
         0x1,
         1,
         0,
+        cfdgtintsts::Tqif0,
         cfdgtintsts::Tqif0,
         Cfdgtintsts_SPEC,
         crate::common::R,
@@ -5780,11 +6860,12 @@ impl Cfdgtintsts {
             1,
             0,
             cfdgtintsts::Tqif0,
+            cfdgtintsts::Tqif0,
             Cfdgtintsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "COM FIFO TX Mode Interrupt Flag"]
+
     #[inline(always)]
     pub fn cftif0(
         self,
@@ -5793,6 +6874,7 @@ impl Cfdgtintsts {
         0x1,
         1,
         0,
+        cfdgtintsts::Cftif0,
         cfdgtintsts::Cftif0,
         Cfdgtintsts_SPEC,
         crate::common::R,
@@ -5803,11 +6885,12 @@ impl Cfdgtintsts {
             1,
             0,
             cfdgtintsts::Cftif0,
+            cfdgtintsts::Cftif0,
             Cfdgtintsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "TX History List Interrupt"]
+
     #[inline(always)]
     pub fn thif0(
         self,
@@ -5817,6 +6900,7 @@ impl Cfdgtintsts {
         1,
         0,
         cfdgtintsts::Thif0,
+        cfdgtintsts::Thif0,
         Cfdgtintsts_SPEC,
         crate::common::R,
     > {
@@ -5825,6 +6909,7 @@ impl Cfdgtintsts {
             0x1,
             1,
             0,
+            cfdgtintsts::Thif0,
             cfdgtintsts::Thif0,
             Cfdgtintsts_SPEC,
             crate::common::R,
@@ -5843,45 +6928,40 @@ pub mod cfdgtintsts {
     pub struct Tsif0_SPEC;
     pub type Tsif0 = crate::EnumBitfieldStruct<u8, Tsif0_SPEC>;
     impl Tsif0 {
-        #[doc = "Channel n TX Successful Interrupt flag not set"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel n TX Successful Interrupt flag set"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Tai0_SPEC;
     pub type Tai0 = crate::EnumBitfieldStruct<u8, Tai0_SPEC>;
     impl Tai0 {
-        #[doc = "Channel n TX Abort Interrupt flag not set"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel n TX Abort Interrupt flag set"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Tqif0_SPEC;
     pub type Tqif0 = crate::EnumBitfieldStruct<u8, Tqif0_SPEC>;
     impl Tqif0 {
-        #[doc = "Channel n TX Queue Interrupt flag not set"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel n TX Queue Interrupt flag set"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cftif0_SPEC;
     pub type Cftif0 = crate::EnumBitfieldStruct<u8, Cftif0_SPEC>;
     impl Cftif0 {
-        #[doc = "Channel n COM FIFO TX Mode Interrupt flag not set"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel n COM FIFO TX Mode Interrupt flag set"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Thif0_SPEC;
     pub type Thif0 = crate::EnumBitfieldStruct<u8, Thif0_SPEC>;
     impl Thif0 {
-        #[doc = "Channel n TX History List Interrupt flag not set"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Channel n TX History List Interrupt flag set"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -5891,16 +6971,16 @@ pub struct Cfdgtstcfg_SPEC;
 impl crate::sealed::RegSpec for Cfdgtstcfg_SPEC {
     type DataType = u32;
 }
-#[doc = "Global Test Configuration Register"]
+
 pub type Cfdgtstcfg = crate::RegValueT<Cfdgtstcfg_SPEC>;
 
 impl Cfdgtstcfg {
-    #[doc = "RAM Test Mode Page Select"]
     #[inline(always)]
     pub fn rtmps(
         self,
-    ) -> crate::common::RegisterField<16, 0xf, 1, 0, u8, Cfdgtstcfg_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xf,1,0,u8, Cfdgtstcfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xf, 1, 0, u8, u8, Cfdgtstcfg_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xf,1,0,u8,u8,Cfdgtstcfg_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdgtstcfg {
@@ -5916,11 +6996,10 @@ pub struct Cfdgtstctr_SPEC;
 impl crate::sealed::RegSpec for Cfdgtstctr_SPEC {
     type DataType = u32;
 }
-#[doc = "Global Test Control Register"]
+
 pub type Cfdgtstctr = crate::RegValueT<Cfdgtstctr_SPEC>;
 
 impl Cfdgtstctr {
-    #[doc = "RAM Test Mode Enable"]
     #[inline(always)]
     pub fn rtme(
         self,
@@ -5930,6 +7009,7 @@ impl Cfdgtstctr {
         1,
         0,
         cfdgtstctr::Rtme,
+        cfdgtstctr::Rtme,
         Cfdgtstctr_SPEC,
         crate::common::RW,
     > {
@@ -5938,6 +7018,7 @@ impl Cfdgtstctr {
             0x1,
             1,
             0,
+            cfdgtstctr::Rtme,
             cfdgtstctr::Rtme,
             Cfdgtstctr_SPEC,
             crate::common::RW,
@@ -5956,9 +7037,8 @@ pub mod cfdgtstctr {
     pub struct Rtme_SPEC;
     pub type Rtme = crate::EnumBitfieldStruct<u8, Rtme_SPEC>;
     impl Rtme {
-        #[doc = "RAM test mode disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "RAM test mode enabled"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -5968,11 +7048,10 @@ pub struct Cfdgfdcfg_SPEC;
 impl crate::sealed::RegSpec for Cfdgfdcfg_SPEC {
     type DataType = u32;
 }
-#[doc = "Global FD Configuration Register"]
+
 pub type Cfdgfdcfg = crate::RegValueT<Cfdgfdcfg_SPEC>;
 
 impl Cfdgfdcfg {
-    #[doc = "RES Bit Protocol Exception Disable"]
     #[inline(always)]
     pub fn rped(
         self,
@@ -5981,6 +7060,7 @@ impl Cfdgfdcfg {
         0x1,
         1,
         0,
+        cfdgfdcfg::Rped,
         cfdgfdcfg::Rped,
         Cfdgfdcfg_SPEC,
         crate::common::RW,
@@ -5991,11 +7071,12 @@ impl Cfdgfdcfg {
             1,
             0,
             cfdgfdcfg::Rped,
+            cfdgfdcfg::Rped,
             Cfdgfdcfg_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Timestamp Capture Configuration"]
+
     #[inline(always)]
     pub fn tsccfg(
         self,
@@ -6005,6 +7086,7 @@ impl Cfdgfdcfg {
         1,
         0,
         cfdgfdcfg::Tsccfg,
+        cfdgfdcfg::Tsccfg,
         Cfdgfdcfg_SPEC,
         crate::common::RW,
     > {
@@ -6013,6 +7095,7 @@ impl Cfdgfdcfg {
             0x3,
             1,
             0,
+            cfdgfdcfg::Tsccfg,
             cfdgfdcfg::Tsccfg,
             Cfdgfdcfg_SPEC,
             crate::common::RW,
@@ -6031,22 +7114,20 @@ pub mod cfdgfdcfg {
     pub struct Rped_SPEC;
     pub type Rped = crate::EnumBitfieldStruct<u8, Rped_SPEC>;
     impl Rped {
-        #[doc = "Protocol exception event detection enabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Protocol exception event detection disabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Tsccfg_SPEC;
     pub type Tsccfg = crate::EnumBitfieldStruct<u8, Tsccfg_SPEC>;
     impl Tsccfg {
-        #[doc = "Timestamp capture at the sample point of SOF (start of frame)"]
         pub const _00: Self = Self::new(0);
-        #[doc = "Timestamp capture at frame valid indication"]
+
         pub const _01: Self = Self::new(1);
-        #[doc = "Timestamp capture at the sample point of RES bit"]
+
         pub const _10: Self = Self::new(2);
-        #[doc = "Reserved"]
+
         pub const _11: Self = Self::new(3);
     }
 }
@@ -6056,16 +7137,16 @@ pub struct Cfdglockk_SPEC;
 impl crate::sealed::RegSpec for Cfdglockk_SPEC {
     type DataType = u32;
 }
-#[doc = "Global Lock Key Register"]
+
 pub type Cfdglockk = crate::RegValueT<Cfdglockk_SPEC>;
 
 impl Cfdglockk {
-    #[doc = "Lock Key"]
     #[inline(always)]
     pub fn lock(
         self,
-    ) -> crate::common::RegisterField<0, 0xffff, 1, 0, u16, Cfdglockk_SPEC, crate::common::W> {
-        crate::common::RegisterField::<0,0xffff,1,0,u16, Cfdglockk_SPEC,crate::common::W>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xffff, 1, 0, u16, u16, Cfdglockk_SPEC, crate::common::W>
+    {
+        crate::common::RegisterField::<0,0xffff,1,0,u16,u16,Cfdglockk_SPEC,crate::common::W>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdglockk {
@@ -6081,17 +7162,16 @@ pub struct Cfdgaflignent_SPEC;
 impl crate::sealed::RegSpec for Cfdgaflignent_SPEC {
     type DataType = u32;
 }
-#[doc = "Global AFL Ignore Entry Register"]
+
 pub type Cfdgaflignent = crate::RegValueT<Cfdgaflignent_SPEC>;
 
 impl Cfdgaflignent {
-    #[doc = "Ignore Rule Number"]
     #[inline(always)]
     pub fn irn(
         self,
-    ) -> crate::common::RegisterField<0, 0x1f, 1, 0, u8, Cfdgaflignent_SPEC, crate::common::RW>
+    ) -> crate::common::RegisterField<0, 0x1f, 1, 0, u8, u8, Cfdgaflignent_SPEC, crate::common::RW>
     {
-        crate::common::RegisterField::<0,0x1f,1,0,u8, Cfdgaflignent_SPEC,crate::common::RW>::from_register(self,0)
+        crate::common::RegisterField::<0,0x1f,1,0,u8,u8,Cfdgaflignent_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdgaflignent {
@@ -6107,11 +7187,10 @@ pub struct Cfdgaflignctr_SPEC;
 impl crate::sealed::RegSpec for Cfdgaflignctr_SPEC {
     type DataType = u32;
 }
-#[doc = "Global AFL Ignore Control Register"]
+
 pub type Cfdgaflignctr = crate::RegValueT<Cfdgaflignctr_SPEC>;
 
 impl Cfdgaflignctr {
-    #[doc = "Ignore Rule Enable"]
     #[inline(always)]
     pub fn iren(
         self,
@@ -6120,6 +7199,7 @@ impl Cfdgaflignctr {
         0x1,
         1,
         0,
+        cfdgaflignctr::Iren,
         cfdgaflignctr::Iren,
         Cfdgaflignctr_SPEC,
         crate::common::RW,
@@ -6130,16 +7210,18 @@ impl Cfdgaflignctr {
             1,
             0,
             cfdgaflignctr::Iren,
+            cfdgaflignctr::Iren,
             Cfdgaflignctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Key Code"]
+
     #[inline(always)]
     pub fn key(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdgaflignctr_SPEC, crate::common::W> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdgaflignctr_SPEC,crate::common::W>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdgaflignctr_SPEC, crate::common::W>
+    {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdgaflignctr_SPEC,crate::common::W>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdgaflignctr {
@@ -6154,9 +7236,8 @@ pub mod cfdgaflignctr {
     pub struct Iren_SPEC;
     pub type Iren = crate::EnumBitfieldStruct<u8, Iren_SPEC>;
     impl Iren {
-        #[doc = "AFL entry number is not ignored"]
         pub const _0: Self = Self::new(0);
-        #[doc = "AFL entry number is ignored"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -6166,11 +7247,10 @@ pub struct Cfdcdtct_SPEC;
 impl crate::sealed::RegSpec for Cfdcdtct_SPEC {
     type DataType = u32;
 }
-#[doc = "DMA Transfer Control Register"]
+
 pub type Cfdcdtct = crate::RegValueT<Cfdcdtct_SPEC>;
 
 impl Cfdcdtct {
-    #[doc = "DMA Transfer Enable for RXFIFO 0"]
     #[inline(always)]
     pub fn rfdmae0(
         self,
@@ -6179,6 +7259,7 @@ impl Cfdcdtct {
         0x1,
         1,
         0,
+        cfdcdtct::Rfdmae0,
         cfdcdtct::Rfdmae0,
         Cfdcdtct_SPEC,
         crate::common::RW,
@@ -6189,11 +7270,12 @@ impl Cfdcdtct {
             1,
             0,
             cfdcdtct::Rfdmae0,
+            cfdcdtct::Rfdmae0,
             Cfdcdtct_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "DMA Transfer Enable for RXFIFO 1"]
+
     #[inline(always)]
     pub fn rfdmae1(
         self,
@@ -6202,6 +7284,7 @@ impl Cfdcdtct {
         0x1,
         1,
         0,
+        cfdcdtct::Rfdmae1,
         cfdcdtct::Rfdmae1,
         Cfdcdtct_SPEC,
         crate::common::RW,
@@ -6212,11 +7295,12 @@ impl Cfdcdtct {
             1,
             0,
             cfdcdtct::Rfdmae1,
+            cfdcdtct::Rfdmae1,
             Cfdcdtct_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "DMA Transfer Enable for Common FIFO 0"]
+
     #[inline(always)]
     pub fn cfdmae(
         self,
@@ -6226,6 +7310,7 @@ impl Cfdcdtct {
         1,
         0,
         cfdcdtct::Cfdmae,
+        cfdcdtct::Cfdmae,
         Cfdcdtct_SPEC,
         crate::common::RW,
     > {
@@ -6234,6 +7319,7 @@ impl Cfdcdtct {
             0x1,
             1,
             0,
+            cfdcdtct::Cfdmae,
             cfdcdtct::Cfdmae,
             Cfdcdtct_SPEC,
             crate::common::RW,
@@ -6252,27 +7338,24 @@ pub mod cfdcdtct {
     pub struct Rfdmae0_SPEC;
     pub type Rfdmae0 = crate::EnumBitfieldStruct<u8, Rfdmae0_SPEC>;
     impl Rfdmae0 {
-        #[doc = "DMA transfer request disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "DMA transfer request enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Rfdmae1_SPEC;
     pub type Rfdmae1 = crate::EnumBitfieldStruct<u8, Rfdmae1_SPEC>;
     impl Rfdmae1 {
-        #[doc = "DMA transfer request disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "DMA transfer request enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cfdmae_SPEC;
     pub type Cfdmae = crate::EnumBitfieldStruct<u8, Cfdmae_SPEC>;
     impl Cfdmae {
-        #[doc = "DMA transfer request disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "DMA transfer request enabled"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -6282,11 +7365,10 @@ pub struct Cfdcdtsts_SPEC;
 impl crate::sealed::RegSpec for Cfdcdtsts_SPEC {
     type DataType = u32;
 }
-#[doc = "DMA Transfer Status Register"]
+
 pub type Cfdcdtsts = crate::RegValueT<Cfdcdtsts_SPEC>;
 
 impl Cfdcdtsts {
-    #[doc = "DMA Transfer Status for RX FIFO 0"]
     #[inline(always)]
     pub fn rfdmasts0(
         self,
@@ -6295,6 +7377,7 @@ impl Cfdcdtsts {
         0x1,
         1,
         0,
+        cfdcdtsts::Rfdmasts0,
         cfdcdtsts::Rfdmasts0,
         Cfdcdtsts_SPEC,
         crate::common::R,
@@ -6305,11 +7388,12 @@ impl Cfdcdtsts {
             1,
             0,
             cfdcdtsts::Rfdmasts0,
+            cfdcdtsts::Rfdmasts0,
             Cfdcdtsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "DMA Transfer Status for RX FIFO 1"]
+
     #[inline(always)]
     pub fn rfdmasts1(
         self,
@@ -6318,6 +7402,7 @@ impl Cfdcdtsts {
         0x1,
         1,
         0,
+        cfdcdtsts::Rfdmasts1,
         cfdcdtsts::Rfdmasts1,
         Cfdcdtsts_SPEC,
         crate::common::R,
@@ -6328,11 +7413,12 @@ impl Cfdcdtsts {
             1,
             0,
             cfdcdtsts::Rfdmasts1,
+            cfdcdtsts::Rfdmasts1,
             Cfdcdtsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "DMA Transfer Status only for Common FIFO"]
+
     #[inline(always)]
     pub fn cfdmasts(
         self,
@@ -6342,6 +7428,7 @@ impl Cfdcdtsts {
         1,
         0,
         cfdcdtsts::Cfdmasts,
+        cfdcdtsts::Cfdmasts,
         Cfdcdtsts_SPEC,
         crate::common::R,
     > {
@@ -6350,6 +7437,7 @@ impl Cfdcdtsts {
             0x1,
             1,
             0,
+            cfdcdtsts::Cfdmasts,
             cfdcdtsts::Cfdmasts,
             Cfdcdtsts_SPEC,
             crate::common::R,
@@ -6368,27 +7456,24 @@ pub mod cfdcdtsts {
     pub struct Rfdmasts0_SPEC;
     pub type Rfdmasts0 = crate::EnumBitfieldStruct<u8, Rfdmasts0_SPEC>;
     impl Rfdmasts0 {
-        #[doc = "DMA transfer stopped"]
         pub const _0: Self = Self::new(0);
-        #[doc = "DMA transfer on going"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Rfdmasts1_SPEC;
     pub type Rfdmasts1 = crate::EnumBitfieldStruct<u8, Rfdmasts1_SPEC>;
     impl Rfdmasts1 {
-        #[doc = "DMA transfer stopped"]
         pub const _0: Self = Self::new(0);
-        #[doc = "DMA transfer on going"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cfdmasts_SPEC;
     pub type Cfdmasts = crate::EnumBitfieldStruct<u8, Cfdmasts_SPEC>;
     impl Cfdmasts {
-        #[doc = "DMA transfer stopped"]
         pub const _0: Self = Self::new(0);
-        #[doc = "DMA transfer on going"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -6398,24 +7483,40 @@ pub struct Cfdgrstc_SPEC;
 impl crate::sealed::RegSpec for Cfdgrstc_SPEC {
     type DataType = u32;
 }
-#[doc = "Global SW reset Register"]
+
 pub type Cfdgrstc = crate::RegValueT<Cfdgrstc_SPEC>;
 
 impl Cfdgrstc {
-    #[doc = "SW Reset"]
     #[inline(always)]
     pub fn srst(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, cfdgrstc::Srst, Cfdgrstc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,cfdgrstc::Srst, Cfdgrstc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        cfdgrstc::Srst,
+        cfdgrstc::Srst,
+        Cfdgrstc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            cfdgrstc::Srst,
+            cfdgrstc::Srst,
+            Cfdgrstc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Key Code"]
+
     #[inline(always)]
     pub fn key(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdgrstc_SPEC, crate::common::W> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdgrstc_SPEC,crate::common::W>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdgrstc_SPEC, crate::common::W> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdgrstc_SPEC,crate::common::W>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdgrstc {
@@ -6430,9 +7531,8 @@ pub mod cfdgrstc {
     pub struct Srst_SPEC;
     pub type Srst = crate::EnumBitfieldStruct<u8, Srst_SPEC>;
     impl Srst {
-        #[doc = "Normal state"]
         pub const _0: Self = Self::new(0);
-        #[doc = "SW reset state"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -6442,37 +7542,40 @@ pub struct Cfdc0Dcfg_SPEC;
 impl crate::sealed::RegSpec for Cfdc0Dcfg_SPEC {
     type DataType = u32;
 }
-#[doc = "Channel 0 Data Bitrate Configuration Register"]
+
 pub type Cfdc0Dcfg = crate::RegValueT<Cfdc0Dcfg_SPEC>;
 
 impl Cfdc0Dcfg {
-    #[doc = "Channel Data Baud Rate Prescaler"]
     #[inline(always)]
     pub fn dbrp(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdc0Dcfg_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdc0Dcfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdc0Dcfg_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdc0Dcfg_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Timing Segment 1"]
+
     #[inline(always)]
     pub fn dtseg1(
         self,
-    ) -> crate::common::RegisterField<8, 0x1f, 1, 0, u8, Cfdc0Dcfg_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0x1f,1,0,u8, Cfdc0Dcfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0x1f, 1, 0, u8, u8, Cfdc0Dcfg_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<8,0x1f,1,0,u8,u8,Cfdc0Dcfg_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Timing Segment 2"]
+
     #[inline(always)]
     pub fn dtseg2(
         self,
-    ) -> crate::common::RegisterField<16, 0xf, 1, 0, u8, Cfdc0Dcfg_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xf,1,0,u8, Cfdc0Dcfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xf, 1, 0, u8, u8, Cfdc0Dcfg_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xf,1,0,u8,u8,Cfdc0Dcfg_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Resynchronization Jump Width"]
+
     #[inline(always)]
     pub fn dsjw(
         self,
-    ) -> crate::common::RegisterField<24, 0xf, 1, 0, u8, Cfdc0Dcfg_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<24,0xf,1,0,u8, Cfdc0Dcfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xf, 1, 0, u8, u8, Cfdc0Dcfg_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<24,0xf,1,0,u8,u8,Cfdc0Dcfg_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdc0Dcfg {
@@ -6488,11 +7591,10 @@ pub struct Cfdc0Fdcfg_SPEC;
 impl crate::sealed::RegSpec for Cfdc0Fdcfg_SPEC {
     type DataType = u32;
 }
-#[doc = "Channel 0 CANFD Configuration Register"]
+
 pub type Cfdc0Fdcfg = crate::RegValueT<Cfdc0Fdcfg_SPEC>;
 
 impl Cfdc0Fdcfg {
-    #[doc = "Error Occurrence Counter Configuration"]
     #[inline(always)]
     pub fn eoccfg(
         self,
@@ -6501,6 +7603,7 @@ impl Cfdc0Fdcfg {
         0x7,
         1,
         0,
+        cfdc0fdcfg::Eoccfg,
         cfdc0fdcfg::Eoccfg,
         Cfdc0Fdcfg_SPEC,
         crate::common::RW,
@@ -6511,11 +7614,12 @@ impl Cfdc0Fdcfg {
             1,
             0,
             cfdc0fdcfg::Eoccfg,
+            cfdc0fdcfg::Eoccfg,
             Cfdc0Fdcfg_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Transceiver Delay Compensation Offset Configuration"]
+
     #[inline(always)]
     pub fn tdcoc(
         self,
@@ -6524,6 +7628,7 @@ impl Cfdc0Fdcfg {
         0x1,
         1,
         0,
+        cfdc0fdcfg::Tdcoc,
         cfdc0fdcfg::Tdcoc,
         Cfdc0Fdcfg_SPEC,
         crate::common::RW,
@@ -6534,11 +7639,12 @@ impl Cfdc0Fdcfg {
             1,
             0,
             cfdc0fdcfg::Tdcoc,
+            cfdc0fdcfg::Tdcoc,
             Cfdc0Fdcfg_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Transceiver Delay Compensation Enable"]
+
     #[inline(always)]
     pub fn tdce(
         self,
@@ -6547,6 +7653,7 @@ impl Cfdc0Fdcfg {
         0x1,
         1,
         0,
+        cfdc0fdcfg::Tdce,
         cfdc0fdcfg::Tdce,
         Cfdc0Fdcfg_SPEC,
         crate::common::RW,
@@ -6557,11 +7664,12 @@ impl Cfdc0Fdcfg {
             1,
             0,
             cfdc0fdcfg::Tdce,
+            cfdc0fdcfg::Tdce,
             Cfdc0Fdcfg_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Error State Indication Configuration"]
+
     #[inline(always)]
     pub fn esic(
         self,
@@ -6570,6 +7678,7 @@ impl Cfdc0Fdcfg {
         0x1,
         1,
         0,
+        cfdc0fdcfg::Esic,
         cfdc0fdcfg::Esic,
         Cfdc0Fdcfg_SPEC,
         crate::common::RW,
@@ -6580,18 +7689,20 @@ impl Cfdc0Fdcfg {
             1,
             0,
             cfdc0fdcfg::Esic,
+            cfdc0fdcfg::Esic,
             Cfdc0Fdcfg_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Transceiver Delay Compensation Offset"]
+
     #[inline(always)]
     pub fn tdco(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdc0Fdcfg_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdc0Fdcfg_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdc0Fdcfg_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdc0Fdcfg_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "FD-Only Enable"]
+
     #[inline(always)]
     pub fn fdoe(
         self,
@@ -6600,6 +7711,7 @@ impl Cfdc0Fdcfg {
         0x1,
         1,
         0,
+        cfdc0fdcfg::Fdoe,
         cfdc0fdcfg::Fdoe,
         Cfdc0Fdcfg_SPEC,
         crate::common::RW,
@@ -6610,11 +7722,12 @@ impl Cfdc0Fdcfg {
             1,
             0,
             cfdc0fdcfg::Fdoe,
+            cfdc0fdcfg::Fdoe,
             Cfdc0Fdcfg_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "RX Edge Filter Enable"]
+
     #[inline(always)]
     pub fn refe(
         self,
@@ -6623,6 +7736,7 @@ impl Cfdc0Fdcfg {
         0x1,
         1,
         0,
+        cfdc0fdcfg::Refe,
         cfdc0fdcfg::Refe,
         Cfdc0Fdcfg_SPEC,
         crate::common::RW,
@@ -6633,11 +7747,12 @@ impl Cfdc0Fdcfg {
             1,
             0,
             cfdc0fdcfg::Refe,
+            cfdc0fdcfg::Refe,
             Cfdc0Fdcfg_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Classical CAN Enable"]
+
     #[inline(always)]
     pub fn cloe(
         self,
@@ -6647,6 +7762,7 @@ impl Cfdc0Fdcfg {
         1,
         0,
         cfdc0fdcfg::Cloe,
+        cfdc0fdcfg::Cloe,
         Cfdc0Fdcfg_SPEC,
         crate::common::RW,
     > {
@@ -6655,6 +7771,7 @@ impl Cfdc0Fdcfg {
             0x1,
             1,
             0,
+            cfdc0fdcfg::Cloe,
             cfdc0fdcfg::Cloe,
             Cfdc0Fdcfg_SPEC,
             crate::common::RW,
@@ -6673,75 +7790,68 @@ pub mod cfdc0fdcfg {
     pub struct Eoccfg_SPEC;
     pub type Eoccfg = crate::EnumBitfieldStruct<u8, Eoccfg_SPEC>;
     impl Eoccfg {
-        #[doc = "All transmitter or receiver CAN frames"]
         pub const _000: Self = Self::new(0);
-        #[doc = "All transmitter CAN frames"]
+
         pub const _001: Self = Self::new(1);
-        #[doc = "All receiver CAN frames"]
+
         pub const _010: Self = Self::new(2);
-        #[doc = "Reserved"]
+
         pub const _011: Self = Self::new(3);
-        #[doc = "Only transmitter or receiver CANFD data-phase (fast bits)"]
+
         pub const _100: Self = Self::new(4);
-        #[doc = "Only transmitter CANFD data-phase (fast bits)"]
+
         pub const _101: Self = Self::new(5);
-        #[doc = "Only receiver CANFD data-phase (fast bits)"]
+
         pub const _110: Self = Self::new(6);
-        #[doc = "Reserved"]
+
         pub const _111: Self = Self::new(7);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Tdcoc_SPEC;
     pub type Tdcoc = crate::EnumBitfieldStruct<u8, Tdcoc_SPEC>;
     impl Tdcoc {
-        #[doc = "Measured + offset"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Offset-only"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Tdce_SPEC;
     pub type Tdce = crate::EnumBitfieldStruct<u8, Tdce_SPEC>;
     impl Tdce {
-        #[doc = "Transceiver delay compensation disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Transceiver delay compensation enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Esic_SPEC;
     pub type Esic = crate::EnumBitfieldStruct<u8, Esic_SPEC>;
     impl Esic {
-        #[doc = "The ESI bit in the frame represents the error state of the node itself"]
         pub const _0: Self = Self::new(0);
-        #[doc = "The ESI bit in the frame represents the error state of the message buffer if the node itself is not in error passive. If the node is in error passive, then the ESI bit is driven by the node itself."]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Fdoe_SPEC;
     pub type Fdoe = crate::EnumBitfieldStruct<u8, Fdoe_SPEC>;
     impl Fdoe {
-        #[doc = "FD-only mode disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "FD-only mode enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Refe_SPEC;
     pub type Refe = crate::EnumBitfieldStruct<u8, Refe_SPEC>;
     impl Refe {
-        #[doc = "RX edge filter disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "RX edge filter enabled"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cloe_SPEC;
     pub type Cloe = crate::EnumBitfieldStruct<u8, Cloe_SPEC>;
     impl Cloe {
-        #[doc = "Classical CAN mode disabled"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Classical CAN mode enabled"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -6751,11 +7861,10 @@ pub struct Cfdc0Fdctr_SPEC;
 impl crate::sealed::RegSpec for Cfdc0Fdctr_SPEC {
     type DataType = u32;
 }
-#[doc = "Channel 0 CANFD Control Register"]
+
 pub type Cfdc0Fdctr = crate::RegValueT<Cfdc0Fdctr_SPEC>;
 
 impl Cfdc0Fdctr {
-    #[doc = "Error Occurrence Counter Clear"]
     #[inline(always)]
     pub fn eocclr(
         self,
@@ -6764,6 +7873,7 @@ impl Cfdc0Fdctr {
         0x1,
         1,
         0,
+        cfdc0fdctr::Eocclr,
         cfdc0fdctr::Eocclr,
         Cfdc0Fdctr_SPEC,
         crate::common::RW,
@@ -6774,11 +7884,12 @@ impl Cfdc0Fdctr {
             1,
             0,
             cfdc0fdctr::Eocclr,
+            cfdc0fdctr::Eocclr,
             Cfdc0Fdctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Successful Occurrence Counter Clear"]
+
     #[inline(always)]
     pub fn socclr(
         self,
@@ -6788,6 +7899,7 @@ impl Cfdc0Fdctr {
         1,
         0,
         cfdc0fdctr::Socclr,
+        cfdc0fdctr::Socclr,
         Cfdc0Fdctr_SPEC,
         crate::common::RW,
     > {
@@ -6796,6 +7908,7 @@ impl Cfdc0Fdctr {
             0x1,
             1,
             0,
+            cfdc0fdctr::Socclr,
             cfdc0fdctr::Socclr,
             Cfdc0Fdctr_SPEC,
             crate::common::RW,
@@ -6814,18 +7927,16 @@ pub mod cfdc0fdctr {
     pub struct Eocclr_SPEC;
     pub type Eocclr = crate::EnumBitfieldStruct<u8, Eocclr_SPEC>;
     impl Eocclr {
-        #[doc = "No error occurrence counter clear"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Clear error occurrence counter"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Socclr_SPEC;
     pub type Socclr = crate::EnumBitfieldStruct<u8, Socclr_SPEC>;
     impl Socclr {
-        #[doc = "No successful occurrence counter clear"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Clear successful occurrence counter"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -6835,18 +7946,18 @@ pub struct Cfdc0Fdsts_SPEC;
 impl crate::sealed::RegSpec for Cfdc0Fdsts_SPEC {
     type DataType = u32;
 }
-#[doc = "Channel 0 CANFD Status Register"]
+
 pub type Cfdc0Fdsts = crate::RegValueT<Cfdc0Fdsts_SPEC>;
 
 impl Cfdc0Fdsts {
-    #[doc = "Transceiver Delay Compensation Result"]
     #[inline(always)]
     pub fn tdcr(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdc0Fdsts_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdc0Fdsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdc0Fdsts_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdc0Fdsts_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "Error Occurrence Counter Overflow"]
+
     #[inline(always)]
     pub fn eoco(
         self,
@@ -6855,6 +7966,7 @@ impl Cfdc0Fdsts {
         0x1,
         1,
         0,
+        cfdc0fdsts::Eoco,
         cfdc0fdsts::Eoco,
         Cfdc0Fdsts_SPEC,
         crate::common::RW,
@@ -6865,11 +7977,12 @@ impl Cfdc0Fdsts {
             1,
             0,
             cfdc0fdsts::Eoco,
+            cfdc0fdsts::Eoco,
             Cfdc0Fdsts_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Successful Occurrence Counter Overflow"]
+
     #[inline(always)]
     pub fn soco(
         self,
@@ -6878,6 +7991,7 @@ impl Cfdc0Fdsts {
         0x1,
         1,
         0,
+        cfdc0fdsts::Soco,
         cfdc0fdsts::Soco,
         Cfdc0Fdsts_SPEC,
         crate::common::RW,
@@ -6888,11 +8002,12 @@ impl Cfdc0Fdsts {
             1,
             0,
             cfdc0fdsts::Soco,
+            cfdc0fdsts::Soco,
             Cfdc0Fdsts_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Transceiver Delay Compensation Violation Flag"]
+
     #[inline(always)]
     pub fn tdcvf(
         self,
@@ -6901,6 +8016,7 @@ impl Cfdc0Fdsts {
         0x1,
         1,
         0,
+        cfdc0fdsts::Tdcvf,
         cfdc0fdsts::Tdcvf,
         Cfdc0Fdsts_SPEC,
         crate::common::RW,
@@ -6911,23 +8027,26 @@ impl Cfdc0Fdsts {
             1,
             0,
             cfdc0fdsts::Tdcvf,
+            cfdc0fdsts::Tdcvf,
             Cfdc0Fdsts_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Error Occurrence Counter"]
+
     #[inline(always)]
     pub fn eoc(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdc0Fdsts_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdc0Fdsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdc0Fdsts_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdc0Fdsts_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "Successful occurrence counter"]
+
     #[inline(always)]
     pub fn soc(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdc0Fdsts_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdc0Fdsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdc0Fdsts_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdc0Fdsts_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdc0Fdsts {
@@ -6942,27 +8061,24 @@ pub mod cfdc0fdsts {
     pub struct Eoco_SPEC;
     pub type Eoco = crate::EnumBitfieldStruct<u8, Eoco_SPEC>;
     impl Eoco {
-        #[doc = "Error occurrence counter has not overflowed"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Error occurrence counter has overflowed"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Soco_SPEC;
     pub type Soco = crate::EnumBitfieldStruct<u8, Soco_SPEC>;
     impl Soco {
-        #[doc = "Successful occurrence counter has not overflowed"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Successful occurrence counter has overflowed"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Tdcvf_SPEC;
     pub type Tdcvf = crate::EnumBitfieldStruct<u8, Tdcvf_SPEC>;
     impl Tdcvf {
-        #[doc = "Transceiver delay compensation violation has not occurred"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Transceiver delay compensation violation has occurred"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -6972,24 +8088,24 @@ pub struct Cfdc0Fdcrc_SPEC;
 impl crate::sealed::RegSpec for Cfdc0Fdcrc_SPEC {
     type DataType = u32;
 }
-#[doc = "Channel 0 CANFD CRC Register"]
+
 pub type Cfdc0Fdcrc = crate::RegValueT<Cfdc0Fdcrc_SPEC>;
 
 impl Cfdc0Fdcrc {
-    #[doc = "CRC Register value"]
     #[inline(always)]
     pub fn crcreg(
         self,
-    ) -> crate::common::RegisterField<0, 0x1fffff, 1, 0, u32, Cfdc0Fdcrc_SPEC, crate::common::R>
+    ) -> crate::common::RegisterField<0, 0x1fffff, 1, 0, u32, u32, Cfdc0Fdcrc_SPEC, crate::common::R>
     {
-        crate::common::RegisterField::<0,0x1fffff,1,0,u32, Cfdc0Fdcrc_SPEC,crate::common::R>::from_register(self,0)
+        crate::common::RegisterField::<0,0x1fffff,1,0,u32,u32,Cfdc0Fdcrc_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "Stuff bit count"]
+
     #[inline(always)]
     pub fn scnt(
         self,
-    ) -> crate::common::RegisterField<24, 0xf, 1, 0, u8, Cfdc0Fdcrc_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xf,1,0,u8, Cfdc0Fdcrc_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xf, 1, 0, u8, u8, Cfdc0Fdcrc_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<24,0xf,1,0,u8,u8,Cfdc0Fdcrc_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdc0Fdcrc {
@@ -7005,19 +8121,35 @@ pub struct Cfdgaflid_SPEC;
 impl crate::sealed::RegSpec for Cfdgaflid_SPEC {
     type DataType = u32;
 }
-#[doc = "Global Acceptance Filter List ID Registers"]
+
 pub type Cfdgaflid = crate::RegValueT<Cfdgaflid_SPEC>;
 
 impl Cfdgaflid {
-    #[doc = "Global Acceptance Filter List Entry ID Field"]
     #[inline(always)]
     pub fn gaflid(
         self,
-    ) -> crate::common::RegisterField<0, 0x1fffffff, 1, 0, u32, Cfdgaflid_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1fffffff,1,0,u32, Cfdgaflid_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1fffffff,
+        1,
+        0,
+        u32,
+        u32,
+        Cfdgaflid_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1fffffff,
+            1,
+            0,
+            u32,
+            u32,
+            Cfdgaflid_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Global Acceptance Filter List Entry Loopback Configuration"]
+
     #[inline(always)]
     pub fn gafllb(
         self,
@@ -7026,6 +8158,7 @@ impl Cfdgaflid {
         0x1,
         1,
         0,
+        cfdgaflid::Gafllb,
         cfdgaflid::Gafllb,
         Cfdgaflid_SPEC,
         crate::common::RW,
@@ -7036,11 +8169,12 @@ impl Cfdgaflid {
             1,
             0,
             cfdgaflid::Gafllb,
+            cfdgaflid::Gafllb,
             Cfdgaflid_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Global Acceptance Filter List Entry RTR Field"]
+
     #[inline(always)]
     pub fn gaflrtr(
         self,
@@ -7049,6 +8183,7 @@ impl Cfdgaflid {
         0x1,
         1,
         0,
+        cfdgaflid::Gaflrtr,
         cfdgaflid::Gaflrtr,
         Cfdgaflid_SPEC,
         crate::common::RW,
@@ -7059,11 +8194,12 @@ impl Cfdgaflid {
             1,
             0,
             cfdgaflid::Gaflrtr,
+            cfdgaflid::Gaflrtr,
             Cfdgaflid_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Global Acceptance Filter List Entry IDE Field"]
+
     #[inline(always)]
     pub fn gaflide(
         self,
@@ -7073,6 +8209,7 @@ impl Cfdgaflid {
         1,
         0,
         cfdgaflid::Gaflide,
+        cfdgaflid::Gaflide,
         Cfdgaflid_SPEC,
         crate::common::RW,
     > {
@@ -7081,6 +8218,7 @@ impl Cfdgaflid {
             0x1,
             1,
             0,
+            cfdgaflid::Gaflide,
             cfdgaflid::Gaflide,
             Cfdgaflid_SPEC,
             crate::common::RW,
@@ -7099,27 +8237,24 @@ pub mod cfdgaflid {
     pub struct Gafllb_SPEC;
     pub type Gafllb = crate::EnumBitfieldStruct<u8, Gafllb_SPEC>;
     impl Gafllb {
-        #[doc = "Global Acceptance Filter List entry ID for acceptance filtering with attribute RX"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Global Acceptance Filter List entry ID for acceptance filtering with attribute TX"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Gaflrtr_SPEC;
     pub type Gaflrtr = crate::EnumBitfieldStruct<u8, Gaflrtr_SPEC>;
     impl Gaflrtr {
-        #[doc = "Data frame"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Remote frame"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Gaflide_SPEC;
     pub type Gaflide = crate::EnumBitfieldStruct<u8, Gaflide_SPEC>;
     impl Gaflide {
-        #[doc = "Standard identifier of rule entry ID is valid for acceptance filtering"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Extended identifier of rule entry ID is valid for acceptance filtering"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -7129,26 +8264,34 @@ pub struct Cfdgaflm_SPEC;
 impl crate::sealed::RegSpec for Cfdgaflm_SPEC {
     type DataType = u32;
 }
-#[doc = "Global Acceptance Filter List Mask Registers"]
+
 pub type Cfdgaflm = crate::RegValueT<Cfdgaflm_SPEC>;
 
 impl Cfdgaflm {
-    #[doc = "Global Acceptance Filter List ID Mask Field"]
     #[inline(always)]
     pub fn gaflidm(
         self,
-    ) -> crate::common::RegisterField<0, 0x1fffffff, 1, 0, u32, Cfdgaflm_SPEC, crate::common::RW>
+    ) -> crate::common::RegisterField<0, 0x1fffffff, 1, 0, u32, u32, Cfdgaflm_SPEC, crate::common::RW>
     {
-        crate::common::RegisterField::<0,0x1fffffff,1,0,u32, Cfdgaflm_SPEC,crate::common::RW>::from_register(self,0)
+        crate::common::RegisterField::<
+            0,
+            0x1fffffff,
+            1,
+            0,
+            u32,
+            u32,
+            Cfdgaflm_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Global Acceptance Filter List Information Label 1"]
+
     #[inline(always)]
     pub fn gaflifl1(
         self,
     ) -> crate::common::RegisterFieldBool<29, 1, 0, Cfdgaflm_SPEC, crate::common::RW> {
         crate::common::RegisterFieldBool::<29,1,0,Cfdgaflm_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Global Acceptance Filter List Entry RTR Mask"]
+
     #[inline(always)]
     pub fn gaflrtrm(
         self,
@@ -7157,6 +8300,7 @@ impl Cfdgaflm {
         0x1,
         1,
         0,
+        cfdgaflm::Gaflrtrm,
         cfdgaflm::Gaflrtrm,
         Cfdgaflm_SPEC,
         crate::common::RW,
@@ -7167,11 +8311,12 @@ impl Cfdgaflm {
             1,
             0,
             cfdgaflm::Gaflrtrm,
+            cfdgaflm::Gaflrtrm,
             Cfdgaflm_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Global Acceptance Filter List IDE Mask"]
+
     #[inline(always)]
     pub fn gaflidem(
         self,
@@ -7181,6 +8326,7 @@ impl Cfdgaflm {
         1,
         0,
         cfdgaflm::Gaflidem,
+        cfdgaflm::Gaflidem,
         Cfdgaflm_SPEC,
         crate::common::RW,
     > {
@@ -7189,6 +8335,7 @@ impl Cfdgaflm {
             0x1,
             1,
             0,
+            cfdgaflm::Gaflidem,
             cfdgaflm::Gaflidem,
             Cfdgaflm_SPEC,
             crate::common::RW,
@@ -7207,18 +8354,16 @@ pub mod cfdgaflm {
     pub struct Gaflrtrm_SPEC;
     pub type Gaflrtrm = crate::EnumBitfieldStruct<u8, Gaflrtrm_SPEC>;
     impl Gaflrtrm {
-        #[doc = "RTR bit is not used for ID matching"]
         pub const _0: Self = Self::new(0);
-        #[doc = "RTR bit is used for ID matching"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Gaflidem_SPEC;
     pub type Gaflidem = crate::EnumBitfieldStruct<u8, Gaflidem_SPEC>;
     impl Gaflidem {
-        #[doc = "IDE bit is not used for ID matching"]
         pub const _0: Self = Self::new(0);
-        #[doc = "IDE bit is used for ID matching"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -7228,32 +8373,32 @@ pub struct Cfdgaflp0_SPEC;
 impl crate::sealed::RegSpec for Cfdgaflp0_SPEC {
     type DataType = u32;
 }
-#[doc = "Global Acceptance Filter List Pointer 0 Registers"]
+
 pub type Cfdgaflp0 = crate::RegValueT<Cfdgaflp0_SPEC>;
 
 impl Cfdgaflp0 {
-    #[doc = "Global Acceptance Filter List DLC Field"]
     #[inline(always)]
     pub fn gafldlc(
         self,
-    ) -> crate::common::RegisterField<0, 0xf, 1, 0, u8, Cfdgaflp0_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xf,1,0,u8, Cfdgaflp0_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xf, 1, 0, u8, u8, Cfdgaflp0_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<0,0xf,1,0,u8,u8,Cfdgaflp0_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Global Acceptance Filter List Information Label 0"]
+
     #[inline(always)]
     pub fn gaflifl0(
         self,
     ) -> crate::common::RegisterFieldBool<7, 1, 0, Cfdgaflp0_SPEC, crate::common::RW> {
         crate::common::RegisterFieldBool::<7,1,0,Cfdgaflp0_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Global Acceptance Filter List RX Message Buffer Direction Pointer"]
+
     #[inline(always)]
     pub fn gaflrmdp(
         self,
-    ) -> crate::common::RegisterField<8, 0x1f, 1, 0, u8, Cfdgaflp0_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0x1f,1,0,u8, Cfdgaflp0_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0x1f, 1, 0, u8, u8, Cfdgaflp0_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<8,0x1f,1,0,u8,u8,Cfdgaflp0_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Global Acceptance Filter List RX Message Buffer Valid"]
+
     #[inline(always)]
     pub fn gaflrmv(
         self,
@@ -7262,6 +8407,7 @@ impl Cfdgaflp0 {
         0x1,
         1,
         0,
+        cfdgaflp0::Gaflrmv,
         cfdgaflp0::Gaflrmv,
         Cfdgaflp0_SPEC,
         crate::common::RW,
@@ -7272,17 +8418,18 @@ impl Cfdgaflp0 {
             1,
             0,
             cfdgaflp0::Gaflrmv,
+            cfdgaflp0::Gaflrmv,
             Cfdgaflp0_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Global Acceptance Filter List Pointer"]
+
     #[inline(always)]
     pub fn gaflptr(
         self,
-    ) -> crate::common::RegisterField<16, 0xffff, 1, 0, u16, Cfdgaflp0_SPEC, crate::common::RW>
+    ) -> crate::common::RegisterField<16, 0xffff, 1, 0, u16, u16, Cfdgaflp0_SPEC, crate::common::RW>
     {
-        crate::common::RegisterField::<16,0xffff,1,0,u16, Cfdgaflp0_SPEC,crate::common::RW>::from_register(self,0)
+        crate::common::RegisterField::<16,0xffff,1,0,u16,u16,Cfdgaflp0_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdgaflp0 {
@@ -7297,9 +8444,8 @@ pub mod cfdgaflp0 {
     pub struct Gaflrmv_SPEC;
     pub type Gaflrmv = crate::EnumBitfieldStruct<u8, Gaflrmv_SPEC>;
     impl Gaflrmv {
-        #[doc = "Single message buffer direction pointer is invalid"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Single message buffer direction pointer is valid"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -7309,11 +8455,10 @@ pub struct Cfdgaflp1_SPEC;
 impl crate::sealed::RegSpec for Cfdgaflp1_SPEC {
     type DataType = u32;
 }
-#[doc = "Global Acceptance Filter List Pointer 1 Registers"]
+
 pub type Cfdgaflp1 = crate::RegValueT<Cfdgaflp1_SPEC>;
 
 impl Cfdgaflp1 {
-    #[doc = "Global Acceptance Filter List FIFO Direction Pointer"]
     #[inline(always)]
     pub fn gaflfdp0(
         self,
@@ -7322,6 +8467,7 @@ impl Cfdgaflp1 {
         0x1,
         1,
         0,
+        cfdgaflp1::Gaflfdp0,
         cfdgaflp1::Gaflfdp0,
         Cfdgaflp1_SPEC,
         crate::common::RW,
@@ -7332,11 +8478,12 @@ impl Cfdgaflp1 {
             1,
             0,
             cfdgaflp1::Gaflfdp0,
+            cfdgaflp1::Gaflfdp0,
             Cfdgaflp1_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Global Acceptance Filter List FIFO Direction Pointer"]
+
     #[inline(always)]
     pub fn gaflfdp1(
         self,
@@ -7345,6 +8492,7 @@ impl Cfdgaflp1 {
         0x1,
         1,
         0,
+        cfdgaflp1::Gaflfdp1,
         cfdgaflp1::Gaflfdp1,
         Cfdgaflp1_SPEC,
         crate::common::RW,
@@ -7355,11 +8503,12 @@ impl Cfdgaflp1 {
             1,
             0,
             cfdgaflp1::Gaflfdp1,
+            cfdgaflp1::Gaflfdp1,
             Cfdgaflp1_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Global Acceptance Filter List FIFO Direction Pointer"]
+
     #[inline(always)]
     pub fn gaflfdp8(
         self,
@@ -7369,6 +8518,7 @@ impl Cfdgaflp1 {
         1,
         0,
         cfdgaflp1::Gaflfdp8,
+        cfdgaflp1::Gaflfdp8,
         Cfdgaflp1_SPEC,
         crate::common::RW,
     > {
@@ -7377,6 +8527,7 @@ impl Cfdgaflp1 {
             0x1,
             1,
             0,
+            cfdgaflp1::Gaflfdp8,
             cfdgaflp1::Gaflfdp8,
             Cfdgaflp1_SPEC,
             crate::common::RW,
@@ -7395,27 +8546,24 @@ pub mod cfdgaflp1 {
     pub struct Gaflfdp0_SPEC;
     pub type Gaflfdp0 = crate::EnumBitfieldStruct<u8, Gaflfdp0_SPEC>;
     impl Gaflfdp0 {
-        #[doc = "Disable RX FIFO 0 as target for reception"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Enable RX FIFO 0 as target for reception"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Gaflfdp1_SPEC;
     pub type Gaflfdp1 = crate::EnumBitfieldStruct<u8, Gaflfdp1_SPEC>;
     impl Gaflfdp1 {
-        #[doc = "Disable RX FIFO 1 as target for reception"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Enable RX FIFO 1 as target for reception"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Gaflfdp8_SPEC;
     pub type Gaflfdp8 = crate::EnumBitfieldStruct<u8, Gaflfdp8_SPEC>;
     impl Gaflfdp8 {
-        #[doc = "Disable Common FIFO as target for reception"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Enable Common FIFO as target for reception"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -7425,17 +8573,33 @@ pub struct Cfdrpgacc_SPEC;
 impl crate::sealed::RegSpec for Cfdrpgacc_SPEC {
     type DataType = u32;
 }
-#[doc = "RAM Test Page Access Registers %s"]
+
 pub type Cfdrpgacc = crate::RegValueT<Cfdrpgacc_SPEC>;
 
 impl Cfdrpgacc {
-    #[doc = "RAM Data Test Access"]
     #[inline(always)]
     pub fn rdta(
         self,
-    ) -> crate::common::RegisterField<0, 0xffffffff, 1, 0, u32, Cfdrpgacc_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0xffffffff,1,0,u32, Cfdrpgacc_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0xffffffff,
+        1,
+        0,
+        u32,
+        u32,
+        Cfdrpgacc_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0xffffffff,
+            1,
+            0,
+            u32,
+            u32,
+            Cfdrpgacc_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Cfdrpgacc {
@@ -7451,33 +8615,66 @@ pub struct Cfdrfid_SPEC;
 impl crate::sealed::RegSpec for Cfdrfid_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Access ID Register %s"]
+
 pub type Cfdrfid = crate::RegValueT<Cfdrfid_SPEC>;
 
 impl Cfdrfid {
-    #[doc = "RX FIFO Buffer ID Field"]
     #[inline(always)]
     pub fn rfid(
         self,
-    ) -> crate::common::RegisterField<0, 0x1fffffff, 1, 0, u32, Cfdrfid_SPEC, crate::common::R>
+    ) -> crate::common::RegisterField<0, 0x1fffffff, 1, 0, u32, u32, Cfdrfid_SPEC, crate::common::R>
     {
-        crate::common::RegisterField::<0,0x1fffffff,1,0,u32, Cfdrfid_SPEC,crate::common::R>::from_register(self,0)
+        crate::common::RegisterField::<0,0x1fffffff,1,0,u32,u32,Cfdrfid_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer RTR bit"]
+
     #[inline(always)]
     pub fn rfrtr(
         self,
-    ) -> crate::common::RegisterField<30, 0x1, 1, 0, cfdrfid::Rfrtr, Cfdrfid_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<30,0x1,1,0,cfdrfid::Rfrtr, Cfdrfid_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        30,
+        0x1,
+        1,
+        0,
+        cfdrfid::Rfrtr,
+        cfdrfid::Rfrtr,
+        Cfdrfid_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            30,
+            0x1,
+            1,
+            0,
+            cfdrfid::Rfrtr,
+            cfdrfid::Rfrtr,
+            Cfdrfid_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "RX FIFO Buffer IDE bit"]
+
     #[inline(always)]
     pub fn rfide(
         self,
-    ) -> crate::common::RegisterField<31, 0x1, 1, 0, cfdrfid::Rfide, Cfdrfid_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<31,0x1,1,0,cfdrfid::Rfide, Cfdrfid_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        31,
+        0x1,
+        1,
+        0,
+        cfdrfid::Rfide,
+        cfdrfid::Rfide,
+        Cfdrfid_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            31,
+            0x1,
+            1,
+            0,
+            cfdrfid::Rfide,
+            cfdrfid::Rfide,
+            Cfdrfid_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Cfdrfid {
@@ -7492,18 +8689,16 @@ pub mod cfdrfid {
     pub struct Rfrtr_SPEC;
     pub type Rfrtr = crate::EnumBitfieldStruct<u8, Rfrtr_SPEC>;
     impl Rfrtr {
-        #[doc = "Data frame"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Remote frame"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Rfide_SPEC;
     pub type Rfide = crate::EnumBitfieldStruct<u8, Rfide_SPEC>;
     impl Rfide {
-        #[doc = "STD-ID has been received"]
         pub const _0: Self = Self::new(0);
-        #[doc = "EXT-ID has been received"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -7513,23 +8708,23 @@ pub struct Cfdrfptr_SPEC;
 impl crate::sealed::RegSpec for Cfdrfptr_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Access Pointer Register %s"]
+
 pub type Cfdrfptr = crate::RegValueT<Cfdrfptr_SPEC>;
 
 impl Cfdrfptr {
-    #[doc = "RX FIFO Timestamp Value"]
     #[inline(always)]
     pub fn rfts(
         self,
-    ) -> crate::common::RegisterField<0, 0xffff, 1, 0, u16, Cfdrfptr_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xffff,1,0,u16, Cfdrfptr_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xffff, 1, 0, u16, u16, Cfdrfptr_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<0,0xffff,1,0,u16,u16,Cfdrfptr_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer DLC Field"]
+
     #[inline(always)]
     pub fn rfdlc(
         self,
-    ) -> crate::common::RegisterField<28, 0xf, 1, 0, u8, Cfdrfptr_SPEC, crate::common::R> {
-        crate::common::RegisterField::<28,0xf,1,0,u8, Cfdrfptr_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<28, 0xf, 1, 0, u8, u8, Cfdrfptr_SPEC, crate::common::R> {
+        crate::common::RegisterField::<28,0xf,1,0,u8,u8,Cfdrfptr_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrfptr {
@@ -7545,11 +8740,10 @@ pub struct Cfdrffdsts_SPEC;
 impl crate::sealed::RegSpec for Cfdrffdsts_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Access CANFD Status Register %s"]
+
 pub type Cfdrffdsts = crate::RegValueT<Cfdrffdsts_SPEC>;
 
 impl Cfdrffdsts {
-    #[doc = "Error State Indicator bit"]
     #[inline(always)]
     pub fn rfesi(
         self,
@@ -7558,6 +8752,7 @@ impl Cfdrffdsts {
         0x1,
         1,
         0,
+        cfdrffdsts::Rfesi,
         cfdrffdsts::Rfesi,
         Cfdrffdsts_SPEC,
         crate::common::R,
@@ -7568,11 +8763,12 @@ impl Cfdrffdsts {
             1,
             0,
             cfdrffdsts::Rfesi,
+            cfdrffdsts::Rfesi,
             Cfdrffdsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "Bit Rate Switch bit"]
+
     #[inline(always)]
     pub fn rfbrs(
         self,
@@ -7581,6 +8777,7 @@ impl Cfdrffdsts {
         0x1,
         1,
         0,
+        cfdrffdsts::Rfbrs,
         cfdrffdsts::Rfbrs,
         Cfdrffdsts_SPEC,
         crate::common::R,
@@ -7591,11 +8788,12 @@ impl Cfdrffdsts {
             1,
             0,
             cfdrffdsts::Rfbrs,
+            cfdrffdsts::Rfbrs,
             Cfdrffdsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "CAN FD Format bit"]
+
     #[inline(always)]
     pub fn rffdf(
         self,
@@ -7604,6 +8802,7 @@ impl Cfdrffdsts {
         0x1,
         1,
         0,
+        cfdrffdsts::Rffdf,
         cfdrffdsts::Rffdf,
         Cfdrffdsts_SPEC,
         crate::common::R,
@@ -7614,24 +8813,25 @@ impl Cfdrffdsts {
             1,
             0,
             cfdrffdsts::Rffdf,
+            cfdrffdsts::Rffdf,
             Cfdrffdsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "RX FIFO Buffer Information Label Field"]
+
     #[inline(always)]
     pub fn rfifl(
         self,
-    ) -> crate::common::RegisterField<8, 0x3, 1, 0, u8, Cfdrffdsts_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0x3,1,0,u8, Cfdrffdsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0x3, 1, 0, u8, u8, Cfdrffdsts_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0x3,1,0,u8,u8,Cfdrffdsts_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Pointer Field"]
+
     #[inline(always)]
     pub fn cfdrfptr(
         self,
-    ) -> crate::common::RegisterField<16, 0xffff, 1, 0, u16, Cfdrffdsts_SPEC, crate::common::R>
+    ) -> crate::common::RegisterField<16, 0xffff, 1, 0, u16, u16, Cfdrffdsts_SPEC, crate::common::R>
     {
-        crate::common::RegisterField::<16,0xffff,1,0,u16, Cfdrffdsts_SPEC,crate::common::R>::from_register(self,0)
+        crate::common::RegisterField::<16,0xffff,1,0,u16,u16,Cfdrffdsts_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrffdsts {
@@ -7646,27 +8846,24 @@ pub mod cfdrffdsts {
     pub struct Rfesi_SPEC;
     pub type Rfesi = crate::EnumBitfieldStruct<u8, Rfesi_SPEC>;
     impl Rfesi {
-        #[doc = "CANFD frame received from error active node"]
         pub const _0: Self = Self::new(0);
-        #[doc = "CANFD frame received from error passive node"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Rfbrs_SPEC;
     pub type Rfbrs = crate::EnumBitfieldStruct<u8, Rfbrs_SPEC>;
     impl Rfbrs {
-        #[doc = "CANFD frame received with no bit rate switch"]
         pub const _0: Self = Self::new(0);
-        #[doc = "CANFD frame received with bit rate switch"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Rffdf_SPEC;
     pub type Rffdf = crate::EnumBitfieldStruct<u8, Rffdf_SPEC>;
     impl Rffdf {
-        #[doc = "Non CANFD frame received"]
         pub const _0: Self = Self::new(0);
-        #[doc = "CANFD frame received"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -7676,37 +8873,36 @@ pub struct Cfdrfdf0_SPEC;
 impl crate::sealed::RegSpec for Cfdrfdf0_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Access Data Field 0 Register %s"]
+
 pub type Cfdrfdf0 = crate::RegValueT<Cfdrfdf0_SPEC>;
 
 impl Cfdrfdf0 {
-    #[doc = "RX FIFO Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rfdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrfdf0_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrfdf0_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrfdf0_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrfdf0_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rfdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrfdf0_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrfdf0_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrfdf0_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrfdf0_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rfdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrfdf0_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrfdf0_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrfdf0_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrfdf0_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rfdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrfdf0_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrfdf0_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrfdf0_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrfdf0_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrfdf0 {
@@ -7722,37 +8918,36 @@ pub struct Cfdrfdf1_SPEC;
 impl crate::sealed::RegSpec for Cfdrfdf1_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Access Data Field 1 Register %s"]
+
 pub type Cfdrfdf1 = crate::RegValueT<Cfdrfdf1_SPEC>;
 
 impl Cfdrfdf1 {
-    #[doc = "RX FIFO Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rfdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrfdf1_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrfdf1_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrfdf1_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrfdf1_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rfdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrfdf1_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrfdf1_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrfdf1_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrfdf1_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rfdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrfdf1_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrfdf1_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrfdf1_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrfdf1_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rfdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrfdf1_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrfdf1_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrfdf1_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrfdf1_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrfdf1 {
@@ -7768,37 +8963,36 @@ pub struct Cfdrfdf2_SPEC;
 impl crate::sealed::RegSpec for Cfdrfdf2_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Access Data Field 2 Register %s"]
+
 pub type Cfdrfdf2 = crate::RegValueT<Cfdrfdf2_SPEC>;
 
 impl Cfdrfdf2 {
-    #[doc = "RX FIFO Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rfdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrfdf2_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrfdf2_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrfdf2_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrfdf2_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rfdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrfdf2_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrfdf2_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrfdf2_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrfdf2_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rfdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrfdf2_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrfdf2_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrfdf2_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrfdf2_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rfdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrfdf2_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrfdf2_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrfdf2_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrfdf2_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrfdf2 {
@@ -7814,37 +9008,36 @@ pub struct Cfdrfdf3_SPEC;
 impl crate::sealed::RegSpec for Cfdrfdf3_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Access Data Field 3 Register %s"]
+
 pub type Cfdrfdf3 = crate::RegValueT<Cfdrfdf3_SPEC>;
 
 impl Cfdrfdf3 {
-    #[doc = "RX FIFO Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rfdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrfdf3_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrfdf3_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrfdf3_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrfdf3_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rfdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrfdf3_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrfdf3_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrfdf3_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrfdf3_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rfdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrfdf3_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrfdf3_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrfdf3_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrfdf3_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rfdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrfdf3_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrfdf3_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrfdf3_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrfdf3_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrfdf3 {
@@ -7860,37 +9053,36 @@ pub struct Cfdrfdf4_SPEC;
 impl crate::sealed::RegSpec for Cfdrfdf4_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Access Data Field 4 Register %s"]
+
 pub type Cfdrfdf4 = crate::RegValueT<Cfdrfdf4_SPEC>;
 
 impl Cfdrfdf4 {
-    #[doc = "RX FIFO Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rfdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrfdf4_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrfdf4_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrfdf4_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrfdf4_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rfdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrfdf4_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrfdf4_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrfdf4_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrfdf4_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rfdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrfdf4_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrfdf4_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrfdf4_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrfdf4_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rfdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrfdf4_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrfdf4_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrfdf4_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrfdf4_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrfdf4 {
@@ -7906,37 +9098,36 @@ pub struct Cfdrfdf5_SPEC;
 impl crate::sealed::RegSpec for Cfdrfdf5_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Access Data Field 5 Register %s"]
+
 pub type Cfdrfdf5 = crate::RegValueT<Cfdrfdf5_SPEC>;
 
 impl Cfdrfdf5 {
-    #[doc = "RX FIFO Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rfdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrfdf5_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrfdf5_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrfdf5_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrfdf5_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rfdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrfdf5_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrfdf5_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrfdf5_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrfdf5_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rfdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrfdf5_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrfdf5_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrfdf5_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrfdf5_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rfdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrfdf5_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrfdf5_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrfdf5_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrfdf5_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrfdf5 {
@@ -7952,37 +9143,36 @@ pub struct Cfdrfdf6_SPEC;
 impl crate::sealed::RegSpec for Cfdrfdf6_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Access Data Field 6 Register %s"]
+
 pub type Cfdrfdf6 = crate::RegValueT<Cfdrfdf6_SPEC>;
 
 impl Cfdrfdf6 {
-    #[doc = "RX FIFO Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rfdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrfdf6_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrfdf6_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrfdf6_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrfdf6_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rfdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrfdf6_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrfdf6_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrfdf6_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrfdf6_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rfdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrfdf6_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrfdf6_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrfdf6_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrfdf6_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rfdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrfdf6_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrfdf6_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrfdf6_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrfdf6_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrfdf6 {
@@ -7998,37 +9188,36 @@ pub struct Cfdrfdf7_SPEC;
 impl crate::sealed::RegSpec for Cfdrfdf7_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Access Data Field 7 Register %s"]
+
 pub type Cfdrfdf7 = crate::RegValueT<Cfdrfdf7_SPEC>;
 
 impl Cfdrfdf7 {
-    #[doc = "RX FIFO Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rfdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrfdf7_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrfdf7_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrfdf7_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrfdf7_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rfdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrfdf7_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrfdf7_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrfdf7_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrfdf7_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rfdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrfdf7_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrfdf7_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrfdf7_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrfdf7_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rfdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrfdf7_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrfdf7_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrfdf7_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrfdf7_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrfdf7 {
@@ -8044,37 +9233,36 @@ pub struct Cfdrfdf8_SPEC;
 impl crate::sealed::RegSpec for Cfdrfdf8_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Access Data Field 8 Register %s"]
+
 pub type Cfdrfdf8 = crate::RegValueT<Cfdrfdf8_SPEC>;
 
 impl Cfdrfdf8 {
-    #[doc = "RX FIFO Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rfdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrfdf8_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrfdf8_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrfdf8_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrfdf8_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rfdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrfdf8_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrfdf8_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrfdf8_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrfdf8_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rfdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrfdf8_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrfdf8_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrfdf8_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrfdf8_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rfdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrfdf8_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrfdf8_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrfdf8_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrfdf8_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrfdf8 {
@@ -8090,37 +9278,36 @@ pub struct Cfdrfdf9_SPEC;
 impl crate::sealed::RegSpec for Cfdrfdf9_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Access Data Field 9 Register %s"]
+
 pub type Cfdrfdf9 = crate::RegValueT<Cfdrfdf9_SPEC>;
 
 impl Cfdrfdf9 {
-    #[doc = "RX FIFO Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rfdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrfdf9_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrfdf9_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrfdf9_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrfdf9_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rfdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrfdf9_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrfdf9_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrfdf9_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrfdf9_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rfdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrfdf9_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrfdf9_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrfdf9_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrfdf9_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rfdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrfdf9_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrfdf9_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrfdf9_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrfdf9_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrfdf9 {
@@ -8136,37 +9323,38 @@ pub struct Cfdrfdf10_SPEC;
 impl crate::sealed::RegSpec for Cfdrfdf10_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Access Data Field 10 Register %s"]
+
 pub type Cfdrfdf10 = crate::RegValueT<Cfdrfdf10_SPEC>;
 
 impl Cfdrfdf10 {
-    #[doc = "RX FIFO Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rfdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrfdf10_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrfdf10_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrfdf10_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrfdf10_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rfdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrfdf10_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrfdf10_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrfdf10_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrfdf10_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rfdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrfdf10_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrfdf10_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrfdf10_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrfdf10_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rfdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrfdf10_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrfdf10_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrfdf10_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrfdf10_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrfdf10 {
@@ -8182,37 +9370,38 @@ pub struct Cfdrfdf11_SPEC;
 impl crate::sealed::RegSpec for Cfdrfdf11_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Access Data Field 11 Register %s"]
+
 pub type Cfdrfdf11 = crate::RegValueT<Cfdrfdf11_SPEC>;
 
 impl Cfdrfdf11 {
-    #[doc = "RX FIFO Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rfdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrfdf11_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrfdf11_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrfdf11_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrfdf11_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rfdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrfdf11_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrfdf11_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrfdf11_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrfdf11_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rfdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrfdf11_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrfdf11_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrfdf11_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrfdf11_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rfdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrfdf11_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrfdf11_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrfdf11_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrfdf11_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrfdf11 {
@@ -8228,37 +9417,38 @@ pub struct Cfdrfdf12_SPEC;
 impl crate::sealed::RegSpec for Cfdrfdf12_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Access Data Field 12 Register %s"]
+
 pub type Cfdrfdf12 = crate::RegValueT<Cfdrfdf12_SPEC>;
 
 impl Cfdrfdf12 {
-    #[doc = "RX FIFO Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rfdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrfdf12_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrfdf12_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrfdf12_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrfdf12_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rfdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrfdf12_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrfdf12_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrfdf12_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrfdf12_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rfdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrfdf12_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrfdf12_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrfdf12_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrfdf12_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rfdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrfdf12_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrfdf12_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrfdf12_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrfdf12_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrfdf12 {
@@ -8274,37 +9464,38 @@ pub struct Cfdrfdf13_SPEC;
 impl crate::sealed::RegSpec for Cfdrfdf13_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Access Data Field 13 Register %s"]
+
 pub type Cfdrfdf13 = crate::RegValueT<Cfdrfdf13_SPEC>;
 
 impl Cfdrfdf13 {
-    #[doc = "RX FIFO Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rfdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrfdf13_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrfdf13_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrfdf13_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrfdf13_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rfdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrfdf13_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrfdf13_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrfdf13_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrfdf13_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rfdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrfdf13_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrfdf13_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrfdf13_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrfdf13_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rfdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrfdf13_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrfdf13_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrfdf13_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrfdf13_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrfdf13 {
@@ -8320,37 +9511,38 @@ pub struct Cfdrfdf14_SPEC;
 impl crate::sealed::RegSpec for Cfdrfdf14_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Access Data Field 14 Register %s"]
+
 pub type Cfdrfdf14 = crate::RegValueT<Cfdrfdf14_SPEC>;
 
 impl Cfdrfdf14 {
-    #[doc = "RX FIFO Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rfdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrfdf14_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrfdf14_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrfdf14_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrfdf14_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rfdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrfdf14_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrfdf14_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrfdf14_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrfdf14_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rfdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrfdf14_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrfdf14_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrfdf14_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrfdf14_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rfdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrfdf14_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrfdf14_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrfdf14_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrfdf14_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrfdf14 {
@@ -8366,37 +9558,38 @@ pub struct Cfdrfdf15_SPEC;
 impl crate::sealed::RegSpec for Cfdrfdf15_SPEC {
     type DataType = u32;
 }
-#[doc = "RX FIFO Access Data Field 15 Register %s"]
+
 pub type Cfdrfdf15 = crate::RegValueT<Cfdrfdf15_SPEC>;
 
 impl Cfdrfdf15 {
-    #[doc = "RX FIFO Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rfdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrfdf15_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrfdf15_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrfdf15_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrfdf15_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rfdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrfdf15_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrfdf15_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrfdf15_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrfdf15_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rfdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrfdf15_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrfdf15_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrfdf15_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrfdf15_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX FIFO Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rfdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrfdf15_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrfdf15_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrfdf15_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrfdf15_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrfdf15 {
@@ -8412,41 +9605,91 @@ pub struct Cfdcfid_SPEC;
 impl crate::sealed::RegSpec for Cfdcfid_SPEC {
     type DataType = u32;
 }
-#[doc = "Common FIFO Access ID Register"]
+
 pub type Cfdcfid = crate::RegValueT<Cfdcfid_SPEC>;
 
 impl Cfdcfid {
-    #[doc = "Common FIFO Buffer ID Field"]
     #[inline(always)]
     pub fn cfid(
         self,
-    ) -> crate::common::RegisterField<0, 0x1fffffff, 1, 0, u32, Cfdcfid_SPEC, crate::common::RW>
+    ) -> crate::common::RegisterField<0, 0x1fffffff, 1, 0, u32, u32, Cfdcfid_SPEC, crate::common::RW>
     {
-        crate::common::RegisterField::<0,0x1fffffff,1,0,u32, Cfdcfid_SPEC,crate::common::RW>::from_register(self,0)
+        crate::common::RegisterField::<0,0x1fffffff,1,0,u32,u32,Cfdcfid_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "THL Entry enable"]
+
     #[inline(always)]
     pub fn thlen(
         self,
-    ) -> crate::common::RegisterField<29, 0x1, 1, 0, cfdcfid::Thlen, Cfdcfid_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<29,0x1,1,0,cfdcfid::Thlen, Cfdcfid_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        29,
+        0x1,
+        1,
+        0,
+        cfdcfid::Thlen,
+        cfdcfid::Thlen,
+        Cfdcfid_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            29,
+            0x1,
+            1,
+            0,
+            cfdcfid::Thlen,
+            cfdcfid::Thlen,
+            Cfdcfid_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Common FIFO Buffer RTR Bit"]
+
     #[inline(always)]
     pub fn cfrtr(
         self,
-    ) -> crate::common::RegisterField<30, 0x1, 1, 0, cfdcfid::Cfrtr, Cfdcfid_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<30,0x1,1,0,cfdcfid::Cfrtr, Cfdcfid_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        30,
+        0x1,
+        1,
+        0,
+        cfdcfid::Cfrtr,
+        cfdcfid::Cfrtr,
+        Cfdcfid_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            30,
+            0x1,
+            1,
+            0,
+            cfdcfid::Cfrtr,
+            cfdcfid::Cfrtr,
+            Cfdcfid_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "Common FIFO Buffer IDE Bit"]
+
     #[inline(always)]
     pub fn cfide(
         self,
-    ) -> crate::common::RegisterField<31, 0x1, 1, 0, cfdcfid::Cfide, Cfdcfid_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<31,0x1,1,0,cfdcfid::Cfide, Cfdcfid_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        31,
+        0x1,
+        1,
+        0,
+        cfdcfid::Cfide,
+        cfdcfid::Cfide,
+        Cfdcfid_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            31,
+            0x1,
+            1,
+            0,
+            cfdcfid::Cfide,
+            cfdcfid::Cfide,
+            Cfdcfid_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Cfdcfid {
@@ -8461,27 +9704,24 @@ pub mod cfdcfid {
     pub struct Thlen_SPEC;
     pub type Thlen = crate::EnumBitfieldStruct<u8, Thlen_SPEC>;
     impl Thlen {
-        #[doc = "Entry will not be stored in THL after successful TX."]
         pub const _0: Self = Self::new(0);
-        #[doc = "Entry will be stored in THL after successful TX."]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cfrtr_SPEC;
     pub type Cfrtr = crate::EnumBitfieldStruct<u8, Cfrtr_SPEC>;
     impl Cfrtr {
-        #[doc = "Data Frame"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Remote Frame"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cfide_SPEC;
     pub type Cfide = crate::EnumBitfieldStruct<u8, Cfide_SPEC>;
     impl Cfide {
-        #[doc = "STD-ID will be transmitted or has been received"]
         pub const _0: Self = Self::new(0);
-        #[doc = "EXT-ID will be transmitted or has been received"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -8491,23 +9731,23 @@ pub struct Cfdcfptr_SPEC;
 impl crate::sealed::RegSpec for Cfdcfptr_SPEC {
     type DataType = u32;
 }
-#[doc = "Common FIFO Access Pointer Register"]
+
 pub type Cfdcfptr = crate::RegValueT<Cfdcfptr_SPEC>;
 
 impl Cfdcfptr {
-    #[doc = "Common FIFO Timestamp Value"]
     #[inline(always)]
     pub fn cfts(
         self,
-    ) -> crate::common::RegisterField<0, 0xffff, 1, 0, u16, Cfdcfptr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xffff,1,0,u16, Cfdcfptr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xffff, 1, 0, u16, u16, Cfdcfptr_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<0,0xffff,1,0,u16,u16,Cfdcfptr_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Common FIFO Buffer DLC Field"]
+
     #[inline(always)]
     pub fn cfdlc(
         self,
-    ) -> crate::common::RegisterField<28, 0xf, 1, 0, u8, Cfdcfptr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<28,0xf,1,0,u8, Cfdcfptr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<28, 0xf, 1, 0, u8, u8, Cfdcfptr_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<28,0xf,1,0,u8,u8,Cfdcfptr_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdcfptr {
@@ -8523,11 +9763,10 @@ pub struct Cfdcffdcsts_SPEC;
 impl crate::sealed::RegSpec for Cfdcffdcsts_SPEC {
     type DataType = u32;
 }
-#[doc = "Common FIFO Access CANFD Control/Status Register"]
+
 pub type Cfdcffdcsts = crate::RegValueT<Cfdcffdcsts_SPEC>;
 
 impl Cfdcffdcsts {
-    #[doc = "Error State Indicator bit"]
     #[inline(always)]
     pub fn cfesi(
         self,
@@ -8536,6 +9775,7 @@ impl Cfdcffdcsts {
         0x1,
         1,
         0,
+        cfdcffdcsts::Cfesi,
         cfdcffdcsts::Cfesi,
         Cfdcffdcsts_SPEC,
         crate::common::RW,
@@ -8546,11 +9786,12 @@ impl Cfdcffdcsts {
             1,
             0,
             cfdcffdcsts::Cfesi,
+            cfdcffdcsts::Cfesi,
             Cfdcffdcsts_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Bit Rate Switch bit"]
+
     #[inline(always)]
     pub fn cfbrs(
         self,
@@ -8559,6 +9800,7 @@ impl Cfdcffdcsts {
         0x1,
         1,
         0,
+        cfdcffdcsts::Cfbrs,
         cfdcffdcsts::Cfbrs,
         Cfdcffdcsts_SPEC,
         crate::common::RW,
@@ -8569,11 +9811,12 @@ impl Cfdcffdcsts {
             1,
             0,
             cfdcffdcsts::Cfbrs,
+            cfdcffdcsts::Cfbrs,
             Cfdcffdcsts_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "CAN FD Format bit"]
+
     #[inline(always)]
     pub fn cffdf(
         self,
@@ -8582,6 +9825,7 @@ impl Cfdcffdcsts {
         0x1,
         1,
         0,
+        cfdcffdcsts::Cffdf,
         cfdcffdcsts::Cffdf,
         Cfdcffdcsts_SPEC,
         crate::common::RW,
@@ -8592,24 +9836,35 @@ impl Cfdcffdcsts {
             1,
             0,
             cfdcffdcsts::Cffdf,
+            cfdcffdcsts::Cffdf,
             Cfdcffdcsts_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "COMMON FIFO Buffer Information Label Field"]
+
     #[inline(always)]
     pub fn cfifl(
         self,
-    ) -> crate::common::RegisterField<8, 0x3, 1, 0, u8, Cfdcffdcsts_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0x3,1,0,u8, Cfdcffdcsts_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0x3, 1, 0, u8, u8, Cfdcffdcsts_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<8,0x3,1,0,u8,u8,Cfdcffdcsts_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Common FIFO Buffer Pointer Field"]
+
     #[inline(always)]
     pub fn cfptr(
         self,
-    ) -> crate::common::RegisterField<16, 0xffff, 1, 0, u16, Cfdcffdcsts_SPEC, crate::common::RW>
+    ) -> crate::common::RegisterField<16, 0xffff, 1, 0, u16, u16, Cfdcffdcsts_SPEC, crate::common::RW>
     {
-        crate::common::RegisterField::<16,0xffff,1,0,u16, Cfdcffdcsts_SPEC,crate::common::RW>::from_register(self,0)
+        crate::common::RegisterField::<
+            16,
+            0xffff,
+            1,
+            0,
+            u16,
+            u16,
+            Cfdcffdcsts_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Cfdcffdcsts {
@@ -8624,27 +9879,24 @@ pub mod cfdcffdcsts {
     pub struct Cfesi_SPEC;
     pub type Cfesi = crate::EnumBitfieldStruct<u8, Cfesi_SPEC>;
     impl Cfesi {
-        #[doc = "CANFD frame received or to transmit by error active node"]
         pub const _0: Self = Self::new(0);
-        #[doc = "CANFD frame received or to transmit by error passive node"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cfbrs_SPEC;
     pub type Cfbrs = crate::EnumBitfieldStruct<u8, Cfbrs_SPEC>;
     impl Cfbrs {
-        #[doc = "CANFD frame received or to transmit with no bit rate switch"]
         pub const _0: Self = Self::new(0);
-        #[doc = "CANFD frame received or to transmit with bit rate switch"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cffdf_SPEC;
     pub type Cffdf = crate::EnumBitfieldStruct<u8, Cffdf_SPEC>;
     impl Cffdf {
-        #[doc = "Non CANFD frame received or to transmit"]
         pub const _0: Self = Self::new(0);
-        #[doc = "CANFD frame received or to transmit"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -8654,37 +9906,36 @@ pub struct Cfdcfdf_SPEC;
 impl crate::sealed::RegSpec for Cfdcfdf_SPEC {
     type DataType = u32;
 }
-#[doc = "Common FIFO Access Data Field %s Registers"]
+
 pub type Cfdcfdf = crate::RegValueT<Cfdcfdf_SPEC>;
 
 impl Cfdcfdf {
-    #[doc = "Common FIFO Buffer Data Bytes (p × 4)"]
     #[inline(always)]
     pub fn cfdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdcfdf_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdcfdf_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdcfdf_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdcfdf_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Common FIFO Buffer Data Bytes ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn cfdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdcfdf_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdcfdf_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdcfdf_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdcfdf_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Common FIFO Buffer Data Bytes ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn cfdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdcfdf_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdcfdf_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdcfdf_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdcfdf_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Common FIFO Buffer Data Bytes ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn cfdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdcfdf_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdcfdf_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdcfdf_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdcfdf_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdcfdf {
@@ -8700,41 +9951,91 @@ pub struct Cfdtmid_SPEC;
 impl crate::sealed::RegSpec for Cfdtmid_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer ID Registers"]
+
 pub type Cfdtmid = crate::RegValueT<Cfdtmid_SPEC>;
 
 impl Cfdtmid {
-    #[doc = "TX Message Buffer ID Field"]
     #[inline(always)]
     pub fn tmid(
         self,
-    ) -> crate::common::RegisterField<0, 0x1fffffff, 1, 0, u32, Cfdtmid_SPEC, crate::common::RW>
+    ) -> crate::common::RegisterField<0, 0x1fffffff, 1, 0, u32, u32, Cfdtmid_SPEC, crate::common::RW>
     {
-        crate::common::RegisterField::<0,0x1fffffff,1,0,u32, Cfdtmid_SPEC,crate::common::RW>::from_register(self,0)
+        crate::common::RegisterField::<0,0x1fffffff,1,0,u32,u32,Cfdtmid_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "Tx History List Entry"]
+
     #[inline(always)]
     pub fn thlen(
         self,
-    ) -> crate::common::RegisterField<29, 0x1, 1, 0, cfdtmid::Thlen, Cfdtmid_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<29,0x1,1,0,cfdtmid::Thlen, Cfdtmid_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        29,
+        0x1,
+        1,
+        0,
+        cfdtmid::Thlen,
+        cfdtmid::Thlen,
+        Cfdtmid_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            29,
+            0x1,
+            1,
+            0,
+            cfdtmid::Thlen,
+            cfdtmid::Thlen,
+            Cfdtmid_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "TX Message Buffer RTR bit"]
+
     #[inline(always)]
     pub fn tmrtr(
         self,
-    ) -> crate::common::RegisterField<30, 0x1, 1, 0, cfdtmid::Tmrtr, Cfdtmid_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<30,0x1,1,0,cfdtmid::Tmrtr, Cfdtmid_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        30,
+        0x1,
+        1,
+        0,
+        cfdtmid::Tmrtr,
+        cfdtmid::Tmrtr,
+        Cfdtmid_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            30,
+            0x1,
+            1,
+            0,
+            cfdtmid::Tmrtr,
+            cfdtmid::Tmrtr,
+            Cfdtmid_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
-    #[doc = "TX Message Buffer IDE bit"]
+
     #[inline(always)]
     pub fn tmide(
         self,
-    ) -> crate::common::RegisterField<31, 0x1, 1, 0, cfdtmid::Tmide, Cfdtmid_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<31,0x1,1,0,cfdtmid::Tmide, Cfdtmid_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        31,
+        0x1,
+        1,
+        0,
+        cfdtmid::Tmide,
+        cfdtmid::Tmide,
+        Cfdtmid_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            31,
+            0x1,
+            1,
+            0,
+            cfdtmid::Tmide,
+            cfdtmid::Tmide,
+            Cfdtmid_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Cfdtmid {
@@ -8749,27 +10050,24 @@ pub mod cfdtmid {
     pub struct Thlen_SPEC;
     pub type Thlen = crate::EnumBitfieldStruct<u8, Thlen_SPEC>;
     impl Thlen {
-        #[doc = "Entry not stored in THL after successful TX"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Entry stored in THL after successful TX"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Tmrtr_SPEC;
     pub type Tmrtr = crate::EnumBitfieldStruct<u8, Tmrtr_SPEC>;
     impl Tmrtr {
-        #[doc = "Data frame"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Remote frame"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Tmide_SPEC;
     pub type Tmide = crate::EnumBitfieldStruct<u8, Tmide_SPEC>;
     impl Tmide {
-        #[doc = "STD-ID is transmitted"]
         pub const _0: Self = Self::new(0);
-        #[doc = "EXT-ID is transmitted"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -8779,16 +10077,15 @@ pub struct Cfdtmptr_SPEC;
 impl crate::sealed::RegSpec for Cfdtmptr_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Pointer Register"]
+
 pub type Cfdtmptr = crate::RegValueT<Cfdtmptr_SPEC>;
 
 impl Cfdtmptr {
-    #[doc = "TX Message Buffer DLC Field"]
     #[inline(always)]
     pub fn tmdlc(
         self,
-    ) -> crate::common::RegisterField<28, 0xf, 1, 0, u8, Cfdtmptr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<28,0xf,1,0,u8, Cfdtmptr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<28, 0xf, 1, 0, u8, u8, Cfdtmptr_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<28,0xf,1,0,u8,u8,Cfdtmptr_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtmptr {
@@ -8804,11 +10101,10 @@ pub struct Cfdtmfdctr_SPEC;
 impl crate::sealed::RegSpec for Cfdtmfdctr_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer CANFD Control Register"]
+
 pub type Cfdtmfdctr = crate::RegValueT<Cfdtmfdctr_SPEC>;
 
 impl Cfdtmfdctr {
-    #[doc = "Error State Indicator bit"]
     #[inline(always)]
     pub fn tmesi(
         self,
@@ -8817,6 +10113,7 @@ impl Cfdtmfdctr {
         0x1,
         1,
         0,
+        cfdtmfdctr::Tmesi,
         cfdtmfdctr::Tmesi,
         Cfdtmfdctr_SPEC,
         crate::common::RW,
@@ -8827,11 +10124,12 @@ impl Cfdtmfdctr {
             1,
             0,
             cfdtmfdctr::Tmesi,
+            cfdtmfdctr::Tmesi,
             Cfdtmfdctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Bit Rate Switch bit"]
+
     #[inline(always)]
     pub fn tmbrs(
         self,
@@ -8840,6 +10138,7 @@ impl Cfdtmfdctr {
         0x1,
         1,
         0,
+        cfdtmfdctr::Tmbrs,
         cfdtmfdctr::Tmbrs,
         Cfdtmfdctr_SPEC,
         crate::common::RW,
@@ -8850,11 +10149,12 @@ impl Cfdtmfdctr {
             1,
             0,
             cfdtmfdctr::Tmbrs,
+            cfdtmfdctr::Tmbrs,
             Cfdtmfdctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "CAN FD Format bit"]
+
     #[inline(always)]
     pub fn tmfdf(
         self,
@@ -8863,6 +10163,7 @@ impl Cfdtmfdctr {
         0x1,
         1,
         0,
+        cfdtmfdctr::Tmfdf,
         cfdtmfdctr::Tmfdf,
         Cfdtmfdctr_SPEC,
         crate::common::RW,
@@ -8873,24 +10174,26 @@ impl Cfdtmfdctr {
             1,
             0,
             cfdtmfdctr::Tmfdf,
+            cfdtmfdctr::Tmfdf,
             Cfdtmfdctr_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "TX Message Buffer Information Label Field"]
+
     #[inline(always)]
     pub fn tmifl(
         self,
-    ) -> crate::common::RegisterField<8, 0x3, 1, 0, u8, Cfdtmfdctr_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0x3,1,0,u8, Cfdtmfdctr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0x3, 1, 0, u8, u8, Cfdtmfdctr_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<8,0x3,1,0,u8,u8,Cfdtmfdctr_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Pointer Field"]
+
     #[inline(always)]
     pub fn tmptr(
         self,
-    ) -> crate::common::RegisterField<16, 0xffff, 1, 0, u16, Cfdtmfdctr_SPEC, crate::common::RW>
+    ) -> crate::common::RegisterField<16, 0xffff, 1, 0, u16, u16, Cfdtmfdctr_SPEC, crate::common::RW>
     {
-        crate::common::RegisterField::<16,0xffff,1,0,u16, Cfdtmfdctr_SPEC,crate::common::RW>::from_register(self,0)
+        crate::common::RegisterField::<16,0xffff,1,0,u16,u16,Cfdtmfdctr_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtmfdctr {
@@ -8905,27 +10208,24 @@ pub mod cfdtmfdctr {
     pub struct Tmesi_SPEC;
     pub type Tmesi = crate::EnumBitfieldStruct<u8, Tmesi_SPEC>;
     impl Tmesi {
-        #[doc = "CANFD frame to transmit by error active node"]
         pub const _0: Self = Self::new(0);
-        #[doc = "CANFD frame to transmit by error passive node"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Tmbrs_SPEC;
     pub type Tmbrs = crate::EnumBitfieldStruct<u8, Tmbrs_SPEC>;
     impl Tmbrs {
-        #[doc = "CANFD frame to transmit with no bit rate switch"]
         pub const _0: Self = Self::new(0);
-        #[doc = "CANFD frame to transmit with bit rate switch"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Tmfdf_SPEC;
     pub type Tmfdf = crate::EnumBitfieldStruct<u8, Tmfdf_SPEC>;
     impl Tmfdf {
-        #[doc = "Non CANFD frame to transmit"]
         pub const _0: Self = Self::new(0);
-        #[doc = "CANFD frame to transmit"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -8935,37 +10235,38 @@ pub struct Cfdtmdf0_SPEC;
 impl crate::sealed::RegSpec for Cfdtmdf0_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Data Field Register"]
+
 pub type Cfdtmdf0 = crate::RegValueT<Cfdtmdf0_SPEC>;
 
 impl Cfdtmdf0 {
-    #[doc = "TX Message Buffer Data Byte ((p × 4)"]
     #[inline(always)]
     pub fn tmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdtmdf0_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdtmdf0_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdtmdf0_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdtmdf0_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn tmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdtmdf0_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdtmdf0_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdtmdf0_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdtmdf0_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn tmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdtmdf0_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdtmdf0_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdtmdf0_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdtmdf0_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn tmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdtmdf0_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdtmdf0_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdtmdf0_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdtmdf0_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtmdf0 {
@@ -8981,37 +10282,38 @@ pub struct Cfdtmdf1_SPEC;
 impl crate::sealed::RegSpec for Cfdtmdf1_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Data Field Register"]
+
 pub type Cfdtmdf1 = crate::RegValueT<Cfdtmdf1_SPEC>;
 
 impl Cfdtmdf1 {
-    #[doc = "TX Message Buffer Data Byte ((p × 4)"]
     #[inline(always)]
     pub fn tmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdtmdf1_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdtmdf1_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdtmdf1_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdtmdf1_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn tmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdtmdf1_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdtmdf1_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdtmdf1_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdtmdf1_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn tmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdtmdf1_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdtmdf1_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdtmdf1_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdtmdf1_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn tmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdtmdf1_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdtmdf1_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdtmdf1_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdtmdf1_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtmdf1 {
@@ -9027,37 +10329,38 @@ pub struct Cfdtmdf2_SPEC;
 impl crate::sealed::RegSpec for Cfdtmdf2_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Data Field Register"]
+
 pub type Cfdtmdf2 = crate::RegValueT<Cfdtmdf2_SPEC>;
 
 impl Cfdtmdf2 {
-    #[doc = "TX Message Buffer Data Byte ((p × 4)"]
     #[inline(always)]
     pub fn tmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdtmdf2_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdtmdf2_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdtmdf2_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdtmdf2_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn tmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdtmdf2_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdtmdf2_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdtmdf2_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdtmdf2_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn tmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdtmdf2_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdtmdf2_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdtmdf2_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdtmdf2_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn tmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdtmdf2_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdtmdf2_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdtmdf2_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdtmdf2_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtmdf2 {
@@ -9073,37 +10376,38 @@ pub struct Cfdtmdf3_SPEC;
 impl crate::sealed::RegSpec for Cfdtmdf3_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Data Field Register"]
+
 pub type Cfdtmdf3 = crate::RegValueT<Cfdtmdf3_SPEC>;
 
 impl Cfdtmdf3 {
-    #[doc = "TX Message Buffer Data Byte ((p × 4)"]
     #[inline(always)]
     pub fn tmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdtmdf3_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdtmdf3_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdtmdf3_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdtmdf3_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn tmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdtmdf3_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdtmdf3_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdtmdf3_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdtmdf3_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn tmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdtmdf3_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdtmdf3_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdtmdf3_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdtmdf3_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn tmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdtmdf3_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdtmdf3_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdtmdf3_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdtmdf3_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtmdf3 {
@@ -9119,37 +10423,38 @@ pub struct Cfdtmdf4_SPEC;
 impl crate::sealed::RegSpec for Cfdtmdf4_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Data Field Register"]
+
 pub type Cfdtmdf4 = crate::RegValueT<Cfdtmdf4_SPEC>;
 
 impl Cfdtmdf4 {
-    #[doc = "TX Message Buffer Data Byte ((p × 4)"]
     #[inline(always)]
     pub fn tmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdtmdf4_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdtmdf4_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdtmdf4_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdtmdf4_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn tmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdtmdf4_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdtmdf4_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdtmdf4_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdtmdf4_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn tmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdtmdf4_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdtmdf4_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdtmdf4_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdtmdf4_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn tmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdtmdf4_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdtmdf4_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdtmdf4_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdtmdf4_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtmdf4 {
@@ -9165,37 +10470,38 @@ pub struct Cfdtmdf5_SPEC;
 impl crate::sealed::RegSpec for Cfdtmdf5_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Data Field Register"]
+
 pub type Cfdtmdf5 = crate::RegValueT<Cfdtmdf5_SPEC>;
 
 impl Cfdtmdf5 {
-    #[doc = "TX Message Buffer Data Byte ((p × 4)"]
     #[inline(always)]
     pub fn tmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdtmdf5_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdtmdf5_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdtmdf5_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdtmdf5_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn tmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdtmdf5_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdtmdf5_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdtmdf5_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdtmdf5_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn tmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdtmdf5_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdtmdf5_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdtmdf5_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdtmdf5_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn tmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdtmdf5_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdtmdf5_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdtmdf5_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdtmdf5_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtmdf5 {
@@ -9211,37 +10517,38 @@ pub struct Cfdtmdf6_SPEC;
 impl crate::sealed::RegSpec for Cfdtmdf6_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Data Field Register"]
+
 pub type Cfdtmdf6 = crate::RegValueT<Cfdtmdf6_SPEC>;
 
 impl Cfdtmdf6 {
-    #[doc = "TX Message Buffer Data Byte ((p × 4)"]
     #[inline(always)]
     pub fn tmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdtmdf6_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdtmdf6_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdtmdf6_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdtmdf6_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn tmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdtmdf6_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdtmdf6_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdtmdf6_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdtmdf6_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn tmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdtmdf6_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdtmdf6_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdtmdf6_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdtmdf6_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn tmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdtmdf6_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdtmdf6_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdtmdf6_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdtmdf6_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtmdf6 {
@@ -9257,37 +10564,38 @@ pub struct Cfdtmdf7_SPEC;
 impl crate::sealed::RegSpec for Cfdtmdf7_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Data Field Register"]
+
 pub type Cfdtmdf7 = crate::RegValueT<Cfdtmdf7_SPEC>;
 
 impl Cfdtmdf7 {
-    #[doc = "TX Message Buffer Data Byte ((p × 4)"]
     #[inline(always)]
     pub fn tmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdtmdf7_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdtmdf7_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdtmdf7_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdtmdf7_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn tmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdtmdf7_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdtmdf7_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdtmdf7_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdtmdf7_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn tmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdtmdf7_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdtmdf7_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdtmdf7_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdtmdf7_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn tmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdtmdf7_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdtmdf7_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdtmdf7_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdtmdf7_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtmdf7 {
@@ -9303,37 +10611,38 @@ pub struct Cfdtmdf8_SPEC;
 impl crate::sealed::RegSpec for Cfdtmdf8_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Data Field Register"]
+
 pub type Cfdtmdf8 = crate::RegValueT<Cfdtmdf8_SPEC>;
 
 impl Cfdtmdf8 {
-    #[doc = "TX Message Buffer Data Byte ((p × 4)"]
     #[inline(always)]
     pub fn tmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdtmdf8_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdtmdf8_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdtmdf8_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdtmdf8_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn tmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdtmdf8_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdtmdf8_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdtmdf8_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdtmdf8_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn tmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdtmdf8_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdtmdf8_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdtmdf8_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdtmdf8_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn tmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdtmdf8_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdtmdf8_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdtmdf8_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdtmdf8_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtmdf8 {
@@ -9349,37 +10658,38 @@ pub struct Cfdtmdf9_SPEC;
 impl crate::sealed::RegSpec for Cfdtmdf9_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Data Field Register"]
+
 pub type Cfdtmdf9 = crate::RegValueT<Cfdtmdf9_SPEC>;
 
 impl Cfdtmdf9 {
-    #[doc = "TX Message Buffer Data Byte ((p × 4)"]
     #[inline(always)]
     pub fn tmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdtmdf9_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdtmdf9_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdtmdf9_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdtmdf9_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn tmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdtmdf9_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdtmdf9_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdtmdf9_SPEC, crate::common::RW> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdtmdf9_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn tmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdtmdf9_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdtmdf9_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdtmdf9_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdtmdf9_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn tmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdtmdf9_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdtmdf9_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdtmdf9_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdtmdf9_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtmdf9 {
@@ -9395,37 +10705,40 @@ pub struct Cfdtmdf10_SPEC;
 impl crate::sealed::RegSpec for Cfdtmdf10_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Data Field Register"]
+
 pub type Cfdtmdf10 = crate::RegValueT<Cfdtmdf10_SPEC>;
 
 impl Cfdtmdf10 {
-    #[doc = "TX Message Buffer Data Byte ((p × 4)"]
     #[inline(always)]
     pub fn tmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdtmdf10_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdtmdf10_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdtmdf10_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdtmdf10_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn tmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdtmdf10_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdtmdf10_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdtmdf10_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdtmdf10_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn tmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdtmdf10_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdtmdf10_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdtmdf10_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdtmdf10_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn tmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdtmdf10_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdtmdf10_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdtmdf10_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdtmdf10_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtmdf10 {
@@ -9441,37 +10754,40 @@ pub struct Cfdtmdf11_SPEC;
 impl crate::sealed::RegSpec for Cfdtmdf11_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Data Field Register"]
+
 pub type Cfdtmdf11 = crate::RegValueT<Cfdtmdf11_SPEC>;
 
 impl Cfdtmdf11 {
-    #[doc = "TX Message Buffer Data Byte ((p × 4)"]
     #[inline(always)]
     pub fn tmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdtmdf11_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdtmdf11_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdtmdf11_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdtmdf11_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn tmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdtmdf11_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdtmdf11_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdtmdf11_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdtmdf11_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn tmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdtmdf11_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdtmdf11_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdtmdf11_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdtmdf11_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn tmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdtmdf11_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdtmdf11_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdtmdf11_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdtmdf11_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtmdf11 {
@@ -9487,37 +10803,40 @@ pub struct Cfdtmdf12_SPEC;
 impl crate::sealed::RegSpec for Cfdtmdf12_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Data Field Register"]
+
 pub type Cfdtmdf12 = crate::RegValueT<Cfdtmdf12_SPEC>;
 
 impl Cfdtmdf12 {
-    #[doc = "TX Message Buffer Data Byte ((p × 4)"]
     #[inline(always)]
     pub fn tmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdtmdf12_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdtmdf12_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdtmdf12_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdtmdf12_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn tmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdtmdf12_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdtmdf12_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdtmdf12_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdtmdf12_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn tmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdtmdf12_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdtmdf12_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdtmdf12_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdtmdf12_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn tmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdtmdf12_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdtmdf12_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdtmdf12_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdtmdf12_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtmdf12 {
@@ -9533,37 +10852,40 @@ pub struct Cfdtmdf13_SPEC;
 impl crate::sealed::RegSpec for Cfdtmdf13_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Data Field Register"]
+
 pub type Cfdtmdf13 = crate::RegValueT<Cfdtmdf13_SPEC>;
 
 impl Cfdtmdf13 {
-    #[doc = "TX Message Buffer Data Byte ((p × 4)"]
     #[inline(always)]
     pub fn tmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdtmdf13_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdtmdf13_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdtmdf13_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdtmdf13_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn tmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdtmdf13_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdtmdf13_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdtmdf13_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdtmdf13_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn tmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdtmdf13_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdtmdf13_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdtmdf13_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdtmdf13_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn tmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdtmdf13_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdtmdf13_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdtmdf13_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdtmdf13_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtmdf13 {
@@ -9579,37 +10901,40 @@ pub struct Cfdtmdf14_SPEC;
 impl crate::sealed::RegSpec for Cfdtmdf14_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Data Field Register"]
+
 pub type Cfdtmdf14 = crate::RegValueT<Cfdtmdf14_SPEC>;
 
 impl Cfdtmdf14 {
-    #[doc = "TX Message Buffer Data Byte ((p × 4)"]
     #[inline(always)]
     pub fn tmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdtmdf14_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdtmdf14_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdtmdf14_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdtmdf14_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn tmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdtmdf14_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdtmdf14_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdtmdf14_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdtmdf14_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn tmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdtmdf14_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdtmdf14_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdtmdf14_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdtmdf14_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn tmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdtmdf14_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdtmdf14_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdtmdf14_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdtmdf14_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtmdf14 {
@@ -9625,37 +10950,40 @@ pub struct Cfdtmdf15_SPEC;
 impl crate::sealed::RegSpec for Cfdtmdf15_SPEC {
     type DataType = u32;
 }
-#[doc = "TX Message Buffer Data Field Register"]
+
 pub type Cfdtmdf15 = crate::RegValueT<Cfdtmdf15_SPEC>;
 
 impl Cfdtmdf15 {
-    #[doc = "TX Message Buffer Data Byte ((p × 4)"]
     #[inline(always)]
     pub fn tmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdtmdf15_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdtmdf15_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdtmdf15_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdtmdf15_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn tmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdtmdf15_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdtmdf15_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdtmdf15_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdtmdf15_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn tmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdtmdf15_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdtmdf15_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdtmdf15_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdtmdf15_SPEC,crate::common::RW>::from_register(self,0)
     }
-    #[doc = "TX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn tmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdtmdf15_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdtmdf15_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdtmdf15_SPEC, crate::common::RW>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdtmdf15_SPEC,crate::common::RW>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdtmdf15 {
@@ -9671,40 +10999,48 @@ pub struct Cfdthlacc0_SPEC;
 impl crate::sealed::RegSpec for Cfdthlacc0_SPEC {
     type DataType = u32;
 }
-#[doc = "TX History List Access Register 0"]
+
 pub type Cfdthlacc0 = crate::RegValueT<Cfdthlacc0_SPEC>;
 
 impl Cfdthlacc0 {
-    #[doc = "Buffer Type"]
     #[inline(always)]
     pub fn bt(
         self,
-    ) -> crate::common::RegisterField<0, 0x7, 1, 0, cfdthlacc0::Bt, Cfdthlacc0_SPEC, crate::common::R>
-    {
+    ) -> crate::common::RegisterField<
+        0,
+        0x7,
+        1,
+        0,
+        cfdthlacc0::Bt,
+        cfdthlacc0::Bt,
+        Cfdthlacc0_SPEC,
+        crate::common::R,
+    > {
         crate::common::RegisterField::<
             0,
             0x7,
             1,
             0,
             cfdthlacc0::Bt,
+            cfdthlacc0::Bt,
             Cfdthlacc0_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "Buffer Number"]
+
     #[inline(always)]
     pub fn bn(
         self,
-    ) -> crate::common::RegisterField<3, 0x3, 1, 0, u8, Cfdthlacc0_SPEC, crate::common::R> {
-        crate::common::RegisterField::<3,0x3,1,0,u8, Cfdthlacc0_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<3, 0x3, 1, 0, u8, u8, Cfdthlacc0_SPEC, crate::common::R> {
+        crate::common::RegisterField::<3,0x3,1,0,u8,u8,Cfdthlacc0_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "Transmit Timestamp"]
+
     #[inline(always)]
     pub fn tmts(
         self,
-    ) -> crate::common::RegisterField<16, 0xffff, 1, 0, u16, Cfdthlacc0_SPEC, crate::common::R>
+    ) -> crate::common::RegisterField<16, 0xffff, 1, 0, u16, u16, Cfdthlacc0_SPEC, crate::common::R>
     {
-        crate::common::RegisterField::<16,0xffff,1,0,u16, Cfdthlacc0_SPEC,crate::common::R>::from_register(self,0)
+        crate::common::RegisterField::<16,0xffff,1,0,u16,u16,Cfdthlacc0_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdthlacc0 {
@@ -9719,11 +11055,10 @@ pub mod cfdthlacc0 {
     pub struct Bt_SPEC;
     pub type Bt = crate::EnumBitfieldStruct<u8, Bt_SPEC>;
     impl Bt {
-        #[doc = "Flat TX message buffer"]
         pub const _001: Self = Self::new(1);
-        #[doc = "TX FIFO message buffer number"]
+
         pub const _010: Self = Self::new(2);
-        #[doc = "TX Queue message buffer number"]
+
         pub const _100: Self = Self::new(4);
     }
 }
@@ -9733,23 +11068,24 @@ pub struct Cfdthlacc1_SPEC;
 impl crate::sealed::RegSpec for Cfdthlacc1_SPEC {
     type DataType = u32;
 }
-#[doc = "TX History List Access Register 1"]
+
 pub type Cfdthlacc1 = crate::RegValueT<Cfdthlacc1_SPEC>;
 
 impl Cfdthlacc1 {
-    #[doc = "Transmit ID"]
     #[inline(always)]
     pub fn tid(
         self,
-    ) -> crate::common::RegisterField<0, 0xffff, 1, 0, u16, Cfdthlacc1_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xffff,1,0,u16, Cfdthlacc1_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xffff, 1, 0, u16, u16, Cfdthlacc1_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<0,0xffff,1,0,u16,u16,Cfdthlacc1_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "Transmit Information Label"]
+
     #[inline(always)]
     pub fn tifl(
         self,
-    ) -> crate::common::RegisterField<16, 0x3, 1, 0, u8, Cfdthlacc1_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0x3,1,0,u8, Cfdthlacc1_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0x3, 1, 0, u8, u8, Cfdthlacc1_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<16,0x3,1,0,u8,u8,Cfdthlacc1_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdthlacc1 {
@@ -9765,33 +11101,66 @@ pub struct Cfdrmid_SPEC;
 impl crate::sealed::RegSpec for Cfdrmid_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer ID Registers"]
+
 pub type Cfdrmid = crate::RegValueT<Cfdrmid_SPEC>;
 
 impl Cfdrmid {
-    #[doc = "RX Message Buffer ID Field"]
     #[inline(always)]
     pub fn rmid(
         self,
-    ) -> crate::common::RegisterField<0, 0x1fffffff, 1, 0, u32, Cfdrmid_SPEC, crate::common::R>
+    ) -> crate::common::RegisterField<0, 0x1fffffff, 1, 0, u32, u32, Cfdrmid_SPEC, crate::common::R>
     {
-        crate::common::RegisterField::<0,0x1fffffff,1,0,u32, Cfdrmid_SPEC,crate::common::R>::from_register(self,0)
+        crate::common::RegisterField::<0,0x1fffffff,1,0,u32,u32,Cfdrmid_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer RTR Bit"]
+
     #[inline(always)]
     pub fn rmrtr(
         self,
-    ) -> crate::common::RegisterField<30, 0x1, 1, 0, cfdrmid::Rmrtr, Cfdrmid_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<30,0x1,1,0,cfdrmid::Rmrtr, Cfdrmid_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        30,
+        0x1,
+        1,
+        0,
+        cfdrmid::Rmrtr,
+        cfdrmid::Rmrtr,
+        Cfdrmid_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            30,
+            0x1,
+            1,
+            0,
+            cfdrmid::Rmrtr,
+            cfdrmid::Rmrtr,
+            Cfdrmid_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "RX Message Buffer IDE Bit"]
+
     #[inline(always)]
     pub fn rmide(
         self,
-    ) -> crate::common::RegisterField<31, 0x1, 1, 0, cfdrmid::Rmide, Cfdrmid_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<31,0x1,1,0,cfdrmid::Rmide, Cfdrmid_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        31,
+        0x1,
+        1,
+        0,
+        cfdrmid::Rmide,
+        cfdrmid::Rmide,
+        Cfdrmid_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            31,
+            0x1,
+            1,
+            0,
+            cfdrmid::Rmide,
+            cfdrmid::Rmide,
+            Cfdrmid_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Cfdrmid {
@@ -9806,18 +11175,16 @@ pub mod cfdrmid {
     pub struct Rmrtr_SPEC;
     pub type Rmrtr = crate::EnumBitfieldStruct<u8, Rmrtr_SPEC>;
     impl Rmrtr {
-        #[doc = "Data frame"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Remote frame"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Rmide_SPEC;
     pub type Rmide = crate::EnumBitfieldStruct<u8, Rmide_SPEC>;
     impl Rmide {
-        #[doc = "STD-ID is stored"]
         pub const _0: Self = Self::new(0);
-        #[doc = "EXT-ID is stored"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -9827,23 +11194,23 @@ pub struct Cfdrmptr_SPEC;
 impl crate::sealed::RegSpec for Cfdrmptr_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer Pointer Registers"]
+
 pub type Cfdrmptr = crate::RegValueT<Cfdrmptr_SPEC>;
 
 impl Cfdrmptr {
-    #[doc = "RX Message Buffer Timestamp Field"]
     #[inline(always)]
     pub fn rmts(
         self,
-    ) -> crate::common::RegisterField<0, 0xffff, 1, 0, u16, Cfdrmptr_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xffff,1,0,u16, Cfdrmptr_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xffff, 1, 0, u16, u16, Cfdrmptr_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<0,0xffff,1,0,u16,u16,Cfdrmptr_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer DLC Field"]
+
     #[inline(always)]
     pub fn rmdlc(
         self,
-    ) -> crate::common::RegisterField<28, 0xf, 1, 0, u8, Cfdrmptr_SPEC, crate::common::R> {
-        crate::common::RegisterField::<28,0xf,1,0,u8, Cfdrmptr_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<28, 0xf, 1, 0, u8, u8, Cfdrmptr_SPEC, crate::common::R> {
+        crate::common::RegisterField::<28,0xf,1,0,u8,u8,Cfdrmptr_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrmptr {
@@ -9859,11 +11226,10 @@ pub struct Cfdrmfdsts_SPEC;
 impl crate::sealed::RegSpec for Cfdrmfdsts_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer CANFD Status Registers"]
+
 pub type Cfdrmfdsts = crate::RegValueT<Cfdrmfdsts_SPEC>;
 
 impl Cfdrmfdsts {
-    #[doc = "Error State Indicator bit"]
     #[inline(always)]
     pub fn rmesi(
         self,
@@ -9872,6 +11238,7 @@ impl Cfdrmfdsts {
         0x1,
         1,
         0,
+        cfdrmfdsts::Rmesi,
         cfdrmfdsts::Rmesi,
         Cfdrmfdsts_SPEC,
         crate::common::R,
@@ -9882,11 +11249,12 @@ impl Cfdrmfdsts {
             1,
             0,
             cfdrmfdsts::Rmesi,
+            cfdrmfdsts::Rmesi,
             Cfdrmfdsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "Bit Rate Switch bit"]
+
     #[inline(always)]
     pub fn rmbrs(
         self,
@@ -9895,6 +11263,7 @@ impl Cfdrmfdsts {
         0x1,
         1,
         0,
+        cfdrmfdsts::Rmbrs,
         cfdrmfdsts::Rmbrs,
         Cfdrmfdsts_SPEC,
         crate::common::R,
@@ -9905,11 +11274,12 @@ impl Cfdrmfdsts {
             1,
             0,
             cfdrmfdsts::Rmbrs,
+            cfdrmfdsts::Rmbrs,
             Cfdrmfdsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "CAN FD Format bit"]
+
     #[inline(always)]
     pub fn rmfdf(
         self,
@@ -9918,6 +11288,7 @@ impl Cfdrmfdsts {
         0x1,
         1,
         0,
+        cfdrmfdsts::Rmfdf,
         cfdrmfdsts::Rmfdf,
         Cfdrmfdsts_SPEC,
         crate::common::R,
@@ -9928,24 +11299,25 @@ impl Cfdrmfdsts {
             1,
             0,
             cfdrmfdsts::Rmfdf,
+            cfdrmfdsts::Rmfdf,
             Cfdrmfdsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "RX Message Buffer Information Label Field"]
+
     #[inline(always)]
     pub fn rmifl(
         self,
-    ) -> crate::common::RegisterField<8, 0x3, 1, 0, u8, Cfdrmfdsts_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0x3,1,0,u8, Cfdrmfdsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0x3, 1, 0, u8, u8, Cfdrmfdsts_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0x3,1,0,u8,u8,Cfdrmfdsts_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Pointer Field"]
+
     #[inline(always)]
     pub fn rmptr(
         self,
-    ) -> crate::common::RegisterField<16, 0xffff, 1, 0, u16, Cfdrmfdsts_SPEC, crate::common::R>
+    ) -> crate::common::RegisterField<16, 0xffff, 1, 0, u16, u16, Cfdrmfdsts_SPEC, crate::common::R>
     {
-        crate::common::RegisterField::<16,0xffff,1,0,u16, Cfdrmfdsts_SPEC,crate::common::R>::from_register(self,0)
+        crate::common::RegisterField::<16,0xffff,1,0,u16,u16,Cfdrmfdsts_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrmfdsts {
@@ -9960,27 +11332,24 @@ pub mod cfdrmfdsts {
     pub struct Rmesi_SPEC;
     pub type Rmesi = crate::EnumBitfieldStruct<u8, Rmesi_SPEC>;
     impl Rmesi {
-        #[doc = "CANFD frame received from error active node"]
         pub const _0: Self = Self::new(0);
-        #[doc = "CANFD frame received from error passive node"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Rmbrs_SPEC;
     pub type Rmbrs = crate::EnumBitfieldStruct<u8, Rmbrs_SPEC>;
     impl Rmbrs {
-        #[doc = "CANFD frame received with no bit rate switch"]
         pub const _0: Self = Self::new(0);
-        #[doc = "CANFD frame received with bit rate switch"]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Rmfdf_SPEC;
     pub type Rmfdf = crate::EnumBitfieldStruct<u8, Rmfdf_SPEC>;
     impl Rmfdf {
-        #[doc = "Non CANFD frame received"]
         pub const _0: Self = Self::new(0);
-        #[doc = "CANFD frame received"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -9990,37 +11359,36 @@ pub struct Cfdrmdf0_SPEC;
 impl crate::sealed::RegSpec for Cfdrmdf0_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer Data Field 0 Registers"]
+
 pub type Cfdrmdf0 = crate::RegValueT<Cfdrmdf0_SPEC>;
 
 impl Cfdrmdf0 {
-    #[doc = "RX Message Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrmdf0_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrmdf0_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrmdf0_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrmdf0_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrmdf0_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrmdf0_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrmdf0_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrmdf0_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrmdf0_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrmdf0_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrmdf0_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrmdf0_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrmdf0_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrmdf0_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrmdf0_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrmdf0_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrmdf0 {
@@ -10036,37 +11404,36 @@ pub struct Cfdrmdf1_SPEC;
 impl crate::sealed::RegSpec for Cfdrmdf1_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer Data Field 1 Registers"]
+
 pub type Cfdrmdf1 = crate::RegValueT<Cfdrmdf1_SPEC>;
 
 impl Cfdrmdf1 {
-    #[doc = "RX Message Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrmdf1_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrmdf1_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrmdf1_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrmdf1_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrmdf1_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrmdf1_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrmdf1_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrmdf1_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrmdf1_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrmdf1_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrmdf1_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrmdf1_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrmdf1_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrmdf1_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrmdf1_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrmdf1_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrmdf1 {
@@ -10082,37 +11449,36 @@ pub struct Cfdrmdf2_SPEC;
 impl crate::sealed::RegSpec for Cfdrmdf2_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer Data Field 2 Registers"]
+
 pub type Cfdrmdf2 = crate::RegValueT<Cfdrmdf2_SPEC>;
 
 impl Cfdrmdf2 {
-    #[doc = "RX Message Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrmdf2_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrmdf2_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrmdf2_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrmdf2_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrmdf2_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrmdf2_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrmdf2_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrmdf2_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrmdf2_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrmdf2_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrmdf2_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrmdf2_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrmdf2_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrmdf2_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrmdf2_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrmdf2_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrmdf2 {
@@ -10128,37 +11494,36 @@ pub struct Cfdrmdf3_SPEC;
 impl crate::sealed::RegSpec for Cfdrmdf3_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer Data Field 3 Registers"]
+
 pub type Cfdrmdf3 = crate::RegValueT<Cfdrmdf3_SPEC>;
 
 impl Cfdrmdf3 {
-    #[doc = "RX Message Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrmdf3_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrmdf3_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrmdf3_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrmdf3_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrmdf3_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrmdf3_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrmdf3_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrmdf3_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrmdf3_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrmdf3_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrmdf3_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrmdf3_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrmdf3_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrmdf3_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrmdf3_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrmdf3_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrmdf3 {
@@ -10174,37 +11539,36 @@ pub struct Cfdrmdf4_SPEC;
 impl crate::sealed::RegSpec for Cfdrmdf4_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer Data Field 4 Registers"]
+
 pub type Cfdrmdf4 = crate::RegValueT<Cfdrmdf4_SPEC>;
 
 impl Cfdrmdf4 {
-    #[doc = "RX Message Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrmdf4_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrmdf4_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrmdf4_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrmdf4_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrmdf4_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrmdf4_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrmdf4_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrmdf4_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrmdf4_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrmdf4_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrmdf4_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrmdf4_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrmdf4_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrmdf4_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrmdf4_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrmdf4_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrmdf4 {
@@ -10220,37 +11584,36 @@ pub struct Cfdrmdf5_SPEC;
 impl crate::sealed::RegSpec for Cfdrmdf5_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer Data Field 5 Registers"]
+
 pub type Cfdrmdf5 = crate::RegValueT<Cfdrmdf5_SPEC>;
 
 impl Cfdrmdf5 {
-    #[doc = "RX Message Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrmdf5_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrmdf5_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrmdf5_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrmdf5_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrmdf5_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrmdf5_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrmdf5_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrmdf5_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrmdf5_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrmdf5_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrmdf5_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrmdf5_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrmdf5_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrmdf5_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrmdf5_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrmdf5_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrmdf5 {
@@ -10266,37 +11629,36 @@ pub struct Cfdrmdf6_SPEC;
 impl crate::sealed::RegSpec for Cfdrmdf6_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer Data Field 6 Registers"]
+
 pub type Cfdrmdf6 = crate::RegValueT<Cfdrmdf6_SPEC>;
 
 impl Cfdrmdf6 {
-    #[doc = "RX Message Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrmdf6_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrmdf6_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrmdf6_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrmdf6_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrmdf6_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrmdf6_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrmdf6_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrmdf6_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrmdf6_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrmdf6_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrmdf6_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrmdf6_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrmdf6_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrmdf6_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrmdf6_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrmdf6_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrmdf6 {
@@ -10312,37 +11674,36 @@ pub struct Cfdrmdf7_SPEC;
 impl crate::sealed::RegSpec for Cfdrmdf7_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer Data Field 7 Registers"]
+
 pub type Cfdrmdf7 = crate::RegValueT<Cfdrmdf7_SPEC>;
 
 impl Cfdrmdf7 {
-    #[doc = "RX Message Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrmdf7_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrmdf7_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrmdf7_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrmdf7_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrmdf7_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrmdf7_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrmdf7_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrmdf7_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrmdf7_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrmdf7_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrmdf7_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrmdf7_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrmdf7_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrmdf7_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrmdf7_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrmdf7_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrmdf7 {
@@ -10358,37 +11719,36 @@ pub struct Cfdrmdf8_SPEC;
 impl crate::sealed::RegSpec for Cfdrmdf8_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer Data Field 8 Registers"]
+
 pub type Cfdrmdf8 = crate::RegValueT<Cfdrmdf8_SPEC>;
 
 impl Cfdrmdf8 {
-    #[doc = "RX Message Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrmdf8_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrmdf8_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrmdf8_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrmdf8_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrmdf8_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrmdf8_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrmdf8_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrmdf8_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrmdf8_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrmdf8_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrmdf8_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrmdf8_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrmdf8_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrmdf8_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrmdf8_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrmdf8_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrmdf8 {
@@ -10404,37 +11764,36 @@ pub struct Cfdrmdf9_SPEC;
 impl crate::sealed::RegSpec for Cfdrmdf9_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer Data Field 9 Registers"]
+
 pub type Cfdrmdf9 = crate::RegValueT<Cfdrmdf9_SPEC>;
 
 impl Cfdrmdf9 {
-    #[doc = "RX Message Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrmdf9_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrmdf9_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrmdf9_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrmdf9_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrmdf9_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrmdf9_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrmdf9_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrmdf9_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrmdf9_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrmdf9_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrmdf9_SPEC, crate::common::R> {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrmdf9_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrmdf9_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrmdf9_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrmdf9_SPEC, crate::common::R> {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrmdf9_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrmdf9 {
@@ -10450,37 +11809,38 @@ pub struct Cfdrmdf10_SPEC;
 impl crate::sealed::RegSpec for Cfdrmdf10_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer Data Field 10 Registers"]
+
 pub type Cfdrmdf10 = crate::RegValueT<Cfdrmdf10_SPEC>;
 
 impl Cfdrmdf10 {
-    #[doc = "RX Message Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrmdf10_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrmdf10_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrmdf10_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrmdf10_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrmdf10_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrmdf10_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrmdf10_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrmdf10_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrmdf10_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrmdf10_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrmdf10_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrmdf10_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrmdf10_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrmdf10_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrmdf10_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrmdf10_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrmdf10 {
@@ -10496,37 +11856,38 @@ pub struct Cfdrmdf11_SPEC;
 impl crate::sealed::RegSpec for Cfdrmdf11_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer Data Field 11 Registers"]
+
 pub type Cfdrmdf11 = crate::RegValueT<Cfdrmdf11_SPEC>;
 
 impl Cfdrmdf11 {
-    #[doc = "RX Message Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrmdf11_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrmdf11_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrmdf11_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrmdf11_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrmdf11_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrmdf11_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrmdf11_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrmdf11_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrmdf11_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrmdf11_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrmdf11_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrmdf11_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrmdf11_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrmdf11_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrmdf11_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrmdf11_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrmdf11 {
@@ -10542,37 +11903,38 @@ pub struct Cfdrmdf12_SPEC;
 impl crate::sealed::RegSpec for Cfdrmdf12_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer Data Field 12 Registers"]
+
 pub type Cfdrmdf12 = crate::RegValueT<Cfdrmdf12_SPEC>;
 
 impl Cfdrmdf12 {
-    #[doc = "RX Message Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrmdf12_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrmdf12_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrmdf12_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrmdf12_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrmdf12_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrmdf12_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrmdf12_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrmdf12_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrmdf12_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrmdf12_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrmdf12_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrmdf12_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrmdf12_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrmdf12_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrmdf12_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrmdf12_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrmdf12 {
@@ -10588,37 +11950,38 @@ pub struct Cfdrmdf13_SPEC;
 impl crate::sealed::RegSpec for Cfdrmdf13_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer Data Field 13 Registers"]
+
 pub type Cfdrmdf13 = crate::RegValueT<Cfdrmdf13_SPEC>;
 
 impl Cfdrmdf13 {
-    #[doc = "RX Message Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrmdf13_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrmdf13_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrmdf13_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrmdf13_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrmdf13_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrmdf13_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrmdf13_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrmdf13_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrmdf13_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrmdf13_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrmdf13_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrmdf13_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrmdf13_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrmdf13_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrmdf13_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrmdf13_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrmdf13 {
@@ -10634,37 +11997,38 @@ pub struct Cfdrmdf14_SPEC;
 impl crate::sealed::RegSpec for Cfdrmdf14_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer Data Field 14 Registers"]
+
 pub type Cfdrmdf14 = crate::RegValueT<Cfdrmdf14_SPEC>;
 
 impl Cfdrmdf14 {
-    #[doc = "RX Message Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrmdf14_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrmdf14_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrmdf14_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrmdf14_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrmdf14_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrmdf14_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrmdf14_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrmdf14_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrmdf14_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrmdf14_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrmdf14_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrmdf14_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrmdf14_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrmdf14_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrmdf14_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrmdf14_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrmdf14 {
@@ -10680,37 +12044,38 @@ pub struct Cfdrmdf15_SPEC;
 impl crate::sealed::RegSpec for Cfdrmdf15_SPEC {
     type DataType = u32;
 }
-#[doc = "RX Message Buffer Data Field 15 Registers"]
+
 pub type Cfdrmdf15 = crate::RegValueT<Cfdrmdf15_SPEC>;
 
 impl Cfdrmdf15 {
-    #[doc = "RX Message Buffer Data Byte (p × 4)"]
     #[inline(always)]
     pub fn rmdb_ll(
         self,
-    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, Cfdrmdf15_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0xff,1,0,u8, Cfdrmdf15_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0xff, 1, 0, u8, u8, Cfdrmdf15_SPEC, crate::common::R> {
+        crate::common::RegisterField::<0,0xff,1,0,u8,u8,Cfdrmdf15_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 1)"]
+
     #[inline(always)]
     pub fn rmdb_lh(
         self,
-    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, Cfdrmdf15_SPEC, crate::common::R> {
-        crate::common::RegisterField::<8,0xff,1,0,u8, Cfdrmdf15_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<8, 0xff, 1, 0, u8, u8, Cfdrmdf15_SPEC, crate::common::R> {
+        crate::common::RegisterField::<8,0xff,1,0,u8,u8,Cfdrmdf15_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 2)"]
+
     #[inline(always)]
     pub fn rmdb_hl(
         self,
-    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, Cfdrmdf15_SPEC, crate::common::R> {
-        crate::common::RegisterField::<16,0xff,1,0,u8, Cfdrmdf15_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<16, 0xff, 1, 0, u8, u8, Cfdrmdf15_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<16,0xff,1,0,u8,u8,Cfdrmdf15_SPEC,crate::common::R>::from_register(self,0)
     }
-    #[doc = "RX Message Buffer Data Byte ((p × 4) + 3)"]
+
     #[inline(always)]
     pub fn rmdb_hh(
         self,
-    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, Cfdrmdf15_SPEC, crate::common::R> {
-        crate::common::RegisterField::<24,0xff,1,0,u8, Cfdrmdf15_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<24, 0xff, 1, 0, u8, u8, Cfdrmdf15_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<24,0xff,1,0,u8,u8,Cfdrmdf15_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Cfdrmdf15 {

@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.2, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:17:41 +0000
+// Generated from SVD 1.2, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:20:22 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Dma {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "DMA  Module Activation Register"]
+
     #[inline(always)]
     pub const fn dmast(&self) -> &'static crate::common::Reg<self::Dmast_SPEC, crate::common::RW> {
         unsafe {
@@ -49,17 +49,33 @@ pub struct Dmast_SPEC;
 impl crate::sealed::RegSpec for Dmast_SPEC {
     type DataType = u8;
 }
-#[doc = "DMA  Module Activation Register"]
+
 pub type Dmast = crate::RegValueT<Dmast_SPEC>;
 
 impl Dmast {
-    #[doc = "DMAC Operation Enable"]
     #[inline(always)]
     pub fn dmst(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, dmast::Dmst, Dmast_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,dmast::Dmst, Dmast_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        dmast::Dmst,
+        dmast::Dmst,
+        Dmast_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            dmast::Dmst,
+            dmast::Dmst,
+            Dmast_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Dmast {
@@ -74,9 +90,8 @@ pub mod dmast {
     pub struct Dmst_SPEC;
     pub type Dmst = crate::EnumBitfieldStruct<u8, Dmst_SPEC>;
     impl Dmst {
-        #[doc = "DMAC activation is disabled."]
         pub const _0: Self = Self::new(0);
-        #[doc = "DMAC activation is enabled."]
+
         pub const _1: Self = Self::new(1);
     }
 }

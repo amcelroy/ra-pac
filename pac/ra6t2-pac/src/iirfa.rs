@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.40.00, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:18:35 +0000
+// Generated from SVD 1.40.00, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:21:24 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Iirfa {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "Channel Processing Status Register"]
+
     #[inline(always)]
     pub const fn iircprcs(
         &self,
@@ -45,7 +45,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "Channel Processing Completion Flag Register"]
     #[inline(always)]
     pub const fn iircprcff(
         &self,
@@ -57,7 +56,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "Output Data Preparation Completion Flag Register"]
     #[inline(always)]
     pub const fn iirordyf(
         &self,
@@ -69,7 +67,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "Operation Error Flag Register"]
     #[inline(always)]
     pub const fn iircerrf(
         &self,
@@ -81,7 +78,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "Operation Control Register"]
     #[inline(always)]
     pub const fn iiropcnt(
         &self,
@@ -93,7 +89,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "ECC Control Register"]
     #[inline(always)]
     pub const fn iirecccnt(
         &self,
@@ -105,7 +100,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "ECC Interrupt Enable Register"]
     #[inline(always)]
     pub const fn iireccint(
         &self,
@@ -117,7 +111,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "ECC Error Flag Register"]
     #[inline(always)]
     pub const fn iireccef(
         &self,
@@ -129,7 +122,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "ECC Error Flag Clear Register"]
     #[inline(always)]
     pub const fn iireccefclr(
         &self,
@@ -141,7 +133,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "ECC 1-bit Error Address Register"]
     #[inline(always)]
     pub const fn iireseadr(
         &self,
@@ -153,7 +144,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "ECC 2-bit Error Address Register"]
     #[inline(always)]
     pub const fn iiredeadr(
         &self,
@@ -165,7 +155,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "Channel %s Input Register"]
     #[inline(always)]
     pub const fn iirchinp(
         &self,
@@ -179,7 +168,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "Channel %s Output Register"]
     #[inline(always)]
     pub const fn iirchout(
         &self,
@@ -193,7 +181,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "Channel %s Control Register"]
     #[inline(always)]
     pub const fn iirchcnt(
         &self,
@@ -207,7 +194,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "Channel %s Interrupt Enable Register"]
     #[inline(always)]
     pub const fn iirchint(
         &self,
@@ -221,7 +207,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "Channel %s Status Register"]
     #[inline(always)]
     pub const fn iirchsts(
         &self,
@@ -235,7 +220,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "Channel %s Flag Clear Register"]
     #[inline(always)]
     pub const fn iirchfclr(
         &self,
@@ -249,7 +233,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "Stage %s Coefficient b0 Register"]
     #[inline(always)]
     pub const fn iirstgb0(
         &self,
@@ -263,7 +246,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "Stage %s Coefficient b1 Register"]
     #[inline(always)]
     pub const fn iirstgb1(
         &self,
@@ -277,7 +259,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "Stage %s Coefficient b2 Register"]
     #[inline(always)]
     pub const fn iirstgb2(
         &self,
@@ -291,7 +272,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "Stage %s Coefficient a1 Register"]
     #[inline(always)]
     pub const fn iirstga1(
         &self,
@@ -305,7 +285,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "Stage %s Coefficient a2 Register"]
     #[inline(always)]
     pub const fn iirstga2(
         &self,
@@ -319,7 +298,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "Stage %s Delay Data D0 Register"]
     #[inline(always)]
     pub const fn iirstgd0(
         &self,
@@ -333,7 +311,6 @@ impl super::Iirfa {
         }
     }
 
-    #[doc = "Stage %s Delay Data D1 Register"]
     #[inline(always)]
     pub const fn iirstgd1(
         &self,
@@ -353,11 +330,10 @@ pub struct Iircprcs_SPEC;
 impl crate::sealed::RegSpec for Iircprcs_SPEC {
     type DataType = u32;
 }
-#[doc = "Channel Processing Status Register"]
+
 pub type Iircprcs = crate::RegValueT<Iircprcs_SPEC>;
 
 impl Iircprcs {
-    #[doc = "Channel processing status bit"]
     #[inline(always)]
     pub fn cprcs(
         self,
@@ -367,6 +343,7 @@ impl Iircprcs {
         1,
         0,
         iircprcs::Cprcs,
+        iircprcs::Cprcs,
         Iircprcs_SPEC,
         crate::common::R,
     > {
@@ -375,6 +352,7 @@ impl Iircprcs {
             0xffff,
             1,
             0,
+            iircprcs::Cprcs,
             iircprcs::Cprcs,
             Iircprcs_SPEC,
             crate::common::R,
@@ -393,9 +371,8 @@ pub mod iircprcs {
     pub struct Cprcs_SPEC;
     pub type Cprcs = crate::EnumBitfieldStruct<u8, Cprcs_SPEC>;
     impl Cprcs {
-        #[doc = "The channel processing of the corresponding channel is not being performed."]
         pub const _0: Self = Self::new(0);
-        #[doc = "The channel processing of the corresponding channel is being performed."]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -405,11 +382,10 @@ pub struct Iircprcff_SPEC;
 impl crate::sealed::RegSpec for Iircprcff_SPEC {
     type DataType = u32;
 }
-#[doc = "Channel Processing Completion Flag Register"]
+
 pub type Iircprcff = crate::RegValueT<Iircprcff_SPEC>;
 
 impl Iircprcff {
-    #[doc = "Channel processing completion flag"]
     #[inline(always)]
     pub fn cprcff(
         self,
@@ -419,6 +395,7 @@ impl Iircprcff {
         1,
         0,
         iircprcff::Cprcff,
+        iircprcff::Cprcff,
         Iircprcff_SPEC,
         crate::common::R,
     > {
@@ -427,6 +404,7 @@ impl Iircprcff {
             0xffff,
             1,
             0,
+            iircprcff::Cprcff,
             iircprcff::Cprcff,
             Iircprcff_SPEC,
             crate::common::R,
@@ -445,9 +423,8 @@ pub mod iircprcff {
     pub struct Cprcff_SPEC;
     pub type Cprcff = crate::EnumBitfieldStruct<u8, Cprcff_SPEC>;
     impl Cprcff {
-        #[doc = "The channel processing of the corresponding channel is not completed."]
         pub const _0: Self = Self::new(0);
-        #[doc = "The channel processing of the corresponding channel is completed."]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -457,11 +434,10 @@ pub struct Iirordyf_SPEC;
 impl crate::sealed::RegSpec for Iirordyf_SPEC {
     type DataType = u32;
 }
-#[doc = "Output Data Preparation Completion Flag Register"]
+
 pub type Iirordyf = crate::RegValueT<Iirordyf_SPEC>;
 
 impl Iirordyf {
-    #[doc = "Output data preparation completion flag"]
     #[inline(always)]
     pub fn ordyf(
         self,
@@ -471,6 +447,7 @@ impl Iirordyf {
         1,
         0,
         iirordyf::Ordyf,
+        iirordyf::Ordyf,
         Iirordyf_SPEC,
         crate::common::R,
     > {
@@ -479,6 +456,7 @@ impl Iirordyf {
             0xffff,
             1,
             0,
+            iirordyf::Ordyf,
             iirordyf::Ordyf,
             Iirordyf_SPEC,
             crate::common::R,
@@ -497,9 +475,8 @@ pub mod iirordyf {
     pub struct Ordyf_SPEC;
     pub type Ordyf = crate::EnumBitfieldStruct<u8, Ordyf_SPEC>;
     impl Ordyf {
-        #[doc = "The output data preparation of the corresponding channel is not completed."]
         pub const _0: Self = Self::new(0);
-        #[doc = "The output data preparation of the corresponding channel is completed."]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -509,11 +486,10 @@ pub struct Iircerrf_SPEC;
 impl crate::sealed::RegSpec for Iircerrf_SPEC {
     type DataType = u32;
 }
-#[doc = "Operation Error Flag Register"]
+
 pub type Iircerrf = crate::RegValueT<Iircerrf_SPEC>;
 
 impl Iircerrf {
-    #[doc = "Operation error flag"]
     #[inline(always)]
     pub fn cerrf(
         self,
@@ -523,6 +499,7 @@ impl Iircerrf {
         1,
         0,
         iircerrf::Cerrf,
+        iircerrf::Cerrf,
         Iircerrf_SPEC,
         crate::common::R,
     > {
@@ -531,6 +508,7 @@ impl Iircerrf {
             0xffff,
             1,
             0,
+            iircerrf::Cerrf,
             iircerrf::Cerrf,
             Iircerrf_SPEC,
             crate::common::R,
@@ -549,9 +527,8 @@ pub mod iircerrf {
     pub struct Cerrf_SPEC;
     pub type Cerrf = crate::EnumBitfieldStruct<u8, Cerrf_SPEC>;
     impl Cerrf {
-        #[doc = "No operation error has occurred in the corresponding channel."]
         pub const _0: Self = Self::new(0);
-        #[doc = "An operation error has occurred in the corresponding channel."]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -561,17 +538,33 @@ pub struct Iiropcnt_SPEC;
 impl crate::sealed::RegSpec for Iiropcnt_SPEC {
     type DataType = u32;
 }
-#[doc = "Operation Control Register"]
+
 pub type Iiropcnt = crate::RegValueT<Iiropcnt_SPEC>;
 
 impl Iiropcnt {
-    #[doc = "Setting for the rounding mode for addition and multiplication"]
     #[inline(always)]
     pub fn rnd(
         self,
-    ) -> crate::common::RegisterField<0, 0x7, 1, 0, iiropcnt::Rnd, Iiropcnt_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x7,1,0,iiropcnt::Rnd, Iiropcnt_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x7,
+        1,
+        0,
+        iiropcnt::Rnd,
+        iiropcnt::Rnd,
+        Iiropcnt_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x7,
+            1,
+            0,
+            iiropcnt::Rnd,
+            iiropcnt::Rnd,
+            Iiropcnt_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Iiropcnt {
@@ -586,11 +579,10 @@ pub mod iiropcnt {
     pub struct Rnd_SPEC;
     pub type Rnd = crate::EnumBitfieldStruct<u8, Rnd_SPEC>;
     impl Rnd {
-        #[doc = "Round to nearest"]
         pub const _000: Self = Self::new(0);
-        #[doc = "Round toward zero"]
+
         pub const _001: Self = Self::new(1);
-        #[doc = "Setting prohibited."]
+
         pub const OTHERS: Self = Self::new(0);
     }
 }
@@ -600,11 +592,10 @@ pub struct Iirecccnt_SPEC;
 impl crate::sealed::RegSpec for Iirecccnt_SPEC {
     type DataType = u32;
 }
-#[doc = "ECC Control Register"]
+
 pub type Iirecccnt = crate::RegValueT<Iirecccnt_SPEC>;
 
 impl Iirecccnt {
-    #[doc = "ECC setting bit"]
     #[inline(always)]
     pub fn eccmd(
         self,
@@ -613,6 +604,7 @@ impl Iirecccnt {
         0x1,
         1,
         0,
+        iirecccnt::Eccmd,
         iirecccnt::Eccmd,
         Iirecccnt_SPEC,
         crate::common::RW,
@@ -623,11 +615,12 @@ impl Iirecccnt {
             1,
             0,
             iirecccnt::Eccmd,
+            iirecccnt::Eccmd,
             Iirecccnt_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "ECC-corrected data write-back disable bit"]
+
     #[inline(always)]
     pub fn eccwbdis(
         self,
@@ -637,6 +630,7 @@ impl Iirecccnt {
         1,
         0,
         iirecccnt::Eccwbdis,
+        iirecccnt::Eccwbdis,
         Iirecccnt_SPEC,
         crate::common::RW,
     > {
@@ -645,6 +639,7 @@ impl Iirecccnt {
             0x1,
             1,
             0,
+            iirecccnt::Eccwbdis,
             iirecccnt::Eccwbdis,
             Iirecccnt_SPEC,
             crate::common::RW,
@@ -663,18 +658,16 @@ pub mod iirecccnt {
     pub struct Eccmd_SPEC;
     pub type Eccmd = crate::EnumBitfieldStruct<u8, Eccmd_SPEC>;
     impl Eccmd {
-        #[doc = "The ECC error detection/correction function is disabled."]
         pub const _0: Self = Self::new(0);
-        #[doc = "The ECC error detection/correction function is enabled."]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Eccwbdis_SPEC;
     pub type Eccwbdis = crate::EnumBitfieldStruct<u8, Eccwbdis_SPEC>;
     impl Eccwbdis {
-        #[doc = "The error-corrected data write-back is enabled."]
         pub const _0: Self = Self::new(0);
-        #[doc = "The error-corrected data write-back is disabled."]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -684,11 +677,10 @@ pub struct Iireccint_SPEC;
 impl crate::sealed::RegSpec for Iireccint_SPEC {
     type DataType = u32;
 }
-#[doc = "ECC Interrupt Enable Register"]
+
 pub type Iireccint = crate::RegValueT<Iireccint_SPEC>;
 
 impl Iireccint {
-    #[doc = "ECC 1-bit error interrupt enable bit"]
     #[inline(always)]
     pub fn eseie(
         self,
@@ -697,6 +689,7 @@ impl Iireccint {
         0x1,
         1,
         0,
+        iireccint::Eseie,
         iireccint::Eseie,
         Iireccint_SPEC,
         crate::common::RW,
@@ -707,11 +700,12 @@ impl Iireccint {
             1,
             0,
             iireccint::Eseie,
+            iireccint::Eseie,
             Iireccint_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "ECC 2-bit error interrupt enable bit"]
+
     #[inline(always)]
     pub fn edeie(
         self,
@@ -721,6 +715,7 @@ impl Iireccint {
         1,
         0,
         iireccint::Edeie,
+        iireccint::Edeie,
         Iireccint_SPEC,
         crate::common::RW,
     > {
@@ -729,6 +724,7 @@ impl Iireccint {
             0x1,
             1,
             0,
+            iireccint::Edeie,
             iireccint::Edeie,
             Iireccint_SPEC,
             crate::common::RW,
@@ -747,18 +743,16 @@ pub mod iireccint {
     pub struct Eseie_SPEC;
     pub type Eseie = crate::EnumBitfieldStruct<u8, Eseie_SPEC>;
     impl Eseie {
-        #[doc = "The generation of ECC 1-bit error interrupt requests is disabled."]
         pub const _0: Self = Self::new(0);
-        #[doc = "The generation of ECC 1-bit error interrupt requests is enabled."]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Edeie_SPEC;
     pub type Edeie = crate::EnumBitfieldStruct<u8, Edeie_SPEC>;
     impl Edeie {
-        #[doc = "The generation of ECC 2-bit error interrupt requests is disabled."]
         pub const _0: Self = Self::new(0);
-        #[doc = "The generation of ECC 2-bit error interrupt requests is enabled."]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -768,25 +762,58 @@ pub struct Iireccef_SPEC;
 impl crate::sealed::RegSpec for Iireccef_SPEC {
     type DataType = u32;
 }
-#[doc = "ECC Error Flag Register"]
+
 pub type Iireccef = crate::RegValueT<Iireccef_SPEC>;
 
 impl Iireccef {
-    #[doc = "ECC 1-bit error flag"]
     #[inline(always)]
     pub fn esef(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, iireccef::Esef, Iireccef_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,iireccef::Esef, Iireccef_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        iireccef::Esef,
+        iireccef::Esef,
+        Iireccef_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            iireccef::Esef,
+            iireccef::Esef,
+            Iireccef_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "ECC 2-bit error flag"]
+
     #[inline(always)]
     pub fn edef(
         self,
-    ) -> crate::common::RegisterField<1, 0x1, 1, 0, iireccef::Edef, Iireccef_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<1,0x1,1,0,iireccef::Edef, Iireccef_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        1,
+        0x1,
+        1,
+        0,
+        iireccef::Edef,
+        iireccef::Edef,
+        Iireccef_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            1,
+            0x1,
+            1,
+            0,
+            iireccef::Edef,
+            iireccef::Edef,
+            Iireccef_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Iireccef {
@@ -801,18 +828,16 @@ pub mod iireccef {
     pub struct Esef_SPEC;
     pub type Esef = crate::EnumBitfieldStruct<u8, Esef_SPEC>;
     impl Esef {
-        #[doc = "No 1-bit ECC error is detected."]
         pub const _0: Self = Self::new(0);
-        #[doc = "1-bit ECC error is detected."]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Edef_SPEC;
     pub type Edef = crate::EnumBitfieldStruct<u8, Edef_SPEC>;
     impl Edef {
-        #[doc = "No 2-bit ECC error is detected."]
         pub const _0: Self = Self::new(0);
-        #[doc = "2-bit ECC error is detected."]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -822,11 +847,10 @@ pub struct Iireccefclr_SPEC;
 impl crate::sealed::RegSpec for Iireccefclr_SPEC {
     type DataType = u32;
 }
-#[doc = "ECC Error Flag Clear Register"]
+
 pub type Iireccefclr = crate::RegValueT<Iireccefclr_SPEC>;
 
 impl Iireccefclr {
-    #[doc = "ECC 1-bit error flag clear bit"]
     #[inline(always)]
     pub fn esefclr(
         self,
@@ -835,6 +859,7 @@ impl Iireccefclr {
         0x1,
         1,
         0,
+        iireccefclr::Esefclr,
         iireccefclr::Esefclr,
         Iireccefclr_SPEC,
         crate::common::W,
@@ -845,11 +870,12 @@ impl Iireccefclr {
             1,
             0,
             iireccefclr::Esefclr,
+            iireccefclr::Esefclr,
             Iireccefclr_SPEC,
             crate::common::W,
         >::from_register(self, 0)
     }
-    #[doc = "ECC 2-bit error status flag clear bit"]
+
     #[inline(always)]
     pub fn edefclr(
         self,
@@ -859,6 +885,7 @@ impl Iireccefclr {
         1,
         0,
         iireccefclr::Edefclr,
+        iireccefclr::Edefclr,
         Iireccefclr_SPEC,
         crate::common::W,
     > {
@@ -867,6 +894,7 @@ impl Iireccefclr {
             0x1,
             1,
             0,
+            iireccefclr::Edefclr,
             iireccefclr::Edefclr,
             Iireccefclr_SPEC,
             crate::common::W,
@@ -885,18 +913,16 @@ pub mod iireccefclr {
     pub struct Esefclr_SPEC;
     pub type Esefclr = crate::EnumBitfieldStruct<u8, Esefclr_SPEC>;
     impl Esefclr {
-        #[doc = "No effect"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Clears the ESEF flag of the IIRECCEF register."]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Edefclr_SPEC;
     pub type Edefclr = crate::EnumBitfieldStruct<u8, Edefclr_SPEC>;
     impl Edefclr {
-        #[doc = "No effect"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Clears the EDEF flag of the IIRECCEF register."]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -906,16 +932,16 @@ pub struct Iireseadr_SPEC;
 impl crate::sealed::RegSpec for Iireseadr_SPEC {
     type DataType = u32;
 }
-#[doc = "ECC 1-bit Error Address Register"]
+
 pub type Iireseadr = crate::RegValueT<Iireseadr_SPEC>;
 
 impl Iireseadr {
-    #[doc = "Error address"]
     #[inline(always)]
     pub fn seadr(
         self,
-    ) -> crate::common::RegisterField<0, 0x7ff, 1, 0, u16, Iireseadr_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0x7ff,1,0,u16, Iireseadr_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0x7ff, 1, 0, u16, u16, Iireseadr_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<0,0x7ff,1,0,u16,u16,Iireseadr_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Iireseadr {
@@ -931,16 +957,16 @@ pub struct Iiredeadr_SPEC;
 impl crate::sealed::RegSpec for Iiredeadr_SPEC {
     type DataType = u32;
 }
-#[doc = "ECC 2-bit Error Address Register"]
+
 pub type Iiredeadr = crate::RegValueT<Iiredeadr_SPEC>;
 
 impl Iiredeadr {
-    #[doc = "Error address"]
     #[inline(always)]
     pub fn deadr(
         self,
-    ) -> crate::common::RegisterField<0, 0x7ff, 1, 0, u16, Iiredeadr_SPEC, crate::common::R> {
-        crate::common::RegisterField::<0,0x7ff,1,0,u16, Iiredeadr_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<0, 0x7ff, 1, 0, u16, u16, Iiredeadr_SPEC, crate::common::R>
+    {
+        crate::common::RegisterField::<0,0x7ff,1,0,u16,u16,Iiredeadr_SPEC,crate::common::R>::from_register(self,0)
     }
 }
 impl ::core::default::Default for Iiredeadr {
@@ -956,7 +982,7 @@ pub struct Iirchinp_SPEC;
 impl crate::sealed::RegSpec for Iirchinp_SPEC {
     type DataType = u32;
 }
-#[doc = "Channel %s Input Register"]
+
 pub type Iirchinp = crate::RegValueT<Iirchinp_SPEC>;
 
 impl NoBitfieldReg<Iirchinp_SPEC> for Iirchinp {}
@@ -973,7 +999,7 @@ pub struct Iirchout_SPEC;
 impl crate::sealed::RegSpec for Iirchout_SPEC {
     type DataType = u32;
 }
-#[doc = "Channel %s Output Register"]
+
 pub type Iirchout = crate::RegValueT<Iirchout_SPEC>;
 
 impl NoBitfieldReg<Iirchout_SPEC> for Iirchout {}
@@ -990,11 +1016,10 @@ pub struct Iirchcnt_SPEC;
 impl crate::sealed::RegSpec for Iirchcnt_SPEC {
     type DataType = u32;
 }
-#[doc = "Channel %s Control Register"]
+
 pub type Iirchcnt = crate::RegValueT<Iirchcnt_SPEC>;
 
 impl Iirchcnt {
-    #[doc = "Stage selection bit"]
     #[inline(always)]
     pub fn stgsel(
         self,
@@ -1004,6 +1029,7 @@ impl Iirchcnt {
         1,
         0,
         iirchcnt::Stgsel,
+        iirchcnt::Stgsel,
         Iirchcnt_SPEC,
         crate::common::RW,
     > {
@@ -1012,6 +1038,7 @@ impl Iirchcnt {
             0xffffffff,
             1,
             0,
+            iirchcnt::Stgsel,
             iirchcnt::Stgsel,
             Iirchcnt_SPEC,
             crate::common::RW,
@@ -1030,9 +1057,8 @@ pub mod iirchcnt {
     pub struct Stgsel_SPEC;
     pub type Stgsel = crate::EnumBitfieldStruct<u8, Stgsel_SPEC>;
     impl Stgsel {
-        #[doc = "The corresponding stage is not used for channel n."]
         pub const _0: Self = Self::new(0);
-        #[doc = "The corresponding stage is used for channel n."]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -1042,11 +1068,10 @@ pub struct Iirchint_SPEC;
 impl crate::sealed::RegSpec for Iirchint_SPEC {
     type DataType = u8;
 }
-#[doc = "Channel %s Interrupt Enable Register"]
+
 pub type Iirchint = crate::RegValueT<Iirchint_SPEC>;
 
 impl Iirchint {
-    #[doc = "Channel processing completion interrupt enable bit"]
     #[inline(always)]
     pub fn cprcfie(
         self,
@@ -1055,6 +1080,7 @@ impl Iirchint {
         0x1,
         1,
         0,
+        iirchint::Cprcfie,
         iirchint::Cprcfie,
         Iirchint_SPEC,
         crate::common::RW,
@@ -1065,11 +1091,12 @@ impl Iirchint {
             1,
             0,
             iirchint::Cprcfie,
+            iirchint::Cprcfie,
             Iirchint_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Output data preparation completion interrupt enable bit"]
+
     #[inline(always)]
     pub fn ordyie(
         self,
@@ -1078,6 +1105,7 @@ impl Iirchint {
         0x1,
         1,
         0,
+        iirchint::Ordyie,
         iirchint::Ordyie,
         Iirchint_SPEC,
         crate::common::RW,
@@ -1088,11 +1116,12 @@ impl Iirchint {
             1,
             0,
             iirchint::Ordyie,
+            iirchint::Ordyie,
             Iirchint_SPEC,
             crate::common::RW,
         >::from_register(self, 0)
     }
-    #[doc = "Operation error interrupt enable bit"]
+
     #[inline(always)]
     pub fn cerrie(
         self,
@@ -1102,6 +1131,7 @@ impl Iirchint {
         1,
         0,
         iirchint::Cerrie,
+        iirchint::Cerrie,
         Iirchint_SPEC,
         crate::common::RW,
     > {
@@ -1110,6 +1140,7 @@ impl Iirchint {
             0x1,
             1,
             0,
+            iirchint::Cerrie,
             iirchint::Cerrie,
             Iirchint_SPEC,
             crate::common::RW,
@@ -1128,27 +1159,24 @@ pub mod iirchint {
     pub struct Cprcfie_SPEC;
     pub type Cprcfie = crate::EnumBitfieldStruct<u8, Cprcfie_SPEC>;
     impl Cprcfie {
-        #[doc = "The generation of channel processing completion interrupt requests is disabled."]
         pub const _0: Self = Self::new(0);
-        #[doc = "The generation of channel processing completion interrupt requests is enabled."]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Ordyie_SPEC;
     pub type Ordyie = crate::EnumBitfieldStruct<u8, Ordyie_SPEC>;
     impl Ordyie {
-        #[doc = "The generation of output data preparation completion interrupt requests is disabled."]
         pub const _0: Self = Self::new(0);
-        #[doc = "The generation of output data preparation completion interrupt requests is enabled."]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cerrie_SPEC;
     pub type Cerrie = crate::EnumBitfieldStruct<u8, Cerrie_SPEC>;
     impl Cerrie {
-        #[doc = "The generation of operation error interrupt requests is disabled."]
         pub const _0: Self = Self::new(0);
-        #[doc = "The generation of operation error interrupt requests is enabled."]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -1158,49 +1186,108 @@ pub struct Iirchsts_SPEC;
 impl crate::sealed::RegSpec for Iirchsts_SPEC {
     type DataType = u8;
 }
-#[doc = "Channel %s Status Register"]
+
 pub type Iirchsts = crate::RegValueT<Iirchsts_SPEC>;
 
 impl Iirchsts {
-    #[doc = "Channel processing status flag"]
     #[inline(always)]
     pub fn cprcs(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, iirchsts::Cprcs, Iirchsts_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,iirchsts::Cprcs, Iirchsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        iirchsts::Cprcs,
+        iirchsts::Cprcs,
+        Iirchsts_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            iirchsts::Cprcs,
+            iirchsts::Cprcs,
+            Iirchsts_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "Channel processing completion flag"]
+
     #[inline(always)]
     pub fn cprcff(
         self,
-    ) -> crate::common::RegisterField<1, 0x1, 1, 0, iirchsts::Cprcff, Iirchsts_SPEC, crate::common::R>
-    {
+    ) -> crate::common::RegisterField<
+        1,
+        0x1,
+        1,
+        0,
+        iirchsts::Cprcff,
+        iirchsts::Cprcff,
+        Iirchsts_SPEC,
+        crate::common::R,
+    > {
         crate::common::RegisterField::<
             1,
             0x1,
             1,
             0,
             iirchsts::Cprcff,
+            iirchsts::Cprcff,
             Iirchsts_SPEC,
             crate::common::R,
         >::from_register(self, 0)
     }
-    #[doc = "Output data preparation completion flag"]
+
     #[inline(always)]
     pub fn ordyf(
         self,
-    ) -> crate::common::RegisterField<2, 0x1, 1, 0, iirchsts::Ordyf, Iirchsts_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<2,0x1,1,0,iirchsts::Ordyf, Iirchsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        2,
+        0x1,
+        1,
+        0,
+        iirchsts::Ordyf,
+        iirchsts::Ordyf,
+        Iirchsts_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            2,
+            0x1,
+            1,
+            0,
+            iirchsts::Ordyf,
+            iirchsts::Ordyf,
+            Iirchsts_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
-    #[doc = "Operation error flag"]
+
     #[inline(always)]
     pub fn cerrf(
         self,
-    ) -> crate::common::RegisterField<3, 0x1, 1, 0, iirchsts::Cerrf, Iirchsts_SPEC, crate::common::R>
-    {
-        crate::common::RegisterField::<3,0x1,1,0,iirchsts::Cerrf, Iirchsts_SPEC,crate::common::R>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        3,
+        0x1,
+        1,
+        0,
+        iirchsts::Cerrf,
+        iirchsts::Cerrf,
+        Iirchsts_SPEC,
+        crate::common::R,
+    > {
+        crate::common::RegisterField::<
+            3,
+            0x1,
+            1,
+            0,
+            iirchsts::Cerrf,
+            iirchsts::Cerrf,
+            Iirchsts_SPEC,
+            crate::common::R,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Iirchsts {
@@ -1215,36 +1302,32 @@ pub mod iirchsts {
     pub struct Cprcs_SPEC;
     pub type Cprcs = crate::EnumBitfieldStruct<u8, Cprcs_SPEC>;
     impl Cprcs {
-        #[doc = "The channel processing is not being performed."]
         pub const _0: Self = Self::new(0);
-        #[doc = "The channel processing is being performed."]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cprcff_SPEC;
     pub type Cprcff = crate::EnumBitfieldStruct<u8, Cprcff_SPEC>;
     impl Cprcff {
-        #[doc = "The channel processing is not completed."]
         pub const _0: Self = Self::new(0);
-        #[doc = "The channel processing is completed."]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Ordyf_SPEC;
     pub type Ordyf = crate::EnumBitfieldStruct<u8, Ordyf_SPEC>;
     impl Ordyf {
-        #[doc = "The output data preparation is not completed."]
         pub const _0: Self = Self::new(0);
-        #[doc = "The output data preparation is completed."]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cerrf_SPEC;
     pub type Cerrf = crate::EnumBitfieldStruct<u8, Cerrf_SPEC>;
     impl Cerrf {
-        #[doc = "No operation error has occurred."]
         pub const _0: Self = Self::new(0);
-        #[doc = "An operation error has occurred."]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -1254,11 +1337,10 @@ pub struct Iirchfclr_SPEC;
 impl crate::sealed::RegSpec for Iirchfclr_SPEC {
     type DataType = u8;
 }
-#[doc = "Channel %s Flag Clear Register"]
+
 pub type Iirchfclr = crate::RegValueT<Iirchfclr_SPEC>;
 
 impl Iirchfclr {
-    #[doc = "Channel processing completion flag clear bit"]
     #[inline(always)]
     pub fn cprcffclr(
         self,
@@ -1267,6 +1349,7 @@ impl Iirchfclr {
         0x1,
         1,
         0,
+        iirchfclr::Cprcffclr,
         iirchfclr::Cprcffclr,
         Iirchfclr_SPEC,
         crate::common::W,
@@ -1277,11 +1360,12 @@ impl Iirchfclr {
             1,
             0,
             iirchfclr::Cprcffclr,
+            iirchfclr::Cprcffclr,
             Iirchfclr_SPEC,
             crate::common::W,
         >::from_register(self, 0)
     }
-    #[doc = "Operation error flag clear bit"]
+
     #[inline(always)]
     pub fn cerrfclr(
         self,
@@ -1291,6 +1375,7 @@ impl Iirchfclr {
         1,
         0,
         iirchfclr::Cerrfclr,
+        iirchfclr::Cerrfclr,
         Iirchfclr_SPEC,
         crate::common::W,
     > {
@@ -1299,6 +1384,7 @@ impl Iirchfclr {
             0x1,
             1,
             0,
+            iirchfclr::Cerrfclr,
             iirchfclr::Cerrfclr,
             Iirchfclr_SPEC,
             crate::common::W,
@@ -1317,18 +1403,16 @@ pub mod iirchfclr {
     pub struct Cprcffclr_SPEC;
     pub type Cprcffclr = crate::EnumBitfieldStruct<u8, Cprcffclr_SPEC>;
     impl Cprcffclr {
-        #[doc = "No effect"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Clears the CPRCFF flag of the IIRCHnSTS register."]
+
         pub const _1: Self = Self::new(1);
     }
     #[derive(Clone, Copy, Eq, PartialEq, Ord, PartialOrd)]
     pub struct Cerrfclr_SPEC;
     pub type Cerrfclr = crate::EnumBitfieldStruct<u8, Cerrfclr_SPEC>;
     impl Cerrfclr {
-        #[doc = "No effect"]
         pub const _0: Self = Self::new(0);
-        #[doc = "Clears the CERRF flag of the IIRCHnSTS register."]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -1338,7 +1422,7 @@ pub struct Iirstgb0_SPEC;
 impl crate::sealed::RegSpec for Iirstgb0_SPEC {
     type DataType = u32;
 }
-#[doc = "Stage %s Coefficient b0 Register"]
+
 pub type Iirstgb0 = crate::RegValueT<Iirstgb0_SPEC>;
 
 impl NoBitfieldReg<Iirstgb0_SPEC> for Iirstgb0 {}
@@ -1355,7 +1439,7 @@ pub struct Iirstgb1_SPEC;
 impl crate::sealed::RegSpec for Iirstgb1_SPEC {
     type DataType = u32;
 }
-#[doc = "Stage %s Coefficient b1 Register"]
+
 pub type Iirstgb1 = crate::RegValueT<Iirstgb1_SPEC>;
 
 impl NoBitfieldReg<Iirstgb1_SPEC> for Iirstgb1 {}
@@ -1372,7 +1456,7 @@ pub struct Iirstgb2_SPEC;
 impl crate::sealed::RegSpec for Iirstgb2_SPEC {
     type DataType = u32;
 }
-#[doc = "Stage %s Coefficient b2 Register"]
+
 pub type Iirstgb2 = crate::RegValueT<Iirstgb2_SPEC>;
 
 impl NoBitfieldReg<Iirstgb2_SPEC> for Iirstgb2 {}
@@ -1389,7 +1473,7 @@ pub struct Iirstga1_SPEC;
 impl crate::sealed::RegSpec for Iirstga1_SPEC {
     type DataType = u32;
 }
-#[doc = "Stage %s Coefficient a1 Register"]
+
 pub type Iirstga1 = crate::RegValueT<Iirstga1_SPEC>;
 
 impl NoBitfieldReg<Iirstga1_SPEC> for Iirstga1 {}
@@ -1406,7 +1490,7 @@ pub struct Iirstga2_SPEC;
 impl crate::sealed::RegSpec for Iirstga2_SPEC {
     type DataType = u32;
 }
-#[doc = "Stage %s Coefficient a2 Register"]
+
 pub type Iirstga2 = crate::RegValueT<Iirstga2_SPEC>;
 
 impl NoBitfieldReg<Iirstga2_SPEC> for Iirstga2 {}
@@ -1423,7 +1507,7 @@ pub struct Iirstgd0_SPEC;
 impl crate::sealed::RegSpec for Iirstgd0_SPEC {
     type DataType = u32;
 }
-#[doc = "Stage %s Delay Data D0 Register"]
+
 pub type Iirstgd0 = crate::RegValueT<Iirstgd0_SPEC>;
 
 impl NoBitfieldReg<Iirstgd0_SPEC> for Iirstgd0 {}
@@ -1440,7 +1524,7 @@ pub struct Iirstgd1_SPEC;
 impl crate::sealed::RegSpec for Iirstgd1_SPEC {
     type DataType = u32;
 }
-#[doc = "Stage %s Delay Data D1 Register"]
+
 pub type Iirstgd1 = crate::RegValueT<Iirstgd1_SPEC>;
 
 impl NoBitfieldReg<Iirstgd1_SPEC> for Iirstgd1 {}

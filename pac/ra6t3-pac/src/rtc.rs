@@ -15,7 +15,7 @@ following link:
 http://www.renesas.com/disclaimer
 
 */
-// Generated from SVD 1.20.00, with svd2pac 0.4.0 on Sat, 12 Apr 2025 22:18:50 +0000
+// Generated from SVD 1.20.00, with svd2pac 0.5.0 on Mon, 14 Apr 2025 11:21:40 +0000
 
 #![allow(clippy::identity_op)]
 #![allow(clippy::module_inception)]
@@ -33,7 +33,7 @@ impl super::Rtc {
     pub(crate) const fn _svd2pac_as_ptr(&self) -> *mut u8 {
         self.ptr
     }
-    #[doc = "Reset Control Register 1"]
+
     #[inline(always)]
     pub const fn rcr1(&self) -> &'static crate::common::Reg<self::Rcr1_SPEC, crate::common::RW> {
         unsafe {
@@ -43,7 +43,6 @@ impl super::Rtc {
         }
     }
 
-    #[doc = "Reset Control Register 2"]
     #[inline(always)]
     pub const fn rcr2(&self) -> &'static crate::common::Reg<self::Rcr2_SPEC, crate::common::RW> {
         unsafe {
@@ -53,7 +52,6 @@ impl super::Rtc {
         }
     }
 
-    #[doc = "Reset Control Register 4"]
     #[inline(always)]
     pub const fn rcr4(&self) -> &'static crate::common::Reg<self::Rcr4_SPEC, crate::common::RW> {
         unsafe {
@@ -63,7 +61,6 @@ impl super::Rtc {
         }
     }
 
-    #[doc = "Time Capture Control Register %s"]
     #[inline(always)]
     pub const fn rtccr(
         &self,
@@ -83,7 +80,7 @@ pub struct Rcr1_SPEC;
 impl crate::sealed::RegSpec for Rcr1_SPEC {
     type DataType = u8;
 }
-#[doc = "Reset Control Register 1"]
+
 pub type Rcr1 = crate::RegValueT<Rcr1_SPEC>;
 
 impl NoBitfieldReg<Rcr1_SPEC> for Rcr1 {}
@@ -100,16 +97,33 @@ pub struct Rcr2_SPEC;
 impl crate::sealed::RegSpec for Rcr2_SPEC {
     type DataType = u8;
 }
-#[doc = "Reset Control Register 2"]
+
 pub type Rcr2 = crate::RegValueT<Rcr2_SPEC>;
 
 impl Rcr2 {
-    #[doc = "Software Reset"]
     #[inline(always)]
     pub fn reset(
         self,
-    ) -> crate::common::RegisterField<1, 0x1, 1, 0, rcr2::Reset, Rcr2_SPEC, crate::common::RW> {
-        crate::common::RegisterField::<1,0x1,1,0,rcr2::Reset, Rcr2_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        1,
+        0x1,
+        1,
+        0,
+        rcr2::Reset,
+        rcr2::Reset,
+        Rcr2_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            1,
+            0x1,
+            1,
+            0,
+            rcr2::Reset,
+            rcr2::Reset,
+            Rcr2_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Rcr2 {
@@ -124,9 +138,8 @@ pub mod rcr2 {
     pub struct Reset_SPEC;
     pub type Reset = crate::EnumBitfieldStruct<u8, Reset_SPEC>;
     impl Reset {
-        #[doc = "In writing: Invalid (writing 0 has no effect) In reading: Software reset has completed."]
         pub const _0: Self = Self::new(0);
-        #[doc = "In writing: The target registers for software reset are initialized. In reading: Software reset in progress."]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -136,17 +149,33 @@ pub struct Rcr4_SPEC;
 impl crate::sealed::RegSpec for Rcr4_SPEC {
     type DataType = u8;
 }
-#[doc = "Reset Control Register 4"]
+
 pub type Rcr4 = crate::RegValueT<Rcr4_SPEC>;
 
 impl Rcr4 {
-    #[doc = "Count Source Select"]
     #[inline(always)]
     pub fn rcksel(
         self,
-    ) -> crate::common::RegisterField<0, 0x1, 1, 0, rcr4::Rcksel, Rcr4_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<0,0x1,1,0,rcr4::Rcksel, Rcr4_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        0,
+        0x1,
+        1,
+        0,
+        rcr4::Rcksel,
+        rcr4::Rcksel,
+        Rcr4_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            0,
+            0x1,
+            1,
+            0,
+            rcr4::Rcksel,
+            rcr4::Rcksel,
+            Rcr4_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Rcr4 {
@@ -161,9 +190,8 @@ pub mod rcr4 {
     pub struct Rcksel_SPEC;
     pub type Rcksel = crate::EnumBitfieldStruct<u8, Rcksel_SPEC>;
     impl Rcksel {
-        #[doc = "Sub-clock oscillator is selected"]
         pub const _0: Self = Self::new(0);
-        #[doc = "LOCO is selected"]
+
         pub const _1: Self = Self::new(1);
     }
 }
@@ -173,17 +201,33 @@ pub struct Rtccr_SPEC;
 impl crate::sealed::RegSpec for Rtccr_SPEC {
     type DataType = u8;
 }
-#[doc = "Time Capture Control Register %s"]
+
 pub type Rtccr = crate::RegValueT<Rtccr_SPEC>;
 
 impl Rtccr {
-    #[doc = "P402/AGTIO and P403/AGTIO input enable"]
     #[inline(always)]
     pub fn tcen(
         self,
-    ) -> crate::common::RegisterField<7, 0x1, 1, 0, rtccr::Tcen, Rtccr_SPEC, crate::common::RW>
-    {
-        crate::common::RegisterField::<7,0x1,1,0,rtccr::Tcen, Rtccr_SPEC,crate::common::RW>::from_register(self,0)
+    ) -> crate::common::RegisterField<
+        7,
+        0x1,
+        1,
+        0,
+        rtccr::Tcen,
+        rtccr::Tcen,
+        Rtccr_SPEC,
+        crate::common::RW,
+    > {
+        crate::common::RegisterField::<
+            7,
+            0x1,
+            1,
+            0,
+            rtccr::Tcen,
+            rtccr::Tcen,
+            Rtccr_SPEC,
+            crate::common::RW,
+        >::from_register(self, 0)
     }
 }
 impl ::core::default::Default for Rtccr {
@@ -198,9 +242,8 @@ pub mod rtccr {
     pub struct Tcen_SPEC;
     pub type Tcen = crate::EnumBitfieldStruct<u8, Tcen_SPEC>;
     impl Tcen {
-        #[doc = "AGTIO input disable"]
         pub const _0: Self = Self::new(0);
-        #[doc = "AGTIO input enable"]
+
         pub const _1: Self = Self::new(1);
     }
 }
