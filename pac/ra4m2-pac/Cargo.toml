@@ -28,6 +28,7 @@ categories = ["embedded", "hardware-support", "no-std"]
 include = ["src/*", "Cargo.toml", "README.md", "build.rs", "device.x"]
 readme = "README.md"
 license-file = "LICENSE.txt"
+license = "MIT"
 
 [lib]
 test = false
